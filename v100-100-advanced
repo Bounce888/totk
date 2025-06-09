@@ -141,7 +141,7 @@ _route:
     - _Cave<Bottomless Cave>:
        coord: [739.100,1500,-1358.0125]
        notes: Map zuggle a claymore, and remove the boulder fuse. Make sure to pick up after part 1 of the setup. 
-    - .link([Perform UPR] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing). If doing Wingflip, get Bubbulfrog and Cave Entrance now. 
+    - .link([Perform UPR] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing)
     - _Chest::ArchaicWarmGreaves:
        notes: Pick up Zonai Charge nearby
     - _Enemy<Construct>:
