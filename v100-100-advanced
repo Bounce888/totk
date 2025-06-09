@@ -381,7 +381,6 @@ _route:
     - Take a picture of a lynel
     - use ancient blades on all except the fourth. if in need of extra arrows, kill the first lynel and immediately pick up the arrows
     - pick up Savage Lynel Bow ("SLB"), Arrows, and Large CC
-    - Dupe a weapon
     - Fuse saber horn to a weapon
     - Fuse ruby to a different weapon
     - Perform Ghost fuse with the Mace horn:
@@ -399,7 +398,7 @@ _route:
        coord: [-247.84, 124.64, 136.6]
        comment: Camera Work in the Depths
     - _Shop::GeneralStore:
-       notes: Sell 165 Diamonds, buy arrows
+       notes: Sell 180 Diamonds, buy arrows
     - _Location::MabeVillageRuins:
        hide-icon-on-map: true
     - _Well::MabeVillageRuins:
