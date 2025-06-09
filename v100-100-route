@@ -249,7 +249,7 @@ _route:
     - _Npc<Purah>:
        coord: [-253.42, 132.01, 156]
        comment: Regional Phenomena    
-    - Dupe 450 Steering Sticks, 180 Cannons, 50 rockets, 50 wings, 35 Big Batteries and 10 Fans
+    - Dupe 450 Steering Sticks, 180 Cannons, 50 rockets, 40 wings, 35 Big Batteries and 10 Fans
     - Dupe 20 Diamonds. Leave 4 on the ground and sell 16
     - _Shop::GeneralStore:
        notes: buy arrows
@@ -348,7 +348,7 @@ _route:
        notes: Build demo vehicle and Clip vehicle and favorite them; defeat Kohga (arrow stun + 2 hits) and pick up huge CC chest afterwards
     - _SchemaStone::CentralMine
     - Perform BID (.link([guide] https://docs.google.com/presentation/d/1_bsHBX-od2V1wXxUn52OarLQw6rCl6nM-5Rxu14c4q8/edit?usp=sharing))
-    - Dupe 510 Large Zonaite, 180 Rubies, 180 Fairies, 160 Diamonds, 120 Flint, 60 Wood, 50 Fire Fruit
+    - Dupe 510 Large Zonaite, 190 Diamonds, 150 Rubies, 150 Fairies, 120 Flint, 60 Wood, 50 Fire Fruit
     - Dupe 35 Ancient Blades, 20 Dazzlefruit, 20 Splash Fruit, 10 Brightcaps, 10 Amber, 10 Sundelions, 6 apples, and 6 Golden Apples
     - Perform Ghost wood:
        notes: overload drop weapon (not MNF), fuse weapon to shield, fuse wood to weapon twice, swap weapon
@@ -390,7 +390,7 @@ _route:
        coord: [-247.84, 124.64, 136.6]
        comment: Camera Work in the Depths
     - _Shop::GeneralStore:
-       notes: Sell 165 Diamonds, buy arrows
+       notes: Sell 175 Diamonds, buy arrows
     - _Location::MabeVillageRuins:
        hide-icon-on-map: true
     - _Well::MabeVillageRuins:
@@ -450,7 +450,7 @@ _route:
     - Eat final Speed Food
     - _Shop<Yiga Merchant>:
        coord: [-979.26, 248.55, -2018.14]
-       comment: Buy 40 Bananas (FABS)
+       comment: Buy full stack of bananas (FABS)
     - _Item<Spicy Pepper>:
        coord: [-985.41, 251.78, -2009.1]
        notes: Pick up
