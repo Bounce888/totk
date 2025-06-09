@@ -55,21 +55,15 @@ _route:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
     - Perform QDZ and retrieve the MNF
-    - _Warp::Npc<Steward Construct>:
-       coord: [449.86, 1640.83, -1310.45]
-       comment: Respawn here
-    - Run through Bottomless Cave; pick up Bombs, the Bubbulfrog, and the Flame Shield
-    - _Cave::Bottomless00   
-    - _Item<Bomb Flower x4>:
-       coord: [737.61, 1591.98, -1437.71]
-       comment: Pick up two under the Bubbulfrog, the other two while running up the cave. Save bubbulfrog until later
-    - _Equipment::Shield<Flame Emitter Shield>:
-       coord: [745.41, 1650.87, -1368.7]
-       comment: Is at the top of the cave
-    - Climb up to Ascend 
-    - _Cave::Bottomless01
+    - _Warp::Location<Up Top>:
+       coord: [426.5,1500,-1681.25]
     - _Shrine::Gutanbac:
        notes: Pick up two bows. Dynamic zuggle the Construct Bow and perform QDS
+    - _Cave::Bottomless01
+    - _Equipment::Shield<Flame Emitter Shield>:
+       coord: [745.41, 1650.87, -1368.7]
+    - _Material<Bomb Flower>:
+       coord: [744.35, 1647.04, -1344.69]
     - Energy Cell
     - Wing + ASF to Fuse 
     - _Shrine::In-isa:
@@ -141,7 +135,7 @@ _route:
     - _Tower::LookoutLanding:
        comment: Launch from the tower
   
-  - Warm Greaves:
+  - UPR:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
     - _Cave<Bottomless Cave>:
@@ -156,28 +150,43 @@ _route:
     - _Korok::GSI06
     - _Cave<Bottomless Cave>:
        coord: [739.100,1500,-1358.0125]
+    - _Bubbulfrog::BottomlessCave
     - Map Zuggle 8 barrel MNFs
+    - _Cave::Bottomless00
     
   - Farosh:
     - _Tear::G03
     - _Well::SouthNabiLake
     - _Korok::PF11    
+    - _Korok::PF17 
+    - _Korok::PF15::Trail
     - _Chest<Ancient Blade>:
        coord: [267, 114.5, -1651.5]
        comment: Is buried inside ground
     - _Chest<Cannon>:
        coord: [238.57, 113.53, -1648.46]
        comment: Is buried inside the water, use a wing to reach
-    - _Material<Farosh Claw>:
-       coord: [40, 300, -2180]
-       notes: This is an approximate position for Farosh
+    - _Korok::PF18
+    - _Location::DeyaVillageRuins:
+       hide-icon-on-map: true
+    - _Well::DeyaVillageRuinsNorth
+    - _Well::DeyaVillageRuins
+    - _Well::DeyaVillageRuinsSouth
+    - _Well::HillsofBaumer
     - _Enemy<Wizzrobe>:
        coord: [283.19, 151.91, -2314.28]
        notes: Pick up Zonaite Sword
+    - _Korok::PF23::Trail
+    - _Material<Farosh Claw>:
+       coord: [40, 300, -2180]
+       notes: This is an approximate position for Farosh
+    - _Chasm::HillsofBaumer
+    - _Well::DeyaVillageRuinsEast
     - _Material<Fleet Lotus Seeds x4>:
        coord: [456.27, 115.86, -2007.45]
     - _Enemy::Talus::GF02
-    - _Enemy::Hinox::GF01
+    - _Enemy::Hinox::GF01:
+       notes: use bomb arrow on eye and hit twice
     - _Item<Make Night>:
        comment: Backup; if Stalnox was asleep, return after shrine.
     - _Item<Frost Emitter>:
@@ -5081,29 +5090,19 @@ _route:
     - _Addison::A41
     - _Korok::PF09
     - _Korok::PF12::End
-    - _Korok::PF17 
-    - _Korok::PF15::Trail
     - _Korok::PF14::End
     - _Korok::PF16
-    - _Korok::PF18
-    - _Location::DeyaVillageRuins:
-       hide-icon-on-map: true
-    - _Well::DeyaVillageRuinsNorth
-    - _Well::DeyaVillageRuins:
-       comment: Enter well
+    - _Korok::PF20
+    - ABC overload clip down to talus
     - _Enemy::Talus::SF03
     - _Shrine::Susub
     - Ascend out
-    - _Korok::PF20
-    - _Well::DeyaVillageRuinsEast
-    - _Well::DeyaVillageRuinsSouth
-    - _Well::HillsofBaumer
     - _Item<Korok Starting Block>:
        coord: [350.49, 167.94, -2158.33]
     - _Korok::PF21
     - _Korok::PF22::Start
     - _Korok::PF22::End
-    - _Korok::PF23::Trail
+
     - _Korok::PF26
     - _Korok::PF28
     - _Korok::PF25
@@ -5146,7 +5145,6 @@ _route:
     - _Korok::PF31
     - _Korok::HF75
     - _Korok::HF69
-    - _Chasm::HillsofBaumer
     - _Korok::PF19
     - _Korok::HF59::Trail
     - _Korok::HF61
@@ -5844,3 +5842,4 @@ _route:
     
     
     
+
