@@ -210,10 +210,10 @@ _route:
     - _Material<Fairy>:
        coord: [926.96, 667.61, -2131.03]
        comment: Is in the sky
-    - Dupe 10 Fairies, 10 Farosh Claws, and 20 Fleet-Lotus
+    - Dupe 10 Fairies, 6 Farosh Horns, and 20 Fleet-Lotus
     - _Item<Cooking Pot>:
        coord: [1233.77, 295.3, -2356.17]
-       comment: Kill the three bokos and Cook 5 Speed Food (1 Farosh Claw, 4 Fleet Lotus each)
+       comment: Kill the three bokos and Cook 3 Speed Food (1 Farosh Horn, 4 Fleet Lotus each)
     - Eat first food immediately and eat next when first runs out. make sure to eat them from LEFT TO RIGHT and have speed food at great plateau
     - Rocket through cave; pick up Truffle and Brightcap to the left once reaching room with spears
     - _Cave::Tobio'sHollow00
