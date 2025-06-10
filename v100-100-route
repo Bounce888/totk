@@ -168,7 +168,7 @@ _route:
     - _Chest<Cannon>:
        coord: [238.57, 113.53, -1648.46]
        comment: Is buried inside the water, use a wing to reach
-    - _Material<Farosh Claw>:
+    - _Material<Farosh Horn>:
        coord: [40, 300, -2180]
        notes: This is an approximate position for Farosh
     - _Enemy<Wizzrobe>:
