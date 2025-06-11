@@ -171,7 +171,7 @@ _route:
     - _Location::DeyaVillageRuins:
        hide-icon-on-map: true
     - _Well::DeyaVillageRuinsNorth
-    - _Well::DeyaVillageRuins
+    - _Korok::PF20
     - _Well::DeyaVillageRuinsSouth
     - _Well::HillsofBaumer
     - _Enemy<Wizzrobe>:
@@ -5092,8 +5092,7 @@ _route:
     - _Korok::PF12::End
     - _Korok::PF14::End
     - _Korok::PF16
-    - _Korok::PF20
-    - ABC overload clip down to talus
+    - _Well::DeyaVillageRuins
     - _Enemy::Talus::SF03
     - _Shrine::Susub
     - Ascend out
