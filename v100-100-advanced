@@ -43,8 +43,7 @@ _route:
     - Title Cutscene
     - _Location::GreatSkyIsland:
        hide-icon-on-map: true
-    - _Equipment::Weapon<Tree Branch>:
-       coord: [394.97, 1647.94, -1392.77]
+    - .link([Perform Wingflip] https://youtu.be/_EAqAWKdQrQ)
     - _Npc<Steward Construct>:
        coord: [449.86, 1640.83, -1310.45]
        comment: Purah Pad
