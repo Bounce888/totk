@@ -159,7 +159,6 @@ _route:
     - _Korok::PF11    
     - _Korok::PF17 
     - _Korok::PF15::Trail
-    - _Korok::PF13
     - _Chest<Ancient Blade>:
        coord: [267, 114.5, -1651.5]
        comment: Is buried inside ground
@@ -5079,8 +5078,8 @@ _route:
     - _Korok::PF12::Start
     - _Location::EastPostRuins
     - _Korok::HF48
-    - _Location::ProximBridge:
-       hide-icon-on-map: true
+    - _Location::ProximBridge
+    - _Korok::PF13
     - _Korok::PF10
     - _Korok::PF14::Start:
        notes: Use blueprint with two Korok Backpackers
