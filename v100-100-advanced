@@ -40,24 +40,29 @@ _route:
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.74]
     - Dupe 22 Wings
-    - Title Cutscene
+    - Enter the title cutscene
+    - Perform Wingflip (.link([guide] https://youtu.be/_EAqAWKdQrQ))
     - _Location::GreatSkyIsland:
        hide-icon-on-map: true
-    - .link([Perform Wingflip] https://youtu.be/_EAqAWKdQrQ)
     - _Npc<Steward Construct>:
        coord: [449.86, 1640.83, -1310.45]
        comment: Purah Pad
-    - Wing to ToT and activate the button without touching the ground
+    - Wing to ToT, defeat construct with the wing, and activate the button without touching the ground
+    - _Enemy<Soldier Construct>:
+       coord: [453.3, 1552.01, -897.25]
+       notes: Pick up the Broadsword and Shield
     - _Location::TempleofTime:
        hide-icon-on-map: true
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
     - Perform QDZ and retrieve the MNF
-    - _Warp::Location<Up Top>:
-       coord: [426.5,1500,-1681.25]
+    - _Warp::Npc<Room of Awakening>:
+       coord: [420, 2400, -1680]
+       comment: Respawn here
     - _Shrine::Gutanbac:
-       notes: Pick up two bows. Dynamic zuggle the Construct Bow and perform QDS
+       notes: Pick up two bows; DZuggle one and perform QDS
+    - Drop down to Bottomless Cave, pick up the Flame Shield (keep it at full durability) and the Bomb Flower
     - _Cave::Bottomless01
     - _Equipment::Shield<Flame Emitter Shield>:
        coord: [745.41, 1650.87, -1368.7]
@@ -66,17 +71,14 @@ _route:
     - Energy Cell
     - Wing + ASF to Fuse 
     - _Shrine::In-isa:
-       notes: Pick up Claymore (Fuse the Boulder to it) and Fire Fruit; dupe 15 Bombs in water and 2 full durability shields
+       notes: Pick up Claymore and Fire Fruit; dupe 2 Full-Durability Flame Shields and 15 Bombs
     - ASF to Ultrahand 
     - _Shrine::Ukouh 
     - ASF to ToT
-    - _Enemy<Soldier Construct>:
-       coord: [453.3, 1552.01, -897.25]
-       notes: Pick up the Broadsword and Shield; don't use any durability on the second shield
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
-    - Get Recall at the pedistal
+    - Get Recall at the pedestal
     - Fail the 4-Heart Door 
     - _Warp::ROA:
        comment: WARP
@@ -98,7 +100,7 @@ _route:
        coord: [884.24, 116.18, -543.12]
     - _Chest<Rocket x3>:
        coord: [891.57, 118.09, -541.65]
-    - Dupe to 12 Rockets. Dupe rockets with wings
+    - Dupe to 12 Rockets (along with Wings)
     - PRAF (new shield) to Lookout Landing
     - _Place::LookoutLanding:
        hide-icon-on-map: true
@@ -118,39 +120,44 @@ _route:
     - _Npc<Hoz>:
        coord: [-334.93, 238.96, 845.94]
        comment: Crisis at Hyrule Castle
-    - Wing to Docks, run through tunnel, bomb switch, get Hylian Shield:
+    - Wing to Docks, run through the tunnel, bomb the switch, and get the Hylian Shield:
        notes: On the Wing, fuse a Rocket to the Broadsword and damage down to 1-Durability for WST (2 hits after the "Badly Damaged" message)
-    - Fuse a barrel to the rusty broadsword
-    - WST Broadsword onto MNF
     - _Location::Docks:
        hide-icon-on-map: true
-    - Break crates for at least 5 arrows
     - _Equipment::Shield<Hylian Shield>:
        coord: [-154, 141.78, 1157.37] 
+    - Dupe to 4 Hylian Shields; keep one at Full-Durability
+    - Break crates for at least 5 arrows    
+    - Fuse a Barrel to the Broadsword
+    - WST Broadsword onto MNF
     - _Warp::Shrine::Kyononis:
        comment: WARP
-    - Dupe to 4 shields
-    - Rocket back to LL and receive the Paraglider. Use broadsword as rocket weapon. make sure to not use any durability.
+    - PRAF back to LL and receive the Paraglider. Use the Broadsword as the rocket holder; do not swing it or it will break.
     - _Tower::LookoutLanding:
        comment: Launch from the tower
   
   - UPR:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
-    - _Cave<Bottomless Cave>:
-       coord: [739.100,1500,-1358.0125]
-       notes: Map zuggle a claymore, and remove the boulder fuse. Make sure to pick up after part 1 of the setup. 
-    - .link([Perform UPR] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing)
-    - _Chest::ArchaicWarmGreaves:
-       notes: Pick up Zonai Charge nearby
+       line-color: rgb(220, 255, 220)
+    - Perform UPR (.link([guide] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing))
+    - _Enemy<Like Like>:
+       coord: [758.74, 1657, -1368.11]
+       comment: Inside the cave at the top; start UPR
+       notes: Map Zuggle a Claymore (remove any Fuse). Make sure to pick up after the first part of the setup. 
+    - _Material<Small Zonai Charge>:
+       coord: [765.31, 1693.12, -1337.38]
+       comment: From ruined robot
+    - _Chest::ArchaicWarmGreaves
     - _Enemy<Construct>:
        coord: [858.96, 1627.1, -1329.88]
     - _Dispenser::S03
-    - _Korok::GSI06
-    - _Cave<Bottomless Cave>:
-       coord: [739.100,1500,-1358.0125]
+    - _Korok::GSI06    
+    - _Enemy<Like Like>:
+       coord: [758.74, 1657, -1368.11]
+       comment: Is the same Like Like at the top of the cave; finish UPR
+    - Map Zuggle 8 Barrel MNFs
     - _Bubbulfrog::BottomlessCave
-    - Map Zuggle 8 barrel MNFs
     - _Cave::Bottomless00
     
   - Farosh:
@@ -177,90 +184,86 @@ _route:
        notes: Pick up Zonaite Sword
     - _Korok::PF23::Trail
     - _Material<Farosh Horn>:
-       coord: [40, 300, -2180]
-       notes: This is an approximate position for Farosh
+       coord: [40, 300, -2200]
+       notes: From Farosh
     - _Chasm::HillsofBaumer
     - _Well::DeyaVillageRuinsEast
     - _Material<Fleet Lotus Seeds x4>:
        coord: [456.27, 115.86, -2007.45]
     - _Enemy::Talus::GF02
     - _Enemy::Hinox::GF01:
-       notes: use bomb arrow on eye and hit twice
-    - _Item<Make Night>:
-       comment: Backup; if Stalnox was asleep, return after shrine.
+       notes: Use bomb arrow on eye and slash twice 
     - _Item<Frost Emitter>:
        coord: [980.43, 115.29, -1833.39]
-    - Make 3 square ice blocks
-    - _Material<Flint>:
-       coord: [933.37, 123.02, -1885.5]
-    - Put one Block in the big facet, and use 1 fire fruit on the other 2 blocks. Light the campfire with another fire fruit
+       comment: Make 3 square ice blocks, move to shrine area
     - _Npc<Steward Construct>:
        coord: [944.5, 122.85, -1908.7]
        comment: Receive the Shrine Quest
-    - Put one of the 2 blocks in the second facet, and then shrink the final square with the campfire into the final facet
+    - Deposit first block into facet
+    - Use a Fire Fruit on second and third block; deposit second block
+    - _Material<Flint>:
+       coord: [933.37, 123.02, -1885.5]
+       comment: Pick up from next to campfire
+    - Light campfire and move third block near it to shrink it; deposit third block
+    - If missed Stalnox, make night again now and return after the shrine
     - _Material<Sundelion>:
        coord: [946.65, 135.16, -1895.77]
-    - .link([Perform ZL protection] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing). Make sure to activate the shrine before performing.
+    - Open the shrine door up top and THEN do .link([ZL protection] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?slide=id.g35d0f8a61fe_0_45#slide=id.g35d0f8a61fe_0_45)
     - _Shrine::Jochisiu:
        comment: Blessing
-       notes: Pick up Big Battery inside shrine
+       notes: Pick up Big Battery from chest inside shrine
     - _Material<Dazzlefruit>:
        coord: [948.83, 136.78, -1910.48] 
-       comment: Backup
     - _Material<Bird Egg>:
        coord: [943.65, 139.88, -1951.08]
-    - _Material<Golden Apple & Wood>:
+    - _Material<Golden Apple + Wood>:
        coord: [900.73, 134.81, -1939.65]
-       notes: Chop down tree, pick up apples and wood
-    - Rocket up to fairy island in the sky
+       notes: Chop down tree
+    - Rocket up to sky
     - _Location::WestNecludaSkyArchipelago:
        hide-icon-on-map: true
     - _Material<Fairy>:
        coord: [926.96, 667.61, -2131.03]
        comment: Is in the sky
-    - Dupe 10 Fairies, 5 farosh horns, and 8 Fleet-Lotus
-    - _Item<Cooking Pot>:
+    - Dupe 15 Small Charges, 10 Fairies, 8 Fleet-Lotus, 6 Farosh Horns
+    - _Enemy<3 Bokoblins>:
        coord: [1233.77, 295.3, -2356.17]
-       comment: Kill the three bokos and Cook 2 Speed Food (1 Farosh Horn, 4 Fleet Lotus each)
-    - Eat first food immediately and eat next when first runs out. make sure to eat them from LEFT TO RIGHT and have speed food at great plateau
-    - Rocket through cave; pick up Truffle and Brightcap to the left once reaching room with spears
+       comment: Defeat these next to the Cooking Pot
+    - Cook 2 Speed Food (1 Farosh Horn, 4 Fleet Lotus each)
+    - Eat the first immediately and eat the second after Depths 1; ensure the second lasts until FABS on the Great Plateau 
+    - Rocket through cave; pick up Truffle and Brightcap, receive quest; pick up both spears, fuse a wing to one and throw it through the target
     - _Cave::Tobio'sHollow00
     - _Material<Hearty Truffle>:
        coord: [1217.32, 204.05, -2466.95]
     - _Material<Brightcap>:
        coord: [1225.67, 205.53, -2466.33]
-    - Pick up spears and get the quest
-    - _Equipment::Weapon<Zonaite Spear x2>:
-       coord: [1206.21, 201.92, -2496.47]
     - _Npc<Tattered Notebook>:
        coord: [1207.04, 202.14, -2489.5]
        comment: Receive the Shrine Quest
-    - Fuse wing to Zonaite Spear, throw through target
+    - _Equipment::Weapon<Zonaite Spear x2>:
+       coord: [1206.21, 201.92, -2496.47]
     - _Shrine::Utojis:
        comment: Blessing
     - Ascend out
-    - Dupe to 15 zonai charges
     - Rocket up to Dragonhead Island
     - _Location::DragonheadIsland:
        hide-icon-on-map: true
     - _Dispenser::S02:
-       notes: Use 5 zonai charges for Carts, Steering Sticks, Fans, and extra Wings
-    - Fuse a cart to a rusty claymore for a cart guster:
-       notes: if you have only one cart, perform this at Lookout Landing
+       notes: Use 5 Small Charges for Sticks, Carts, Wings, Fans (everything there)
     - _Shrine::Joku-u:
        comment: Blessing
-       notes: Pick up Diamond from blessing chest
+       notes: Pick up Diamond from chest inside shrine
     
   - Regional Phenomena:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
     - _Npc<Purah>:
        coord: [-253.42, 132.01, 156]
-       comment: Regional Phenomena    
-    - Dupe 450 Steering Sticks, 180 Cannons, 50 rockets, 50 wings, 35 Big Batteries and 10 Fans
-    - Dupe 20 Diamonds. Leave 4 on the ground and sell 16
+       comment: Regional Phenomena 
+    - Dupe to 10 Fans, 40 Wings, 40 Carts, 60 Rockets, 450 Sticks, 40 Big Batteries, 180 Cannons
+    - Dupe 18 Diamonds; leave 5 on the ground and sell the remaining 13; then pick up the 5 Diamonds
     - _Shop::GeneralStore:
-       notes: buy arrows
+       notes: Buy arrows
     - _Shop::ArmorShop:
        notes: Buy Hylian Set [3]
     - _Npc<Scorpis>:
@@ -272,8 +275,7 @@ _route:
     - Clip down into cave with statue
     - _Npc<Horned Statue>:
        coord: [-233.36, 110.21, 157.28]
-       comment: A Deal With the Statue
-       notes: Trade 1 heart for 1 stamina
+       comment: Choose to get back a stamina vessel
 
   - Depths 1:
     - Clip down to Depths
@@ -353,18 +355,20 @@ _route:
     - _Chest<Large Zonaite>:
        coord: [-799.43, -361.24, -1920.48]
     - _Special::StartPos Depths<Autobuild>:
-       notes: Build demo vehicle and Clip vehicle and favorite them; defeat Kohga (arrow stun + 2 hits) and pick up huge CC chest afterwards
+       notes: Build and favorite the demo vehicle; defeat Kohga and pick up chest afterwards
     - _SchemaStone::CentralMine
+    - Drop UPR Shield
     - Perform BID (.link([guide] https://docs.google.com/presentation/d/1_bsHBX-od2V1wXxUn52OarLQw6rCl6nM-5Rxu14c4q8/edit?usp=sharing))
-    - Dupe 510 Large Zonaite, 192 Diamonds, 180 Rubies, 180 Fairies, 120 Flint, 60 Wood, 50 Fire Fruit
-    - Dupe 35 Ancient Blades, 20 Dazzlefruit, 20 Splash Fruit, 10 Brightcaps, 10 Amber, 10 Sundelions, 6 apples, and 6 Golden Apples
-    - Perform Ghost wood:
-       notes: overload drop weapon (not MNF), fuse weapon to shield, fuse wood to weapon twice, swap weapon
-    - Zuggle UPR shield and unequip weapon, bow, and shield
+    - Dupe 510 Large Zonaite, 192 Diamonds, 180 Rubies, 180 Fairies, 120 Flint, 60 Wood, 50 Fire Fruit, 35 Ancient Blades, 20 Dazzlefruit, 20 Splash Fruit, 10 Brightcaps, 10 Amber, 10 Sundelions, and 6 Golden Apples
+    - Ghost Fuse Wood:
+       notes: For Ghost Fuse, overload drop weapon (not MNF), fuse weapon to shield, fuse wood to weapon twice, swap weapon
+    - Pick up and Zuggle the UPR shield
+    - Unequip weapon/bow/shield
     - _Shop::ForgeConstruct10:
-       comment: Farm Crystallized Charges to 2500 total
-    - Recursed Jetpack Setup (.link([guide] https://docs.google.com/presentation/d/1xl_yAa2wLSV68cfRu6mfQHc90ALUATcG_oeM9y_4gXM/edit?usp=sharing))
-    - DZuggle 8 barrel MNFs
+       comment: Farm to 2500 Crystallized Charges (CC) total
+    - Drop UPR shield and UH it aside; perform Recursed Jetpack (.link([guide] https://docs.google.com/presentation/d/1xl_yAa2wLSV68cfRu6mfQHc90ALUATcG_oeM9y_4gXM/edit?usp=sharing))
+    - Before reloading, Zuggle the UPR shield; then retrieve the UPR shield after the load
+    - DZuggle 8 Barrel MNFs
     - _Location::SecretSpringofRevival:
        hide-icon-on-map: true
     - _Poe::Grand:
@@ -376,16 +380,15 @@ _route:
     - _Lightroot::Kogoir
     - _Lightroot::Mu-ustust
     - _Location::FloatingColiseum:
-       hide-icon-on-map: true 
-    - Take a picture of a lynel
-    - use ancient blades on all except the fourth. if in need of extra arrows, kill the first lynel and immediately pick up the arrows
-    - pick up Savage Lynel Bow ("SLB"), Arrows, and Large CC
-    - Fuse saber horn to a weapon
-    - Fuse ruby to a different weapon
-    - Perform Ghost fuse with the Mace horn:
-       notes: overload drop weapon (not MNF), fuse weapon to shield, fuse Saber Horn to weapon twice, swap weapon
-    - Euip normal MNF
-    - _Chest::MajorasMask
+       hide-icon-on-map: true
+       notes: Use Ancient Blades on all except the 4th Lynel; pick up Savage Lynel Bow ("SLB"), Arrows, Both Horns, and Large CC
+    - _Chest::MajorasMask:
+       notes: If in need of extra arrows, defeat first Lynel as well
+    - Fuse Cart to Claymore
+    - Fuse Saber Horn to any weapon
+    - Fuse Ruby to any other weapon
+    - Ghost Fuse the Mace Horn
+    - Equip normal MNF
     
   - Hyrule Field:
     - _Warp::Tower::LookoutLanding:
@@ -397,7 +400,7 @@ _route:
        coord: [-247.84, 124.64, 136.6]
        comment: Camera Work in the Depths
     - _Shop::GeneralStore:
-       notes: Sell 180 Diamonds, buy arrows
+       notes: Sell 180 Diamonds, buy arrows and apples
     - _Location::MabeVillageRuins:
        hide-icon-on-map: true
     - _Well::MabeVillageRuins:
@@ -502,7 +505,7 @@ _route:
     - _OldMap::SouthHyrule<Old Map>:
        comment: Hanging from rope on apparatus
     - _Shrine::Jinodok::Start:
-       notes: Save Autobuild favorite for Shrine Crystals
+       notes: Create Ghost Stick clip build and crystal build; favorite both 
     - _Shrine::Jinodok
     - _OldMap::SouthHyrule_01<Old Map>
     - _Korok::HFS01
@@ -1284,8 +1287,8 @@ _route:
        hide-icon-on-map: true
     - _Korok::LL51
     - _Material<Acorn x3>:
-       comment: for milk in hateno
-       coord: [-1389.19, 115, -249.77]
+       coord: [-1364.94, 114.99, -215.86]
+       notes: Pick up
     - _Cave::SageTemple00
     - _Bubbulfrog::SageTempleCave
     - Ascend out
@@ -3026,12 +3029,9 @@ _route:
        hide-icon-on-map: true
     - _Well::EastAkkalaStable
     - Clear Food Inventory (except for Speed Bananas)
-    - _Item<Cooking Pot>:
-       coord: [4249.96, 231.44, 2757.39]
-       comment: Cook 3 Meals for Quests
-    - Meal 1 Ruby
-    - Meal 2 Monster Extract, Goron Spice, Hylian Rice
-    - Meal 3 Porgy, Goron Spice, Hylian Rice
+    - Cook Ruby
+    - Cook Monster Extract, Goron Spice, Hylian Rice
+    - Cook Porgy, Goron Spice, Hylian Rice
     - _Npc<Rudi>:
        coord: [4232.77, 231.81, 2743.5]
        comment: A Picture for East Akkala Stable
