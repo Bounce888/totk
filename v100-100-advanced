@@ -56,7 +56,7 @@ _route:
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
-    - Perform QDZ and retrieve the MNF
+    - Perform QDZ and obtain the MNF
     - _Warp::Npc<Room of Awakening>:
        coord: [420, 2400, -1680]
        comment: Respawn here
@@ -71,7 +71,7 @@ _route:
     - Energy Cell
     - Wing + ASF to Fuse 
     - _Shrine::In-isa:
-       notes: Pick up Claymore and Fire Fruit; dupe 2 Full-Durability Flame Shields and 15 Bombs
+       notes: Pick up Claymore and Fire Fruit; dupe 2 Full-Durability Flame Shields and 15 Bombs; Fuse Rock in Shrine to weapon.
     - ASF to Ultrahand 
     - _Shrine::Ukouh 
     - ASF to ToT
@@ -85,6 +85,7 @@ _route:
        line-color: white
     - Bomb jump up the ledge and run to Recall shrine
     - _Shrine::Nachoyah
+    - After the Shrine; Throw your Broadsword on the gound, and pick up the broadsword and the MNF
     - _Warp::Shrine::Ukouh:
        comment: WARP
     - ASF to ToT and open the 4-Heart Door:
@@ -368,7 +369,7 @@ _route:
        comment: Farm to 2500 Crystallized Charges (CC) total
     - Drop UPR shield and UH it aside; perform Recursed Jetpack (.link([guide] https://docs.google.com/presentation/d/1xl_yAa2wLSV68cfRu6mfQHc90ALUATcG_oeM9y_4gXM/edit?usp=sharing))
     - Before reloading, Zuggle the UPR shield; then retrieve the UPR shield after the load
-    - DZuggle 8 Barrel MNFs
+    - DZuggle 7 Barrel MNFs
     - _Location::SecretSpringofRevival:
        hide-icon-on-map: true
     - _Poe::Grand:
@@ -387,7 +388,8 @@ _route:
     - Fuse Cart to Claymore
     - Fuse Saber Horn to any weapon
     - Fuse Ruby to any other weapon
-    - Ghost Fuse the Mace Horn
+    - Ghost Fuse the Saber Horn
+    - zuggle rock MNF
     - Equip normal MNF
     
   - Hyrule Field:
@@ -5156,7 +5158,8 @@ _route:
     - _Cave::CoraLakefront01
     - _Korok::PF51
     - _Korok::PF48::Trail
-    - _Korok::PF47
+    - _Korok::PF47:
+       comment: Hover Stone is needed
     - _Korok::PF41
     - _Korok::PF40
     - _Korok::PF42
@@ -5524,7 +5527,8 @@ _route:
        notes: Defeat the Aerocudas in the sky
     - _Korok::PS27  
     - _Korok::PS25
-    - _Korok::PS22
+    - _Korok::PS22:
+       comment: Hover Stone is needed
     - Clip down
     - _Shrine::Nouda:
        comment: (GOHMA)
