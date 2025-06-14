@@ -2152,6 +2152,9 @@ _route:
        comment: The Ancient City Gorondia?
        notes: Launch minecart using rocket
     - _Korok::EC06::Start
+    - _Npc<Dugby>:
+       coord: [1651, 414, 2792]
+       comment: The Ancient City Gorondia?
     - _Cave::YunoboCoHQSouth00
     - _Chest::EmberHeaddress
     - _Bubbulfrog::YunoboCoHQSouthCave
@@ -2163,9 +2166,6 @@ _route:
     - _Place::YunoboCoHQ:
        hide-icon-on-map: true
     - _Korok::EC13
-    - _Npc<Dugby>:
-       coord: [1651, 414, 2792]
-       comment: The Ancient City Gorondia?
     - _Enemy<Yunobo>:
        coord: [1639.66, 518.5, 2861.65]
        comment: Defeat Yunobo
