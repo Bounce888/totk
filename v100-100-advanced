@@ -488,7 +488,8 @@ _route:
     - _Korok::HF28
     - _Location::ExchangeRuins:
        hide-icon-on-map: true
-    - _Addison::A32
+    - _Addison::A32:
+       notes: use a cart at a 45 degree angle
     - _Shrine::Mayachin
     - _Tower::HyruleField:
        comment: Launch from the tower
@@ -1358,7 +1359,7 @@ _route:
     - Ascend out
     - _Location::AquameBridge
     - _Korok::HF25  
-    - _Addison::A24
+    - _Addison::A24    
     - _Npc<Deer>:
        coord: [-1409.72, 160.61, -1173.91]
        comment: The Horse Guard's Request
@@ -1799,7 +1800,8 @@ _route:
     - _Location::InogoBridge
     - _Korok::UZ36
     - _Korok::UZ44::Start
-    - _Addison::A58
+    - _Addison::A58:
+       notes: Use 2 Hover Stones
     - _Korok::UZ44::End
     - _Cave::BonéPondEast02
     - _Bubbulfrog::BonéPondEastCave
@@ -2985,7 +2987,8 @@ _route:
     - _Item<ToD Weather Rain>:
        coord: [3818,150,2302]
     - _Korok::UM25::Start
-    - _Addison::A66
+    - _Addison::A66:
+       notes: Use 2 Hover Stones
     - _Korok::UM24
     - _Tablet<Octorok Lake>:
        coord: [4100, 234.09, 2500]
@@ -3019,7 +3022,8 @@ _route:
        coord: [4523.45, 352.99, 3163.68]
        comment: Is across from tailor
     - _Korok::UM12
-    - _Addison::A74
+    - _Addison::A74:
+       notes: Use 2 Hover Stones
     - _Korok::UM16
     - _Shrine::Jochi-iu:
        comment: (STICK OPTION)
@@ -3118,7 +3122,8 @@ _route:
     - Ascend out
     - _Korok::TR04
     - _Enemy::Hinox::GE01
-    - _Addison::A45
+    - _Addison::A45:
+       notes: Use Hover Stone vertically
     - _Korok::TR13::Start
     - _Tear::G10
     - _Korok::TR12
@@ -3571,7 +3576,8 @@ _route:
     - _Korok::ML19::Start
     - _Korok::ML16
     - _Korok::ML19::End
-    - _Addison::A61
+    - _Addison::A61:
+       notes: Use 2 Hover Stones
     - _Korok::SS58
     - _Cave::RobredDropoff00
     - _Bubbulfrog::RobredDropoffCave
@@ -3707,7 +3713,8 @@ _route:
        notes: Move boulder
     - Ascend out
     - _Korok::ML36
-    - _Addison::A80
+    - _Addison::A80:
+       notes: Use 2 Hover Stones
     - _Korok::ML40
     - _Cave::DeepbackBay00
     - _Shrine::Anedamimik
@@ -4274,7 +4281,8 @@ _route:
     - _Cave::AncientAltarRuins00
     - _Cave::AncientAltarRuins06
     - Ascend out
-    - _Addison::A16
+    - _Addison::A16:
+       notes: Use 2 Hover Stones
     - _Cave::SouthGerudo00
     - _Bubbulfrog::SouthGerudoCave
     - Ascend out
