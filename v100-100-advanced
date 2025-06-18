@@ -3672,6 +3672,40 @@ _route:
     - _Korok::ML23
     - _Addison::A72
     - _Korok::ML26::End
+    - _Item<Make Noon>:
+       coord: [3260, 300, -2120]
+    - _Npc<Sophie + Cece>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Sophie -> Cece -> Cece -> Sophie
+    - _Npc<Manny + Ivee>:
+       coord: [3373.55, 225.6, -2131.88]
+       comment: Manny -> Ivee -> Manny
+       notes: 10 Hot Footed Frogs       
+    - _Npc<Leop>:
+       coord: [3325.66, 225.66, -2153.96]
+       comment: Shroom
+    - _Npc<Medda>:
+       coord: [3380.11, 225.72, -2104.59]
+       comment: Shroom
+    - _Npc<Tamana>:
+       coord: [3342.79, 218.85, -2083.32]
+       comment: Shroom, forget bird eggs
+    - _Korok::ML22
+    - _Npc<Symin>:
+       coord: [3366.91, 235.29, -1969.32]
+       comment: Teach Me a Lesson I/II
+       notes: Calamity Mural -> Hylian Rice, Goron Spice, Monster Extract
+    - _Npc<Uma>:
+       coord: [3346.54, 223.24, -2035.39]
+       comment: Shroom, Uma's Garden
+       notes: Any crop
+    - _Well::HatenoVillageWest:
+       comment: Enter well
+    - Run to under the shack
+    - Ascend up to shack, read diary
+    - _Item<Reede's Diary>:
+       coord: [3415.07, 238.58, -2085.43]
+    - _Well::HatenoVillageNorth
     - _Korok::ML14
     - _Korok::ML15
     - _Korok::ML13
@@ -3728,6 +3762,8 @@ _route:
     - _Bubbulfrog::RetsamForestCave
     - _Shrine::Mayahisik
     - _Cave::RetsamForest01
+    - _Item<Make Night>:
+       coord: [3760, 308.04, -2010]
     - _Korok::ML21
     - _Place::HatenoVillage:
        hide-icon-on-map: true
@@ -3738,66 +3774,23 @@ _route:
     - _Npc<Koyin>:
        coord: [3630, 283, -2050]
        comment: Shroom, A Letter to Koyin
-    - _Well::HatenoVillageEast
-    - _Item<ToD Noon>:
-       coord: [3467.5,150,-2173]
-    - _Shrine::Zanmik:
-       comment: (STICK OPTION)
-    - _Well::HatenoVillageSouth
-    - _Npc<Sophie + Cece>:
-       coord: [3359.61, 225.54, -2137.69]
-       comment: Sophie -> Cece -> Cece -> Sophie
-    - _Npc<Manny + Ivee>:
-       coord: [3373.55, 225.6, -2131.88]
-       comment: Manny -> Ivee -> Manny
-       notes: 10 Hot Footed Frogs       
-    - _Npc<Leop>:
-       coord: [3325.66, 225.66, -2153.96]
-       comment: Shroom
-    - _Npc<Tamana>:
-       coord: [3342.79, 218.85, -2083.32]
-       comment: Shroom, forget bird eggs
-    - _Npc<Medda>:
-       coord: [3380.11, 225.72, -2104.59]
-       comment: Shroom
-    - _Well::HatenoVillageNorth
-    - _Korok::ML22
-    - _Npc<Symin>:
-       coord: [3366.91, 235.29, -1969.32]
-       comment: Teach Me a Lesson I/II
-       notes: Calamity Mural -> Hylian Rice, Goron Spice, Monster Extract
-    - _Npc<Uma>:
-       coord: [3346.54, 223.24, -2035.39]
-       comment: Shroom, Uma's Garden
-       notes: Any crop
-    - _Well::HatenoVillageWest:
-       comment: Enter well
-    - Run to under the shack
-    - Ascend up to shack, read diary
-    - _Item<Reede's Diary>:
-       coord: [3415.07, 238.58, -2085.43]
-    - _Npc<Worten>:
-       coord: [3465.08, 232.75, -2119.37]
-       comment: Shroom
     - _Npc<Dantz>:
        coord: [3623.63, 283.43, -2078.87]
        comment: Shroom, Dantz's Prized Cows
        notes: 3 Acorns
     - _Npc<Koyin>:
        coord: [3633.99, 283.81, -2100.48]
-       comment: Shroom, get Cheese
+       comment: Cheese
     - _Npc<Tokk>:
-       coord: [3800, 300, -2110]
+       coord: [3630, 300, -2110]
        comment: Shroom
-    - _Korok::ML29
-    - _TechLab::Hateno:
-       hide-icon-on-map: true
-    - _Npc<Robbie>:
-       coord: [3778, 370, -2128]
-       comment: Do Purah Pad upgrades except for Travel Medallion
-    - _Item<ToD Night>:
-       coord: [3437.5,150,-2103]
-       comment: set at lit campfire
+       notes: Should be sitting down outside the house but sometimes doesn't appear; if this happens, return here after sneaking up on Cece (5am); should be guaranteed then
+    - _Well::HatenoVillageEast
+    - _Shrine::Zanmik:
+       comment: (STICK OPTION)
+    - _Npc<Worten>:
+       coord: [3465.08, 232.75, -2119.37]
+       comment: Shroom
     - _Npc<Clavia>:
        coord: [3443, 236.83, -2091.19]
        comment: Reede's Secret
@@ -3818,6 +3811,7 @@ _route:
        comment: Dazzlefruit Stal enemies
     - _Korok::ML31
     - _Korok::ML34
+    - _Well::HatenoVillageSouth
     - _Well::Zelda'sSecret
     - _Npc<Zelda's Diary>:
        coord: [3307.49, 219.15, -2297.56]
@@ -5600,6 +5594,7 @@ _route:
     - _Npc<Uma>:
        coord: [3346.54, 223.24, -2035.39]
        comment: Uma's Garden
+    - _Korok::ML29
     - _TechLab::Hateno:
        hide-icon-on-map: true
     - _Npc<Robbie>:
