@@ -198,6 +198,9 @@ _route:
        comment: Sell 180 diamonds, buy arrows and apples
     - _Shop::ArmorShop:
        comment: Buy Hylian Set [3]
+    - _Npc<Scorpis>:
+       coord: [-258.32, 127.4, 100.7]
+       comment: Open the Emergency Shelter
     - _Npc<Robbie>:
        coord: [-247.84, 124.64, 136.6]
        comment: Camera Work in the Depths
@@ -1066,9 +1069,9 @@ _route:
     - _Korok::EC14
     - _Korok::EC10::Start
     - _Korok::EC10::End
-    - _Enemy::Talus::GE04
     - _Cave::DeathMountainEastTunnel00
     - _Bubbulfrog::DeathMountainEastTunnel
+    - _Enemy::Talus::GE04
     - _Shrine::Momosik::Start
     - _Shrine::Momosik
     - _Addison::A55
@@ -1622,18 +1625,21 @@ _route:
     - _Enemy<Monster Forces>:
        coord: [4853.61, 128.72, 2769.59]
     - _Enemy::Talus::GA01
-    - _Cave::NorthAkkalaBeach00
     - _Shrine::Rasiwak    
-    - _Location::LomeiLabyrinthIsland:
-       hide-icon-on-map: true
-    - _Korok::UM01
-    - _Shrine::Igashuk
+    - _Cave::NorthAkkalaBeach00
+    - _Enemy::Hinox::GA01
+    - _Bubbulfrog::NorthAkkalaBeachCave:
+       notes: Defeat with ruby or bomb shot
+    - Ascend up
+    - _Cave::NorthAkkalaBeach01:
+       notes: Ensure entrance is marked
     - _Chasm::LomeiLabyrinth:
        notes: Second grate below the first one
-    - _Cave::NorthAkkalaBeach01
-    - _Bubbulfrog::NorthAkkalaBeachCave
-    - _Enemy::Hinox::GA01
-    - Ascend out
+    - Ascend up
+    - _Location::LomeiLabyrinthIsland:
+       hide-icon-on-map: true
+    - _Shrine::Igashuk
+    - _Korok::UM01
     - _Korok::UM06
     - _Korok::UM10
     - _Fairy::MalanyaSpring
@@ -2484,7 +2490,6 @@ _route:
        coord: [-1034.03, -508.74, -1918.27]
     - _Poe::Grand:
        coord: [-1160.64, -428.48, -1813.99]
-       notes: Should have 150 poes after Depths 1
     - _Lightroot::Kogoir
     - _Lightroot::Mu-ustust
     - _Location::FloatingColiseum:
@@ -3726,8 +3731,8 @@ _route:
     - _Korok::GC43
     - _Npc<Rahdo>:
        coord: [-1381.37, 574.75, -3366.07]
-       comment: Heat, Cold Endurance Contest
-       notes: Use a campfire to pass quests
+       comment: Cold, Heat Endurance Contest
+       notes: Use a campfire to pass quests; unequip armor to avoid desync
 
   - Gerudo Labyrinth Sky:
     - _Location::SouthLomeiCastleTopFloor:
@@ -4233,9 +4238,6 @@ _route:
     - _Npc<Purah>:
        coord: [-233.5, 131.94, 153.43]
        comment: Crisis at Hyrule Castle, Regional Phenomenon
-    - _Npc<Scorpis>:
-       coord: [-258.32, 127.4, 100.7]
-       comment: Open the Emergency Shelter
     - _Location::EmergencyShelter<Enter the Emergency Shelter>:
        hide-icon-on-map: true
     - _Npc<Burmano>:
@@ -5511,7 +5513,7 @@ _route:
     - _Npc<Koltin>:
        coord: [-321.77, 127.58, -162.25]
        comment: Koltin's Fabric
-       notes: For verification, show Map%, Quests, Key Items, Armor; warp to Hateno, show Fabrics
+       notes: For verification, show Map%, Quests, Armor, Key Items; warp to Hateno, show Fabrics
     - 100%
        
   
