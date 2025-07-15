@@ -108,6 +108,12 @@ _route:
     - _Chasm::TobiosHollow
   
   - Spirit Temple:
+    - _Warp::Location<Construct Factory>:
+        coord: [873,-500,-2211]
+    - .link([Perform Construct Factory] https://youtu.be/LG47Nq0lagw)
+    - _Material<Zonaite>:
+       coord: [1322, -586, -2937]
+       notes: do a spirit slide to the pedistal with Zonai Devices, and rocket SE to the zonaite. bomb it and dupe 50
     - _Temple::Spirit
     - _MainQuest::GuidancefromAgesPast
     - _SideQuest::AncientBladesBelow
