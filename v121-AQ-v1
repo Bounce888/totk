@@ -62,16 +62,16 @@ _route:
     - _MainQuest::TotheKingdomofHyrule
     - _Shrine<Kyononis (activate)>:
        coord: [-205.15, 123, 451.47]
-       comment: Only activate
-    - _Material<Topaz>:
-       coord: [-335.05, 129.43, 391.17]
-       notes: dupe 120
+       comment: Only activate   
     - _Npc<Hoz>:
        coord: [-334.93, 238.96, 845.94]
     - _Chest<Hylian Shield>:
        coord: [-154, 141.78, 1157.37]
     - _Warp::Shrine::Kyononis:
        comment: WARP
+    - _Material<Topaz>:
+       coord: [-335.05, 129.43, 391.17]
+       notes: dupe 120
     - _Tower::LookoutLanding
     - _Material<Hyrule bass>:
        coord: [-270.18, 121.99, 159.6]
