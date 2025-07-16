@@ -63,6 +63,9 @@ _route:
     - _Shrine<Kyononis (activate)>:
        coord: [-205.15, 123, 451.47]
        comment: Only activate
+    - _Material<Topaz>:
+       coord: [-335.05, 129.43, 391.17]
+       notes: dupe 120
     - _Npc<Hoz>:
        coord: [-334.93, 238.96, 845.94]
     - _Chest<Hylian Shield>:
