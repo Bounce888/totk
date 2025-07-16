@@ -70,6 +70,9 @@ _route:
     - _Warp::Shrine::Kyononis:
        comment: WARP
     - _Tower::LookoutLanding
+    - _Material<Hyrule bass>:
+       coord: [-270.18, 121.99, 159.6]
+       notes: Pick up and dupe 20
     - _Npc<Purah>:
        coord: [-251.26, 126.18, 155.25]
        comment: Start Regional Phenomena (dive back down)
@@ -233,6 +236,7 @@ _route:
     - _Npc<Boraa>:
        coord: [-3226.39, 129.06, -2517.8]
        comment: Fuse Ruby to Weapon, talk twice
+    - With speed food, buy 3 hyrule bass. drop your 20 bass on the ground and throw a ruby at the bass to get 20 more cooked bass
     - _SideQuest::DecoratewithPassion
     - _Shrine::Mayatat
     - _Npc<Riju>:
