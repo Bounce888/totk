@@ -141,7 +141,15 @@ _route:
     - _Npc<Robbie>:
        coord: [-803.81, -365.4, -452.58]
        comment: Take a picture of statue and show Robbie
-    - Slide or rocket to Depths north edge, clip to army and beat the game
+    - Clip down to the final entry point into army and obtain an autosave
+    - Complete army through until ghoma:
+       notes: 1.0 only
+    - drop UPR shield, and fuse a Ghoma rock to a different shield:
+       notes: 1.0 only
+    - Unequip shield and pick up UPR shield. zuggle both and reload autosave before army:
+       notes: 1.0 only
+    - immediately drop shield, pickup ghoma shield, and unequip. Pick up UPR shield and make a manual save:
+       notes: 1.0 only
     - _Enemy<Demon Dragon>:
        coord: [-249.22, -2366.88, 731.27]
        comment: Beat the game
