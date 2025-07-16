@@ -1,0 +1,1934 @@
+---
+_config:
+_project: 
+  description: All Quests
+  authors:
+    - BounceSR
+    
+_route:
+  - Great Sky Island 1:
+    - _Special::StartPos Sky<Room of Awakening>
+    - _Chest<Wing x3>:
+       coord: [379.57, 2441.25, -1698.74]
+       comment: Cog Skip
+       line-color: white
+    - _Item<Tree Branch>:
+       coord: [394.97, 1647.94, -1392.77]
+       comment: Pick up
+    - _Npc<Steward Construct>:
+       coord: [449.86, 1640.83, -1310.45]
+       comment: Purah Pad
+    - _Npc<Temple of Time Door>:
+       coord: [453.51, 1556.17, -849.75]
+       comment: Fail to open
+    - Perform QDZ to get the MNF
+    - _Warp::Npc<Steward Construct>:
+       coord: [449.86, 1640.83, -1310.45]
+       comment: Respawn here
+    - _Cave::Bottomless00
+    - _Item<Bomb Flower x8>:
+       coord: [737.61, 1591.98, -1437.71]
+       comment: Pick up while going up the cave
+    - _Item<Flame-Emitter Shield>:
+       coord: [745.41, 1650.87, -1368.7]
+       comment: Pick up at top of the cave
+    - _Cave::Bottomless01
+    - _Shrine::Gutanbac
+    - _Shrine::In-isa
+    - _Shrine::Ukouh
+    - _Npc<Temple of Time Door>:
+       coord: [453.51, 1556.17, -849.75]
+       comment: Open successfully, get Recall, then fail to open the 4-Heart Door
+    - _MainQuest::TheClosedDoor
+    - _Warp::ROA:
+       comment: WARP
+    - _Shrine::Nachoyah
+    - _Warp::Shrine::Ukouh:
+       comment: WARP
+    - _Npc<Pedestal>:
+       coord: [453.76, 1579.32, -636.17]
+       comment: Complete the Great Sky Island
+    
+  
+  - Paraglider:
+    - _Chest<Rocket x3>:
+       coord: [891.57, 118.09, -541.65]
+    - _Npc<Josha>:
+       coord: [-238.97, 132.32, 147.92]
+       comment: To the Kingdom of Hyrule
+    - _MainQuest::TotheKingdomofHyrule
+    - _Shrine<Kyononis (activate)>:
+       coord: [-205.15, 123, 451.47]
+       comment: Only activate
+    - _Npc<Hoz>:
+       coord: [-334.93, 238.96, 845.94]
+    - _Chest<Hylian Shield>:
+       coord: [-154, 141.78, 1157.37]
+    - _Warp::Shrine::Kyononis:
+       comment: WARP
+    - _Tower::LookoutLanding
+    - _Npc<Purah>:
+       coord: [-251.26, 126.18, 155.25]
+       comment: Start Regional Phenomena (dive back down)
+    - _Npc<Josha>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Start Camera Work in the Depths
+  
+  - Dragonhead:
+    - _Warp::Shrine::Gutanbac:
+       comment: WARP
+    - _Item<Fairy>:
+       coord: [926.96, 667.61, -2131.03]
+       comment: Pick up
+    - _Cave::Tobio'sHollow00
+    - _Item<Hearty Truffle>:
+       coord: [1217.32, 204.05, -2466.95]
+       comment: Is to the left after entering open area
+    - _Npc<Tattered Notebook>:
+       coord: [1207.04, 202.14, -2489.5]
+       comment: Receive Shrine Quest
+    - Pick up Zonaite Spears, fuse a Wing or Rocket to one and throw it through the target
+    - DZuggle 8 MNFs and one shield/bow
+    - _Shrine::Utojis:
+       comment: Blessing
+       notes: Pick up Large Zonai Charge (LZC) from chest
+    - Ascend out, dupe 5 LZCs
+    - _Enemy<Lynel>:
+       coord: [1464.46, 311.94, -3036.49]
+       comment: Defeat for both Horns, SLB, Claymore, and Arrows; also chop grass for Hylian Rice nearby
+  
+  - Tobio:
+    - _Dispenser::S02:
+       comment: Use 2 LZCs for everything dropped
+       level: Sky
+    - _Shrine::Joku-u:
+       comment: Blessing
+       notes: Pick up Diamond from chest
+    - Ascend out, clip into mask room
+    - _Chasm::TobiosHollow
+  
+  - Spirit Temple:
+    - _Warp::Location<Construct Factory>:
+        coord: [873,-500,-2211]
+    - .link([Perform Construct Factory] https://youtu.be/LG47Nq0lagw)
+    - _Material<Zonaite>:
+       coord: [1322, -586, -2937]
+       notes: do a spirit slide to the pedistal with Zonai Devices, and rocket SE to the zonaite. bomb it and dupe 50
+    - _Temple::Spirit
+    - _MainQuest::GuidancefromAgesPast
+    - _SideQuest::AncientBladesBelow
+  
+  - Plateau 1:
+    - _Warp::Shrine::In-isa:
+       comment: WARP
+    - _Npc<Bargainer Fragment>:
+       coord: [-587.31, 134.42, -1542.53]
+       comment: Break floodgate with rocket arrow and then talk
+    - _Npc<Traveler>:
+       coord: [-979.26, 248.55, -2018.14]
+       comment: Eat Speed Food, and then buy 99 Bananas
+    - _Npc<Temple of Time Statue>:
+       coord: [-823.26, 225.44, -2031.48]
+       comment: Start A Call from the Depths
+     
+  
+  - Depths 1:
+    - Clip down to Autobuild
+    - _Special::StartPos Depths<Autobuild>:
+       notes: Defeat Kohga and pick up chest afterwards
+    - Slide or rocket to Frox DC08 (ignore other Frox otw)
+    - _Enemy::Frox::DC08
+    - Slide or rocket to Camera Lightroot
+    - _Lightroot::Iayusus
+    - _Npc<Robbie>:
+       coord: [-803.81, -365.4, -452.58]
+       comment: Take a picture of statue and show Robbie
+    - Slide or rocket to Depths north edge, clip to army and beat the game
+    - _Enemy<Demon Dragon>:
+       coord: [-249.22, -2366.88, 731.27]
+       comment: Beat the game
+    - _MainQuest::DestroyGanondorf
+    - _MainQuest::FindPrincessZelda
+    
+  - Hyrule Field:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: lightblue
+    - _Npc<Josha>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Complete Camera Work in the Depths
+    - _MainQuest::CameraWorkintheDepths
+    - _Well::MabeVillageRuins
+    - _Shrine::Jiosin
+    - _Enemy<Monster Forces>:
+       coord: [-441.12, 156.17, -624.38]
+       comment: Bring Peace to Hyrule Field!
+    - _SideAdv::BringPeacetoHyruleField
+    - _Shrine::Susuyai
+    - _Cave::AncientTreeStump00
+    - Get Bubbulfrog and Glowing Cave Fish
+    - _Chest::FierceDeityBoots
+    - Ascend out
+    - _Well::MountDaphnes
+    - _Well::AquameLake
+    - _Shrine::Mayachin
+    - _Tower::HyruleField
+  
+  - Hyrule Field Sky:
+    - _Shrine::Jinodok::Start
+    - _Shrine::Jinodok
+    - _Tablet::S10
+    - _Shrine::Rakashog
+    - _Tablet<Sand Sinkhole>:
+       coord: [-1841.44, 1254.41, -2111.66]
+       comment: Snap sand sinkhole in heroine ruins (zoom all the way in)
+    - _Tablet<Smiling Spectacle Rock>:
+       coord: [-1846.44, 1254.41, -2106.66]
+       comment: Snap ruins forming smile face
+  
+  - Gerudo Canyon 1:
+    - _Well::MountNabooru
+    - _Npc<Giro>:
+       coord: [-1896.63, 104, -2357.83]
+       comment: Turn in 1 Splash Fruit
+    - _Shrine::Rakakudaj::Start
+    - _Shrine::Rakakudaj
+    - _Npc<Garill>:
+       coord: [-2197.67, 258.5, -1866.53]
+       comment: Turn in 1 Spicy Pepper
+    - Clip in above shrine
+    - _Shrine::Suariwak
+    - _Npc<Yiga Blademaster>:
+       coord: [-2479.1, 242.97, -1796.44]
+       comment: Start Blademaster Quest
+    - _Item<Statue>: 
+       coord: [-2356.15, 197.46, -1814.14]
+       comment: Deposit Banana
+    - _Item<Statue>:
+       coord: [-2432.61, 183.31, -2035.49]
+       comment: Deposit Banana
+    - Lift up worker with contraption
+    - _Tower::GerudoCanyon
+    - _Item<Statue>:
+       coord: [-2301.11, 462.97, -2426.82]
+       comment: Deposit Banana
+    - _Cave::GerudoCanyonMine01
+    - _Item<Statue>:
+       coord: [-2675.53, 199.38, -2496.61]
+       comment: Deposit Banana
+    - Ascend out
+    - _Npc<Boraa>:
+       coord: [-3226.39, 129.06, -2517.8]
+       comment: Fuse Ruby to Weapon, talk twice
+    - _SideQuest::DecoratewithPassion
+    - _Shrine::Mayatat
+    - _Npc<Riju>:
+       coord: [-3782.48, 137.99, -2639.96]
+       comment: Training
+    - _Npc<Anche>:
+       coord: [-3752, 139.5, -2277.5]
+       comment: Spawn ice and move it into circle
+    - _SideQuest::TheIcelessIcehouse
+    - _Shrine::Kudanisar
+    - _Cave::WestGerudoUndergroundRuins00
+    - _Chest::VahNaborisDivineHelm
+    - _Shrine::Mayamats
+    - _Cave::StatueoftheEighthHeroine00
+    - _Chest::TinglesHood:
+       notes: Is covered by sand
+    - _Shrine::Otutsum
+    - Ascend out
+    - _Tablet<Snap Sword>:
+       coord: [-4023.77, 813.94, -955.5]
+       comment: Is next to Gleeok
+    - _Tower::GerudoHighlands
+    
+  - Gerudo Highlands Sky:
+    - _Tablet::S08
+    - _Shrine::Mayasiar
+    - _Shrine::Ga-ahisas
+    - _Shrine::Ganos::Start
+    - _Shrine::Ganos
+    
+  
+  - Tulin:
+    - _Cave::AncientColumns00:
+       comment: Open with stone switch on pillar
+    - _Chest::TunicofAwakening:
+       comment: End of Awakening I
+    - _Npc<Misko's Tablet>:
+       coord: [-3535.26, 348.06, 390.16]
+       comment: Start of Awakening Quest II
+    - Ascend out    
+    - _Cave::TanagarCanyonWest00
+    - _Shrine::Iun-orok
+    - _Npc<Eustus>:
+       coord: [-3651.02, 223.45, 755.78]
+       comment: Rescue with rocket
+    - _SideAdv::TheHornistsDramaticEscape
+    - _Cave::GisaCrater00
+    - _Shrine::Ikatak::Start
+    - _Shrine::Ikatak
+    - Ascend out
+    - _Shrine::Gatakis
+    - _Npc<Tulin>:
+       coord: [-3592.50, 318.50, 1801.25]
+       comment: Start Tulin of Rito Village
+    - _Npc<Harth>:
+       coord: [-3571.2, 247.65, 2260.04]
+       comment: Continue Tulin of Rito Village
+    - _Npc<Mazli>:
+       coord: [-3582.5, 334.57, 2475.69]
+       comment: Break rocks blocking cave
+    - _SideQuest::TheBlockedCave
+    - _Shrine::Sahirow
+    - _Item<Ice Fruit x3>:
+       coord: [-3224.51, 454.74, 2456.73]
+       comment: Pick up
+    - _Npc<Verla>:
+       coord: [-3216.98, 453.59, 2457.41]
+       comment: Turn in 10 Chillshrooms
+    - _SideQuest::CrossingtheColdPool
+    - _Chest<Swallow Bow>:
+       coord: [-3189.08, 564.19, 2562.46]
+       comment: Pick up for GEB
+    - _Enemy<Aerocuda>:
+       coord: [-3022.67, 664.12, 2748.73]
+       comment: Snipe and then defeat enemies
+    
+  - Wind Temple:
+    - _Npc<Tulin>:
+       coord: [-2859.5, 1622.57, 2987.5]
+       comment: Talk to at ship
+    - _Shrine::Mayaumekis
+    - _Shrine::Kahatanaum
+    - _Temple::Wind
+  
+  - Return to Rito Village:
+    - _Warp::Npc<Tulin>:
+       coord: [-3592.50, 318.50, 1801.25]
+       comment: Tulin of Rito Village
+       line-color: lightsalmon
+    - _MainQuest::TulinofRitoVillage
+    - _GoddessStatue::RitoVillage
+    - _Item<Staminoka Bass>:
+       coord: [-3493.49, 258.08, 1853.66]
+    - _Npc<Gesane>:
+       coord: [-3296.8, 227.18, 1807.36]
+       comment: Start The Rito Rope Bridge
+    - _Npc<Traysi>:
+       coord: [-3258.5, 224.96, 1762.5]
+       comment: Start Potential Princess Sightings
+    - _Shrine::Oromuwak
+    - _Npc<Nat>:
+       coord: [-2988.54, 304.71, 1657.21]
+       comment: Turn in 10 Brightcaps
+    - _SideQuest::CaveMushroomsThatGlow
+    - _Npc<Jogo>:
+       coord: [-2684.54, 364.33, 1668.4]
+       comment: Defeat enemies outside then open door
+    - _SideQuest::OpentheDoor  
+    - _Tear::G01
+    - _Well::TabanthaVillageRuins
+    - _Npc<Huck>:
+       coord: [-2174.61, 469.49, 2029.75]
+       comment: Defeat Aerocudas in the sky
+    - _SideQuest::SupplyEyeingFliers
+    - _Well::MarittaExchangeRuins
+    - _Well::IrchPlain
+    - _Well::ElmaKnolls:
+       comment: Progress through well OR clip above shrine
+    - _Shrine::Tenmaten
+    - Ascend out
+    - _Cave::YigaClanMarittaBranch00
+    - _Chest::YigaTights
+    - Ascend out
+    - _Shrine::Kiuyoyou
+    - _Well::RowanPlain
+    - _Shrine::Mayausiy
+    - _Npc<Statue>:
+       coord: [-1057.92, 20.77, 2697.54]
+       comment: Examine Fallen Statue
+    - Ascend out at high ledge
+    - _Shrine::Kikakin
+    - _Shrine::Sikukuu
+    - _Tear::G10
+    - _Npc<Bludo>:
+       coord: [1648.01, 487.5, 2439.43]
+       comment: Start Yunobo of Goron City
+    - _Shop::GeneralStore06:
+       notes: Buy Goron Spice
+    - _Tablet<Soaking Goron>:
+       coord: [1705, 491.59, 2468.81]
+       comment: Snap Goron Soaking in water
+    - _Tablet<Daruk Statue>:
+       coord: [1752.49, 539, 2499.65]
+       comment: Snap Statue
+    - _Shrine::Marakuguc
+    - _Npc<Dugby>:
+       coord: [1744, 531.5, 2585]
+       comment: Escort across the path
+    - _Npc<Dugby>:
+       coord: [1651, 414, 2792]
+       comment: End Escort
+    - _SideQuest::TheAncientCityGorondia?
+    - _Enemy<Yunobo>:
+       coord: [1642.65, 510.5, 2908.4]
+       comment: Destroy mask
+    - _Cave::YunoboCoHQEast00
+    - _Shrine::Isisim
+    - Clip across
+    - _Shrine::Jiotak
+    - Ascend out
+    - _Shrine::Sibajitak
+    - _Cave::Lizard'sBurrow00
+    - _Chest::VahRudaniaDivineHelm
+    - Ascend out
+    - _Cave::LakeDarmanMonsterDen00
+    - _Enemy<Monster Forces>:
+       coord: [2428.1, 563.75, 2951.68]
+       comment: Bring Peace to Eldin!
+    - _SideAdv::BringPeacetoEldin
+    - Clip across
+    - _Enemy::Talus::GE04
+    - _Shrine::Momosik::Start
+    - _Shrine::Momosik
+    - _Shrine::Kimayat
+    - _Shrine::Kamatukis
+    - _Npc<Spring of Power>:
+       coord: [3760.55, 111.16, 2679.37]
+       comment: Deposit Dinraal Claw
+    - _SideQuest::GoddessStatueofPower
+    - Make raining
+    - _Tablet<Rainy Octorok Lake>:
+       coord: [4061.8, 179.82, 2475.62]
+       comment: Snap when filled with rain water
+    - _Shrine::Sinatanika
+    - _Npc<Rhondson + Hudson>:
+       coord: [3941.88, 235.06, 1593.23]
+       comment: Talk to Rhondson and then Hudson
+    - _Npc<Mattison>:
+       coord: [3936.1, 241.83, 1593.1]
+       comment: Send walking
+    - _Npc<Mattison>:
+       coord: [3981.3, 233.38, 1613.63]
+       comment: Vaba
+    - _Npc<Mattison>:
+       coord: [3936, 400, 1610]
+       comment: Send to Hudson; use Wings to block railcar
+    - _Npc<Hagie>:
+       coord: [3921.74, 234.16, 1598.42]
+       comment: Buy shrine crystal
+    - _Shrine::Jochi-ihiga::Start
+    - _Shrine::Jochi-ihiga
+    - _Cave::AkkalaCitadelRuinsSummit00
+    - _Chest::FierceDeityArmor
+    - Ascend up
+    - _Shrine::Domizuin
+    - _Enemy<Monster Forces>:
+       coord: [3006.26, 412.1, 1225.11]
+       comment: Bring Peace to Akkala!
+    - _SideAdv::BringPeacetoAkkala
+    - _Npc<Ozunda>:
+       coord: [2607.23, 253.85, 1137.91]
+       comment: Turn in picture
+    - _SideQuest::APictureforFoothillStable
+    - _Npc<Penn>:
+       coord: [2594, 253.8, 1164.15]
+       comment: Start For Our Princess
+    - _Well::FoothillStable
+    - _Shrine::Kisinona
+    - _Cave::CephlaLake00
+    - _Chest::EmberTrousers
+    - _SideQuest::MiskosCaveofChests
+    - _Npc<Bottled Message>:
+       coord: [2579.68, 240.54, 1428.4]
+       comment: Read bottle to start The Fierce Deity
+    - Equip Fierce Deity Set to open door
+    - _Chest<Fierce Deity Sword>:
+       coord: [2624.09, 241.94, 1417.55]
+       comment: Pick up, make weapon room
+    - _SideQuest::MiskosTreasureTheFierceDiety
+    - Ascend out
+    - _Npc<Sango>:
+       coord: [2277.64, 264.12, 1515.73]
+       comment: Pseudo-Proving Grounds
+    - Make noon
+    - _Tablet<Lake Ferona>:
+       coord: [1931.95, 273.65, 1304.57]
+       comment: Snap moon image
+    - _Tower::EldinCanyon
+    - _Shrine::Kadaunar
+    - _Tablet::S00
+    - _Tear::G02
+    - _Enemy::Hinox::GZ01
+    - _Npc<Kilton>:
+       coord: [1228.03, 126.81, 1215.17]
+       comment: Turn in 1 Bubbulgem
+    - _SideAdv::TheHuntforBubbulGems
+    - _Shrine::Ekochiu
+    - _Well::WoodlandStable
+    - _Npc<Kish>:
+       coord: [1061.47, 128.06, 1134.35]
+       comment: Turn in picture
+    - _SideQuest::APictureforWoodlandStable
+    - _Npc<Penn + Mastro>:
+       coord: [1047.76, 127.66, 1146.54]
+       comment: Escort to fairy fountain
+    - _Fairy::GreatFairyFountain03
+    - _SideAdv::SerenadetoaGreatFairy
+    - _Chasm::MinshiWoods:
+       comment: Save Korok Forest; Do Not Ascend
+    
+  - New Serenne Stable:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+    - _Npc<Josha>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Send to mural, repair balloon
+    - _Npc<Robbie>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Send to Hateno!
+    - _MainQuest::AMysteryintheDepths
+    - _Shrine::Ishodag
+    - _Well::MountGustaf
+    - _Well::CarokBridge
+    - _Npc<Impa>:
+       coord: [-1313.14, 201.35, 823.5]
+       comment: Repair balloon and launch up
+    - _Npc<Horse>:
+       coord: [-1230.65, 197.84, 776.71]
+       comment: Ride to stable
+    - _Npc<Zumi>:
+       coord: [-1327.81, 190.99, 724.63]
+       comment: Repair wheels and turn in horse
+    - _SideQuest::HorseDrawnDreams
+    - _Well::NewSerenneStable
+    - _Npc<Penn>:
+       coord: [-1349.11, 191.08, 732.73]
+       comment: Start The Beast and the Princess
+    - _Npc<Sprinn>:
+       coord: [-1354.77, 191.56, 730.96]
+       comment: Register as a Pony Points Member
+    - _Shrine::Sinakawak
+    - _Tablet<Geoglyph>:
+       coord: [-1361, 191.5, 724]
+       comment: Snap from on top of stable
+    - _Npc<Sprinn>:
+       coord: [-1354.77, 191.56, 730.96]
+       comment: Turn in picture
+    - _SideQuest::APictureforNewSerenneStable
+    - _Tear::G00
+    - _MainQuest::ImpaandtheGeoglyphs
+    - _Cave::Lindor'sBrow00
+    - _Shrine::Taki-ihaban
+    - Ascend out
+    - _Tower::Lindor'sBrow
+  
+  - Lindor's Brow Sky:
+    - _Npc<Diving Challenge>:
+       coord: [-2215.91, 1746.12, 933.67]
+       comment: Complete Dive Challenge
+    - _Shrine::Taunhiy
+  
+  - Rito:
+    - _Cave::ThundraPlateau00:
+       comment: Clip
+    - _Chest::MaskofAwakening:
+       comment: End of Awakening III, tablet nearby does nothing
+    - _SideQuest::MiskosTreasureofAwakeningIII
+    - _Shrine::Runakit
+    
+    
+    
+  - Labyrinth Island Approach A:
+    - _Warp::Shrine::Kisinona:
+       comment: WARP
+       line-color: orange
+    - _Npc<Penn>:
+       coord: [2594, 253.8, 1164.15]
+       comment: Complete For Our Princess
+    - _SideAdv::ForOurPrincess
+    - _Npc<Domidak>:
+       coord: [2612, 254.81, 1315.07]
+       comment: Buy 3 Tingle Quests
+    - _SideQuest::MiskosTreasureHeroinesManuscript
+    - _Cave::LakeIntenoch00
+    - _Shrine::Moshapin::Start
+    - _Shrine::Moshapin
+    - Ascend out
+    - _Well::ShadowHamletRuins
+    - _Shrine::Mayachideg
+    - _Npc<Parcy>:
+       coord: [3089.48, 307.36, 1673.77]
+       comment: Destroy the ore in one hit
+    - _SideQuest::OneHitWonder
+    - _Npc<Dmitri>:
+       coord: [3138.89, 307.33, 1686.14]
+       comment: Turn in picture
+    - _SideQuest::APictureforSouthAkkalaStable
+    - _Npc<Penn>:
+       coord: [3180, 307.62, 1720]
+       comment: Start The All Clucking Cucco
+    - _Well::SouthAkkalaStable
+    - _Npc<Cucco>:
+       coord: [3227.84, 324.6, 1785.56]
+       comment: Complete trials, defeat enemies
+    - _SideAdv::TheAllCluckingCucco
+    - _Tower::UlriMountain
+  
+  - Ulri Mountain Sky:
+    - _Tablet::S11
+    - _Shrine::Natak::Start
+    - _Shrine::Natak
+    - _Shrine::Gikaku::Start
+    - _Shrine::Gikaku
+  
+  - Labyrinth Island Approach B:
+    - _Shrine::Gemimik
+    - _Enemy<Monster Forces>:
+       coord: [4853.61, 128.72, 2769.59]
+       comment: Defeat enemies
+    - _Npc<Aya>:
+       coord: [4234.08, 231.92, 2738.65]
+       comment: The Gathering Pirates
+    - _SideQuest::TheGatheringPirates
+    - _Npc<Rudi>:
+       coord: [4232.77, 231.81, 2743.5]
+       comment: A Picture for East Akkala Stable
+       notes: Receive Meat and Rice Bowl reward and do NOT discard it
+    - _SideQuest::APictureforEastAkkalaStable
+    - _Npc<Chabi>:
+       coord: [4201.68, 232.8, 2766.36]
+       comment: Strongest in the World
+       notes: Fuse a Lynel Horn to a Weapon
+    - _SideQuest::StrongestintheWorld
+    - _Well::EastAkkalaStable
+    - _Npc<Loone>:
+       coord: [4339.78, 247.76, 2815.68]
+       comment: Start Eldin Colossal Fossil
+    - _Shrine::Jochi-iu
+    - _Enemy::Talus::GA02
+    - _Chest::YigaArmor
+    - _Shrine::Mogisari:
+       notes: Is in the sky
+    - _Shrine::Rasiwak
+    - _Shrine::Igashuk
+    - _SideQuest::TheLomeiLabyrinthIslandProphecy:
+       comment: Clip to the Depths, defeat Flux, and activate the terminal
+    - _Temple::Fire:
+       comment: Warp back to Goron City, do Moragia; dive down and talk to Yunobo; then progress to Fire Temple and complete it
+       hide-icon-on-map: true
+  
+  - Return to Goron City:
+    - _Warp::Npc<Yunobo>:
+       coord: [1648.01, 487.5, 2439.43]
+       comment: Yunobo of Goron City
+    - _Npc<Bludo>:
+       coord: [1648.67, 487.3, 2446.02]
+       comment: The Hidden Treasure of the Lizard Lakes
+    - _SideQuest::TheHiddenTeasureatLizardLakes
+    - _Npc<Dugby>:
+       coord: [1640.4, 488.5, 2448.22]
+       comment: Send to Minecart Rail
+    - _MainQuest::YunoboofGoronCity
+    - _Npc<Ramella>:
+       coord: [1669.94, 492.64, 2473.33]
+       comment: Turn in 10 Amber
+    - _SideQuest::AmberDealer
+    - _Npc<Fugo>:
+       coord: [1687.56, 502.14, 2497.22]
+       comment: Turn in Cobble Crusher + 5 Flint + 3 Diamonds
+    - _SideQuest::SouloftheGorons
+    - _Npc<Volcon>:
+       coord: [1675.44, 488.75, 2433.4]
+       comment: Turn in picture
+    - _SideQuest::MoonGazingGorons
+    - _Npc<Dugby>:
+       coord: [1614.5, 502, 2399]
+       comment: Move rocks out of the way, then escort down rail
+    - _Npc<Dugby>:
+       coord: [1580, 300, 2060]
+       comment: End Escort
+    - _SideQuest::TheAncientCityGorondia!
+    - _Cave::GoronbiRiver00
+    - _Chest::EmberShirt:
+       comment: Completes Awakening 0
+    - _Npc<Misko's Tablet>:
+       coord: [1382.41, 400, 2255.35]
+       comment: Hints towards Awakening I
+    - _SideQuest::MiskosTreasureofAwakeningI
+    - Ascend out
+    - _Cave::WestRestaurant00
+    - _Npc<Cooke>:
+       coord: [1761.51, 384.49, 1546.32]
+       comment: Turn in first Rock Roast
+    - _SideQuest::MeatforMeat
+    - _Npc<Gomo>:
+       coord: [1752.37, 384.23, 1530.77]
+       comment: Turn in 100 Flint
+    - _SideQuest::CashInonRipenedFlint
+    - _Cave::WestRestaurant00
+    - _Npc<Cooke>:
+       coord: [1761.51, 384.49, 1546.32]
+       comment: Turn in second Rock Roast
+    - _SideQuest::RockRoastorDust
+    - _Shrine::Timawak
+    - _Cave::SouthernMine00
+    - _Npc<Bayge + Other Gorons>:
+       coord: [1827.42, 427.27, 2079.37]
+       comment: Complete Mine-Cart Land 1
+    - _SideQuest::MineCartLandOpenforBusiness
+    - _Npc<Heehl (right)>:
+       coord: [1830.87, 427.25, 2080.46]
+       comment: Complete Mine-Cart Land 2
+    - _SideQuest::MineCartLandQuickshotCourse
+    - Ascend out
+    - _Cave::GorkoTunnel00
+    - _Npc<Kima>:
+       coord: [2160.65, 495.5, 2086.57]
+       comment: Complete Simmerstone Springs
+    - _SideQuest::SimmerstoneSprings
+    - Ascend out
+    - _Npc<Kabetta>:
+       coord: [2363, 932.75, 2599.5]
+       comment: Complete Mine-Cart Land 3
+    - _SideQuest::MineCartLandDeathMountain
+    - _Shrine::Sitsum
+    - _Cave::DeathMountainWestTunnel00
+    - _Npc<Mota>:
+       coord: [2344.17, 620.18, 2682.99]
+       comment: Escort across the gap with rocket
+    - _Npc<Mota>:
+       coord: [2220, 620, 2670]
+       comment: End Escort
+    - _SideQuest::TheAbandonedLaborer
+    - _Npc<Loone>:
+       coord: [1667.36, 206.58, 3649.95]
+       comment: Repair Fossil
+    - _SideQuest::EldinsColossalFossil
+    - _Shrine::Mayak
+    - _Cave::DeplianBadlands00
+    - _Shrine::Minetak
+    - Ascend out
+    - Clip in
+    - _Npc<Kazul>:
+       coord: [372.69, 280.02, 3095.62]
+       comment: Autocomplete 5 Side Adventures
+    - _SideAdv::InvestigatetheThyphloRuins
+    - _SideAdv::TheOwlProtectedbyDragons
+    - _SideAdv::TheCorridorbetweenTwoDragons
+    - _SideAdv::TheSixDragons
+    - _SideAdv::TheLongDragon
+    - _Tower::ThyphloRuins
+    
+  - Thyphlo Ruins Sky:
+    - _Enemy::FluxConstruct::SE01
+    - _Shrine::Mayam::Start
+    - _Shrine::Mayam
+    - _Npc<Terminal>:
+       coord: [229.56, 2089.86, 2069.67]
+       comment: Complete Dive Challenge
+    - _Shrine::Simosiwak
+   
+  - Korok Forest:  
+    - _Shrine::Ninjis:
+       notes: Is on the surface, dive down
+    - _Shrine::Musanokir
+    - _SideAdv::HestusConcerns
+    - _SideQuest::TheSecretRoom
+    - _SideQuest::WaltonsTreasureHunt
+    - _SideQuest::WhirlySwirlyThings
+    - _Shrine::Pupunke
+    - _Shrine::Sakunbomar
+    - _MainQuest::TrailoftheMasterSword
+ 
+  - Tyohpolo Ruins Sky Continued:
+    - _Warp::Shrine::Mayam:
+       comment: WARP
+       line-color: lightyellow
+    - _Tablet::S09
+    - _Shrine::Tenbez
+    - _Tablet::S03
+    - _Shrine::Taninoud::Start
+    - _Shrine::Taninoud
+  
+  
+  - Hebra 2:
+    - _Npc<Golden Horse>:
+       coord: [-1820.87, 341.56, 3381.87]
+       comment: Ride to stable
+    - _Npc<Penn>:
+       coord: [-1642.11, 339.2, 2575.8]
+       comment: Turn in horse
+    - _SideAdv::ZeldasGoldenHorse
+    - _Npc<Mastro>:
+       coord: [-1631.15, 339.38, 2589.63]
+       comment: Escort to Fairy
+    - _Fairy<Great Fairy Mija>:
+       coord: [-1458,150,2989]
+    - _SideAdv::SerenadetoMija
+    - _Cave::MountDrenaFoothill00
+    - _Enemy<Monsters>:
+       coord: [-1381.69, 281.71, 2931.68]
+       comment: 3 Bokoblins + 1 Moblin
+    - _Shrine::Orochium
+    - _Well::SnowfieldStable
+    - _Npc<Nat>:
+       coord: [-1665.01, 339.45, 2540.73]
+       comment: Complete The Captured Tent
+    - _SideQuest::TheCapturedTent
+    - _Npc<Varke>:
+       coord: [-1648.72, 339.78, 2569.43]
+       comment: Turn in picture
+    - _SideQuest::APictureforSnowfieldStable
+   
+  - Hebra:  
+    - _Warp::Shrine::Gatakis
+    - _Npc<Genli>:
+       coord: [-3645.50, 289.88, 1822.96]
+       comment: Turn in 1 Staminoka Bass
+    - _SideQuest::GenlisHomeCooking
+    - _Npc<Laissa>:
+       coord: [-3633.88, 309.76, 1826.67]
+       comment: Receive SHQ
+    - _Npc<Tulin>:
+       coord: [-3615, 323.62, 1825.01]
+       comment: Start Treasure of the Secret Springs
+       line-color: lightpink
+    - _Npc<Teba>:
+       coord: [-3609.06, 323.62, 1825.01]
+       comment: Turn in Diamonds, Wood, and a Swallow Bow for GEB
+    - _SideQuest::LegacyoftheRito
+    - _Npc<Molli>:
+       coord: [-3617.09, 320.35, 1789.5]
+       comment: Turn in 1 Ice Fruit
+    - _Npc<Bedoli>:
+       coord: [-3655.16, 320.26, 1762.85]
+       comment: Turn in 3 Cave Fish
+    - _SideQuest::FishforFletching
+    - _SideQuest::MollitheFletchersQuest
+    - _Shrine::Wao-os
+    - Ascend out
+    - _Well::Dronoc'sPass
+    - _Npc<Kaneli>:
+       coord: [-3795.87, 267.53, 2320.31]
+       comment: Complete Flight Training
+    - _SideQuest::KanelisFlightTraining
+    - _Tower::RosproPass  
+  
+  - Rospro Pass Sky:
+    - _Tablet<King Gleeok>:
+       coord: [-4430.63, 1389.9, 2275.43]
+       comment: Snap
+    - _Enemy::Gleeok::S01:
+       notes: Defeat and pick up Guts
+    - _Item<Gleeok Guts>:
+       coord: [-4510.63, 1389.9, 2275.43]
+    - _Shrine::Ijo-o
+    - _Enemy::FluxConstruct::SH02
+ 
+  - Hebra Continued:
+    - _Cave::SturnidaSprings00
+    - _Npc<Nat>:
+       coord: [-4023.52, 118.49, 2645.99]
+       comment: Progress through the cave to the end
+    - _SideQuest::WhoFindstheHaven
+    - _Shrine::Tauyosipun
+    - _Cave::IcefallFoothills00
+    - _Shrine::Otak
+    - _Npc<Loone>:
+       coord: [-3882.24, 328.64, 3692.1]
+       comment: Repair the fossil
+    - _SideQuest::HebrasColossalFossil
+    - _Shrine::Eutoum:
+       comment: PROV
+    - _Tablet::S02
+    - _Chest::VahMedohDivineHelm
+    - _SideQuest::TreasureoftheSecretSprings
+    - Go East off the pedistal and clip into the water. Swim east and go under the wall out of bounds
+    - _Npc<Selmie>:
+       coord: [-3668.34, 335.72, 3102.31]
+       comment: Break rocks
+    - _Tablet<Sunny White Spot>:
+       coord: [-3158.28, 701.07, 2689.44]
+    - _SideQuest::TheDuchessWhoDissapeared
+    - _Cave::HebraMountainsNorthwest00
+    - _Shrine::Rutafu-um::Start
+    - _Shrine::Rutafu-um
+    - Ascend out
+    - _Npc<Selmie>:
+       coord: [-2951.24, 677.55, 3140.54]
+    - _Tower::PikidaStonegrove
+    - _Enemy::Talus::GH02
+    - _Shrine::Sisuran::Start
+    - _Shrine::Sisuran
+    - _Tear::G07
+    - _Shrine::Oshozan-u
+    - _Shrine::Mayaotaki
+    - _SideQuest::TheNorthLomeiProphecy:
+       comment: Clip to Depths, defeat Flux, and activate the terminal
+  
+  
+  - Necluda:
+    - _Warp::Shrine::Kyononis:
+       comment: WARP
+       line-color: lightgreen
+    - _Shrine::Kyononis
+    - _Well::HyruleCastleTownRuins
+    - _Shrine::Yamiyo
+    - _Shrine::Sepapa
+    - _Npc<Domidak>:
+       coord: [599.5, 152, 1282]
+       comment: Move chest
+    - _SideQuest::TheTreasureHunters
+    - _Well::RauruSettlementRuins
+    - _Shrine::Ren-iz
+    - _Cave::CrenelPeak00
+    - _Shrine::Jojon
+    - Ascend out
+    - _Well::MoorGarrisonRuins
+    - _Shrine::Jonsau
+    - _Well::ZauzIsland
+    - _Well::GopongaVillageRuins
+    - _Well::RikokaHills:
+       comment: Enter well
+    - _Npc<Moza>:
+       coord: [1711.09, 119.38, -652.14]
+       comment: Turn in Dubious Food and 5 Rupees
+    - _SideQuest::TheUltimateDish
+    - _Tablet<Ring Ruins>:
+       coord: [1700, 119.38, -652.14]
+       comment: Look up and snap
+    - _Well::LanayruWetlands
+    - _Shrine::Tukarok
+    - _Enemy<Moblin>:
+       coord: [867.94, 131.71, -280.38]
+       comment: Defeat
+    - _Well::WetlandStableSouth
+    - _Well::WetlandStable
+    - _Npc<Ami>:
+       coord: [864.73, 131.25, -172.27]
+       comment: Turn in
+    - _SideQuest::AnUninvitedGuest
+    - _Npc<Lawdon>:
+       coord: [888.08, 131.78, -166.06]
+       comment: Turn in picture
+    - _SideQuest::APictureforWetlandStable
+    - _Npc<Penn>:
+       coord: [873.57, 131.26, -158.42]
+       comment: Start The Missing Farm Tools
+    - _Well::RebonaeBridge:
+       comment: Enter well
+    - _Npc<Dillie>:
+       coord: [778.93, 122.16, 8.4]
+       comment: Repair ladder and then talk
+    - _SideQuest::FellintoaWell
+    - _Npc<Izra>:
+       coord: [834.88, 115, -118.49]
+       comment: Escort to Floret Sandbar
+    - _Npc<Magda>:
+       coord: [850.59, 115.23, -787.13]
+       comment: End Escort
+    - _SideAdv::TheMissingFarmTools
+    - _Well::BottomlessPond
+    - _Shrine::Morok
+    - _Tower::SahasraSlope
+    - _Shrine::Josiu::Start
+    - _Shrine::Josiu
+    - _Npc<Deciphered Slab>:
+       coord: [1634.51, 323.95, -1177.73]
+       comment: Read Notebook
+    - _Enemy<Monsters>:
+       coord: [1647.66, 320.39, -1171.56]
+       comment: Defeat
+    - _Npc<Olkin>:
+       coord: [1649.09, 317.91, -1123.84]
+       comment: Progress Codgers Quarrel
+    - _Shrine::Makasura
+    - _Npc<Trissa>:
+       coord: [1789.04, 221.07, -1029.58]
+       comment: Complete Codgers Quarrel
+    - _SideQuest::CodgersQuarrel
+    - _Tablet<Calamity Mural>:
+       coord: [1773.18, 235.31, -981.2]
+       comment: Snap inside Impa's House
+    - _Npc<Ollie>:
+       coord: [1733.95, 305.69, -901.37]
+       comment: Drop a Hearty Truffle over slab
+    - _Npc<Deciphered Slab>:
+       coord: [1737.12, 305.96, -900.39]
+       comment: Read Notebook (is the northern notebook of the two on the platform)
+    - _Npc<Deciphered Slab>:
+       coord: [1901.46, 305.32, -810.25]
+       comment: Read Notebook
+    - _Well::KakarikoVillage
+    - _Npc<Deciphered Slab>:
+       coord: [1937.84, 272.63, -1080.23]
+       comment: Read Notebook
+    - _Npc<Beetz>:
+       coord: [2166.09, 214.5, -1379.43]
+       comment: Send to Stable Trotters
+    - _SideAdv::HoneyBeeMine
+    - _Shrine::Yansamin:
+       notes: Is in the sky
+    - _Enemy<Monster Forces>:
+       coord: [2305.38, 121.23, -1838.43]
+       comment: Defeat for Bring Peace to Necluda
+    - _SideAdv::BringPeacetoNecluda
+    - _Cave::Oakle'sNavel00
+    - _Shrine::Tokiy::Start
+    - _Shrine::Tokiy
+    - Ascend out
+    - _Tower::RabellaWetlands
+    - _Tablet::S06
+    - _Tablet::S07
+    - _Well::Zelda'sSecret:
+       comment: Enter Well
+    - _Npc<Diary>:
+       coord: [3307.49, 219.15, -2297.56]
+       comment: Start Champion's Tunic Quest    
+    - _Well::HatenoVillageSouth
+    - _Shrine::Zanmik
+    - _Well::HatenoVillageEast
+    - _Well::HatenoVillageNorth
+    - Make noon
+    - _Npc<Symin>:
+       coord: [3366.91, 235.29, -1969.32]
+       comment: Show Calamity Mural and Hylian Rice, Goron Spice, Monster Extract
+    - _SideQuest::TeachMeaLessonI
+    - _SideQuest::TeachMeaLessonII
+    - _Npc<Sophie + Cece + Cece + Sophie>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Open shop, talk to Cece inside shop, talk again to start mushroom delivery, talk to Sophie outside again
+    - _Npc<Manny + Ivee + Manny>:
+       coord: [3373.55, 225.6, -2131.88]
+       comment: Turn in 10 Frogs
+    - _SideQuest::MannysBeloved
+    - _Npc<Sayge>:
+       coord: [3409.1, 226.72, -2150.45]
+       comment: Click Rework the Paraglider, then talk again and turn in Chuchu picture
+    - _SideQuest::PhotographingaChuchu
+    - _Npc<Leop>:
+       coord: [3325.66, 225.66, -2153.96]
+    - _Npc<Medda>:
+       coord: [3380.11, 225.72, -2104.59]
+    - _Npc<Tamana>:
+       coord: [3342.79, 218.85, -2083.32]
+    - _Npc<Uma>:
+       coord: [3346.54, 223.24, -2035.39]
+       comment: Start Garden, use anything, give shroom
+    - _Well::HatenoVillageWest:
+       comment: Enter 
+    - Ascend up next to diary
+    - _Npc<Diary>:
+       coord: [3415.07, 238.58, -2085.43]
+    - _Npc<Tokk>:
+       coord: [3800, 300, -2110]
+       comment: Talk to Tokk
+    - _Cave::RetsamForest00
+    - _Shrine::Mayahisik
+    - _Cave::RetsamForest01
+    - _Npc<Koyin>:
+       coord: [3632, 300, -2048]
+       comment: UH bottle to dock, give shroom
+    - _Npc<Dantz>:
+       coord: [3623.63, 283.43, -2078.87]
+       comment: Turn in 3 Acorns
+    - _SideQuest::DantzsPriceCows
+    - _Npc<Koyin>:
+       coord: [3633.99, 283.81, -2100.48]
+       comment: Receive Cheese
+    - _SideAdv::ALettertoKoyin
+    - _Npc<Worten>:
+       coord: [3470, 300, -2120]
+       comment: Is on dock
+    - Make night
+    - _Npc<Clavia>:
+       coord: [3443, 236.83, -2091.19]
+       comment: Turn in Diary
+    - _SideAdv::ReedesSecret
+    - _Npc<Reede>:
+       coord: [3428, 1311, -2083]
+       comment: Turn in cheese
+    - _SideAdv::ANewSignatureFood
+    - _Npc<Sneaky Cece>:
+       coord: [3385, 131, -2163]
+       comment: Sneak in through window and wait for Cece to enter this silo
+    - _Npc<Cece + Sophie + Sophie + Cece>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Do election and then talk to Cece AFTER the election
+    - _SideAdv::TeamCeceorTeamReede
+    - _SideAdv::CecesSecret
+    - _SideAdv::TheMayoralElection
+    - _Npc<Nack>:
+       coord: [3306.43, 216.05, -2121.05]
+       comment: Defeat Stal enemies with Dazzlefruit
+    - _SideQuest::HomegrowninHateno
+
+    - _Enemy::FluxConstruct::SF01
+    - _Shrine::Kumamayn::Start
+    - _Shrine::Kumamayn:
+       notes: Is in the sky
+    - _Item<15 Logs>:
+       coord: [2962.42, 245.27, -2953.8]
+       comment: Escort with ABC; do not un-ABC until after all monsters are defeated
+    - _Enemy<Monster Forces>:
+       coord: [2950, 113.54, -3380]
+       comment: Defeat all monsters
+    - _Well::LurelinVillage:
+       comment: Enter for remaining Boko
+    - _Npc<Bolson>:
+       coord: [2901.19, 112.39, -3415.15]
+       comment: Cancel ABC for Logs, turn in Logs and 20 Hylian Rice; repair all the buildings      
+    - _SideAdv::RuffianInfestedVillage
+    - _SideAdv::LurelinVillageRestorationProject
+    - _Npc<Ralera>:
+       coord: [2844.93, 110.22, -3462.89]
+       comment: Cook Hylian Rice, Goron Spice, Porgy; then use a Cart Guster
+    - _SideQuest::RattledRalera
+    - _Npc<Rozel>:
+       coord: [2880.93, 110.22, -3550.89]
+       comment: Start Lurelin Resort Project
+    - _Chest::IslandLobsterShirt
+    - _Npc<Zuta>:
+       coord: [2946.75, 108.68, -3453.03]
+       comment: Turn in shirt
+    - _SideQuest::DadsBlueShirt
+    - _Tear::G06
+    - _Shrine::Marari-in
+    - _SideQuest::SeekingthePirateHideout
+    - _Cave::CapeCalesCliffbase00
+    - _Chest::TinglesTights
+    - _SideQuest::MiskosTreasurePirateManuscript
+    - Ascend out
+    - _Cave::MountDunsel01
+    - _Shrine::Bamitok
+    - Ascend out
+    - _Shrine::Sifumim
+    - Make Morning
+    - _Tablet<Sunrise>:
+       coord: [2589.7, 341.3, -3596.08]
+       comment: Snap sunrise east
+    - _Cave::CaloraLake00
+    - _Enemy::Hinox::GF08
+    - Ascend out
+    - _Cave::RodaiLakefrontTunnel00
+    - _Enemy::Hinox::GF06
+    - Ascend out
+    - _Cave::CortaLake00
+    - _Enemy::Hinox::GF05
+    - _Shrine::Ukoojisi::Start
+    - _Shrine::Ukoojisi
+    - _Shrine::Eshos
+    - _Well::DuelingPeaksStable
+    - _Npc<Penn>:
+       coord: [1759.67, 145.98, -1925.56]
+       comment: Start Princess Zelda Kidnapped
+    - _Npc<Tasseren>:
+       coord: [1753.65, 116.06, -1923.16]
+       comment: Turn in picture
+    - _SideQuest::APictureforDuelingPeaksStable
+    - _Npc<Mastro>:
+       coord: [1756.12, 116.07, -1958.84]
+       comment: Escort to fairy
+    - _Fairy::GreatFairyFountain
+    - _SideAdv::SerenadetoCotera
+    - _Npc<Real Zelda>:
+       coord: [1313.21, 409.17, -1975.59]
+       comment: Defeat enemies
+    - _SideAdv::PrincessZeldaKidnapped
+    - _Cave::DuelingPeaksSouth00
+    - _Chest::TinglesShirt
+    - _SideQuest::MiskosTreasureTwinsManuscript
+    - Ascend out
+    - _Shrine::Jiukoum
+    - _Shrine::Jochisiu
+    - _Well::SouthNabiLake
+    - _Tear::G03
+    - _Npc<Agus>:
+       coord: [548.15, 122.38, -1192.29]
+       comment: Retain meal from North Akkala Stable
+    - _Well::RiversideStable
+    - _Npc<Teli>:
+       coord: [365.8, 115.02, -1106.91]
+       comment: Return 5 cuccos to pen
+    - _SideQuest::FeatheredFugitives
+    - _Npc<Ember>:
+       coord: [333.04, 115.8, -1089.23]
+       comment: Turn in picture
+    - _SideQuest::APictureforRiversideStable
+    - _Npc<Penn>:
+       coord: [387.88, 121.51, -1044.12]
+    - _SideAdv::GourmetsGoneMissing
+    - _Shrine::Tajikats
+    - _Shrine::Teniten
+    - _Shrine::Kamizun
+  
+    - _Well::DeyaVillageRuinsNorth
+    - _Well::DeyaVillageRuins
+    - _Well::DeyaVillageRuinsEast:
+       comment: Break rocks with rocket arrows, enter well
+    - _Shrine::Susub
+    - Ascend out
+    - _Well::DeyaVillageRuinsSouth
+    - _Well::HillsofBaumer
+    - _Well::PoplaFoothillsSouth
+    - _Cave::PoplaFoothillsExcavationSite00
+    - Stand on the switch to free worker
+    - Ascend out
+    - _Well::PoplaFoothillsNorth
+    - _Tower::PoplaFoothills
+    - _Tablet::S04
+    - _Shrine::En-oma::Start:
+       notes: Is in the sky
+    - _Enemy::Gleeok::G08
+    - _Shrine::En-oma
+    
+  - Riju 2:
+    - _Warp::Shrine::Mayatat:
+       comment: WARP AND DEFEND
+    - _Well::KaraKaraBazaar:
+       comment: Enter well, break rocks on path
+    - _Npc<Ponthos>:
+       coord: [-3290, 111.64, -2643]
+       comment: Talk at the end of the path
+    - _Item<Bazaar Orb>:
+       coord: [-3315, 129.62, -2579]
+       comment: Escort Orb
+    - _SideQuest::LostintheDunes
+    - Deposit orb in seven figures slot   
+    - _Tablet<Stelae 1>:
+       comment: In the Voe and You classroom, line two parts up
+    - _Tablet<Stelae 2>:
+       comment: Towards the cave, blocked by sand, use a Cart Guster
+    - _Tablet<Stelae 3>:
+       comment: Inside the jail
+       notes: Unequip shirt to warp inside, take picture, equip, then leave normally
+    - _Tablet<Stelae 4>:
+       comment: Near the pillars mural, behind bomb rocks
+    - _Npc<Rotana>:
+       comment: Turn in the 4 stelae pictures
+    - _SideQuest::TheHeroinesSecret
+    - Ascend out
+    - _Item<Arrows + Gerudo Scim + Gerudo Shield>:
+       coord: [-3862.75, 149.72, -2982.06]
+       comment: Pick up
+    - _Npc<Riju>:
+       coord: [-3887.35, 157.48, -2968]
+       comment: Defend Gerudo Town
+    - _Npc<Riju>:
+       coord: [-3900.08, 140.73, -2978.17]
+       comment: UH Sand Seal Toy to enter shelter, examine mural
+    - Ascend out
+    - _Item<North Mirror>:
+        coord: [-4056.82, 167.50, -3149.83]
+        comment: Break with Rocket Arrow
+    - _Enemy::Molduga::SG04
+    - _Npc<Isha>:
+       coord: [-4772.75, 140.25, -2825.25]
+       comment: The Missing Owner
+    - _Shrine::Miryotanog
+    - _Item<Middle Mirror>:
+       coord: [-4539.07, 138.50, -3278.52]
+       comment: Rotate spinner below with rocket
+    - _Cave::GerudoGreatSkeleton00
+    - _Npc<Loone>:
+       coord: [-4873.42, 47.82, -3770.62]
+       comment: Repair the Fossil
+    - _SideQuest::GerudosColossalFossil
+    - _Shrine::Irasak
+    - _Shrine::Karahatag
+    - _Item<South Mirror>:
+       coord: [-4185.51, 167.50, -3632.07]
+       comment: Rotate spinner on top with rocket
+    - _Temple::Lightning
+    
+  - Return to Gerudo Town:
+    - _Warp::Npc<Riju>:
+       coord: [-3887.35, 157.48, -2968]
+       comment: Riju of Gerudo Town
+       line-color: pink
+    - _MainQuest::RijuofGerudoTown
+    - _Npc<Isha>:
+       coord: [-3828.5, 149.5, -2885]
+       comment: Turn in Scim + Shield + 10 Flint + 4 Diamonds
+    - _SideQuest::TheMissingOwner
+    - _SideQuest::PrideoftheGerudo
+    - _Npc<Dalia>:
+       coord: [-3813.5, 149.5, -2872.5]
+       comment: Find Sand Seal
+    - _SideQuest::DaliasGame
+    - _Item<Dalia Orb>:
+       coord: [-3813.5, 149.5, -2872.5]
+       comment: Escort with UH
+    - _Item<Shop Orb>:
+       coord: [-3781.25, 153.03, -2899.79]
+       comment: UH to other orb
+    - _Item<Top Orb>:
+       coord: [-3800.5, 164.5, -2970.5]
+       comment: Is under sand at the top of town, blow sand with Cart Guster
+    - Enter the shelter while UH-ing the orbs
+    - _Item<Bar Orb>:
+       coord: [-3903.8, 136.08, -2914.92]
+    - _Item<Shelved Orb>:
+       coord: [-3910.88, 143.03, -2929.15]
+       comment: Is above beds in shelf
+    - _Item<Researcher Orb>:
+       coord: [-3905.75, 139.87, -2953.25]
+       comment: Is next to Rotana
+    - Escort all orbs into the slot
+    - ABC Giant Orb to Sanctuary north, deposit it
+    - _Cave::GerudoSanctuary01
+    - Clip across into Mural Room
+    - _Item<Mural>:
+       coord: [-3762.92, 114.62, -2531.73]
+       comment: Read
+    - Ascend out
+    - _Shrine::Soryotanog
+    - _Npc<Riju>:
+       coord: [-3886.63, 157.48, -2965.29]
+       comment: Complete Treasure of the Gerudo Desert
+    - _SideQuest::TreasureoftheGerudoDesert
+    - Enter shelter
+    - _Npc<Rotana>:
+       coord: [-3862.75, 149.72, -2982.06]
+       comment: Turn in Heroines Quest
+    - _SideQuest::TheMysteriousEighth
+    - Ascend out
+    - _Npc<Pokki>:
+       coord: [-3760, 149.5, -2944.5]
+       comment: Buy Sleigh Seal and escort to ruins
+    - _Npc<Pokki>:
+       coord: [-2792, 135, -2881.25]
+       comment: End Escort
+    - _SideQuest::TotheRuins
+    - _Tablet::S05
+    - _Enemy::Molduga::SG03:
+       notes: Wait for Molduga to explode for quest before entering shrine
+    - _Shrine::Siwakama
+    - _Cave::AncientPrisonRuins00
+    - _Shrine::Chichim
+    - _Enemy<Master Kohga>:
+       comment: Clip down to the depths and slide to gerudo down to kill Khoga
+ 
+  - Gerudo Canyon Cleanup:
+    - _Warp::Tower::GerudoCanyon:
+       comment: WARP
+       line-color: yellow
+    - _Shrine::Turakamik
+    - _Npc<Malena>:
+       coord: [-2726.13, 167.9, -2335.33]
+       comment: Turn in Gleeok Gut
+    - _SideQuest::GleeokGuts
+    - _Npc<Piaffe>:
+       coord: [-2802.75, 135.44, -2225]
+       notes: Break crates -> turn in a picture -> turn in the other picture
+    - _SideQuest::PiaffePackedAway
+    - _SideQuest::APicturefortheClosedStableI
+    - _SideQuest::APicturefortheClosedStableII
+    - _Npc<Penn>:
+       coord: [-2817, 134.87, -2236.5]
+       comment: Start The Blocked Well
+    - _Well::GerudoCanyon:
+       comment: Enter well, defeat the 5 enemies; cutscene will warp you out after
+    - _SideAdv::TheBlockedWell
+    - Equip Yiga Set
+    
+    - _Warp::Shrine::Suariwak:
+       comment: WARP
+    - _Npc<Yiga Blademaster>:
+       coord: [-2479.1, 242.97, -1796.44]
+       comment: Complete The Yiga Clan Exam
+    - _SideAdv::TheYigaClanExam
+    - Ascend out
+    - _Tear::G04
+    - _Shrine::Rotsumamu
+    - _Npc<Mimos>:
+       coord: [-3687.06, 436.5, -1364.58]
+       comment: Show Yiga Set AND unlock door to hideout
+    - _SideAdv::InfiltratingtheYigaClan
+
+  - Sidon:
+    - _Warp::Shrine::Jochi-ihiga:
+       comment: WARP
+    - _Dispenser::G01:
+       comment: Use for quest
+    - _SideQuest::SecretsWithin
+    - _Well::ConstructionSite
+    - _Npc<Tali>:
+       coord: [3753.24, 198.19, 1675.51]
+       comment: Do first race + make noon twice + do second race + send racers to Lurelin
+    - _SideQuest::MastertheVehiclePrototype
+    - _SideQuest::TheTarreyTownRaceIsOn
+    - Make noon twice
+    - _Npc<Hudson>:
+       coord: [3754.34, 195.25, 1616.34]
+       comment: Turn in 10 Sundelions
+    - _SideAdv::MattisonsIndependence
+    - _Npc<Kilton>:
+       coord: [3966, 234.09, 1644]
+       comment: Turn in Boko, Horriblin, Talus, Frox, King Gleeok
+    - _SideAdv::AMonsterousCollectionI
+    - _SideAdv::AMonsterousCollectionII
+    - _SideAdv::AMonsterousCollectionIII
+    - _SideAdv::AMonsterousCollectionIV
+    - _SideAdv::AMonsterousCollectionV
+    - _Npc<Rhondson>:
+       coord: [3941.88, 235.06, 1593.23]
+       comment: Buy house
+    - _Shrine::Rasitakiwak
+    - _Npc<Granteson>:
+       coord: [4164.8, 313.46, 1377.84]
+       comment: Build home
+    - _SideQuest::HomeonArrange
+    - _Shrine::Gatanisis
+    - _Enemy<Monster Forces>:
+       coord: [4178.5, 463.75, 71.75]
+       comment: Defeat enemies
+    - _Npc<Yona>:
+       coord: [3304.96, 244.26, 473.96]
+       comment: Splash the statue and then talk
+    - _MainQuest::TheSludgeCoveredStatue
+    - _Shrine::Ihen-a
+    - _Npc<Sidon>:
+       coord: [3845.6, 591.74, 576.94]
+       comment: Talk
+    - _Npc<Jiahto>:
+       coord: [3401.73, 506.99, 871.93]
+       comment: Splash cut out slab, UH into slot
+    - _MainQuest::TheBrokenSlate
+    - _Cave::PristineSanctum01
+    - _Npc<Dorephan>:
+       coord: [3682.07, 310.28, 605.91]
+       comment: Receive King Scale x5
+    - Ascend out
+    - Shoot King Scale arrow through tear
+    - _MainQuest::CluestotheSky
+    - _Chest::ZoraHelm:
+       coord: [4000, 692.07, 650]
+       notes: Enter through north end, splash sludge covering entrance
+    - Defeat Sludge Like with Sidon's Ability
+    - _Npc<Yona>:
+       coord: [3845.6, 591.74, 576.94]
+       comment: Receive Zora Armor (ancient arowana)
+    - _MainQuest::RestoringtheZoraArmor
+    - _Tablet<Mipha Statue>:
+       coord: [3758.86, 654.62, 417.38]
+       comment: Snap
+    - _Item<Ancient Arowana>:
+       coord: [3765.25, 641.11, 425.2]
+    - _Npc<Sidon>:
+       coord: [3671.8, 320.99, 259.86]
+       comment: Complete Waterworks
+    - _Temple::Water:
+       hide-icon-on-map: true
+    
+  - Return to Zora's Domain:  
+    - _Warp::Npc<Sidon>:
+       coord: [3336, 270.42, 544.73]
+       comment: Sidon of the Zora
+       line-color: thistle
+    - _MainQuest::SidonoftheZora
+    - Reload autosave and obtain quest from Sidon
+    - _Npc<Sidon>:
+       comment: Start Secret Treasure under the Great Fish
+    - _Npc<Chroma>:
+       coord: [3332, 270.48, 545]
+       comment: Complete The Never Ending Lecture (Zora Helm)
+    - _SideQuest::TheNeverEndingLecture
+    - _Npc<Seggin>:
+       coord: [3273.7, 261.06, 543.43]
+       comment: The Moonlit Princess
+    - _SideQuest::TheMoonlitPrincess
+    - _Npc<Yona>:
+       coord: [3304.96, 244.26, 473.96]
+       comment: Start A Token of Friendship
+    - _Npc<Fronk>:
+       coord: [3291.71, 244.86, 441.43]
+       comment: Start A Wife Wafted Away
+    - _Shrine::Apogek
+    - _Cave::TarmPoint00
+    - _Npc<Sasan>:
+       coord: [4476, 140.2, -804.27]
+       comment: Start Escort
+    - _Npc<Finley>:
+       coord: [4413.89, 140.66, -620.8]
+       comment: End Escort
+    - _SideQuest::TrueTreasure
+    - _Shrine::Yomizuk
+    - Ascend out
+    - _Tear::G08
+  
+  - Mount Lanayru Sky:
+    - _Shrine::Mayanas::Start
+    - _Shrine::Mayanas
+    - _Npc<Terminal>:
+       coord: [4441.7, 2724.25, -871.23]
+       comment: Complete Dive Challenge
+    - _Shrine::Sihajog
+    
+  - Lnnayru Promenade:
+    - _Cave::MaplaPoint00
+    - _Npc<Chumin>:
+       coord: [4515.1, 106.79, -2310.12]
+       comment: Move boulder
+    - _SideQuest::ABottleCryforHelp
+    - Ascend out
+    - _Cave::DeepbackBay00
+    - _Shrine::Anedamimik
+    - Ascend out
+    - _Shrine::Jikais
+    - _Npc<Nazbi>:
+       coord: [3961.4, 571.52, -1361.27]
+       comment: Start The High Spring and the Light Rings
+    - _Npc<Spring of Wisdom>:
+       coord: [3910.78, 574.69, -1328.3]
+       comment: Deposit Naydra Claw
+    - _SideQuest::GoddessStatueofWisdom
+    - _Tower::MountLanayru
+    - _Npc<Terminal>:
+       coord: [3959.56, 1224.77, -1537.83]
+       comment: Complete Shield Surfing Challenge
+    - _Shrine::Zakusu
+    - _Cave::LanayruRoadEast01
+    - _Shrine::Jogou
+    - _Cave::LanayruRoadSouth00
+    - _Shrine::O-ogim::Start
+    - _Shrine::O-ogim
+    - Make morning, spin handle
+    - _Shrine::Kurakat
+    - _Cave::BonéPondEast03
+    - _Shrine::Maoikes
+    - _Well::TabahlWoods
+    - _Tablet::S01
+    - _Cave::RalisChannel01
+    - _Shrine::Joniu::Start
+    - _Shrine::Joniu
+    - Ascend out
+    - _Npc<Bazz>:
+       coord: [2841, 482.17, 583.63]
+       comment: Use a splash fruit; make room for Zora Spear and keep the spear until after Water Temple
+    - _SideQuest::MiredinMuck
+    - _Tower::UplandZorana
+  
+  - Upland Zorana Sky:
+    - _Shrine::Jirutagumac
+    - _Shrine::Igoshon
+    - _Npc<Mei>:
+       coord: [3668.75, 1356.94, 567.5]
+       comment: Send back to Zora's Domain
+   
+  - Fronk:
+    - _Cave::ReservoirLakefrontrn00
+    - _Item<Blue Rock>:
+       coord: [3907.68, 316.91, 343.08]
+       comment: Escort to dock
+    - _Npc<Ledo>:
+       coord: [3594.67, 316.5, 338.88]
+       comment: End escort of blue rock
+    - _SideQuest::TheBlueStone
+    - _Cave::AncientZoraWaterworks00:
+       coord: [3614, 300, 189]
+    - _Chest::ZoraGreaves
+    - _SideQuest::ATokenofFriendship
+    - Ascend out
+    - _Npc<Gaddison>:
+       coord: [3482.48, 261.25, 484.99]
+       comment: Turn in Monster Forces
+    - _SideQuest::TheFortatJaAbuRidge
+    - _Npc<Dento>:
+       coord: [3336.38, 245.86, 489.25]
+       comment: Turn in Zora Spear + 3 Diamonds + 5 Flint
+    - _SideQuest::GloryoftheZora
+    - _Npc<Cleff>:
+       coord: [3324.52, 245.26, 492.66]
+       comment: Turn in 10 Bright-Eyed Crabs
+    - _SideQuest::ACrabulousDeal
+    - _Npc<Fronk>:
+       coord: [3291.71, 244.86, 441.43]
+       comment: Reunite with Mei
+    - _SideQuest::AWifeWaftedAway
+    - _Shrine::Mogawak
+    - _Cave::UnderZora'sDomain00
+    - _Chest::VahRutaDivineHelm:
+       coord: [3273, 300, 461]
+    - _SideQuest::SecretTreasureundertheGreatFish
+    - _Chasm::UnderZorasDomain:
+       comment: Defeat Kohga
+       
+  - Castle:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: plum  
+    - _Npc<Scorpis>:
+       coord: [-258.32, 127.4, 100.7]
+       comment: Open + enter the Emergency Shelter
+    - _Npc<Burmano>:
+       coord: [-267.22, 113.5, 100.23]
+       comment: Today's Menu
+    - _SideQuest::TodaysMenu
+    - _Npc<Jerrin + Horned Statue + Jerrin>:
+       coord: [-254.03, 114.3, 112.48]
+       comment: Talk to Jerrin, trade anything with Horned Statue, then talk to Jerrin again
+    - _SideAdv::ADealWiththeStatue
+    - _SideAdv::WhoGoesThere
+    - _Npc<Gralens>:
+       coord: [-252.07, 113.63, 86.17]
+       comment: 6 Wanted Quests
+    - _SideQuest::WANTEDStoneTalus
+    - _SideQuest::WANTEDHinox
+    - _SideQuest::WANTEDMolduga
+    - _SideQuest::UnknownSkyGiant
+    - _SideQuest::UnknownThreeHeadedMonster
+    - _SideQuest::UnknownHugeSilhouette
+    - Ascend out
+    - _Npc<Wortsworth>:
+       coord: [-270.35, 124, 66.24]
+       comment: Messages from an Ancient Era
+    - _Npc<Lester + Spot>:
+       coord: [-252.2, 124.6, 52.12]
+       comment: Repair Stable + go to Spot and ride back
+    - _SideQuest::TheIncompleteStable
+    - _SideQuest::SpottingSpot
+    - _Npc<Karson>:
+       coord: [-251.2, 126.99, 65.45]
+       comment: Progress The Rito Rope Bridge
+    - _Npc<Mubs>:
+       coord: [-208.31, 124.75, 81.6]
+       comment: Send to Lurelin 
+    - _SideQuest::VillageAttackedbyPirates
+    - _Well::LookoutLanding
+    - _Npc<Purah>:
+       coord: [-233.5, 131.94, 153.43]
+       comment: Crisis at Hyrule Castle, Regional Phenomenon
+    - _MainQuest::RegionalPhenomena
+    - _Enemy<Monster Forces>:
+       coord: [-162.25, 390.86, 887.86]
+       comment: Bokoblins + Boss Boko
+    - _Enemy<Monster Forces>:
+       coord: [-158.76, 330.27, 1076.15]
+       comment: Hinox + Chuchus
+    - _Enemy<Monster Forces>:
+       coord: [-165.68, 334.75, 1146.34]
+       comment: Gibdos
+    - Ascend out
+    - _Shrine::Serutabomac
+    - _Enemy<Monster Forces>:
+       coord: [-318.3, 409.43, 992.64]
+       comment: Fire Lizalfos
+    - _Enemy<Monster Forces>:
+       coord: [-367.43, 352.62, 989.59]
+       comment: Moblin + Ice Keese
+       notes: Is in hallway, enter through west side below room
+    - _Enemy<Monster Forces>:
+       coord: [-313.52, 351.05, 932.62]
+       comment: Shock Like (use Ancient Blade)
+       notes: Is in hallway, enter through south side
+    - _Enemy<Phantom Ganon>:
+       coord: [-254, 444.19, 1076.87]
+       comment: Use triple shot gem arrows
+    - _Chest::ChampionsLeathers:
+       notes: Light torches with Fire Fruit
+    - _SideQuest::ANewChampionsTunic
+  
+  - Cleanup:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+    - _Npc<Purah>:
+       coord: [-251.26, 126.18, 155.25]
+       comment: Complete Main Quests
+    - _MainQuest::CrisisatHyruleCastle
+    - _MainQuest::FindtheFifthSage
+       
+    - _Warp::Shrine::Makasura:
+       comment: WARP
+    - _Npc<Trissa>:
+       coord: [1789.04, 221.07, -1029.58]
+       comment: Turn in 10 Bird Eggs
+    - _SideQuest::FollowtheCuccos
+    - _Npc<Bugut>:
+       coord: [1807.42, 218.52, -1027.34]
+       comment: Report Deciphered Slabs
+    - _SideQuest::ATripthroughhistory
+    - _Npc<Ollie>:
+       coord: [1838.28, 222.46, -1024.14]
+       comment: Return to inn
+    - _SideQuest::OutoftheInn
+    - _Npc<Wortsworth>:
+       coord: [1830.72, 221.84, -955.9]
+       comment: SEldin Lanayru Hebra EHebra WNecluda Gerudo Necluda NeclSea NGerudo GHF SHyrule Sokkala
+    - _SideAdv::MessagesfromanAncientEra
+    - _Npc<Lasli>:
+       coord: [1910.09, 233.02, -1002.36]
+       comment: Cook Hylian Rice, Sundelion, Fresh Milk
+    - _SideQuest::GloomBorneIllness
+    
+  - Eventide:
+    - _Warp::Shrine::Zanmik:
+       comment: WARP
+    - _Npc<Uma>:
+       coord: [3346.54, 223.24, -2035.39]
+       comment: Complete Uma's Garden
+    - _SideQuest::UmasGarden
+    - _Npc<Robbie>:
+       coord: [3778, 370, -2128]
+       comment: Upgrade Purah Pad
+    - _SideAdv::HatenoVillageResearchLab
+    - _SideAdv::PresentingHerosPathMode
+    - _SideAdv::PresentingTheTravelMedallion
+    - _SideAdv::PresentingSensor+
+    - _SideAdv::FillingouttheCompendium
+    - _Item<Boat>:
+       coord: [3990.29, 106.26, -2991.82]
+       comment: Escort with ABC
+    - _Npc<Garini>:
+       coord: [2955.09, 106.82, -3492.64]
+       comment: Turn in boat
+    - _SideQuest::AWaytoTradeWashedAway
+    - _Npc<Rozel>:
+       coord: [2880.93, 110.22, -3550.89]
+       comment: Complete Lurelin Resort
+    - _SideQuest::LurelinResortProject
+  
+  - Highland:
+    - _Warp::Shrine::Joku-u:
+       comment: WARP
+    - _Shrine::Joku-usin
+    - _Npc<Cima>:
+       coord: [1545.4, 164.09, -3359.99]
+    - _SideAdv::TheBeastandthePrincess
+    - _Tablet<Floria Falls>:
+       coord: [1731.43, 159.76, -3454.84]
+       comment: Snap Floria Falls
+    - _Npc<Kampo>:
+       coord: [1560.35, 165.97, -3520.51]
+    - _SideQuest::OustingtheGiants
+    - _Npc<Anly>:
+       coord: [1552.92, 166.57, -3530.1]
+    - _SideQuest::APictureforLakesideStable
+    - _Well::LakesideStable
+    - _Shrine::Joju-u-u
+    - _Tablet<Giant White Stallion>:
+       coord: [820, 186.42, -3719.61]
+       comment: Snap
+    - _Npc<Giant White Stallion>:
+       coord: [799.59, 186.42, -3719.61]
+       comment: Ride
+    - _Shrine::Utsushok
+    - Make night and not raining
+    - _Npc<Pyper>:
+       coord: [527.76, 153.69, -3398.91]
+       comment: Turn in 10 Sunset Fireflies
+    - _Well::HighlandStable
+    - _Npc<Haite>:
+       coord: [535.02, 153.33, -3445.56]
+       comment: Begin luring over to Pyper
+    - _Npc<Padok>:
+       coord: [523.51, 153.41, -3446.07]
+       comment: A Picture for Highland Stable
+    - _SideQuest::APictureforHighlandStable
+    - _Npc<Penn>:
+       coord: [504.45, 152.68, -3443.47]
+       comment: Talk twice to send Penn to field
+    - _Npc<Pyper>:
+       coord: [527.76, 153.69, -3398.91]
+       comment: Finish luring Haite over 
+    - _SideAdv::TheFlutePlayersPlan
+    - _Well::HaranLakefront:
+       notes: Follow Penn until you can enter the well
+    - _SideAdv::AnEerieVoice
+    - _Enemy<Monster Forces>:
+       coord: [-56.96, 136.44, -3468.28]
+       comment: Bring Peace to Faron!
+       notes: Dismount horse then return after quest
+    - _SideAdv::BringPeacetoFaron
+    - _Npc<Baddek>:
+       coord: [-692.5, 277.92, -3397.14]
+       comment: Show Horse
+    - _Shrine::Ishokin::Start
+    - _Shrine::Ishokin
+    - _Npc<Barles>:
+       coord: [-1009.54, 325.11, -3583.13]
+       comment: Destroy the Tumbleweeds
+    - _SideQuest::TheGreatTumbleweedPurge
+    - _Npc<Rahdo>:
+       coord: [-1381.37, 574.75, -3366.07]
+       comment: Cold + Heat Endurance Contest
+       notes: Unequip clothes, spawn campfire to pass time; do twice
+    - _SideQuest::ColdEnduranceContest
+    - _SideQuest::HeatEnduranceContest
+    - _Shrine::Kitawak
+    - _Shrine::Siyamotsus:
+       notes: Is in the sky
+    - _Shrine::Motsusis
+    - _SideQuest::TheSouthLomeiProhecy:
+       comment: Clip to Depths, defeat Flux, activate terminal
+  - Plateau 2:
+    - _Warp::Shrine::Otutsum:
+       comment: WARP
+    - _Shrine::Gasas
+    - _Shrine::Turakawak
+    - _Tear::G05
+    - _Shrine::Makurukis
+    - _Npc<Dabi>:
+       coord: [-2923.48, 275.27, 546.43]
+       comment: Turn in picture
+    - _SideQuest::APictureforTabanthaBridgeStable
+    - _Well::TabanthaBridgeStable:
+       comment: Enter well
+    - _Npc<Fera>:
+       coord: [-2947.08, 250.46, 510.84]
+       comment: Start Where are the Wells
+    - _Npc<Penn>:
+       coord: [-2910.76, 274.97, 522.58]
+       comment: Start White Goats Gone Missing
+    - _Npc<Penn>:
+       coord: [-2562, 256.58, 407]
+       comment: Examine bottle
+    - _SideAdv::WhiteGoatsGoneMissing
+    - _Shrine::Sonapan
+    - _Cave::SatoriMountainFoothill00
+    - _Enemy::Hinox::GC04
+    - _Shrine::Usazum::Start
+    - _Shrine::Usazum
+    - _Npc<Stalhorse>:
+       coord: [-1688.05, 227.81, -681.89]
+       comment: Ride towards stable
+    - _Npc<Toffa>:
+       coord: [-1449.91, 137.77, -1253.55]
+       comment: Turn in Stalhorse, mount Deer in trees nearby, turn in deer
+    - _SideQuest::TheHorseGuardsRequest
+    - _Npc<Embry>:
+       coord: [-1442.38, 138.24, -1267.06]
+       comment: Turn in picture
+    - _SideQuest::APictureforOutskirtStable
+    - _Npc<Mastro>:
+       coord: [-1405.81, 137.76, -1263.57]
+       comment: Escort to Fairy Fountain
+    - _Fairy::GreatFairyFountain02
+    - _SideAdv::SerenadetoKaysa
+    - _Well::OutskirtHill
+    - _Well::OutskirtStable:
+       comment: go into well
+    - _Npc<Fera>:
+       coord: [-1454.71, 119.98, -1301.74]
+       comment: Turn in All Wells
+    - _SideQuest::WhereAretheWells
+    - _Npc<Penn>:
+       coord: [-1412.67, 137.5, -1296.43]
+       comment: Start The Beckoning Woman
+    - _Shrine::Tsutsu-um
+    - _Npc<Ralera 1>:
+       coord: [-1356.03, 122.09, -1439.93]
+    - _Npc<Ralera 2>:
+       coord: [-1041.17, 127.55, -1459.25]
+    - _Npc<Ralera 3>:
+       coord: [-1088.28, 251.83, -1371.44]
+    - _Cave::ColiseumRuins00
+    - _Chest::TrousersofAwakening
+    - _SideQuest::MiskosTreasureofAwakeningII
+    - Ascend out
+    - _Shrine::Riogok
+    - _Npc<Ralera>:
+       coord: [-989.8, 190.78, -1527.7]
+       comment: Defeat Yigas
+    - _SideAdv::TheBeckoningWoman
+    - _Cave::GreatPlateauFoothill00
+    - _Shrine::Kyokugon
+    - Ascend out
+    - _Chasm::GreatPlateauNorth:
+       comment: Deposit Magnesis eye into chasm
+    - _Chasm::GreatPlateauEast:
+       comment: Deposit Bombs eye into chasm
+    - _Tear::G09
+    - _Chest::YigaMask
+    - _Chasm::GreatPlateauSouth:
+       comment: Deposit Stasis eye into chasm
+    - _Cave::RiveroftheDeadWaterfall00
+    - _Bubbulfrog::RiveroftheDeadWaterfallCave
+    - _Shrine::Tadarok
+    - Ascend out
+    - _Npc<Botrick>:
+       coord: [-1509.83, 87.23, -2234.8]
+       comment: Save from Lizalfos
+    - _Npc<Quince>:
+       coord: [-1660.77, 89.65, -2013.89]
+       comment: Complete Disaster in Gerudo Canyon
+    - _Cave::MountNabooru01
+    - _Item<Statue>:
+       coord: [-1838.75, 147.18, -1943.96]
+       comment: Deposit Banana
+    - _SideQuest::DisasterinGerudoCanyon
+    - _Chasm::GreatPlateauWest:
+       comment: Deposit Cryonis eye into chasm
+    - Deposit all eyes to the Bargainer
+    - _SideAdv::ACallfromtheDepths
+    
+  - Ring Ruins:
+    - _Warp::Shrine::Jiukoum:
+       comment: WARP
+    - _Npc<Spring of Courage>:
+       coord: [874.84, 125.34, -2359]
+       comment: Deposit Farosh Claw
+    - _SideQuest::GoddessStatueofCourage
+    - Make night
+    - _Chest::ChargedShirt
+    - _Chest::ChargedTrousers
+    - _Chest::ChargedHeaddress
+    - _Npc<Tauro>:
+       coord: [658.36, 124.53, -2735]
+       comment: Deposit a Zonai Charge
+    - _MainQuest::SecretoftheRingRuins
+    - _Npc<Koltin>:
+       coord: [587.62, 217.66, -2680.16]
+       comment: Just talk, no need to do anything
+    - _SideAdv::TheSearchforKoltin
+    
+  - Goddess Statue:
+    - _Warp::Shrine::Mayausiy:
+       comment: WARP
+    - _Npc<Statue>:
+       coord: [-1057.92, 20.77, 2697.54]
+       comment: Make room for White Sword of the Sky
+    - _SideQuest::TheMotherGoddessStatue
+    - _Enemy<Monster Forces>:
+       coord: [-1793.9, 374.36, 2226.77]
+       comment: Bring Peace to Hebra!
+    - _SideAdv::BringPeacetoHebra
+    - _Cave::KopeekiDrifts00
+    - _Shrine::Nouda
+   
+  - Final Memory + MS:
+    - _Warp::Shrine::Gemimik
+    - _Tear::G11
+    - _MainQuest::TheDragonsTears
+    - _Warp::Npc<Master Sword>:
+       coord: [453.76, 1579.32, -636.17]
+       comment: Obtain the Master Sword
+       level: Sky
+    - _MainQuest::RecoveringtheHerosSword
+    - _Chest::AncientHerosAspect
+    - _SideQuest::TheShrineExplorer
+    - Ascend up
+    - _Npc<Steward Construct>:
+       coord: [453.67, 1645.84, -800.44]
+       comment: Complete Legend of GSI
+    - _SideAdv::LegendoftheGreatSkyIsland
+    
+
+  - Hebra Khoga:
+    - _Warp::Shrine::Oromuwak
+    - _Npc<Traysi>:
+       coord: [-3258.5, 224.96, 1762.5]
+       comment: Complete Potential Princess Sightings
+    - _SideAdv::PotentialPrincessSightings
+    - _Npc<Gesane>:
+       coord: [-3296.8, 227.18, 1807.36]
+       comment: Turn in 20 Wood
+    - _SideQuest::TheRitoRopeBridge
+    - Clip Down to the Depths and clip into the Rito Mine. Defeat Khoga
+    - _SideAdv::MasterKohgaoftheYigaClan
+  
+    
+    
