@@ -4,17 +4,15 @@ _project:
   description: All Quests
   authors:
     - BounceSR
-    
+    - DinoTechSR
 _route:
   - Great Sky Island 1:
     - _Special::StartPos Sky<Room of Awakening>
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.74]
        comment: Cog Skip
+       notes: dupe to 22
        line-color: white
-    - _Item<Tree Branch>:
-       coord: [394.97, 1647.94, -1392.77]
-       comment: Pick up
     - _Npc<Steward Construct>:
        coord: [449.86, 1640.83, -1310.45]
        comment: Purah Pad
@@ -34,7 +32,8 @@ _route:
        comment: Pick up at top of the cave
     - _Cave::Bottomless01
     - _Shrine::Gutanbac
-    - _Shrine::In-isa
+    - _Shrine::In-isa:
+       notes: dupe 1 bomb shield and 17 bombs, and fuse rock inside shrine to the MNF. Use only one bomb shield
     - _Shrine::Ukouh
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
@@ -42,7 +41,9 @@ _route:
     - _MainQuest::TheClosedDoor
     - _Warp::ROA:
        comment: WARP
-    - _Shrine::Nachoyah
+    - fuse bomb to shield and swap to a shield with nothing on it
+    - _Shrine::Nachoyah:
+       notes: Shield jump right, surf down the slope, and swap drop the bomb shield (bomb recycle)
     - _Warp::Shrine::Ukouh:
        comment: WARP
     - _Npc<Pedestal>:
@@ -53,6 +54,8 @@ _route:
   - Paraglider:
     - _Chest<Rocket x3>:
        coord: [891.57, 118.09, -541.65]
+    - _Material<Splash Fruit>:
+       coord: [884.24, 116.18, -543.12]
     - _Npc<Josha>:
        coord: [-238.97, 132.32, 147.92]
        comment: To the Kingdom of Hyrule
@@ -77,25 +80,34 @@ _route:
   - Dragonhead:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
+    - .link ([perform UPR] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing)
     - _Item<Fairy>:
        coord: [926.96, 667.61, -2131.03]
-       comment: Pick up
+    - _Material<Fleet Lotus>:
+       coord: [919.49, 113.84, -2504.05]
+    - _Enemy<Construct>:
+       coord: [908.58, 118.24, -2725.57]
+       comment: Pick up zonaite sword
+       notes: only required if jetpack is performed
     - _Cave::Tobio'sHollow00
-    - _Item<Hearty Truffle>:
+    - _Material<Hearty Truffle>:
        coord: [1217.32, 204.05, -2466.95]
        comment: Is to the left after entering open area
+    - _Material<Brightcap>:
+       notes: in the same area
     - _Npc<Tattered Notebook>:
        coord: [1207.04, 202.14, -2489.5]
        comment: Receive Shrine Quest
     - Pick up Zonaite Spears, fuse a Wing or Rocket to one and throw it through the target
-    - DZuggle 8 MNFs and one shield/bow
+    - Keep one spear for spirit temple
+    - DZuggle 9 MNFs 
     - _Shrine::Utojis:
        comment: Blessing
        notes: Pick up Large Zonai Charge (LZC) from chest
     - Ascend out, dupe 5 LZCs
     - _Enemy<Lynel>:
        coord: [1464.46, 311.94, -3036.49]
-       comment: Defeat for both Horns, SLB, Claymore, and Arrows; also chop grass for Hylian Rice nearby
+       comment: Defeat for both Horns, SLB, Claymore, and Arrows
   
   - Tobio:
     - _Dispenser::S02:
@@ -111,32 +123,18 @@ _route:
     - _Warp::Location<Construct Factory>:
         coord: [873,-500,-2211]
     - .link([Perform Construct Factory] https://youtu.be/LG47Nq0lagw)
+    - After Construct Factory, find Farosh and get a Horn (should be west of construct factory)
     - _Material<Zonaite>:
        coord: [1322, -586, -2937]
        notes: do a spirit slide to the pedistal with Zonai Devices, and rocket SE to the zonaite. bomb it and dupe 50
     - _Temple::Spirit
     - _MainQuest::GuidancefromAgesPast
     - _SideQuest::AncientBladesBelow
-  
-  - Plateau 1:
-    - _Warp::Shrine::In-isa:
-       comment: WARP
-    - _Npc<Bargainer Fragment>:
-       coord: [-587.31, 134.42, -1542.53]
-       comment: Break floodgate with rocket arrow and then talk
-    - _Npc<Traveler>:
-       coord: [-979.26, 248.55, -2018.14]
-       comment: Eat Speed Food, and then buy 99 Bananas
-    - _Npc<Temple of Time Statue>:
-       coord: [-823.26, 225.44, -2031.48]
-       comment: Start A Call from the Depths
-     
-  
-  - Depths 1:
-    - Clip down to Autobuild
+    - Clip out of Spirit temple at the grand poe, rocket up to the roof of the depths, and slide to autobuild (plain claymore)
     - _Special::StartPos Depths<Autobuild>:
        notes: Defeat Kohga and pick up chest afterwards
     - Slide or rocket to Frox DC08 (ignore other Frox otw)
+    - when fixing second card, make steering stick build (horizontal + one at 45 degress behind it) save both structures as favorites (first is for terry town)
     - _Enemy::Frox::DC08
     - Slide or rocket to Camera Lightroot
     - _Lightroot::Iayusus
@@ -175,8 +173,12 @@ _route:
     - _Tower::HyruleField
   
   - Hyrule Field Sky:
+    - _Material<Sundelion>:
+       coord: [-1326.34, 1113.48, -1383.13]
     - _Shrine::Jinodok::Start
     - _Shrine::Jinodok
+    - _Material<Dazzlefruit>:
+       coord: [-1272.61, 1114.85, -1497.47]
     - _Tablet::S10
     - _Shrine::Rakashog
     - _Tablet<Sand Sinkhole>:
@@ -198,6 +200,9 @@ _route:
        comment: Turn in 1 Spicy Pepper
     - Clip in above shrine
     - _Shrine::Suariwak
+    - _Material<Ruby>:
+       coord: [-2504.78, 244.06, -1781.56]
+       notes: In chest
     - _Npc<Yiga Blademaster>:
        coord: [-2479.1, 242.97, -1796.44]
        comment: Start Blademaster Quest
@@ -230,14 +235,11 @@ _route:
        comment: Spawn ice and move it into circle
     - _SideQuest::TheIcelessIcehouse
     - _Shrine::Kudanisar
-    - _Cave::WestGerudoUndergroundRuins00
+    - Clip to Naboris Diving Helm
     - _Chest::VahNaborisDivineHelm
     - _Shrine::Mayamats
-    - _Cave::StatueoftheEighthHeroine00
-    - _Chest::TinglesHood:
-       notes: Is covered by sand
     - _Shrine::Otutsum
-    - Ascend out
+    - _Korok::GH13
     - _Tablet<Snap Sword>:
        coord: [-4023.77, 813.94, -955.5]
        comment: Is next to Gleeok
@@ -245,22 +247,23 @@ _route:
     
   - Gerudo Highlands Sky:
     - _Tablet::S08
-    - _Shrine::Mayasiar
+    - _Shrine::Mayasiar 
+    - _Dispenser::S23:
+       notes: grab stabilizers. not needed with jetpack
     - _Shrine::Ga-ahisas
     - _Shrine::Ganos::Start
     - _Shrine::Ganos
     
   
   - Tulin:
-    - _Cave::AncientColumns00:
-       comment: Open with stone switch on pillar
+    - ABC overload clip to The Tunic of Awakening
     - _Chest::TunicofAwakening:
        comment: End of Awakening I
     - _Npc<Misko's Tablet>:
        coord: [-3535.26, 348.06, 390.16]
        comment: Start of Awakening Quest II
     - Ascend out    
-    - _Cave::TanagarCanyonWest00
+    - Clip to Iun-orok
     - _Shrine::Iun-orok
     - _Npc<Eustus>:
        coord: [-3651.02, 223.45, 755.78]
@@ -268,7 +271,8 @@ _route:
     - _SideAdv::TheHornistsDramaticEscape
     - _Cave::GisaCrater00
     - _Shrine::Ikatak::Start
-    - _Shrine::Ikatak
+    - _Shrine::Ikatak:
+       notes: Big Battery in Shrine Chest
     - Ascend out
     - _Shrine::Gatakis
     - _Npc<Tulin>:
@@ -339,6 +343,9 @@ _route:
     - _Well::ElmaKnolls:
        comment: Progress through well OR clip above shrine
     - _Shrine::Tenmaten
+    - _Material<Glowing Cave Fish>:
+       coord: [-577.4, 84.22, 1529.23]
+       notes: use a brightbloom to see the cave fish in the water next to you
     - Ascend out
     - _Cave::YigaClanMarittaBranch00
     - _Chest::YigaTights
@@ -489,6 +496,8 @@ _route:
     - _Npc<Robbie>:
        coord: [-247.84, 124.64, 136.6]
        comment: Send to Hateno!
+    - _Shop::GeneralStore:
+       notes: Buy Hylian Rice, Spples, and Arrows
     - _MainQuest::AMysteryintheDepths
     - _Shrine::Ishodag
     - _Well::MountGustaf
@@ -610,9 +619,10 @@ _route:
     - _Shrine::Jochi-iu
     - _Enemy::Talus::GA02
     - _Chest::YigaArmor
+    - _Shrine::Rasiwak
+    - Vertical Slide to Mogisari
     - _Shrine::Mogisari:
        notes: Is in the sky
-    - _Shrine::Rasiwak
     - _Shrine::Igashuk
     - _SideQuest::TheLomeiLabyrinthIslandProphecy:
        comment: Clip to the Depths, defeat Flux, and activate the terminal
@@ -708,7 +718,6 @@ _route:
        comment: Repair Fossil
     - _SideQuest::EldinsColossalFossil
     - _Shrine::Mayak
-    - _Cave::DeplianBadlands00
     - _Shrine::Minetak
     - Ascend out
     - Clip in
@@ -725,27 +734,7 @@ _route:
   - Thyphlo Ruins Sky:
     - _Enemy::FluxConstruct::SE01
     - _Shrine::Mayam::Start
-    - _Shrine::Mayam
-    - _Npc<Terminal>:
-       coord: [229.56, 2089.86, 2069.67]
-       comment: Complete Dive Challenge
-    - _Shrine::Simosiwak
-   
-  - Korok Forest:  
-    - _Shrine::Ninjis:
-       notes: Is on the surface, dive down
-    - _Shrine::Musanokir
-    - _SideAdv::HestusConcerns
-    - _SideQuest::TheSecretRoom
-    - _SideQuest::WaltonsTreasureHunt
-    - _SideQuest::WhirlySwirlyThings
-    - _Shrine::Pupunke
-    - _Shrine::Sakunbomar
-    - _MainQuest::TrailoftheMasterSword
- 
-  - Tyohpolo Ruins Sky Continued:
-    - _Warp::Shrine::Mayam:
-       comment: WARP
+    - _Shrine::Mayam:
        line-color: lightyellow
     - _Tablet::S09
     - _Shrine::Tenbez
@@ -875,6 +864,9 @@ _route:
        comment: WARP
        line-color: lightgreen
     - _Shrine::Kyononis
+    - _Material<Amber>:
+       coord: [-80.52, 132.73, 489.92]
+       notes: in chest in the ground
     - _Well::HyruleCastleTownRuins
     - _Shrine::Yamiyo
     - _Shrine::Sepapa
@@ -901,6 +893,9 @@ _route:
        coord: [1700, 119.38, -652.14]
        comment: Look up and snap
     - _Well::LanayruWetlands
+    - _Material<Blue Nightshade>:
+       coord: [938.62, 137.29, -264.45]
+       notes: there are many in the forst, grab 1 and dupe 5
     - _Shrine::Tukarok
     - _Enemy<Moblin>:
        coord: [867.94, 131.71, -280.38]
@@ -1001,10 +996,6 @@ _route:
     - _Npc<Sophie + Cece + Cece + Sophie>:
        coord: [3359.61, 225.54, -2137.69]
        comment: Open shop, talk to Cece inside shop, talk again to start mushroom delivery, talk to Sophie outside again
-    - _Npc<Manny + Ivee + Manny>:
-       coord: [3373.55, 225.6, -2131.88]
-       comment: Turn in 10 Frogs
-    - _SideQuest::MannysBeloved
     - _Npc<Sayge>:
        coord: [3409.1, 226.72, -2150.45]
        comment: Click Rework the Paraglider, then talk again and turn in Chuchu picture
@@ -1023,6 +1014,9 @@ _route:
     - Ascend up next to diary
     - _Npc<Diary>:
        coord: [3415.07, 238.58, -2085.43]
+    - _Material<Frog>:
+       coord: [3384.75, 225.62, -2075.9]
+       notes: dupe 10
     - _Npc<Tokk>:
        coord: [3800, 300, -2110]
        comment: Talk to Tokk
@@ -1055,6 +1049,10 @@ _route:
     - _Npc<Sneaky Cece>:
        coord: [3385, 131, -2163]
        comment: Sneak in through window and wait for Cece to enter this silo
+    - _Npc<Manny + Ivee + Manny>:
+       coord: [3373.55, 225.6, -2131.88]
+       comment: Turn in 10 Frogs
+    - _SideQuest::MannysBeloved
     - _Npc<Cece + Sophie + Sophie + Cece>:
        coord: [3359.61, 225.54, -2137.69]
        comment: Do election and then talk to Cece AFTER the election
@@ -1164,7 +1162,14 @@ _route:
     - _Shrine::Tajikats
     - _Shrine::Teniten
     - _Shrine::Kamizun
-  
+    - _Npc<Bargainer Fragment>:
+       coord: [-587.31, 134.42, -1542.53]
+       comment: Break floodgate with rocket arrow and then talk
+    - _Npc<Temple of Time Statue>:
+       coord: [-823.26, 225.44, -2031.48]
+       comment: Start A Call from the Depths
+    - _Chest::YigaMask
+    - _Tear::G09
     - _Well::DeyaVillageRuinsNorth
     - _Well::DeyaVillageRuins
     - _Well::DeyaVillageRuinsEast:
@@ -1183,7 +1188,26 @@ _route:
     - _Shrine::En-oma::Start:
        notes: Is in the sky
     - _Enemy::Gleeok::G08
+    - Take Picture of Whirlpool
     - _Shrine::En-oma
+
+  - Korok Forest Sky:
+    - _Npc<Terminal>:
+       coord: [229.56, 2089.86, 2069.67]
+       comment: Complete Dive Challenge
+    - _Shrine::Simosiwak
+    
+  - Korok Forest:
+    - _Shrine::Ninjis:
+       notes: Is on the surface, dive down
+    - _Shrine::Musanokir
+    - _SideAdv::HestusConcerns
+    - _SideQuest::TheSecretRoom
+    - _SideQuest::WaltonsTreasureHunt
+    - _SideQuest::WhirlySwirlyThings
+    - _Shrine::Pupunke
+    - _Shrine::Sakunbomar
+    - _MainQuest::TrailoftheMasterSword
     
   - Riju 2:
     - _Warp::Shrine::Mayatat:
@@ -1501,6 +1525,9 @@ _route:
     - _Cave::BonéPondEast03
     - _Shrine::Maoikes
     - _Well::TabahlWoods
+    - _Material<Crab>:
+       coord: [2818.5, 120,195]
+    - Vertical Slide up to Tablet
     - _Tablet::S01
     - _Cave::RalisChannel01
     - _Shrine::Joniu::Start
@@ -1716,6 +1743,9 @@ _route:
        coord: [799.59, 186.42, -3719.61]
        comment: Ride
     - _Shrine::Utsushok
+    - _Shop<Beedle>:
+       coord: [486,150,-3378]
+       notes: Buy Arrows AND fireflies
     - Make night and not raining
     - _Npc<Pyper>:
        coord: [527.76, 153.69, -3398.91]
@@ -1766,7 +1796,9 @@ _route:
        comment: Clip to Depths, defeat Flux, activate terminal
   - Plateau 2:
     - _Warp::Shrine::Otutsum:
-       comment: WARP
+       comment: WARP   
+    - _Chest::TinglesHood:
+       notes: Is covered by sand
     - _Shrine::Gasas
     - _Shrine::Turakawak
     - _Tear::G05
@@ -1787,11 +1819,19 @@ _route:
        coord: [-2562, 256.58, 407]
        comment: Examine bottle
     - _SideAdv::WhiteGoatsGoneMissing
+    - _Item<Cooking Pot>:
+       coord: [-2043.2, 395.88, -299.7]
+       notes: sleep to night
     - _Shrine::Sonapan
+    - _Material<Acorn x3>:
+       coord: [-2326.93, 370.94, -641.06]
+       notes: pick up 2 acorns in the woods and 1 just south 
+       comment: Dantz Prized Cows
     - _Cave::SatoriMountainFoothill00
     - _Enemy::Hinox::GC04
     - _Shrine::Usazum::Start
     - _Shrine::Usazum
+   
     - _Npc<Stalhorse>:
        coord: [-1688.05, 227.81, -681.89]
        comment: Ride towards stable
@@ -1834,19 +1874,17 @@ _route:
        coord: [-989.8, 190.78, -1527.7]
        comment: Defeat Yigas
     - _SideAdv::TheBeckoningWoman
-    - _Cave::GreatPlateauFoothill00
+    - Clip to Kyokugon
     - _Shrine::Kyokugon
     - Ascend out
     - _Chasm::GreatPlateauNorth:
        comment: Deposit Magnesis eye into chasm
     - _Chasm::GreatPlateauEast:
        comment: Deposit Bombs eye into chasm
-    - _Tear::G09
-    - _Chest::YigaMask
     - _Chasm::GreatPlateauSouth:
        comment: Deposit Stasis eye into chasm
-    - _Cave::RiveroftheDeadWaterfall00
-    - _Bubbulfrog::RiveroftheDeadWaterfallCave
+    - Clip down to Tadarok Shrine:
+       notes: Camera is cooked for this clip, so if you are not confident that you can pause buffer, just go through entrance
     - _Shrine::Tadarok
     - Ascend out
     - _Npc<Botrick>:
