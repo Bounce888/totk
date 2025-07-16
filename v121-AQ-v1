@@ -168,6 +168,9 @@ _route:
        comment: Complete Camera Work in the Depths
     - _MainQuest::CameraWorkintheDepths
     - _Well::MabeVillageRuins
+    - _Item<Cooking Pot>:
+       coord: [-42.85, 130.6, -223.9]
+       notes: cook 23 speed food for current and 2 for 1.0
     - _Shrine::Jiosin
     - _Enemy<Monster Forces>:
        coord: [-441.12, 156.17, -624.38]
