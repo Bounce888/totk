@@ -33,9 +33,11 @@ _project:
   version: 3.1
 
 _route:
+  - Overview:
+    - What tech is used in the run? .link([See the Readme here] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8)
+    - .link([Splits File] https://drive.google.com/file/d/1zqapWidAdhkRaRNRsuFvyt-jiOSa6WoP/view?usp=drive_link)
   - Great Sky Island:
     - _Special::StartPos Sky<Room of Awakening>:
-       notes: What tech is used in the run? See the Readme .link([here] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8).
     - Cog Skip
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.74]
