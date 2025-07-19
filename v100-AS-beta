@@ -1,0 +1,204 @@
+---
+_config:
+_project:
+  description: All Shrines v4
+
+_route:
+  - Great Sky Island:
+    - _Shrine::Nachoyah:
+       line-color: white
+    - _Shrine::Gutanbac
+    - _Shrine::In-isa
+    - _Shrine::Ukouh
+  
+  - Hylian Shield:
+    - _Chest<Rocket x3>:
+       coord: [891.57, 118.09, -541.65]
+    - _Npc<Josha>:
+       coord: [-238.97, 132.32, 147.92]
+    - _Shrine::Kyononis:
+       comment: Activate only
+    - _Npc<Hoz>:
+       coord: [-334.93, 238.96, 845.94]
+    - _Chest<Hylian Shield>:
+       coord: [-154, 141.78, 1157.37]
+  
+  - Central:
+    - _Warp::Shrine::Nachoyah:
+       comment: WARP
+       line-color: pink
+    - _Item<Fairy>:
+       coord: [926.96, 667.61, -2131.03]
+    - _Shrine::Jochisiu
+    - _Shrine::Jiukoum
+    - _Shrine::Utojis
+    - _Dispenser::S02
+    - _Shrine::Joju-u-u
+    - _Shrine::Joku-u
+    - _Shrine::Joku-usin
+    - _Shrine::Utsushok
+    - _Shrine::Ishokin
+    - _Shrine::Tadarok
+    - _Shrine::Kyokugon
+    - _Shrine::Mayachin
+    - _Shrine::Susuyai 
+    - _Tower::LookoutLanding
+    - _Shrine::Jiosin
+    - _Shrine::Tajikats
+    - _Shrine::Teniten
+    - _Shrine::Kamizun
+    - _Shrine::Susub
+    - _Shrine::En-oma:
+       comment: Clip out, slide to Autobuild
+  
+  - West:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: deepskyblue
+    - _Shrine::Ishodag
+    - _Shrine::Sinakawak
+    - _Shrine::Taki-ihaban
+    - _Shrine::Taunhiy
+    - _Shrine::Runakit
+    - _Shrine::Makurukis
+    - _Shrine::Sonapan
+    - _Shrine::Usazum
+    - _Shrine::Tsutsu-um
+    - _Shrine::Riogok
+    - _Shrine::Jinodok
+    - _Shrine::Rakashog
+    - _Shrine::Siyamotsus
+    - _Shrine::Motsusis
+    - _Shrine::Kitawak
+    - _Shrine::Rakakudaj
+    - _Shrine::Suariwak
+    - _Shrine::Turakamik
+    - _Shrine::Mayatat
+    - _Shrine::Soryotanog
+    - _Shrine::Chichim
+    - _Shrine::Siwakama
+    - _Shrine::Karahatag
+    - _Shrine::Irasak
+    - _Shrine::Miryotanog
+    - _Shrine::Kudanisar
+    - _Shrine::Rotsumamu
+    - _Shrine::Mayamats
+    - _Shrine::Otutsum
+    - _Shrine::Gasas
+    - _Shrine::Turakawak
+    - _Shrine::Mayasiar
+    - _Shrine::Ganos
+    - _Shrine::Ga-ahisas
+    - _Shrine::Iun-orok
+    - _Shrine::Ikatak
+    - _Shrine::Wao-os
+    - _Shrine::Gatakis
+    - _Shrine::Oromuwak
+    - _Shrine::Nouda
+    - _Shrine::Sahirow
+    - _Shrine::Ijo-o
+    - _Shrine::Tauyosipun
+    - _Shrine::Otak
+    - _Shrine::Eutoum
+    - _Shrine::Kahatanaum
+    - _Shrine::Mayaumekis
+    - _Shrine::Rutafu-um
+    - _Shrine::Sisuran
+    - _Shrine::Taninoud
+    - _Shrine::Tenbez
+    - _Shrine::Mayaotaki
+    - _Shrine::Oshozan-u
+    - _Shrine::Orochium
+    - _Shrine::Mayausiy
+    - _Shrine::Kiuyoyou
+    - _Shrine::Tenmaten
+    - _Shrine::Serutabomac
+    - _Shrine::Sepapa
+    - _Shrine::Yamiyo
+    - _Shrine::Ren-iz
+    - _Shrine::Ekochiu
+  
+  - NE Sky:
+    - _Shrine::Kadaunar
+    - _Shrine::Jirutagumac
+    - _Shrine::Igoshon
+    - _Shrine::Natak
+    - _Shrine::Gikaku
+    - _Shrine::Mogisari
+  
+  - North:
+    - _Shrine::Igashuk
+    - _Shrine::Rasiwak
+    - _Shrine::Jochi-iu
+    - _Shrine::Sinatanika
+    - _Shrine::Gemimik
+    - _Shrine::Gatanisis
+    - _Shrine::Rasitakiwak
+    - _Shrine::Jochi-ihiga
+    - _Shrine::Domizuin
+    - _Shrine::Mayachideg
+    - _Shrine::Moshapin
+    - _Shrine::Kisinona
+    - _Shrine::Timawak
+    - _Shrine::Marakuguc
+    - _Shrine::Isisim
+    - _Shrine::Jiotak
+    - _Shrine::Sibajitak
+    - _Shrine::Sitsum
+    - _Shrine::Momosik
+    - _Shrine::Kamatukis
+    - _Shrine::Kimayat
+    - _Shrine::Mayak
+    - _Shrine::Minetak
+    - _Shrine::Kikakin
+    - _Shrine::Sikukuu
+    - _Shrine::Mayam
+    - _Shrine::Simosiwak
+    - _Shrine::Ninjis
+    - _Shrine::Musanokir
+    - _Shrine::Pupunke
+    - _Shrine::Sakunbomar
+    
+  
+  - East:
+    - _Warp::Shrine::Jirutagumac:
+       comment: WARP
+       line-color: orange
+    - _Shrine::Joniu
+    - _Shrine::Mogawak
+    - _Shrine::Ihen-a:
+       comment: Splash entrance
+    - _Shrine::Apogek
+    - _Shrine::Yomizuk
+    - _Shrine::Mayanas
+    - _Shrine::Sihajog
+    - _Shrine::Zakusu
+    - _Shrine::Jogou
+    - _Shrine::O-ogim
+    - _Shrine::Kurakat
+    - _Shrine::Maoikes
+    - _Shrine::Jonsau
+    - _Shrine::Jojon
+    - _Shrine::Tukarok
+    - _Shrine::Morok
+    - _Shrine::Makasura
+    - _Shrine::Josiu
+    - _Shrine::Ukoojisi
+    - _Shrine::Eshos
+    - _Shrine::Tokiy
+    - _Shrine::Yansamin
+    - _Shrine::Kumamayn
+    - _Shrine::Sifumim
+    - _Shrine::Bamitok
+    - _Shrine::Zanmik
+    - _Shrine::Mayahisik
+    - _Shrine::Jikais
+    - _Shrine::Anedamimik
+    - _Shrine::Marari-in:
+       comment: Warp to Joku-usin (west Dragonhead) to complete it. Warp to Ukouh (GSI North) and pick up Hero's Aspect. Warp to Kyononis (castle town) and beat the game. 
+  
+    
+    
+    
+    
+  
