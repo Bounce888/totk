@@ -809,10 +809,6 @@ _route:
        coord: [-1665.01, 339.45, 2540.73]
        comment: Complete The Captured Tent
     - _SideQuest::TheCapturedTent
-    - _Npc<Varke>:
-       coord: [-1648.72, 339.78, 2569.43]
-       comment: Turn in picture
-    - _SideQuest::APictureforSnowfieldStable
    
   - Hebra:  
     - _Warp::Shrine::Gatakis
@@ -1974,6 +1970,10 @@ _route:
        coord: [-1057.92, 20.77, 2697.54]
        comment: Make room for White Sword of the Sky
     - _SideQuest::TheMotherGoddessStatue
+    - _Npc<Varke>:
+       coord: [-1648.72, 339.78, 2569.43]
+       comment: Turn in picture
+    - _SideQuest::APictureforSnowfieldStable
     - _Enemy<Monster Forces>:
        coord: [-1793.9, 374.36, 2226.77]
        comment: Bring Peace to Hebra!
