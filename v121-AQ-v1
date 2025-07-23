@@ -1297,7 +1297,7 @@ _route:
     - _SideAdv::HestusConcerns
     - _SideQuest::TheSecretRoom
     - _SideQuest::WaltonsTreasureHunt:
-       - .link([Video] https://youtu.be/u14aop57Og4?t=17552)
+       notes: .link([Video] https://youtu.be/u14aop57Og4?t=17552)
     - _SideQuest::WhirlySwirlyThings
     - _Shrine::Pupunke
     - _Shrine::Sakunbomar
