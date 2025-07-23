@@ -250,9 +250,9 @@ _route:
        coord: [-2301.11, 462.97, -2426.82]
        comment: Deposit Banana
     - _Cave::GerudoCanyonMine01
-    - _Material<Ice Like>:
-       coord: [-2598.73, 190.84, -2475.32]
-       notes: kill and get ice like stone. use in icehosue for ice
+    - _Tablet<Bokoblin>:
+       coord: [-2616.61, 177.95, -2499.48]
+       comment: Snap
     - _Item<Statue>:
        coord: [-2675.53, 199.38, -2496.61]
        comment: Deposit Banana
@@ -260,6 +260,8 @@ _route:
     - With speed food, buy 3 hyrule bass. drop your 20 bass on the ground and throw a ruby at the bass to get 20 more cooked bass
     - _SideQuest::DecoratewithPassion
     - _Shrine::Mayatat
+    - _Shop::GeneralStore11:
+       Notes: Buy Arrows and Ice Chu Jelly
     - _Npc<Riju>:
        coord: [-3782.48, 137.99, -2639.96]
        comment: Training
@@ -271,6 +273,9 @@ _route:
     - Clip to Naboris Diving Helm
     - _Chest::VahNaborisDivineHelm
     - _Shrine::Mayamats
+    - _Tablet<Chuchu>:
+       coord: [-4489.2, 619.33, -695.24]
+       comment: Snap
     - _Shrine::Otutsum
     - _Korok::GH13
     - _Tablet<Snap Sword>:
@@ -306,6 +311,11 @@ _route:
     - _Shrine::Ikatak::Start
     - _Shrine::Ikatak:
        notes: Big Battery in Shrine Chest
+    - _Item<ToD Night>:
+       coord: [-3945.5,150,1147]
+    - _Tablet<Stalnox>:
+       coord: [-3793.24, -485.34, 1557.11]
+       comment: Snap
     - Ascend out
     - _Shrine::Gatakis
     - _Npc<Tulin>:
@@ -322,6 +332,8 @@ _route:
     - _Item<Ice Fruit x3>:
        coord: [-3224.51, 454.74, 2456.73]
        comment: Pick up
+    - _Cave::TalontoPeak00:
+       notes: grab chillshrooms and dupe to 10
     - _Npc<Verla>:
        coord: [-3216.98, 453.59, 2457.41]
        comment: Turn in 10 Chillshrooms
@@ -357,6 +369,8 @@ _route:
        coord: [-3258.5, 224.96, 1762.5]
        comment: Start Potential Princess Sightings
     - _Shrine::Oromuwak
+    - _Cave::Brightcap00:
+       notes: Go into the cave, get a brightcap, and dupe 10
     - _Npc<Nat>:
        coord: [-2988.54, 304.71, 1657.21]
        comment: Turn in 10 Brightcaps
@@ -443,6 +457,9 @@ _route:
     - _Npc<Spring of Power>:
        coord: [3760.55, 111.16, 2679.37]
        comment: Deposit Dinraal Claw
+    - _Tablet<Goddess Statue>:
+       coord: [3752,150,2676]
+       comment: Snap
     - _SideQuest::GoddessStatueofPower
     - Make raining
     - _Tablet<Rainy Octorok Lake>:
@@ -455,6 +472,8 @@ _route:
     - _Npc<Mattison>:
        coord: [3936.1, 241.83, 1593.1]
        comment: Send walking
+    - _Shop::GeneralStore15:
+       notes: Buy Arrows AND Monster Extract
     - _Tablet<Bell>:
        coord: [3967.125,150,1611.5625]
        comment: Snap
@@ -502,8 +521,12 @@ _route:
        coord: [1931.95, 273.65, 1304.57]
        comment: Snap moon image
     - _Tower::EldinCanyon
+ 
+  - Eldin Canyon Sky:
     - _Shrine::Kadaunar
     - _Tablet::S00
+ 
+  - Eldin Canyon Continued:
     - _Tear::G02
     - _Enemy::Hinox::GZ01
     - _Npc<Kilton>:
@@ -625,6 +648,10 @@ _route:
        coord: [3227.84, 324.6, 1785.56]
        comment: Complete trials, defeat enemies
     - _SideAdv::TheAllCluckingCucco
+    - _Tablet<Aerocuda>:
+       comment: Snap
+       coord: [3458,150,2028]
+       notes: Holding tower Pedistal. Take a picture before you kill
     - _Tower::UlriMountain
   
   - Ulri Mountain Sky:
@@ -898,12 +925,18 @@ _route:
   
   
   - Necluda:
-    - _Warp::Shrine::Kyononis:
+    - _Warp::Tower::LookoutLanding:
        comment: WARP
        line-color: lightgreen
+    - _Shop::GeneralStore:
+       notes: Buy Arrows AND Hylain Rice
     - _Shrine::Kyononis
     - _Well::HyruleCastleTownRuins
     - _Shrine::Yamiyo
+    - _Tablet<Battle Talus>:
+       comment: Snap
+       coord: [317,150,473]
+       notes: Face west and zoom all the way in
     - _Shrine::Sepapa
     - _Npc<Domidak>:
        coord: [599.5, 152, 1282]
@@ -1087,12 +1120,17 @@ _route:
        coord: [3428, 1311, -2083]
        comment: Turn in cheese
     - _SideAdv::ANewSignatureFood
+    - _Item<Campfire>:
+       coord: [3436.875,150,-2103.875]
+       notes: sleep till night
     - _Npc<Sneaky Cece>:
        coord: [3385, 131, -2163]
        comment: Sneak in through window and wait for Cece to enter this silo
     - _Npc<Manny + Ivee + Manny>:
        coord: [3373.55, 225.6, -2131.88]
        comment: Turn in 10 Frogs
+    - _Shop::GeneralStore07:
+       notes: Go into the Shop after talking to Ivee. Buy Arrows, and Hylian Rice
     - _SideQuest::MannysBeloved
     - _Npc<Cece + Sophie + Sophie + Cece>:
        coord: [3359.61, 225.54, -2137.69]
@@ -1135,6 +1173,14 @@ _route:
        comment: Turn in shirt
     - _SideQuest::DadsBlueShirt
     - _Tear::G06
+    - _Enemy<Monster Forces>:
+       coord: [4458.14, 150.2, -3743.46]
+    - _Enemy<Monster Forces>:
+       coord: [4584.86, 150.84, -3520.82]
+    - _Enemy<Monster Forces>:
+       coord: [4618.71, 168, -3716.1]
+    - _Enemy<Monster Forces>:
+       coord: [4678.78, 64.96, -3743.48]
     - _Shrine::Marari-in
     - _SideQuest::SeekingthePirateHideout
     - _Cave::CapeCalesCliffbase00
@@ -1157,8 +1203,13 @@ _route:
     - Ascend out
     - _Cave::CortaLake00
     - _Enemy::Hinox::GF05
-    - _Shrine::Ukoojisi::Start
+ 
+  - Dueling Peaks Sky:
+    - _Shrine::Ukoojisi::Start:
+       level: Sky
     - _Shrine::Ukoojisi
+ 
+  - Dueling Peaks Continued:
     - _Shrine::Eshos
     - _Well::DuelingPeaksStable
     - _Npc<Penn>:
@@ -1377,7 +1428,14 @@ _route:
     - _Shrine::Siwakama
     - _Cave::AncientPrisonRuins00
     - _Shrine::Chichim
+ 
+  - Gerudo Depths:
+    - _Tablet<Frox>:
+       coord: [-3430,-500,-3232]
+       comment: Snap
+       level: Depths
     - _Enemy<Master Kohga>:
+       coord: [-3769,-500,-2830]
        comment: Clip down to the depths and slide to gerudo down to kill Khoga
  
   - Gerudo Canyon Cleanup:
@@ -1475,7 +1533,7 @@ _route:
     - _MainQuest::CluestotheSky
     - _Chest::ZoraHelm:
        coord: [4000, 692.07, 650]
-       notes: Enter through north end, splash sludge covering entrance
+       notes: Enter on the Left Side of the tail. Splash the sludge covering the entrance
     - Defeat Sludge Like with Sidon's Ability
     - _Npc<Yona>:
        coord: [3845.6, 591.74, 576.94]
@@ -1516,6 +1574,7 @@ _route:
        coord: [3291.71, 244.86, 441.43]
        comment: Start A Wife Wafted Away
     - _Shrine::Apogek
+    - _Tear::G08
     - _Cave::TarmPoint00
     - _Npc<Sasan>:
        coord: [4476, 140.2, -804.27]
@@ -1526,7 +1585,6 @@ _route:
     - _SideQuest::TrueTreasure
     - _Shrine::Yomizuk
     - Ascend out
-    - _Tear::G08
   
   - Mount Lanayru Sky:
     - _Shrine::Mayanas::Start
@@ -1544,6 +1602,9 @@ _route:
     - _SideQuest::ABottleCryforHelp
     - Ascend out
     - _Cave::DeepbackBay00
+    - _Tablet<Black Horriblin>: 
+       coord: [4213,150,-2248]
+       comment: Snap
     - _Shrine::Anedamimik
     - Ascend out
     - _Shrine::Jikais
@@ -1762,10 +1823,13 @@ _route:
        comment: Complete Lurelin Resort
     - _SideQuest::LurelinResortProject
   
-  - Highland:
+  - Highland Sky:
     - _Warp::Shrine::Joku-u:
        comment: WARP
+       level: Sky
     - _Shrine::Joku-usin
+ 
+  - Highland:
     - _Npc<Cima>:
        coord: [1545.4, 164.09, -3359.99]
     - _SideAdv::TheBeastandthePrincess
