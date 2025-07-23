@@ -1229,7 +1229,8 @@ _route:
        comment: Defeat enemies
     - _SideAdv::PrincessZeldaKidnapped
     - _Cave::DuelingPeaksSouth00
-    - _Chest::TinglesShirt
+    - _Chest::TinglesShirt:
+       notes: .link([Rock Spots] https://drive.google.com/file/d/1VNpNlJDjCWk9ePrMDVIYLAkkOjfEU-HJ/view?usp=sharing)
     - _SideQuest::MiskosTreasureTwinsManuscript
     - Ascend out
     - _Shrine::Jiukoum
@@ -1295,7 +1296,8 @@ _route:
     - _Shrine::Musanokir
     - _SideAdv::HestusConcerns
     - _SideQuest::TheSecretRoom
-    - _SideQuest::WaltonsTreasureHunt
+    - _SideQuest::WaltonsTreasureHunt:
+       - .link([Video] https://youtu.be/u14aop57Og4?t=17552)
     - _SideQuest::WhirlySwirlyThings
     - _Shrine::Pupunke
     - _Shrine::Sakunbomar
@@ -1303,7 +1305,7 @@ _route:
     
   - Riju 2:
     - _Warp::Shrine::Mayatat:
-       comment: WARP AND DEFEND
+       comment: WARP AND DEFExND
     - _Npc<Boraa>:
        coord: [-3226.39, 129.06, -2517.8]
        comment: Fuse Ruby to Weapon, talk twice
