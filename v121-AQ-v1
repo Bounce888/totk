@@ -1,4 +1,5 @@
 ---
+# When you see a dragon, pick up its claw
 _config:
 _project: 
   description: All Quests
@@ -95,6 +96,10 @@ _route:
        comment: From ruined robot
        notes: Grab on the way to the construct
     - _Chest::ArchaicWarmGreaves
+    - _Material<Spicy Pepper>:
+       coord: [778.18, 1681.52, -1391.44]
+    - _Material<Flint>:
+       coord: [790.68, 1682.9, -1389.64]
     - _Item<Fairy>:
        coord: [926.96, 667.61, -2131.03]
     
@@ -245,13 +250,13 @@ _route:
        coord: [-2301.11, 462.97, -2426.82]
        comment: Deposit Banana
     - _Cave::GerudoCanyonMine01
+    - _Material<Ice Like>:
+       coord: [-2598.73, 190.84, -2475.32]
+       notes: kill and get ice like stone. use in icehosue for ice
     - _Item<Statue>:
        coord: [-2675.53, 199.38, -2496.61]
        comment: Deposit Banana
     - Ascend out
-    - _Npc<Boraa>:
-       coord: [-3226.39, 129.06, -2517.8]
-       comment: Fuse Ruby to Weapon, talk twice
     - With speed food, buy 3 hyrule bass. drop your 20 bass on the ground and throw a ruby at the bass to get 20 more cooked bass
     - _SideQuest::DecoratewithPassion
     - _Shrine::Mayatat
@@ -432,6 +437,8 @@ _route:
     - _Shrine::Momosik::Start
     - _Shrine::Momosik
     - _Shrine::Kimayat
+    - _Cave::SkullLake00
+    - _Chest::FierceDeityMask
     - _Shrine::Kamatukis
     - _Npc<Spring of Power>:
        coord: [3760.55, 111.16, 2679.37]
@@ -448,6 +455,9 @@ _route:
     - _Npc<Mattison>:
        coord: [3936.1, 241.83, 1593.1]
        comment: Send walking
+    - _Tablet<Bell>:
+       coord: [3967.125,150,1611.5625]
+       comment: Snap
     - _Npc<Mattison>:
        coord: [3981.3, 233.38, 1613.63]
        comment: Vaba
@@ -467,14 +477,10 @@ _route:
        coord: [3006.26, 412.1, 1225.11]
        comment: Bring Peace to Akkala!
     - _SideAdv::BringPeacetoAkkala
-    - _Npc<Ozunda>:
-       coord: [2607.23, 253.85, 1137.91]
-       comment: Turn in picture
-    - _SideQuest::APictureforFoothillStable
+    - _Well::FoothillStable
     - _Npc<Penn>:
        coord: [2594, 253.8, 1164.15]
        comment: Start For Our Princess
-    - _Well::FoothillStable
     - _Shrine::Kisinona
     - _Cave::CephlaLake00
     - _Chest::EmberTrousers
@@ -589,6 +595,10 @@ _route:
        coord: [2594, 253.8, 1164.15]
        comment: Complete For Our Princess
     - _SideAdv::ForOurPrincess
+    - _Npc<Ozunda>:
+       coord: [2607.23, 253.85, 1137.91]
+       comment: Turn in picture
+    - _SideQuest::APictureforFoothillStable
     - _Npc<Domidak>:
        coord: [2612, 254.81, 1315.07]
        comment: Buy 3 Tingle Quests
@@ -1247,6 +1257,9 @@ _route:
   - Riju 2:
     - _Warp::Shrine::Mayatat:
        comment: WARP AND DEFEND
+    - _Npc<Boraa>:
+       coord: [-3226.39, 129.06, -2517.8]
+       comment: Fuse Ruby to Weapon, talk twice
     - _Well::KaraKaraBazaar:
        comment: Enter well, break rocks on path
     - _Npc<Ponthos>:
