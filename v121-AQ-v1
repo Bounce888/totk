@@ -289,8 +289,13 @@ _route:
     - _Dispenser::S23:
        notes: grab stabilizers. not needed with jetpack
     - _Shrine::Ga-ahisas
+    - _Dispenser::S00:
+       notes: Hover Stones
     - _Shrine::Ganos::Start
     - _Shrine::Ganos
+    - _Item<Campfire>:
+       coord: [-3368.496753199555,1500,450.48237451187015]
+       notes: Set to Morning. Not needed if its 4-5am
     
   
   - Tulin:
@@ -301,6 +306,10 @@ _route:
        coord: [-3535.26, 348.06, 390.16]
        comment: Start of Awakening Quest II
     - Ascend out    
+    - _Tablet<Ancient Columns>:
+       coord: [-3615,150,461]
+       comment: Snap
+       notes: Face East. Sunrise should be in the picture
     - Clip to Iun-orok
     - _Shrine::Iun-orok
     - _Npc<Eustus>:
@@ -933,6 +942,10 @@ _route:
     - _Shrine::Kyononis
     - _Well::HyruleCastleTownRuins
     - _Shrine::Yamiyo
+    - _Tablet<CHerry Tree>:
+       comment: Snap
+       coord: [319,150,480]
+       notes: Face North
     - _Tablet<Battle Talus>:
        comment: Snap
        coord: [317,150,473]
@@ -1297,7 +1310,7 @@ _route:
     - _SideAdv::HestusConcerns
     - _SideQuest::TheSecretRoom
     - _SideQuest::WaltonsTreasureHunt:
-       notes: .link([Video] https://youtu.be/u14aop57Og4?t=17552)
+       - .link([Video] https://youtu.be/u14aop57Og4?t=17552)
     - _SideQuest::WhirlySwirlyThings
     - _Shrine::Pupunke
     - _Shrine::Sakunbomar
