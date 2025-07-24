@@ -320,12 +320,6 @@ _route:
     - _Shrine::Ikatak::Start
     - _Shrine::Ikatak:
        notes: Big Battery in Shrine Chest
-    - _Item<ToD Night>:
-       coord: [-3945.5,150,1147]
-    - _Tablet<Stalnox>:
-       coord: [-3793.24, -485.34, 1557.11]
-       comment: Snap
-    - Ascend out
     - _Shrine::Gatakis
     - _Npc<Tulin>:
        coord: [-3592.50, 318.50, 1801.25]
@@ -657,10 +651,6 @@ _route:
        coord: [3227.84, 324.6, 1785.56]
        comment: Complete trials, defeat enemies
     - _SideAdv::TheAllCluckingCucco
-    - _Tablet<Aerocuda>:
-       comment: Snap
-       coord: [3458,150,2028]
-       notes: Holding tower Pedistal. Take a picture before you kill
     - _Tower::UlriMountain
   
   - Ulri Mountain Sky:
