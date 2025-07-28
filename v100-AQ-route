@@ -76,15 +76,15 @@ _route:
        coord: [-335.05, 129.43, 391.17]
        notes: dupe 120
     - _Tower::LookoutLanding
-    - _Material<Hyrule bass>:
-       coord: [-270.18, 121.99, 159.6]
-       notes: Pick up and dupe 20
     - _Npc<Purah>:
        coord: [-251.26, 126.18, 155.25]
        comment: Start Regional Phenomena (dive back down)
     - _Npc<Josha>:
        coord: [-248.72, 126.36, 148.83]
        comment: Start Camera Work in the Depths
+    - _Npc<Scorpis>:
+       coord: [-258.32, 127.4, 100.7]
+       comment: Open the Emergency Shelter
     - _Shop::ArmorShop:
        notes: Sell 3 topaz and buy the Hylian Tunic and Hylian Hood. 
   
@@ -256,7 +256,11 @@ _route:
        comment: (only if low)
     - _Shrine::Tsutsu-um
     - _Cave::ColiseumRuins00
-    - _Chest::TrousersofAwakening
+    - _Npc<Misko Tablet>:
+       coord: [-1156.73, 140.47, -1284.05]
+       comment: Start for Awakening Quest 3
+    - _Chest::TrousersofAwakening:
+       comment: End of Awakening II
     - _SideQuest::MiskosTreasureofAwakeningII
     - Ascend out
     - _Well::AquameLake
@@ -363,12 +367,13 @@ _route:
     
   
   - Hebra 1:
-    - ABC overload clip to The Tunic of Awakening
-    - _Chest::TunicofAwakening:
-       comment: End of Awakening I
+    - Stand on switch to open door
+    - _Cave::AncientColumns00
     - _Npc<Misko's Tablet>:
        coord: [-3535.26, 348.06, 390.16]
-       comment: Start of Awakening Quest II
+       comment: Hints towards Awakening II
+    - _Chest::TunicofAwakening:
+       comment: End of Awakening I
     - Ascend out    
     - _Tablet<Ancient Columns>:
        coord: [-3615,150,461]
@@ -716,8 +721,7 @@ _route:
        comment: End Escort
     - _SideQuest::TheAncientCityGorondia!
     - _Cave::GoronbiRiver00
-    - _Chest::EmberShirt:
-       comment: Completes Awakening 0
+    - _Chest::EmberShirt
     - _Npc<Misko's Tablet>:
        coord: [1382.41, 400, 2255.35]
        comment: Hints towards Awakening I
@@ -910,26 +914,21 @@ _route:
   
   
   - Wetland Stable:
-    - _Warp::Tower::LookoutLanding:
+    - _Warp::Shrine::Kyononis:
        comment: WARP
        line-color: lightgreen
-    - _Npc<Josha>:
-       coord: [-248.72, 126.36, 148.83]
-       comment: Send to mural, repair balloon
-    - _Npc<Robbie>:
-       coord: [-247.84, 124.64, 136.6]
-       comment: Send to Hateno!
-    - _MainQuest::AMysteryintheDepths
-    - _Shrine::Yamiyo
-    - _Tablet<CHerry Tree>:
-       comment: Snap
-       coord: [319,150,480]
-       notes: Face North
-    - _Tablet<Battle Talus>:
-       comment: Snap
-       coord: [317,150,473]
-       notes: Face west and zoom all the way in
+    - _Shrine::Kyononis
     - _Well::HyruleCastleTownRuins
+    - _Tablet<Battle Talus>:
+       coord: [125, 500, 530]
+       comment: Snap
+    - _Tablet<Bokoblin>:
+       coord: [150, 500, 530]
+       comment: Snap       
+    - _Tablet<Cherry Tree>:
+       coord: [175, 500, 530]
+       comment: Snap
+    - _Shrine::Yamiyo
     - _Shrine::Sepapa
     - _Npc<Domidak>:
        coord: [599.5, 152, 1282]
@@ -1267,26 +1266,6 @@ _route:
     - _Shrine::En-oma
 
   - Riju:
-    - _Warp::Tower::GerudoCanyon:
-       comment: WARP
-    - _Shrine::Turakamik
-    - _Npc<Malena>:
-       coord: [-2726.13, 167.9, -2335.33]
-       comment: Turn in Gleeok Gut
-    - _SideQuest::GleeokGuts
-    - _Npc<Piaffe>:
-       coord: [-2802.75, 135.44, -2225]
-       notes: Break crates -> turn in a picture -> turn in the other picture
-    - _SideQuest::PiaffePackedAway
-    - _SideQuest::APicturefortheClosedStableI
-    - _SideQuest::APicturefortheClosedStableII
-    - _Npc<Penn>:
-       coord: [-2817, 134.87, -2236.5]
-       comment: Start The Blocked Well
-    - _Well::GerudoCanyon:
-       comment: Enter well, defeat the 5 enemies; cutscene will warp you out after
-    - _SideAdv::TheBlockedWell
-    
     - _Warp::Shrine::Mayatat:
        comment: WARP AND DEFEND
     - _Npc<Boraa>:
@@ -1352,7 +1331,7 @@ _route:
     - _Warp::Npc<Riju>:
        coord: [-3887.35, 157.48, -2968]
        comment: Riju of Gerudo Town
-       line-color: yellow
+       line-color: thistle
     - _MainQuest::RijuofGerudoTown
     - _Npc<Isha>:
        coord: [-3828.5, 149.5, -2885]
@@ -1416,61 +1395,6 @@ _route:
     - _Enemy<Master Kohga>:
        coord: [-3311, 52.1, -3006.5]
        comment: Clip to the Depths, slide to Gerudo Mine and defeat Kohga
-
-  - Korok Forest Sky:
-    - _Warp::Shrine::Mayam:
-       comment: WARP
-    - _Npc<Terminal>:
-       coord: [229.56, 2089.86, 2069.67]
-       comment: Complete Dive Challenge
-    - _Shrine::Simosiwak
-    
-  - Korok Forest Surface:
-    - _Shrine::Ninjis:
-       notes: Is on the surface, dive down
-    - Slide through fog 
-    - _Npc<Maca>:
-       coord: [379.65, 251.5, 2083.58]
-       comment: Receive Shrine Quest
-    - _Npc<Hestu>:
-       coord: [419.49, 248.71, 2119.06]
-       comment: Turn in 1 Korok Seed
-    - _SideAdv::HestusConcerns
-    - _Shrine::Musanokir
-    - _Npc<Kula>:
-       coord: [415.49, 248.71, 2145]
-       comment: Turn in Water/Sand Sinkhole Picture    
-    - _SideQuest::WhirlySwirlyThings
-    - Ascend into Secret Room
-    - _Npc<Oaki>:
-       coord: [413.12, 285.21, 2177.78]
-       comment: Turn in 2 Giant Brightbloom Seeds and 4 Blue Nightshades; is inside tree
-    - _SideQuest::TheSecretRoom
-    - Ascend up top
-    - _Npc<Walton>:
-       coord: [417.59, 334.03, 2180.27]
-       comment: Talk once, grab spear and sword (make room), talk again
-    - _Npc<Deku Tree>:
-       coord: [425, 300, 2155]
-       comment: Trail of the Master Sword 
-    - _MainQuest::TrailoftheMasterSword 
-    - _Item<Forest Dweller's Shield>:
-       coord: [422.01, 263.88, 2157.42]
-       notes: Is above entrance to interior, make room 
-    - _Npc<Damia>:
-       coord: [564.99, 264.83, 2160.65]
-       comment: Turn in 5 Golden Apples
-    - _Shrine::Pupunke::Start
-    - _Shrine::Pupunke
-    - _Npc<Walton>:
-       coord: [417.59, 334.03, 2180.27]
-       comment: Turn in the shield, make room for bow reward
-    - _SideQuest::WaltonsTreasureHunt
-    - _Enemy::Talus::GT03
-    - _Shrine::Sakunbomar::Start
-    - _Shrine::Sakunbomar
-    
-    
     
   - Sidon:
     - _Warp::Shrine::Kisinona:
@@ -1575,7 +1499,7 @@ _route:
     - _Warp::Npc<Sidon>:
        coord: [3336, 270.42, 544.73]
        comment: Sidon of the Zora
-       line-color: thistle
+       line-color: yellow
     - _MainQuest::SidonoftheZora
     - Reload autosave and obtain quest from Sidon
     - _Npc<Sidon>:
@@ -1707,17 +1631,19 @@ _route:
   - Castle:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
-    - _Npc<Scorpis>:
-       coord: [-258.32, 127.4, 100.7]
-       comment: Open + enter the Emergency Shelter
-    - _Npc<Burmano>:
-       coord: [-267.22, 113.5, 100.23]
-       comment: Today's Menu
-    - _SideQuest::TodaysMenu
-    - _Npc<Jerrin + Horned Statue + Jerrin>:
-       coord: [-254.03, 114.3, 112.48]
-       comment: Talk to Jerrin, trade anything with Horned Statue, then talk to Jerrin again
+    - _Npc<Josha>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Send to mural, repair balloon
+    - _Npc<Robbie>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Send to Hateno!
+    - _MainQuest::AMysteryintheDepths
+    - _Npc<Horned Statue>:
+       comment: Trade heart, get heart back
     - _SideAdv::ADealWiththeStatue
+    - _Npc<Jerrin>:
+       coord: [-254.03, 114.3, 112.48]
+       comment: Show Horned Statue
     - _SideAdv::WhoGoesThere
     - _Npc<Gralens>:
        coord: [-252.07, 113.63, 86.17]
@@ -1728,6 +1654,10 @@ _route:
     - _SideQuest::UnknownSkyGiant
     - _SideQuest::UnknownThreeHeadedMonster
     - _SideQuest::UnknownHugeSilhouette
+    - _Npc<Burmano>:
+       coord: [-267.22, 113.5, 100.23]
+       comment: Today's Menu
+    - _SideQuest::TodaysMenu
     - Ascend out
     - _Npc<Wortsworth>:
        coord: [-270.35, 124, 66.24]
@@ -1748,7 +1678,6 @@ _route:
        coord: [-233.5, 131.94, 153.43]
        comment: Crisis at Hyrule Castle, Regional Phenomenon
     - _MainQuest::RegionalPhenomena
-    - _Shrine::Kyononis
     - _Enemy<Monster Forces>:
        coord: [-162.25, 390.86, 887.86]
        comment: Bokoblins + Boss Boko
@@ -1844,9 +1773,66 @@ _route:
     - _Shrine::Turakawak
     - _Shrine::Gasas
     
+    
+  - Korok Forest Sky:
+    - _Warp::Shrine::Mayam:
+       comment: WARP
+    - _Npc<Terminal>:
+       coord: [229.56, 2089.86, 2069.67]
+       comment: Complete Dive Challenge
+    - _Shrine::Simosiwak
+    
+  - Korok Forest Surface:
+    - _Shrine::Ninjis:
+       notes: Is on the surface, dive down
+    - Slide through fog 
+    - _Npc<Maca>:
+       coord: [379.65, 251.5, 2083.58]
+       comment: Receive Shrine Quest
+    - _Npc<Hestu>:
+       coord: [419.49, 248.71, 2119.06]
+       comment: Turn in 1 Korok Seed
+    - _SideAdv::HestusConcerns
+    - _Shrine::Musanokir
+    - _Npc<Kula>:
+       coord: [415.49, 248.71, 2145]
+       comment: Turn in Water/Sand Sinkhole Picture    
+    - _SideQuest::WhirlySwirlyThings
+    - Ascend into Secret Room
+    - _Npc<Oaki>:
+       coord: [413.12, 285.21, 2177.78]
+       comment: Turn in 2 Giant Brightbloom Seeds and 4 Blue Nightshades; is inside tree
+    - _SideQuest::TheSecretRoom
+    - Ascend up top
+    - _Npc<Walton>:
+       coord: [417.59, 334.03, 2180.27]
+       comment: Talk once, grab spear and sword (make room), talk again
+    - _Npc<Deku Tree>:
+       coord: [425, 300, 2155]
+       comment: Trail of the Master Sword 
+    - _MainQuest::TrailoftheMasterSword 
+    - _Item<Forest Dweller's Shield>:
+       coord: [422.01, 263.88, 2157.42]
+       notes: Is above entrance to interior, make room 
+    - _Npc<Damia>:
+       coord: [564.99, 264.83, 2160.65]
+       comment: Turn in 5 Golden Apples
+    - _Shrine::Pupunke::Start
+    - _Shrine::Pupunke
+    - _Npc<Walton>:
+       coord: [417.59, 334.03, 2180.27]
+       comment: Turn in the shield, make room for bow reward
+    - _SideQuest::WaltonsTreasureHunt
+    - _Enemy::Talus::GT03
+    - _Shrine::Sakunbomar::Start
+    - _Shrine::Sakunbomar
+    
+    
+    
   - Eventide:
     - _Warp::Shrine::Zanmik:
        comment: WARP
+       line-color: turquoise
     - _Npc<Uma>:
        coord: [3346.54, 223.24, -2035.39]
        comment: Complete Uma's Garden
@@ -2046,6 +2032,23 @@ _route:
        comment: Complete The Yiga Clan Exam
     - _SideAdv::TheYigaClanExam
     - Ascend out
+    - _Shrine::Turakamik
+    - _Npc<Malena>:
+       coord: [-2726.13, 167.9, -2335.33]
+       comment: Turn in Gleeok Gut
+    - _SideQuest::GleeokGuts
+    - _Npc<Piaffe>:
+       coord: [-2802.75, 135.44, -2225]
+       notes: Break crates -> turn in a picture -> turn in the other picture
+    - _SideQuest::PiaffePackedAway
+    - _SideQuest::APicturefortheClosedStableI
+    - _SideQuest::APicturefortheClosedStableII
+    - _Npc<Penn>:
+       coord: [-2817, 134.87, -2236.5]
+       comment: Start The Blocked Well
+    - _Well::GerudoCanyon:
+       comment: Enter well, defeat the 5 enemies; cutscene will warp you out after
+    - _SideAdv::TheBlockedWell
     - _Tear::G04
     - _Shrine::Rotsumamu
     - _Npc<Mimos>:
@@ -2056,7 +2059,6 @@ _route:
   - Great Sky Island 2:
     - _Warp::Shrine::Gemimik:
        comment: WARP
-       line-color: turquoise
     - _Tear::G11
     - _MainQuest::TheDragonsTears
     - _Warp::Npc<Master Sword>:
