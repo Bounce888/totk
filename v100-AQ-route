@@ -13,8 +13,9 @@ _route:
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.74]
        comment: Cog Skip
-       notes: dupe to 22
        line-color: white
+    - Dupe 22 Wings
+    - Enter the Title Cutscene
     - _Npc<Steward Construct>:
        coord: [449.86, 1640.83, -1310.45]
        comment: Purah Pad
@@ -71,7 +72,7 @@ _route:
        coord: [-154, 141.78, 1157.37]
     - _Warp::Shrine::Kyononis:
        comment: WARP
-    - _Material<Topaz>:
+    - _Chest<Topaz>:
        coord: [-335.05, 129.43, 391.17]
        notes: dupe 120
     - _Tower::LookoutLanding
@@ -90,47 +91,43 @@ _route:
   - UPR:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
-    - .link([perform UPR] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing)
-    - _Material<Small Zonai Charge>:
-       coord: [765.31, 1693.12, -1337.38]
-       comment: From ruined robot
-       notes: Grab on the way to the construct
+    - If doing UPR (optional), do it now (.link([guide] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing))
     - _Chest::ArchaicWarmGreaves
-    - _Material<Spicy Pepper>:
-       coord: [778.18, 1681.52, -1391.44]
     - _Material<Flint>:
        coord: [790.68, 1682.9, -1389.64]
+    - _Material<Wood>:
+       coord: [778.18, 1681.52, -1385.44]
+       comment: Chop down tree with sword
+    - _Material<Spicy Pepper>:
+       coord: [778.18, 1681.52, -1391.44]
     - _Item<Fairy>:
        coord: [926.96, 667.61, -2131.03]
     
-  - Dragonhead:
+  - Mask Approach:
     - _Cave::Tobio'sHollow00
-    - _Material<Hearty Truffle>:
-       coord: [1217.32, 204.05, -2466.95]
-       comment: Is to the left after entering open area
-    - _Material<Brightcap>:
-       notes: in the same area
     - _Npc<Tattered Notebook>:
        coord: [1207.04, 202.14, -2489.5]
        comment: Receive Shrine Quest
-    - Pick up Zonaite Spears, fuse a Wing or Rocket to one and throw it through the target
-    - Keep one spear for spirit temple
-    - DZuggle 9 MNFs 
+    - _Item<Zonaite Spear x2>:
+       coord: [1206.21, 201.92, -2496.47]
+       comment: Pick up
+       notes: Fuse a Wing or Rocket to one and throw it through the target; keep other and use as primary weapon
     - _Shrine::Utojis:
        comment: Blessing
        notes: Pick up Large Zonai Charge (LZC) from chest
     - Ascend out, dupe 5 LZCs
-    - _Material<Fleet Lotus>:
-       coord: [919.49, 113.84, -2504.05]
     - _Enemy<Construct>:
        coord: [908.58, 118.24, -2725.57]
        comment: Pick up zonaite sword
-       notes: only required if jetpack is performed
+       notes: For jetpack ONLY
     - _Enemy<Lynel>:
        coord: [1464.46, 311.94, -3036.49]
        comment: Defeat for both Horns, SLB, Claymore, and Arrows
+  
+  - Mask Delivery:
     - _Dispenser::S02:
        comment: Use 2 LZCs for everything dropped
+       level: Sky
     - _Shrine::Joku-u:
        comment: Blessing
        notes: Pick up Diamond from chest
@@ -139,16 +136,20 @@ _route:
   
   - Depths 1:
     - _Warp::Npc<Construct Factory>:
-        coord: [873,-500,-2211]
-    - .link([Perform Construct Factory] https://youtu.be/LG47Nq0lagw)
-    - After Construct Factory, find Farosh and get a Horn (should be west of construct factory)
+        coord: [873, -500, -2211]
+        comment: (.link([vod] https://youtu.be/LG47Nq0lagw))
+        notes: Keep an eye out on Farosh for a Horn; Fuse Stone Slab to Claymore
     - _Material<Zonaite>:
        coord: [1322, -586, -2937]
        notes: do a spirit slide to the pedistal with Zonai Devices, and rocket SE to the zonaite. bomb it and dupe 50
     - _Temple::Spirit
     - _MainQuest::GuidancefromAgesPast
+    - _Npc<Mining Construct>:
+       coord: [1334, -632, -3367.41]
+       comment: Turn in 50 Zonaite for Ancient Blade
     - _SideQuest::AncientBladesBelow
-    - Clip out of Spirit temple at the grand poe, rocket up to the roof of the depths, and slide to autobuild (plain claymore)
+    - Clip out of Spirit temple at the grand poe, rocket up to the roof of the depths, and slide to autobuild (plain claymore):
+       notes: For non 1.0, warp to Fuse and dive down chasm
     - _Special::StartPos Depths<Autobuild>:
        notes: Defeat Kohga and pick up chest afterwards
     - Slide or rocket to Frox DC08 (ignore other Frox otw)
@@ -159,6 +160,7 @@ _route:
     - _Npc<Robbie>:
        coord: [-803.81, -365.4, -452.58]
        comment: Take a picture of statue and show Robbie
+    - Progress towards army and snap Frox on the way
     - Clip down to the final entry point into army and obtain an autosave
     - Complete army through until ghoma:
        notes: 1.0 only
@@ -184,6 +186,13 @@ _route:
     - _MainQuest::CameraWorkintheDepths
     - _Well::MabeVillageRuins:
        comment: Enter well
+    - _Item<Brightcap>:
+       coord: [-71.78, 116.21, -148.34]
+       comment: Pick up
+    - _Item<Glowing Cave Fish x3>:
+       coord: [-46.63, 111.39, -163.05]
+       comment: Pick up THREE
+    - Ascend out
     - _Shrine::Jiosin
     - _Item<Cooking Pot>:
        coord: [-328.93, 131.42, -333.68]
@@ -192,7 +201,11 @@ _route:
        coord: [-441.12, 156.17, -624.38]
        comment: Bring Peace to Hyrule Field!
     - _SideAdv::BringPeacetoHyruleField
+    - _Chest<Amber>:
+       coord: [-726.44, 132.04, -552.59]
+       comment: Pick up
     - _Shrine::Susuyai
+    - Clip down
     - _Chest::FierceDeityBoots
     - Ascend out
     - _Well::MountDaphnes
@@ -200,8 +213,29 @@ _route:
     - _Item<Golden Apple + Apple>:
        coord: [-1927.54, 336.32, -335.24]
        comment: Pick up
+    - _Item<Acorn x3>:
+       coord: [-2326.93, 370.94, -641.06]
+       comment: Pick up THREE
+    - _Item<Fleet Lotus Seeds>:
+       coord: [-2562.91, 307, -659.52]
+       comment: Pick up
+    - _Item<Hyrule Bass>:
+       coord: [-2546.8, 305.54, -646.59]
+       comment: Pick up
     - _Item<Bright Eyed Crab>:
        coord: [-2504.24, 305.92, -585.35]
+       comment: Pick up
+    - _Item<Hot Footed Frog>:
+       coord: [-2505.09, 306.12, -591.73]
+       comment: Pick up
+    - _Item<Sunset Firefly>:
+       coord: [-2506.52, 308.89, -631.57]
+       comment: Pick up
+    - _Item<Blue Nightshade>:
+       coord: [-2483.86, 313.47, -641.93]
+       comment: Pick up
+    - _Item<Chillshroom>:
+       coord: [-2194.22, 269.35, -811.83]
        comment: Pick up
     - _Cave::SatoriMountainFoothill00
     - _Enemy::Hinox::GC04
@@ -225,12 +259,14 @@ _route:
     - _Tower::HyruleField
   
   - Hyrule Field Sky:
-    - _Material<Sundelion>:
+    - _Item<Sundelion>:
        coord: [-1326.34, 1113.48, -1383.13]
+       comment: Pick up
+    - _Item<Dazzlefruit>:
+       coord: [-1354.01, 1114.76, -1386.08]
+       comment: Pick up
     - _Shrine::Jinodok::Start
     - _Shrine::Jinodok
-    - _Material<Dazzlefruit>:
-       coord: [-1272.61, 1114.85, -1497.47]
     - _Tablet::S10
     - _Shrine::Rakashog
     - _Tablet<Sand Sinkhole>:
@@ -252,9 +288,9 @@ _route:
        comment: Turn in 1 Spicy Pepper
     - Clip in above shrine
     - _Shrine::Suariwak
-    - _Material<Ruby>:
+    - _Chest<Ruby>:
        coord: [-2504.78, 244.06, -1781.56]
-       notes: In chest
+       notes: Is in chest towards main room
     - _Npc<Yiga Blademaster>:
        coord: [-2479.1, 242.97, -1796.44]
        comment: Start Blademaster Quest
@@ -354,9 +390,6 @@ _route:
        comment: Break rocks blocking cave
     - _SideQuest::TheBlockedCave
     - _Shrine::Sahirow
-    - _Item<Ice Fruit x3>:
-       coord: [-3224.51, 454.74, 2456.73]
-       comment: Pick up
     - _Cave::TalontoPeak00:
        notes: grab chillshrooms and dupe to 10
     - _Npc<Verla>:
@@ -417,9 +450,6 @@ _route:
     - _Well::ElmaKnolls:
        comment: Progress through well OR clip above shrine
     - _Shrine::Tenmaten
-    - _Material<Glowing Cave Fish>:
-       coord: [-577.4, 84.22, 1529.23]
-       notes: use a brightbloom to see the cave fish in the water next to you
     - Ascend out
     - _Cave::YigaClanMarittaBranch00
     - _Chest::YigaTights
@@ -629,87 +659,11 @@ _route:
        comment: Escort to fairy fountain
     - _Fairy::GreatFairyFountain03
     - _SideAdv::SerenadetoaGreatFairy
-    - _Chasm::MinshiWoods:
-       comment: Save Korok Forest; Do Not Ascend
-    
-  - New Serenne Stable:
-    - _Warp::Tower::LookoutLanding:
-       comment: WARP
-    - _Npc<Josha>:
-       coord: [-248.72, 126.36, 148.83]
-       comment: Send to mural, repair balloon
-    - _Npc<Robbie>:
-       coord: [-247.84, 124.64, 136.6]
-       comment: Send to Hateno!
-    - _Shop::GeneralStore:
-       notes: Buy Hylian Rice, Spples, and Arrows
-    - _MainQuest::AMysteryintheDepths
-    - _Shrine::Ishodag
-    - _Well::MountGustaf
-    - _Well::CarokBridge
-    - _Npc<Impa>:
-       coord: [-1313.14, 201.35, 823.5]
-       comment: Repair balloon and launch up
-    - _Npc<Horse>:
-       coord: [-1230.65, 197.84, 776.71]
-       comment: Ride to stable
-    - _Npc<Zumi>:
-       coord: [-1327.81, 190.99, 724.63]
-       comment: Repair wheels and turn in horse
-    - _SideQuest::HorseDrawnDreams
-    - _Well::NewSerenneStable
-    - _Npc<Penn>:
-       coord: [-1349.11, 191.08, 732.73]
-       comment: Start The Beast and the Princess
-    - _Npc<Sprinn>:
-       coord: [-1354.77, 191.56, 730.96]
-       comment: Register as a Pony Points Member
-    - _Shrine::Sinakawak
-    - _Tablet<Geoglyph>:
-       coord: [-1361, 191.5, 724]
-       comment: Snap from on top of stable
-    - _Npc<Sprinn>:
-       coord: [-1354.77, 191.56, 730.96]
-       comment: Turn in picture
-    - _SideQuest::APictureforNewSerenneStable
-    - _Tear::G00
-    - _MainQuest::ImpaandtheGeoglyphs
-    - _Cave::Lindor'sBrow00
-    - _Shrine::Taki-ihaban
-    - Ascend out
-    - _Tower::Lindor'sBrow
-  
-  - Lindor's Brow Sky:
-    - _Npc<Diving Challenge>:
-       coord: [-2215.91, 1746.12, 933.67]
-       comment: Complete Dive Challenge
-    - _Shrine::Taunhiy
-  
-  - Tabantha Bridge Stable:
-    - _Cave::ThundraPlateau00:
-       comment: Clip
-    - _Chest::MaskofAwakening:
-       comment: End of Awakening III, tablet nearby does nothing
-    - _SideQuest::MiskosTreasureofAwakeningIII
-    - _Shrine::Runakit
-    - _Shrine::Makurukis
-    - _Npc<Dabi>:
-       coord: [-2923.48, 275.27, 546.43]
-       comment: Turn in picture
-    - _SideQuest::APictureforTabanthaBridgeStable
-    - _Well::TabanthaBridgeStable
-    - _Npc<Penn>:
-       coord: [-2910.76, 274.97, 522.58]
-       comment: Start White Goats Gone Missing
-    - _Npc<Penn>:
-       coord: [-2562, 256.58, 407]
-       comment: Examine bottle
-    - _SideAdv::WhiteGoatsGoneMissing
-    - _Tear::G05
-    - _Shrine::Turakawak
-    - _Shrine::Gasas
+    - _Chasm::MinshiWoods
+    - _Enemy<Phantom Ganon>:
+       comment: (not drawn) Save Korok Forest
     - _Temple::Fire:
-       comment: Warp back to Goron City, do Moragia; dive down and talk to Yunobo; then progress to Fire Temple and complete it
+       comment: (not drawn) Warp to Goron City and do Moragia; talk to Yunobo in the Depths; then progress through Fire Temple
        hide-icon-on-map: true
   
     
@@ -871,7 +825,7 @@ _route:
     - _SideQuest::LegacyoftheRito
     - _Npc<Molli>:
        coord: [-3617.09, 320.35, 1789.5]
-       comment: Turn in 1 Ice Fruit
+       comment: Turn in 1 Ice Chuchu Jelly
     - _Npc<Bedoli>:
        coord: [-3655.16, 320.26, 1762.85]
        comment: Turn in 3 Cave Fish
@@ -943,6 +897,13 @@ _route:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
        line-color: lightgreen
+    - _Npc<Josha>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Send to mural, repair balloon
+    - _Npc<Robbie>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Send to Hateno!
+    - _MainQuest::AMysteryintheDepths
     - _Shop::GeneralStore:
        notes: Buy Arrows AND Hylain Rice
     - _Shrine::Yamiyo
@@ -1015,8 +976,12 @@ _route:
     - _Well::BottomlessPond
     - _Shrine::Morok
     - _Tower::SahasraSlope
+  
+  - Sahasra Slope Sky:
     - _Shrine::Josiu::Start
     - _Shrine::Josiu
+  
+  - Kakariko Village:
     - _Npc<Deciphered Slab>:
        coord: [1634.51, 323.95, -1177.73]
        comment: Read Notebook
@@ -1034,15 +999,6 @@ _route:
     - _Tablet<Calamity Mural>:
        coord: [1773.18, 235.31, -981.2]
        comment: Snap inside Impa's House
-    - _Npc<Ollie>:
-       coord: [1733.95, 305.69, -901.37]
-       comment: Drop a Hearty Truffle over slab
-    - _Npc<Deciphered Slab>:
-       coord: [1737.12, 305.96, -900.39]
-       comment: Read Notebook (is the northern notebook of the two on the platform)
-    - _Npc<Deciphered Slab>:
-       coord: [1901.46, 305.32, -810.25]
-       comment: Read Notebook
     - _Well::KakarikoVillage
     - _Npc<Deciphered Slab>:
        coord: [1937.84, 272.63, -1080.23]
@@ -1055,8 +1011,6 @@ _route:
        coord: [2166.09, 214.5, -1379.43]
        comment: Send to Stable Trotters
     - _SideAdv::HoneyBeeMine
-    - _Shrine::Yansamin:
-       notes: Is in the sky
     - _Enemy<Monster Forces>:
        coord: [2305.38, 121.23, -1838.43]
        comment: Defeat for Bring Peace to Necluda
@@ -1066,36 +1020,39 @@ _route:
     - _Shrine::Tokiy
     - Ascend out
     - _Tower::RabellaWetlands
-    - _Tablet::S06
-    - _Tablet::S07
-    - _Well::Zelda'sSecret:
-       comment: Enter Well
-    - _Npc<Diary>:
-       coord: [3307.49, 219.15, -2297.56]
-       comment: Start Champion's Tunic Quest    
-    - _Well::HatenoVillageSouth
-    - _Shrine::Zanmik
-    - _Well::HatenoVillageEast
-    - _Well::HatenoVillageNorth
+    
+  - Rabella Wetlands Sky:
+    - _Enemy::FluxConstruct::SF01
+    - _Shrine::Kumamayn::Start
+    - _Shrine::Kumamayn
+    - _Enemy<Monster Forces>:
+       comment: Lurelin
+       notes: Only if NOT on v1.0
+  
+  - Hateno and Lurelin:
     - Make noon
+    - _Npc<Sophie + Cece + Cece + Sophie>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Open shop, talk to Cece inside shop, talk again to start mushroom delivery, talk to Sophie outside again
+    - _Npc<Manny + Ivee + Manny>:
+       coord: [3373.55, 225.6, -2131.88]
+       comment: Turn in 10 Frogs
+    - _SideQuest::MannysBeloved
+    - _Npc<Leop>:
+       coord: [3325.66, 225.66, -2153.96]
+       comment: Give Shroom
+    - _Npc<Tamana>:
+       coord: [3342.79, 218.85, -2083.32]
+       comment: Give Shroom
+    - _Npc<Medda>:
+       coord: [3380.11, 225.72, -2104.59]
+       comment: Give Shroom
+    - _Well::HatenoVillageNorth
     - _Npc<Symin>:
        coord: [3366.91, 235.29, -1969.32]
        comment: Show Calamity Mural and Hylian Rice, Goron Spice, Monster Extract
     - _SideQuest::TeachMeaLessonI
     - _SideQuest::TeachMeaLessonII
-    - _Npc<Sophie + Cece + Cece + Sophie>:
-       coord: [3359.61, 225.54, -2137.69]
-       comment: Open shop, talk to Cece inside shop, talk again to start mushroom delivery, talk to Sophie outside again
-    - _Npc<Sayge>:
-       coord: [3409.1, 226.72, -2150.45]
-       comment: Click Rework the Paraglider, then talk again and turn in Chuchu picture
-    - _SideQuest::PhotographingaChuchu
-    - _Npc<Leop>:
-       coord: [3325.66, 225.66, -2153.96]
-    - _Npc<Medda>:
-       coord: [3380.11, 225.72, -2104.59]
-    - _Npc<Tamana>:
-       coord: [3342.79, 218.85, -2083.32]
     - _Npc<Uma>:
        coord: [3346.54, 223.24, -2035.39]
        comment: Start Garden, use anything, give shroom
@@ -1104,9 +1061,7 @@ _route:
     - Ascend up next to diary
     - _Npc<Diary>:
        coord: [3415.07, 238.58, -2085.43]
-    - _Material<Frog>:
-       coord: [3384.75, 225.62, -2075.9]
-       notes: dupe 10
+       comment: Read Reede's Diary
     - _Npc<Tokk>:
        coord: [3800, 300, -2110]
        comment: Talk to Tokk
@@ -1116,9 +1071,6 @@ _route:
     - _Npc<Koyin>:
        coord: [3632, 300, -2048]
        comment: UH bottle to dock, give shroom
-    - _Material<Squirrel>:
-       coord: [3636.47, 283.83, -2068.23]
-       notes: kill for an acorn, dupe 3
     - _Npc<Dantz>:
        coord: [3623.63, 283.43, -2078.87]
        comment: Turn in 3 Acorns
@@ -1127,33 +1079,29 @@ _route:
        coord: [3633.99, 283.81, -2100.48]
        comment: Receive Cheese
     - _SideAdv::ALettertoKoyin
+    - _Well::HatenoVillageEast
+    - _Shrine::Zanmik
     - _Npc<Worten>:
        coord: [3470, 300, -2120]
        comment: Is on dock
-    - Make night
+    - _Item<Campfire>:
+       coord: [3436.875,150,-2103.875]
+       notes: sleep till night
     - _Npc<Clavia>:
        coord: [3443, 236.83, -2091.19]
        comment: Turn in Diary
-    - _Item<Campfire>:
-       coord: [3436.875,150,-2103.875]
-       notes: sleep till noon
     - _SideAdv::ReedesSecret
     - _Npc<Reede>:
        coord: [3428, 1311, -2083]
        comment: Turn in cheese
     - _SideAdv::ANewSignatureFood
-    - _Item<Campfire>:
-       coord: [3436.875,150,-2103.875]
-       notes: sleep till night
+    - _Npc<Sayge>:
+       coord: [3409.1, 226.72, -2150.45]
+       comment: Click Rework the Paraglider, then talk again and turn in Chuchu picture
+    - _SideQuest::PhotographingaChuchu
     - _Npc<Sneaky Cece>:
        coord: [3385, 131, -2163]
-       comment: Sneak in through window and wait for Cece to enter this silo
-    - _Npc<Manny + Ivee + Manny>:
-       coord: [3373.55, 225.6, -2131.88]
-       comment: Turn in 10 Frogs
-    - _Shop::GeneralStore07:
-       notes: Go into the Shop after talking to Ivee. Buy Arrows, and Hylian Rice
-    - _SideQuest::MannysBeloved
+       comment: Sneak in through window and wait for Cece to enter this silo  
     - _Npc<Cece + Sophie + Sophie + Cece>:
        coord: [3359.61, 225.54, -2137.69]
        comment: Do election and then talk to Cece AFTER the election
@@ -1163,15 +1111,24 @@ _route:
     - _Npc<Nack>:
        coord: [3306.43, 216.05, -2121.05]
        comment: Defeat Stal enemies with Dazzlefruit
-    - _SideQuest::HomegrowninHateno
-
-    - _Enemy::FluxConstruct::SF01
-    - _Shrine::Kumamayn::Start
-    - _Shrine::Kumamayn:
-       notes: Is in the sky
-    - _Item<15 Logs>:
-       coord: [2962.42, 245.27, -2953.8]
-       comment: Escort with ABC; do not un-ABC until after all monsters are defeated
+    - _SideQuest::HomegrowninHateno    
+    - _Well::HatenoVillageSouth
+    - _Well::Zelda'sSecret:
+       comment: Enter Well
+    - _Npc<Diary>:
+       coord: [3307.49, 219.15, -2297.56]
+       comment: Start Champion's Tunic Quest  
+    - Ascend or climb out
+    - _Cave::CapeCalesCliffbase00
+    - _Chest::TinglesTights
+    - Ascend out
+    - _Cave::MountDunsel01
+    - _Shrine::Bamitok
+    - Ascend out
+    - _Shrine::Sifumim
+    - _Item<10 Logs>:
+       coord: [2644.83, 191.69, -3284.4]
+       comment: Escort 
     - _Enemy<Monster Forces>:
        coord: [2950, 113.54, -3380]
        comment: Defeat all monsters
@@ -1179,7 +1136,7 @@ _route:
        comment: Enter for remaining Boko
     - _Npc<Bolson>:
        coord: [2901.19, 112.39, -3415.15]
-       comment: Cancel ABC for Logs, turn in Logs and 20 Hylian Rice; repair all the buildings      
+       comment: Turn in 10 Logs + 2 Logs by Shore + 3 Logs by Cows + 20 Hylian Rice; repair all the buildings      
     - _SideAdv::RuffianInfestedVillage
     - _SideAdv::LurelinVillageRestorationProject
     - _Npc<Ralera>:
@@ -1194,29 +1151,6 @@ _route:
        coord: [2946.75, 108.68, -3453.03]
        comment: Turn in shirt
     - _SideQuest::DadsBlueShirt
-    - _Tear::G06
-    - _Enemy<Monster Forces>:
-       coord: [4458.14, 150.2, -3743.46]
-    - _Enemy<Monster Forces>:
-       coord: [4584.86, 150.84, -3520.82]
-    - _Enemy<Monster Forces>:
-       coord: [4618.71, 168, -3716.1]
-    - _Enemy<Monster Forces>:
-       coord: [4678.78, 64.96, -3743.48]
-    - _Shrine::Marari-in
-    - Ascend out
-    - _Npc<Sesami>:
-       coord: [4515.17, 107.01, -3501.46]
-       comment: Turn in Monster Forces completion
-    - _SideQuest::SeekingthePirateHideout
-    - _Cave::CapeCalesCliffbase00
-    - _Chest::TinglesTights
-    - _SideQuest::MiskosTreasurePirateManuscript
-    - Ascend out
-    - _Cave::MountDunsel01
-    - _Shrine::Bamitok
-    - Ascend out
-    - _Shrine::Sifumim
     - Make Morning
     - _Tablet<Sunrise>:
        coord: [2589.7, 341.3, -3596.08]
@@ -1229,13 +1163,16 @@ _route:
     - Ascend out
     - _Cave::CortaLake00
     - _Enemy::Hinox::GF05
+    - Ascend out
  
-  - Dueling Peaks Sky:
+  - Popla Foothills Sky:
+    - _Tablet::S06
+    - _Shrine::Yansamin
     - _Shrine::Ukoojisi::Start:
        level: Sky
     - _Shrine::Ukoojisi
  
-  - Dueling Peaks Continued:
+  - Dueling Peaks Stable:
     - _Shrine::Eshos
     - _Well::DuelingPeaksStable
     - _Npc<Penn>:
@@ -1257,9 +1194,12 @@ _route:
     - _Cave::DuelingPeaksSouth00
     - _Chest::TinglesShirt:
        notes: .link([Rock Spots] https://drive.google.com/file/d/1VNpNlJDjCWk9ePrMDVIYLAkkOjfEU-HJ/view?usp=sharing)
-    - _SideQuest::MiskosTreasureTwinsManuscript
     - Ascend out
     - _Shrine::Jiukoum
+    - _Npc<Steward Construct>:
+       coord: [944.5, 122.85, -1908.7]
+       comment: Receive Shrine Quest
+       notes: Make ice with the Frost Emitter; shrink each to fit in slot
     - _Shrine::Jochisiu
     - _Well::SouthNabiLake
     - _Tear::G03
@@ -1305,7 +1245,9 @@ _route:
     - _Shrine::En-oma::Start:
        notes: Is in the sky
     - _Enemy::Gleeok::G08
-    - Take Picture of Whirlpool
+    - _Tablet<Water Sinkhole>:
+       coord: [-47.47, 145, -2520]
+       comment: Snap
     - _Shrine::En-oma
 
   - Riju:
@@ -1330,7 +1272,7 @@ _route:
     - _SideAdv::TheBlockedWell
     
     - _Warp::Shrine::Mayatat:
-       comment: WARP AND DEFExND
+       comment: WARP AND DEFEND
     - _Npc<Boraa>:
        coord: [-3226.39, 129.06, -2517.8]
        comment: Fuse Ruby to Weapon, talk twice
@@ -1456,7 +1398,7 @@ _route:
     - _Cave::AncientPrisonRuins00
     - _Shrine::Chichim
     - _Enemy<Master Kohga>:
-       comment: Clip down to the depths and slide to gerudo down to kill Khog
+       comment: (not drawn) Clip to the Depths, slide to Gerudo Mine and defeat Kohga
 
   - Korok Forest Sky:
     - _Warp::Shrine::Mayam:
@@ -1528,6 +1470,8 @@ _route:
        coord: [2612, 254.81, 1315.07]
        comment: Buy 3 Tingle Quests
     - _SideQuest::MiskosTreasureHeroinesManuscript
+    - _SideQuest::MiskosTreasureTwinsManuscript
+    - _SideQuest::MiskosTreasurePirateManuscript
     - _Cave::LakeIntenoch00
     - _Shrine::Moshapin::Start
     - _Shrine::Moshapin
@@ -1676,14 +1620,16 @@ _route:
     - _Cave::LanayruRoadSouth00
     - _Shrine::O-ogim::Start
     - _Shrine::O-ogim
-    - Make morning, spin handle
+    - Make morning
+    - _Npc<Steward Construct>:
+       coord: [2399.95, 259.9, -520.23]
+       comment: Receive Shrine Quest
+       notes: Spin handle such that the hollow "T" is in the front; insert board on left side and wait until 5 55am
     - _Shrine::Kurakat
     - _Cave::BonéPondEast03
     - _Shrine::Maoikes
     - _Well::TabahlWoods
-    - _Material<Crab>:
-       coord: [2818.5, 120,195]
-    - Vertical Slide up to Tablet
+    - Up Slide
     - _Tablet::S01
     - _Cave::RalisChannel01
     - _Shrine::Joniu::Start
@@ -1691,7 +1637,7 @@ _route:
     - Ascend out
     - _Npc<Bazz>:
        coord: [2841, 482.17, 583.63]
-       comment: Use a splash fruit; make room for Zora Spear and keep the spear until after Water Temple
+       comment: Use a splash fruit; make room for Zora Spear
     - _SideQuest::MiredinMuck
     - _Tower::UplandZorana
   
@@ -1814,8 +1760,74 @@ _route:
     - _Chest::ChampionsLeathers:
        notes: Light torches with Fire Fruit
     - _SideQuest::ANewChampionsTunic
+  
+  - New Serenne Stable:
+    - _Shrine::Ishodag
+    - _Well::MountGustaf
+    - _Well::CarokBridge
+    - _Npc<Impa>:
+       coord: [-1313.14, 201.35, 823.5]
+       comment: Repair balloon and launch up
+    - _Npc<Horse>:
+       coord: [-1230.65, 197.84, 776.71]
+       comment: Ride to stable
+    - _Npc<Zumi>:
+       coord: [-1327.81, 190.99, 724.63]
+       comment: Repair wheels and turn in horse
+    - _SideQuest::HorseDrawnDreams
+    - _Well::NewSerenneStable
+    - _Npc<Penn>:
+       coord: [-1349.11, 191.08, 732.73]
+       comment: Start The Beast and the Princess
+    - _Npc<Sprinn>:
+       coord: [-1354.77, 191.56, 730.96]
+       comment: Register as a Pony Points Member
+    - _Shrine::Sinakawak
+    - _Tablet<Geoglyph>:
+       coord: [-1361, 191.5, 724]
+       comment: Snap from on top of stable
+    - _Npc<Sprinn>:
+       coord: [-1354.77, 191.56, 730.96]
+       comment: Turn in picture
+    - _SideQuest::APictureforNewSerenneStable
+    - _Tear::G00
+    - _MainQuest::ImpaandtheGeoglyphs
+    - _Cave::Lindor'sBrow00
+    - _Shrine::Taki-ihaban
+    - Ascend out
+    - _Tower::Lindor'sBrow
+  
+  - Lindor's Brow Sky:
+    - _Npc<Diving Challenge>:
+       coord: [-2215.91, 1746.12, 933.67]
+       comment: Complete Dive Challenge
+    - _Shrine::Taunhiy
+  
+  - Tabantha Bridge Stable:
+    - _Cave::ThundraPlateau00:
+       comment: Clip
+    - _Chest::MaskofAwakening:
+       comment: End of Awakening III, tablet nearby does nothing
+    - _SideQuest::MiskosTreasureofAwakeningIII
+    - _Shrine::Runakit
+    - _Shrine::Makurukis
+    - _Npc<Dabi>:
+       coord: [-2923.48, 275.27, 546.43]
+       comment: Turn in picture
+    - _SideQuest::APictureforTabanthaBridgeStable
+    - _Well::TabanthaBridgeStable
+    - _Npc<Penn>:
+       coord: [-2910.76, 274.97, 522.58]
+       comment: Start White Goats Gone Missing
+    - _Npc<Penn>:
+       coord: [-2562, 256.58, 407]
+       comment: Examine bottle
+    - _SideAdv::WhiteGoatsGoneMissing
+    - _Tear::G05
+    - _Shrine::Turakawak
+    - _Shrine::Gasas
     
-  - Faron 2:
+  - Eventide:
     - _Warp::Shrine::Zanmik:
        comment: WARP
     - _Npc<Uma>:
@@ -1830,6 +1842,8 @@ _route:
     - _SideAdv::PresentingTheTravelMedallion
     - _SideAdv::PresentingSensor+
     - _SideAdv::FillingouttheCompendium
+    - Up Slide
+    - _Tablet::S07
     - _Cave::DeepbackBay00
     - _Shrine::Anedamimik
     - Ascend out
@@ -1850,10 +1864,30 @@ _route:
        coord: [2880.93, 110.22, -3550.89]
        comment: Complete Lurelin Resort
     - _SideQuest::LurelinResortProject
+    - _Tear::G06
+    - _Enemy<Monster Forces>:
+       coord: [4458.14, 150.2, -3743.46]
+    - _Enemy<Monster Forces>:
+       coord: [4584.86, 150.84, -3520.82]
+    - _Enemy<Monster Forces>:
+       coord: [4618.71, 168, -3716.1]
+    - _Enemy<Monster Forces>:
+       coord: [4678.78, 64.96, -3743.48]
+    - _Shrine::Marari-in
+    - Ascend out
+    - _Npc<Sesami>:
+       coord: [4515.17, 107.01, -3501.46]
+       comment: Turn in Monster Forces completion
+    - _SideQuest::SeekingthePirateHideout
+  
+  - Highland Stable Sky:
     - _Warp::Shrine::Joku-u:
        comment: WARP
+       level: Sky
     - Open the 10-Heart Door
     - _Shrine::Joku-usin
+  
+  - Highland Stable Surface:
     - _Npc<Cima>:
        coord: [1545.4, 164.09, -3359.99]
     - _SideAdv::TheBeastandthePrincess
@@ -2035,18 +2069,19 @@ _route:
        
     - _Warp::Shrine::Makasura:
        comment: WARP
-    - _Npc<Trissa>:
-       coord: [1789.04, 221.07, -1029.58]
-       comment: Turn in 10 Bird Eggs
-    - _SideQuest::FollowtheCuccos
-    - _Npc<Bugut>:
-       coord: [1807.42, 218.52, -1027.34]
-       comment: Report Deciphered Slabs
-    - _SideQuest::ATripthroughhistory
     - _Npc<Ollie>:
-       coord: [1838.28, 222.46, -1024.14]
-       comment: Return to inn
-    - _SideQuest::OutoftheInn
+       coord: [1733.95, 305.69, -901.37]
+       comment: Drop a Hearty Truffle over slab
+    - _Npc<Deciphered Slab>:
+       coord: [1737.12, 305.96, -900.39]
+       comment: Read Notebook (is the northern notebook of the two on the platform)
+    - _Npc<Deciphered Slab>:
+       coord: [1901.46, 305.32, -810.25]
+       comment: Read Notebook
+    - _Tablet<Ring Ruins>:
+       coord: [1813.5, 216, -927]
+       comment: Let Calip yap and then snap the slab 
+       notes: If not doing clips ONLY
     - _Npc<Wortsworth>:
        coord: [1830.72, 221.84, -955.9]
        comment: SEldin Lanayru Hebra EHebra WNecluda Gerudo Necluda NeclSea NGerudo GHF SHyrule Sokkala
@@ -2055,6 +2090,18 @@ _route:
        coord: [1910.09, 233.02, -1002.36]
        comment: Cook Hylian Rice, Sundelion, Fresh Milk
     - _SideQuest::GloomBorneIllness
+    - _Npc<Ollie>:
+       coord: [1838.28, 222.46, -1024.14]
+       comment: Return to inn
+    - _SideQuest::OutoftheInn
+    - _Npc<Bugut>:
+       coord: [1807.42, 218.52, -1027.34]
+       comment: Report Deciphered Slabs
+    - _SideQuest::ATripthroughhistory
+    - _Npc<Trissa>:
+       coord: [1789.04, 221.07, -1029.58]
+       comment: Turn in 10 Bird Eggs
+    - _SideQuest::FollowtheCuccos
     
     - _Warp::Shrine::Jiukoum:
        comment: WARP
