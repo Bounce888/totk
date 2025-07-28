@@ -91,7 +91,8 @@ _route:
   - UPR:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
-    - If doing UPR (optional), do it now (.link([guide] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing))
+    
+    - For UPR (optional) do it now (.link([guide] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing))
     - _Chest::ArchaicWarmGreaves
     - _Material<Flint>:
        coord: [790.68, 1682.9, -1389.64]
@@ -118,8 +119,7 @@ _route:
     - Ascend out, dupe 5 LZCs
     - _Enemy<Construct>:
        coord: [908.58, 118.24, -2725.57]
-       comment: Pick up zonaite sword
-       notes: For jetpack ONLY
+       notes: For Jetpack ONLY
     - _Enemy<Lynel>:
        coord: [1464.46, 311.94, -3036.49]
        comment: Defeat for both Horns, SLB, Claymore, and Arrows
@@ -134,47 +134,45 @@ _route:
     - Ascend out, clip into mask room
     - _Chasm::TobiosHollow
   
-  - Depths 1:
+  - Mineru:
     - _Warp::Npc<Construct Factory>:
         coord: [873, -500, -2211]
         comment: (.link([vod] https://youtu.be/LG47Nq0lagw))
         notes: Keep an eye out on Farosh for a Horn; Fuse Stone Slab to Claymore
-    - _Material<Zonaite>:
+    - _Item<Square Stone Slab>:
+       coord: [844.28, -452.35, -2161.08]
+       comment: Fuse to Claymore
+    - Do a spirit slide to the pedistal with Zonai Devices, and rocket SE to the zonaite. bomb it and dupe 50
+    - _Item<Zonaite>:
        coord: [1322, -586, -2937]
-       notes: do a spirit slide to the pedistal with Zonai Devices, and rocket SE to the zonaite. bomb it and dupe 50
     - _Temple::Spirit
     - _MainQuest::GuidancefromAgesPast
     - _Npc<Mining Construct>:
        coord: [1334, -632, -3367.41]
        comment: Turn in 50 Zonaite for Ancient Blade
     - _SideQuest::AncientBladesBelow
-    - Clip out of Spirit temple at the grand poe, rocket up to the roof of the depths, and slide to autobuild (plain claymore):
-       notes: For non 1.0, warp to Fuse and dive down chasm
+    - Clip out near Grand Poe and slide to Central Mine:
+       notes: For v1.0 ONLY; other versions warp to Fuse and use the chasm
     - _Special::StartPos Depths<Autobuild>:
-       notes: Defeat Kohga and pick up chest afterwards
-    - Slide or rocket to Frox DC08 (ignore other Frox otw)
-    - when fixing second card, make steering stick build (horizontal + one at 45 degress behind it) save both structures as favorites (first is for terry town)
-    - _Enemy::Frox::DC08
-    - Slide or rocket to Camera Lightroot
+       notes: Favorite demo vehicle build; make and favorite two-stick build now as well (one flat, other at 45 degrees behind)
+    - _Enemy<Central Kohga>:
+       coord: [-727.19, -414.31, -1857.57]
+       comment: Defeat
+    - Slide or rocket to lightroot near Robbie
     - _Lightroot::Iayusus
     - _Npc<Robbie>:
        coord: [-803.81, -365.4, -452.58]
-       comment: Take a picture of statue and show Robbie
-    - Progress towards army and snap Frox on the way
-    - Clip down to the final entry point into army and obtain an autosave
-    - Complete army through until ghoma:
-       notes: 1.0 only
-    - drop UPR shield, and fuse a Ghoma rock to a different shield:
-       notes: 1.0 only
-    - Unequip shield and pick up UPR shield. zuggle both and reload autosave before army:
-       notes: 1.0 only
-    - immediately drop shield, pickup ghoma shield, and unequip. Pick up UPR shield and make a manual save:
-       notes: 1.0 only
+       comment: Take a picture of statue and show Robbie 
+    - Slide or rocket to Frox; snap, then defeat
+    - _Tablet<Frox>:
+       coord: [126.5, -371.01, -812.5]
+       comment: Snap
+    - _Enemy::Frox::DC08
+    - Slide or rocket to northern wall, clip to army
     - _Enemy<Demon Dragon>:
        coord: [-249.22, -2366.88, 731.27]
        comment: Beat the game
-    - _MainQuest::DestroyGanondorf
-    - _MainQuest::FindPrincessZelda
+       notes: For v1.0, .link([smuggle a Gohma Rock out of army] https://docs.google.com/document/d/1hinXPMFKBybjzEvfylpBzFR-PTndqVj27EuykYG45Ps/edit?tab=t.0#heading=h.30eqo9oti2a5)
     
   - Hyrule Field:
     - _Warp::Tower::LookoutLanding:
@@ -184,14 +182,7 @@ _route:
        coord: [-248.72, 126.36, 148.83]
        comment: Complete Camera Work in the Depths
     - _MainQuest::CameraWorkintheDepths
-    - _Well::MabeVillageRuins:
-       comment: Enter well
-    - _Item<Brightcap>:
-       coord: [-71.78, 116.21, -148.34]
-       comment: Pick up
-    - _Item<Glowing Cave Fish x3>:
-       coord: [-46.63, 111.39, -163.05]
-       comment: Pick up THREE
+    - _Well::MabeVillageRuins
     - Ascend out
     - _Shrine::Jiosin
     - _Item<Cooking Pot>:
@@ -248,8 +239,22 @@ _route:
        coord: [-1449.91, 137.77, -1253.55]
        comment: Turn in Stalhorse, mount Deer in trees nearby, turn in deer
     - _SideQuest::TheHorseGuardsRequest
+    - _Npc<Embry>:
+       coord: [-1442.38, 138.24, -1267.06]
+       comment: Register as a Pony Points member
+    - _Well::OutskirtStable:
+       comment: Enter well
+    - _Npc<Fera>:
+       coord: [-1454.71, 119.98, -1301.74]
+       comment: Send to Lookout Landing
+    - _Item<Brightcap>:
+       coord: [-1455.71, 120.66, -1306.24]
+       comment: Pick up
+    - _Item<Glowing Cave Fish>:
+       comment: Pick up
+    - _Item<Fairy>:
+       comment: (only if low)
     - _Shrine::Tsutsu-um
-    - _Shrine::Riogok
     - _Cave::ColiseumRuins00
     - _Chest::TrousersofAwakening
     - _SideQuest::MiskosTreasureofAwakeningII
@@ -265,7 +270,8 @@ _route:
     - _Item<Dazzlefruit>:
        coord: [-1354.01, 1114.76, -1386.08]
        comment: Pick up
-    - _Shrine::Jinodok::Start
+    - _Shrine::Jinodok::Start:
+       notes: Favorite the Shrine Crystal build
     - _Shrine::Jinodok
     - _Tablet::S10
     - _Shrine::Rakashog
@@ -403,7 +409,7 @@ _route:
        coord: [-3022.67, 664.12, 2748.73]
        comment: Snipe and then defeat enemies
     
-  - Wind Temple:
+  - Tulin:
     - _Npc<Tulin>:
        coord: [-2859.5, 1622.57, 2987.5]
        comment: Talk to at ship
@@ -565,8 +571,10 @@ _route:
     - _Shrine::Mogisari:
        notes: Is in the sky
     - _Shrine::Igashuk
-    - _SideQuest::TheLomeiLabyrinthIslandProphecy:
-       comment: Clip to the Depths, defeat Flux, and activate the terminal
+    - _Enemy::FluxConstruct::DA01:
+       comment: Clip to the Depths; defeat Flux; then activate the terminal
+    - _Npc<Terminal>
+    - _SideQuest::TheLomeiLabyrinthIslandProphecy
   
   - Foothill Stable:
     - _Warp::Tower::UlriMountain:
@@ -586,14 +594,21 @@ _route:
     - _Npc<Mattison>:
        coord: [3936.1, 241.83, 1593.1]
        comment: Send walking
-    - _Shop::GeneralStore15:
-       notes: Buy Arrows AND Monster Extract
-    - _Tablet<Bell>:
-       coord: [3967.125,150,1611.5625]
-       comment: Snap
     - _Npc<Mattison>:
        coord: [3981.3, 233.38, 1613.63]
        comment: Vaba
+    - _Tablet<Tarrey Town Bell>:
+       coord: [3967.125,150,1611.5625]
+       comment: Snap
+       notes: Upgrade to full stamina now if needed
+    - _Shop::GeneralStore15:
+       notes: Buy Monster Extract AND Arrows
+    - _Item<Cooking Pot>:
+       coord: [3943.63, 233.37, 1618.7]
+       comment: Cook Dubious Food (for Moza)
+    - _Item<Cooking Pot>:
+       coord: [3943.63, 233.37, 1618.7]
+       comment: Cook Hylian Rice, Goron Spice, Monster Extract (for Hateno)
     - _Npc<Mattison>:
        coord: [3936, 400, 1610]
        comment: Send to Hudson; use Wings to block railcar
@@ -659,15 +674,14 @@ _route:
        comment: Escort to fairy fountain
     - _Fairy::GreatFairyFountain03
     - _SideAdv::SerenadetoaGreatFairy
-    - _Chasm::MinshiWoods
     - _Enemy<Phantom Ganon>:
-       comment: (not drawn) Save Korok Forest
-    - _Temple::Fire:
-       comment: (not drawn) Warp to Goron City and do Moragia; talk to Yunobo in the Depths; then progress through Fire Temple
-       hide-icon-on-map: true
+       coord: [1059.43, 254.87, 1668.1]
+       comment: Enter chasm here and save Korok Forest
   
-    
-    
+  - Yunobo:
+    - _Temple::Fire:
+       coord: [1109.43, 254.87, 1668.1]
+       comment: Warp to Goron City and do Moragia; talk to Yunobo in the Depths; then progress through Fire Temple
     
   - Return to Goron City:
     - _Warp::Npc<Yunobo>:
@@ -889,8 +903,10 @@ _route:
     - _Tear::G07
     - _Shrine::Oshozan-u
     - _Shrine::Mayaotaki
-    - _SideQuest::TheNorthLomeiProphecy:
-       comment: Clip to Depths, defeat Flux, and activate the terminal
+    - _Enemy::FluxConstruct::DH01:
+       comment: Clip to the Depths; defeat Flux; then activate the terminal
+    - _Npc<Terminal>
+    - _SideQuest::TheNorthLomeiProphecy
   
   
   - Wetland Stable:
@@ -904,8 +920,6 @@ _route:
        coord: [-247.84, 124.64, 136.6]
        comment: Send to Hateno!
     - _MainQuest::AMysteryintheDepths
-    - _Shop::GeneralStore:
-       notes: Buy Arrows AND Hylain Rice
     - _Shrine::Yamiyo
     - _Tablet<CHerry Tree>:
        comment: Snap
@@ -940,9 +954,6 @@ _route:
        coord: [1700, 119.38, -652.14]
        comment: Look up and snap
     - _Well::LanayruWetlands
-    - _Material<Blue Nightshade>:
-       coord: [938.62, 137.29, -264.45]
-       notes: there are many in the forst, grab 1 and dupe 5
     - _Shrine::Tukarok
     - _Enemy<Moblin>:
        coord: [867.94, 131.71, -280.38]
@@ -1026,8 +1037,7 @@ _route:
     - _Shrine::Kumamayn::Start
     - _Shrine::Kumamayn
     - _Enemy<Monster Forces>:
-       comment: Lurelin
-       notes: Only if NOT on v1.0
+       notes: For non-v1.0 ONLY
   
   - Hateno and Lurelin:
     - Make noon
@@ -1050,7 +1060,7 @@ _route:
     - _Well::HatenoVillageNorth
     - _Npc<Symin>:
        coord: [3366.91, 235.29, -1969.32]
-       comment: Show Calamity Mural and Hylian Rice, Goron Spice, Monster Extract
+       comment: Show Calamity Mural and Meal
     - _SideQuest::TeachMeaLessonI
     - _SideQuest::TeachMeaLessonII
     - _Npc<Uma>:
@@ -1135,13 +1145,19 @@ _route:
     - _Well::LurelinVillage:
        comment: Enter for remaining Boko
     - _Npc<Bolson>:
-       coord: [2901.19, 112.39, -3415.15]
+       coord: [2940, 500, -3430]
        comment: Turn in 10 Logs + 2 Logs by Shore + 3 Logs by Cows + 20 Hylian Rice; repair all the buildings      
+    - _Item<Cooking Pot>:
+       coord: [2894.99, 112.44, -3411.22]
+       comment: Cook Hylian Rice, Goron Spice, Porgy (for Ralera)
+    - _Item<Cooking Pot>:
+       coord: [2894.99, 112.44, -3411.22]
+       comment: Cook Hylian Rice, Sundelion, Fresh Milk (for Kakariko)
     - _SideAdv::RuffianInfestedVillage
     - _SideAdv::LurelinVillageRestorationProject
     - _Npc<Ralera>:
        coord: [2844.93, 110.22, -3462.89]
-       comment: Cook Hylian Rice, Goron Spice, Porgy; then use a Cart Guster
+       comment: Turn in meal; then use a Cart Guster
     - _SideQuest::RattledRalera
     - _Npc<Rozel>:
        coord: [2880.93, 110.22, -3550.89]
@@ -1398,7 +1414,8 @@ _route:
     - _Cave::AncientPrisonRuins00
     - _Shrine::Chichim
     - _Enemy<Master Kohga>:
-       comment: (not drawn) Clip to the Depths, slide to Gerudo Mine and defeat Kohga
+       coord: [-3311, 52.1, -3006.5]
+       comment: Clip to the Depths, slide to Gerudo Mine and defeat Kohga
 
   - Korok Forest Sky:
     - _Warp::Shrine::Mayam:
@@ -1683,8 +1700,9 @@ _route:
     - _Chest::VahRutaDivineHelm:
        coord: [3273, 300, 461]
     - _SideQuest::SecretTreasureundertheGreatFish
-    - _Chasm::UnderZorasDomain:
-       comment: Defeat Kohga
+    - _Enemy<Lanayru Kohga>:
+       coord: [3271.55, 84.31, 441.59]
+       comment: Dive down the chasm and defeat Kohga
        
   - Castle:
     - _Warp::Tower::LookoutLanding:
@@ -1726,7 +1744,6 @@ _route:
        coord: [-208.31, 124.75, 81.6]
        comment: Send to Lurelin 
     - _SideQuest::VillageAttackedbyPirates
-    - _Well::LookoutLanding
     - _Npc<Purah>:
        coord: [-233.5, 131.94, 153.43]
        comment: Crisis at Hyrule Castle, Regional Phenomenon
@@ -1958,12 +1975,17 @@ _route:
     - _Shrine::Siyamotsus:
        notes: Is in the sky
     - _Shrine::Motsusis
-    - _SideQuest::TheSouthLomeiProhecy:
-       comment: Clip to Depths, defeat Flux, activate terminal
+    - _Enemy::FluxConstruct::DG04:
+       comment: Clip to the Depths; defeat Flux; then activate the terminal
+    - _Npc<Terminal>
+    - _SideQuest::TheSouthLomeiProhecy
        
   - Call from the Depths:
     - _Warp::Shrine::Tsutsu-um:
        comment: WARP   
+    - _Npc<Penn>:
+       coord: [-1412.67, 137.5, -1296.43]
+       comment: Start The Beckoning Woman
     - _Npc<Embry>:
        coord: [-1442.38, 138.24, -1267.06]
        comment: Turn in picture
@@ -1974,15 +1996,7 @@ _route:
     - _Fairy::GreatFairyFountain02
     - _SideAdv::SerenadetoKaysa
     - _Well::OutskirtHill
-    - _Well::OutskirtStable:
-       comment: go into well
-    - _Npc<Fera>:
-       coord: [-1454.71, 119.98, -1301.74]
-       comment: Turn in All Wells
-    - _SideQuest::WhereAretheWells
-    - _Npc<Penn>:
-       coord: [-1412.67, 137.5, -1296.43]
-       comment: Start The Beckoning Woman
+    - _Shrine::Riogok
     - _Npc<Ralera 1>:
        coord: [-1356.03, 122.09, -1439.93]
     - _Npc<Ralera 2>:
@@ -2066,6 +2080,12 @@ _route:
        comment: Complete Main Quests
     - _MainQuest::CrisisatHyruleCastle
     - _MainQuest::FindtheFifthSage
+    - _Well::LookoutLanding:
+       comment: Enter well
+    - _Npc<Fera>:
+       coord: [-214.35, 107.78, 128]
+       comment: Turn in all wells
+    - _SideQuest::WhereAretheWells
        
     - _Warp::Shrine::Makasura:
        comment: WARP
@@ -2088,7 +2108,7 @@ _route:
     - _SideAdv::MessagesfromanAncientEra
     - _Npc<Lasli>:
        coord: [1910.09, 233.02, -1002.36]
-       comment: Cook Hylian Rice, Sundelion, Fresh Milk
+       comment: Turn in meal
     - _SideQuest::GloomBorneIllness
     - _Npc<Ollie>:
        coord: [1838.28, 222.46, -1024.14]
@@ -2153,6 +2173,7 @@ _route:
     - _SideQuest::TheRitoRopeBridge
     - Clip down and defeat Kohga
     - _Enemy<Hebra Kohga>:
+       coord: [-3396.8, 227.18, 1807.36]
        comment: Defeat
     - _SideAdv::MasterKohgaoftheYigaClan
   
