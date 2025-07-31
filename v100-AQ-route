@@ -8,7 +8,6 @@ _project:
     
 _route:
   - Great Sky Island 1:
-    - .link([Splits File] https://drive.google.com/file/d/16EIh4bsVkdGj2r13BxY-jlcwN4TPGOqO/view?usp=drive_link)
     - _Special::StartPos Sky<Room of Awakening>
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.74]
