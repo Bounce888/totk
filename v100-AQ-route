@@ -18,6 +18,10 @@ _route:
     - _Npc<Steward Construct>:
        coord: [449.86, 1640.83, -1310.45]
        comment: Purah Pad
+    - _Enemy<Construct>:
+       coord: [453.3, 1552.01, -897.25]
+       comment: Defeat with wings
+       notes: Pick up Sword and Shield
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
        comment: Fail to open
@@ -26,7 +30,7 @@ _route:
        coord: [449.86, 1640.83, -1310.45]
        comment: Respawn here
     - _Cave::Bottomless00
-    - _Item<Bomb Flower x8>:
+    - _Item<Bomb Flower x4>:
        coord: [737.61, 1591.98, -1437.71]
        comment: Pick up while going up the cave
     - _Item<Flame-Emitter Shield>:
@@ -35,7 +39,7 @@ _route:
     - _Cave::Bottomless01
     - _Shrine::Gutanbac
     - _Shrine::In-isa:
-       notes: dupe 1 bomb shield and 17 bombs, and fuse rock inside shrine to the MNF. Use only one bomb shield
+       notes: Dupe 20 Bombs and one Flame Shield inside shrine
     - _Shrine::Ukouh
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
@@ -43,9 +47,7 @@ _route:
     - _MainQuest::TheClosedDoor
     - _Warp::ROA:
        comment: WARP
-    - fuse bomb to shield and swap to a shield with nothing on it
-    - _Shrine::Nachoyah:
-       notes: Shield jump right, surf down the slope, and swap drop the bomb shield (bomb recycle)
+    - _Shrine::Nachoyah
     - _Warp::Shrine::Ukouh:
        comment: WARP
     - _Npc<Pedestal>:
@@ -73,7 +75,7 @@ _route:
        comment: WARP
     - _Chest<Topaz>:
        coord: [-335.05, 129.43, 391.17]
-       notes: dupe 120
+       comment: Pick up
     - _Tower::LookoutLanding
     - _Npc<Purah>:
        coord: [-251.26, 126.18, 155.25]
@@ -85,9 +87,9 @@ _route:
        coord: [-258.32, 127.4, 100.7]
        comment: Open the Emergency Shelter
     - _Shop::ArmorShop:
-       notes: Sell 3 topaz and buy the Hylian Tunic and Hylian Hood. 
+       notes: Dupe 5 Topazes, sell 4, buy Hylian Hood + Hylian Shirt + Arrows
   
-  - UPR:
+  - Flint:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
     - If doing UPR (optional), do it now (.link([guide] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing))
@@ -116,15 +118,7 @@ _route:
        notes: Fuse a Wing or Rocket to one and throw it through the target; keep other and use as primary weapon
     - _Shrine::Utojis:
        notes: Pick up Large Zonai Charge (LZC) from chest
-    - Ascend out, dupe 5 LZCs
-    - _Item<Splash Fruit x3>:
-       coord: [1292.99, 188.95, -2617.6]
-       comment: Pick up
-       notes: Only if NOT picking up rocket chest
-    - _Enemy<Construct>:
-       coord: [908.58, 118.24, -2725.57]
-       comment: (conditional)
-       notes: For Jetpack ONLY
+    - Ascend out
     - _Enemy<Lynel>:
        coord: [1464.46, 311.94, -3036.49]
        comment: Defeat for both Horns, SLB, Claymore, and Arrows
@@ -141,7 +135,7 @@ _route:
     - Ascend out, clip into mask room
     - _Chasm::TobiosHollow
   
-  - Mineru:
+  - Spirit Temple:
     - _Warp::Npc<Construct Factory>:
         coord: [873, -500, -2211]
         comment: (.link([vod] https://youtu.be/LG47Nq0lagw))
@@ -153,8 +147,8 @@ _route:
     - _MainQuest::GuidancefromAgesPast
     - _Npc<Mining Construct>:
        coord: [1334, -632, -3367.41]
-       comment: Turn in 50 Zonaite for Ancient Blade
-       notes: For v1.2.1, leave quest turn in until ater
+       comment: Dupe and turn in 50 Zonaite for Ancient Blade
+       notes: For v1.2.1, leave quest turn in until after BID
     - _SideQuest::AncientBladesBelow
     - Clip out near Grand Poe and slide to Central Mine:
        notes: For v1.0 ONLY; other versions warp to Fuse and use the chasm
@@ -177,7 +171,7 @@ _route:
     - _Enemy<Demon Dragon>:
        coord: [-249.22, -2366.88, 731.27]
        comment: Beat the game
-       notes: For v1.0, .link([smuggle a Gohma Rock out of army] https://docs.google.com/document/d/1hinXPMFKBybjzEvfylpBzFR-PTndqVj27EuykYG45Ps/edit?tab=t.0#heading=h.30eqo9oti2a5)
+       notes: For v1.0, smuggle a Gohma Rock out of army
     
   - Hyrule Field:
     - _Warp::Tower::LookoutLanding:
@@ -285,7 +279,7 @@ _route:
     - Dupe 150 Diamonds
     - Dupe 120 Flint
     - Dupe 100 Bombs, Topaz, Fairies
-    - Dupe 50 LZCs, Wood, Zonaite, Fire Fruit, Ancient Blades
+    - Dupe 50 LZCs, Wood, Zonaite*, Fire Fruit, Ancient Blades
     - Dupe 15 Dazzlefruit, Hylian Rice
     - Dupe 10 Splash Fruit, Crabs, Fireflies, Frogs, Brightcaps, Amber, Sundelions, Farosh Horns*, Fleet Lotus*
     - For v1.2.1, dupe 21 Farosh Horns and 81 Fleet Lotus Seeds instead
@@ -413,8 +407,7 @@ _route:
     - _SideAdv::TheHornistsDramaticEscape
     - _Cave::GisaCrater00
     - _Shrine::Ikatak::Start
-    - _Shrine::Ikatak:
-       notes: Big Battery in Shrine Chest
+    - _Shrine::Ikatak
     - _Shrine::Gatakis
     - _Npc<Tulin>:
        coord: [-3592.50, 318.50, 1801.25]
@@ -427,8 +420,6 @@ _route:
        comment: Break rocks blocking cave
     - _SideQuest::TheBlockedCave
     - _Shrine::Sahirow
-    - _Cave::TalontoPeak00:
-       notes: grab chillshrooms and dupe to 10
     - _Npc<Verla>:
        coord: [-3216.98, 453.59, 2457.41]
        comment: Turn in 10 Chillshrooms
@@ -440,7 +431,7 @@ _route:
        coord: [-3022.67, 664.12, 2748.73]
        comment: Snipe and then defeat enemies
     
-  - Tulin:
+  - Wind Temple:
     - _Npc<Tulin>:
        coord: [-2859.5, 1622.57, 2987.5]
        comment: Talk to at ship
@@ -464,8 +455,6 @@ _route:
        coord: [-3258.5, 224.96, 1762.5]
        comment: Start Potential Princess Sightings
     - _Shrine::Oromuwak
-    - _Cave::Brightcap00:
-       notes: Go into the cave, get a brightcap, and dupe 10
     - _Npc<Nat>:
        coord: [-2988.54, 304.71, 1657.21]
        comment: Turn in 10 Brightcaps
@@ -506,9 +495,6 @@ _route:
        notes: When you see Dinraal, Naydra, and Farosh, get a claw
     - _Shrine::Sikukuu
     - _Tear::G10
-    - _Material<Cobble Crusher>:
-       coord: [1474.82, 508.72, 2616.78]
-       notes: at blue boko. pick up
     - _Npc<Bludo>:
        coord: [1648.01, 487.5, 2439.43]
        comment: Start Yunobo of Goron City
@@ -537,6 +523,10 @@ _route:
     - Clip across
     - _Shrine::Jiotak
     - Ascend out
+    - _Enemy<Blue Boss Bokoblin>:
+       coord: [1929.52, 497.9, 3028.88]
+       comment: Defeat
+       notes: Pick up Cobble Crusher
     - _Cave::Lizard'sBurrow00
     - _Chest::VahRudaniaDivineHelm
     - Ascend out
@@ -593,7 +583,7 @@ _route:
     - _Npc<Chabi>:
        coord: [4201.68, 232.8, 2766.36]
        comment: Strongest in the World
-       notes: Fuse a Lynel Horn to a Weapon
+       notes: Use Lynel Horn Weapon
     - _SideQuest::StrongestintheWorld
     - _Well::EastAkkalaStable
     - _Npc<Loone>:
@@ -601,8 +591,7 @@ _route:
        comment: Start Eldin Colossal Fossil
     - _Shrine::Jochi-iu:
        comment: (STICK)
-    - _Enemy::Talus::GA02:
-       notes: Get Amber
+    - _Enemy::Talus::GA02
     - _Chest::YigaArmor
     - _Shrine::Rasiwak:
        comment: (STICK)
@@ -701,7 +690,7 @@ _route:
     - _Enemy::Hinox::GZ01
     - _Npc<Kilton>:
        coord: [1228.03, 126.81, 1215.17]
-       comment: Turn in 1 Bubbulgem
+       comment: Turn in Bubbulgem from cave nearby
     - _SideAdv::TheHuntforBubbulGems
     - _Shrine::Ekochiu
     - _Well::WoodlandStable
@@ -718,7 +707,7 @@ _route:
        coord: [1059.43, 254.87, 1668.1]
        comment: Enter chasm here and save Korok Forest
   
-  - Yunobo:
+  - Fire Temple:
     - _Temple::Fire:
        coord: [1109.43, 254.87, 1668.1]
        comment: Warp to Goron City and do Moragia; talk to Yunobo in the Depths; then progress through Fire Temple
@@ -1330,7 +1319,7 @@ _route:
        comment: Snap
     - _Shrine::En-oma
 
-  - Riju:
+  - Lightning Temple:
     - _Warp::Shrine::Mayatat:
        comment: WARP AND DEFEND
     - _Well::KaraKaraBazaar:
@@ -1466,7 +1455,7 @@ _route:
        coord: [-3311, 52.1, -3006.5]
        comment: Clip to the Depths, slide to Gerudo Mine and defeat Kohga
     
-  - Sidon:
+  - Water Temple:
     - _Warp::Shrine::Kisinona:
        comment: WARP
     - _Npc<Penn>:
