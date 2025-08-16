@@ -1,0 +1,13 @@
+---
+_config:
+_project:
+  description: Your Description Here
+  authors:
+    - Author
+
+_route:
+  - Great Sky Island:
+    - Cog Skip
+    - Wings Chest
+    - Title Card
+    - Purah Pad
