@@ -1,9 +1,9 @@
 ---
 _config:
 _project:
-  description: Your Description Here
+  description: Insert Description Here
   authors:
-    - Author
+    - Insert Author Name Here
 
 _route:
   - Great Sky Island:
