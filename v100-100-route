@@ -42,7 +42,7 @@ _route:
     - .link([Speedrunning Discord] https://discord.com/invite/ZT5TG2KQnx)
     
   - Great Sky Island:
-    - _Special::StartPos Sky<Room of Awakening>:
+    - _Special::StartPos Sky<Room of Awakening>
     - Cog Skip:
        notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.m3euy7jb3q2p)
     - _Chest<Wing x3>:
@@ -4395,10 +4395,9 @@ _route:
        comment: Open door in area below
     - _Npc<Yiga Blademaster>:
        comment: The Yiga Clan Exam
-    - _Item<Secret Base Frog Statue>:
+    - _Item<Frog Statue>:
        coord: [-2432.61, 183.31, -2035.49]
-       comment: Deposit Banana
-    - _Item<Secret Base Frog Statue>
+       comment: Oh Banana
     - Unequip the Yiga Set
     - _Korok::GC06    
     - _Korok::GC09::Start
@@ -4432,9 +4431,9 @@ _route:
        coord: [-2726.13, 167.9, -2335.33]
        comment: Gleeok Gut
     - _Cave::GerudoCanyonMine00
-    - _Item<Secret Base Frog Statue>:
+    - _Item<Frog Statue>:
        coord: [-2675.53, 199.38, -2496.61]
-       comment: Deposit Banana
+       comment: Oh Banana
     - _Bubbulfrog::GerudoCanyonMine
     - Ascend out
     - _Korok::GH54::Trail
@@ -4624,9 +4623,9 @@ _route:
     - _Korok::GC28
     - _Cave::GerudoCanyonMine01 
     - _Enemy::Talus::GG05
-    - _Item<Secret Base Frog Statue>:
+    - _Item<Frog Statue>:
        coord: [-2301.11, 462.97, -2426.82]
-       comment: Deposit Banana
+       comment: Oh Banana
     - _Cave::SpectacleRock00
     - _Bubbulfrog::SpectacleRockCave
     - Ascend out
@@ -4644,9 +4643,9 @@ _route:
     - _Addison::A13
     - _Cave::MountNabooru00
     - _Bubbulfrog::MountNabooruCave
-    - _Item<Secret Base Frog Statue>:
+    - _Item<Frog Statue>:
        coord: [-1838.75, 147.18, -1943.96]
-       comment: Deposit Banana
+       comment: Oh Banana
     - _Cave::MountNabooru01
     - _Location::GerudoCanyonPass:
        hide-icon-on-map: true
@@ -4676,9 +4675,9 @@ _route:
     - _Korok::GC02
     - _Cave::KoukotPlateau00
     - _Korok::GC03
-    - _Item<Secret Base Frog Statue>:
+    - _Item<Frog Statue>:
        coord: [-2323.3, 252.92, -1839.97]
-       comment: Deposit Banana
+       comment: Oh Banana
     - _Cave::YigaBlademasterStation00
     - _Npc<Yiga Blademaster>:
        comment: The Yiga Clan Exam
@@ -5125,6 +5124,7 @@ _route:
     - _Korok::PF31
     - _Korok::HF75
     - _Korok::HF69
+    - _Chasm::HillsofBaumer
     - _Korok::PF19
     - _Korok::HF59::Trail
     - _Korok::HF61
