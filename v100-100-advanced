@@ -33,13 +33,14 @@ _project:
   version: 3.1
 
 _route:
-  - Readme:
+  - Resources:
     - This is the ADVANCED route with Wingflip, Jetpack, and UPR, which ONLY saves time at WR Level. The exact same route is available without this tech .link([here] https://restite.org/notceler-totk/?github=Bounce888/totk/main/v100-100-route), which is HIGHLY advised for anyone starting out.
-    - What tech is used in the run? .link([See the Readme here] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8)
-    - Blank .link([Splits File] https://drive.google.com/file/d/1zqapWidAdhkRaRNRsuFvyt-jiOSa6WoP/view?usp=drive_link)
-    - Video of .link([Xdri's WR] https://www.youtube.com/watch?v=uuWyB-L9jDE&list=PL-wDvpsT8UHHUuH0zbJjAuNd73v9I8Gh8)
-    - Questions? Ask in the .link([Speedrunning Discord] https://discord.com/invite/ZT5TG2KQnx). This route (and the basic route) is designed for v1.0.0 of the game. For other versions, see the TOTK-SR Discord
-    
+    - This route is designed for v1.0.0 of the game.
+    - .link([Tech Reference] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8)
+    - .link([Video Reference] https://www.youtube.com/watch?v=uuWyB-L9jDE&list=PL-wDvpsT8UHHUuH0zbJjAuNd73v9I8Gh8)
+    - .link([Splits File] https://drive.google.com/file/d/1zqapWidAdhkRaRNRsuFvyt-jiOSa6WoP/view?usp=drive_link)
+    - .link([Speedrunning Discord] https://discord.com/invite/ZT5TG2KQnx)
+
   - Great Sky Island:
     - _Special::StartPos Sky<Room of Awakening>:
     - Cog Skip:
