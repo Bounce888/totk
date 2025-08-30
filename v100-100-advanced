@@ -42,7 +42,7 @@ _route:
     - .link([Speedrunning Discord] https://discord.com/invite/ZT5TG2KQnx)
 
   - Great Sky Island:
-    - _Special::StartPos Sky<Room of Awakening>:
+    - _Special::StartPos Sky<Room of Awakening>
     - Cog Skip:
        notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.m3euy7jb3q2p)
     - _Chest<Wing x3>:
