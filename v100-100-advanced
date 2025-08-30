@@ -24,7 +24,7 @@ _config:
 _project: 
   authors:
     - BounceSR
-    - DinoTechSR  
+    - DinoTechSR
     - Xdri33s
   description: 100%
   name: 100%
@@ -33,12 +33,17 @@ _project:
   version: 3.1
 
 _route:
-  - Overview:
+  - Readme:
+    - This is the ADVANCED route with Wingflip, Jetpack, and UPR, which ONLY saves time at WR Level. The exact same route is available without this tech .link([here] https://restite.org/notceler-totk/?github=Bounce888/totk/main/v100-100-route), which is HIGHLY advised for anyone starting out.
     - What tech is used in the run? .link([See the Readme here] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8)
-    - .link([Splits File] https://drive.google.com/file/d/1zqapWidAdhkRaRNRsuFvyt-jiOSa6WoP/view?usp=drive_link)
+    - Blank .link([Splits File] https://drive.google.com/file/d/1zqapWidAdhkRaRNRsuFvyt-jiOSa6WoP/view?usp=drive_link)
+    - Video of .link([Xdri's WR] https://www.youtube.com/watch?v=uuWyB-L9jDE&list=PL-wDvpsT8UHHUuH0zbJjAuNd73v9I8Gh8)
+    - Questions? Ask in the .link([Speedrunning Discord] https://discord.com/invite/ZT5TG2KQnx). This route (and the basic route) is designed for v1.0.0 of the game. For other versions, see the TOTK-SR Discord
+    
   - Great Sky Island:
     - _Special::StartPos Sky<Room of Awakening>:
-    - Cog Skip
+    - Cog Skip:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.m3euy7jb3q2p)
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.74]
     - Dupe 22 Wings
@@ -58,12 +63,13 @@ _route:
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
-    - Perform QDZ and obtain the MNF
+    - Perform QDZ and obtain the MNF:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.ublzvnexf1px)
     - _Warp::Npc<Room of Awakening>:
        coord: [420, 2400, -1680]
        comment: Respawn here
     - _Shrine::Gutanbac:
-       notes: Pick up two bows; DZuggle one and perform QDS
+       notes: Pick up two bows; DZuggle one and perform QDS (.link([guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.ydkzlxl39h6))
     - Drop down to Bottomless Cave, pick up the Flame Shield (keep it at full durability) and the Bomb Flower
     - _Cave::Bottomless01
     - _Equipment::Shield<Flame Emitter Shield>:
@@ -104,7 +110,8 @@ _route:
     - _Chest<Rocket x3>:
        coord: [891.57, 118.09, -541.65]
     - Dupe to 12 Rockets (along with Wings)
-    - PRAF (new shield) to Lookout Landing
+    - PRAF (new shield) to Lookout Landing:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.65zwxbrkb63f)
     - _Place::LookoutLanding:
        hide-icon-on-map: true
     - _Npc<Josha>:
@@ -132,7 +139,8 @@ _route:
     - Dupe to 4 Hylian Shields; keep one at Full-Durability
     - Break crates for at least 5 arrows    
     - Fuse a Barrel to the Broadsword
-    - WST Broadsword onto MNF
+    - WST Broadsword onto MNF:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.aaq1xtn3xvvt)
     - _Warp::Shrine::Kyononis:
        comment: WARP
     - PRAF back to LL and receive the Paraglider. Use the Broadsword as the rocket holder; do not swing it or it will break.
@@ -143,7 +151,7 @@ _route:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
        line-color: rgb(220, 255, 220)
-    - Perform UPR (.link([guide] https://docs.google.com/presentation/d/14M4fUh2k582GVtFAb3VmZmG2oJg9q-ATHMdQa80ErYI/edit?usp=sharing))
+    - Perform UPR (.link([guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.mnasqj82pzav))
     - _Enemy<Like Like>:
        coord: [758.74, 1657, -1368.11]
        comment: Inside the cave at the top; start UPR
@@ -188,7 +196,7 @@ _route:
     - _Korok::PF23::Trail
     - _Material<Farosh Horn>:
        coord: [40, 300, -2200]
-       notes: From Farosh
+       notes: From Farosh; .link([cycle info] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.mw6eju33ak27)
     - _Chasm::HillsofBaumer
     - _Well::DeyaVillageRuinsEast
     - _Material<Fleet Lotus Seeds x4>:
