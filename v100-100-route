@@ -34,10 +34,10 @@ _project:
   version: 3.1
 
 _route:
-  - Readme:
+  - Resources:
     - This route is designed for v1.0.0 of the game.
-    - What tech is used in the run? .link([See the Readme here] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8)
-    - Sample video with this route .link([here] https://www.youtube.com/watch?v=46bekQfaxcY&list=PLbnq-z_kmNWCAsKA2PV3ndiSi1A0e4GXG).
+    - .link([Tech Reference] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8)
+    - .link([Video Reference] https://www.youtube.com/watch?v=46bekQfaxcY&list=PLbnq-z_kmNWCAsKA2PV3ndiSi1A0e4GXG)
     - .link([Splits File] https://drive.google.com/file/d/1zqapWidAdhkRaRNRsuFvyt-jiOSa6WoP/view?usp=drive_link)
     - .link([Speedrunning Discord] https://discord.com/invite/ZT5TG2KQnx)
     
