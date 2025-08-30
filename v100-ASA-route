@@ -1,0 +1,626 @@
+---
+_config:
+_project: 
+  description: All Side Adventures
+  authors:
+    - BounceSR
+    
+_route:
+  - Great Sky Island 1:
+    - _Shrine::Nachoyah:
+       line-color: white
+    - _Shrine::Gutanbac
+    - _Shrine::In-isa
+    - _Shrine::Ukouh
+  
+  - Paraglider:
+    - _Chest<Rocket x3>:
+       coord: [891.57, 118.09, -541.65]
+    - _Material<Splash Fruit>:
+       coord: [884.24, 116.18, -543.12]
+    - _Npc<Josha>:
+       coord: [-238.97, 132.32, 147.92]
+       comment: To the Kingdom of Hyrule
+    - _Shrine::Kyononis:
+       comment: Activate only
+    - _Npc<Hoz>:
+       coord: [-334.93, 238.96, 845.94]
+       comment: Watch Zelda cutscene
+    - _Chest<Hylian Shield>:
+       coord: [-154, 141.78, 1157.37]
+       comment: Is inside Docks
+    - _Warp::Shrine::Kyononis:
+       comment: WARP
+    - _Tower::LookoutLanding:
+       comment: Launch
+  
+  - Dragonhead:
+    - _Warp::ROA:
+       comment: WARP
+       level: Sky
+    - _Korok::GSI16
+    - _Chest<Large Zonai Charge>:
+       coord: [501.28, 1893.86, -1613.06]
+    - _Material<Ancient Arowana>:
+       coord: [499.24, 1895.42, -1616.99]
+    - _Material<Fairy>:
+       coord: [926.96, 667.61, -2131.03]
+    - _Chest<Topaz>:
+       coord: [1516.64, 310.19, -2596.76]
+       comment: Is on the surface at Boko Treehouse camp
+    - _Enemy<Lynel>:
+       coord: [1464.46, 311.94, -3036.49]
+       comment: Defeat for SLB, Arrows, Claymore
+    - _Material<Hylian Rice>:
+       coord: [1464.46, 311.94, -3045.49]
+       comment: Slash grass nearby and pick up
+    - _Dispenser::S02:
+       notes: Use 2 LZCs, keep at least one
+    - _Shrine::Joku-u:
+       comment: Enter for diamond chest, do not complete shrine
+ 
+  - Hyrule Field:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: lightgreen
+    - _Npc<Purah>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Start Regional Phenomena
+    - _Npc<Josha>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Start Camera, use Wing Displacement
+    - Dupe Diamonds [130]; and Fairies, Topazes, and LZCs [as needed]
+    - _Shop::GeneralStore:
+       notes: Sell 125 Diamonds, buy Arrows + Hylian Set
+    - _Enemy<Monster Forces>:
+       coord: [-441.12, 156.17, -624.38]
+       comment: Bring Peace to Hyrule Field!
+    - _SideAdv::BringPeacetoHyruleField
+    - _Shrine::Mayachin:
+       comment: Activate only for ALL future shrines
+    - _Tower::HyruleField
+    - _Npc<Bargainer Statue Fragment>:
+       coord: [-611.77, 179.39, -1525.45]
+       comment: Break floodgate and talk to statue below
+    - _Npc<Temple of Time Statue>:
+       coord: [-823.26, 225.44, -2031.48]
+       comment: Start A Call from the Depths
+  
+  - Depths 1:
+    - Clip to Autobuild
+    - _Special::StartPos Depths<Autobuild>:
+       comment: Receive ability
+    - _Enemy<Master Kohga>:
+       coord: [-727.19, -414.31, -1857.57]
+       comment: Defeat
+    - _Lightroot::Iayusus
+    - _Npc<Robbie>:
+       coord: [-803.81, -365.4, -452.58]
+       comment: Progress Camera Quest
+    - _Tablet<Frox>:
+       coord: [-571.5, -358.61, 222.5]
+       comment: Snap, do not need to defeat
+    - _Enemy<Demon Dragon>:
+       coord: [-249.22, -2366.88, 731.27]
+       comment: Beat the game
+  
+  - Wind Temple:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: lightblue
+    - _Npc<Josha>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Complete Camera Work in the Depths
+    - _Npc<Tulin>:
+       coord: [-3593.1, 317.95, 1800.98]
+       comment: Start Tulin of Rito Village
+    - _Npc<Harth>:
+       coord: [-3571.2, 247.65, 2260.04]
+       comment: Progress Tulin Quest
+    - _Tower::RosproPass
+    - _Tablet<King Gleeok>:
+       coord: [-4470.63, 1389.9, 2275.43]
+       comment: Snap, do not need to defeat; is in the sky balloon
+    - _Tablet::S02
+    - _Enemy<Aerocuda>:
+       coord: [-3022.67, 664.12, 2748.73]
+       comment: Recover Bow and defeat Bokos
+    - _Npc<Tulin>:
+       coord: [-2860.25, 2005.88, 2902.62]
+       comment: Talk to near ship
+    - _Tower::PikidaStonegrove
+    - _Temple::Wind
+  
+  - Return to Rito Village:
+    - _Warp::Npc<Tulin>:
+       coord: [-3593.1, 317.95, 1800.98]
+       comment: Tulin of Rito Village
+       line-color: deepskyblue
+    - _Npc<Penn>:
+       coord: [-3260.35, 224.96, 1761.88]
+       comment: Start Penn Quests
+    - _Shrine::Oromuwak
+    - _Tablet<Horriblin>:
+       coord: [-3021.74, 282.76, 1541.93]
+       comment: Snap; is in nearby cave
+    - _Tablet<Battle Talus>:
+       coord: [-3108.02, -500.09, 1287.7]
+       comment: Snap
+    - _Npc<Eustus>:
+       coord: [-3651.02, 223.45, 755.78]
+       comment: Talk and then launch out with rocket
+    - _SideAdv::TheHornistsDramaticEscape
+    - _Shrine::Makurukis
+    - _Npc<Penn>:
+       coord: [-2910.76, 274.97, 522.58]
+       comment: Start White Goats Gone Missing
+    - _Npc<Penn>:
+       coord: [-2562, 256.58, 407]
+       comment: Complete White Goats Gone Missing, examine bottle near goats
+    - _SideAdv::WhiteGoatsGoneMissing
+    - _Tower::Lindor'sBrow
+    - _Shrine::Sinakawak
+    - _Npc<Penn>:
+       coord: [-1349.11, 191.08, 732.73]
+       comment: Start The Beast and the Princess
+    - _Shrine::Tsutsu-um
+    - _Npc<Penn>:
+       coord: [-1412.67, 137.5, -1296.43]
+       comment: Start The Beckoning Woman
+    - _Npc<Ralera>:
+       coord: [-1356.03, 122.09, -1439.93]
+       comment: Follow
+    - _Npc<Ralera>:
+       coord: [-1041.17, 127.55, -1459.25]
+       comment: Follow
+    - _Npc<Ralera>:
+       coord: [-1088.28, 251.83, -1371.44]
+       comment: Follow
+    - _Npc<Ralera>:
+       coord: [-989.8, 190.78, -1527.7]
+       comment: Fight
+    - _SideAdv::TheBeckoningWoman
+    - _Chasm::GreatPlateauNorth:
+       comment: Deposit eye
+    - _Chasm::GreatPlateauEast:
+       comment: Deposit eye
+    - _Chest::YigaMask:
+       comment: Defeat Yigas and talk to merchant
+    - _Chasm::GreatPlateauSouth:
+       comment: Deposit eye
+    - _Chasm::GreatPlateauWest:
+       comment: Deposit eye
+       notes: Dive down chasm, ABC all four eyes together and deposit it into the bargainer
+    - _SideAdv::ACallfromtheDepths
+  
+  - Gerudo Kohga:
+    - _Enemy<Gerudo Kohga>:
+       coord: [-3827.73, -382.36, -2908.4]
+       comment: Defeat
+  
+  - Woodland stable:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: lightsalmon
+    - _Npc<Josha>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Let Josha start running
+    - Clip or open shelter for Horned Statue
+    - _Npc<Horned Statue>:
+       coord: [-250, 110.21, 157.28]
+       comment: Trade anything
+    - _SideAdv::ADealWiththeStatue
+    - _Npc<Jerrin>:
+       coord: [-254.03, 114.3, 112.48]
+       comment: Talk about Horned Statue
+    - _SideAdv::WhoGoesThere
+    - Climb or ascend out of shelter
+    - _Npc<Wortsworth>:
+       coord: [-270.35, 124, 66.24]
+       comment: Send to Kakariko
+    - _Npc<Hestu>:
+       coord: [-229.49, 127.2, 80.14]
+       comment: Turn in 1 Korok Seed
+    - _SideAdv::HestusConcerns
+    - _Npc<Josha>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Complete A Mystery in the Depths
+    - _Npc<Robbie>:
+       coord: [-235, 124.64, 136.6]
+       comment: Complete
+    - _Npc<Penn>:
+       coord: [1047.76, 127.66, 1146.54]
+       comment: Start Great Fairy Escort
+    - _Fairy::GreatFairyFountain03<Tera>
+    - _SideAdv::SerenadetoaGreatFairy
+    - _Npc<Kilton>:
+       coord: [1228.03, 126.81, 1215.17]
+       comment: Turn in a Bubbulgem
+    - _SideAdv::TheHuntforBubbulGems
+    - _Tower::EldinCanyon
+    - _Tablet::S00
+    - _Shrine::Kisinona
+    - _Npc<Penn>:
+       coord: [2594, 253.8, 1164.15]
+       comment: Start For Our Princess
+    - _Npc<Sango>:
+       coord: [2277.64, 264.12, 1515.73]
+       comment: Pseudo-Proving Grounds
+    - Clip into and examine the final Thyphlo Ruins slab
+    - _Npc<Kazul>:
+       coord: [386.03, 270.38, 3170.75]
+       comment: 5 Side Adventures
+    - _SideAdv::InvestigatetheThyphloRuins
+    - _SideAdv::TheOwlProtectedbyDragons
+    - _SideAdv::TheCorridorbetweenTwoDragons
+    - _SideAdv::TheSixDragons
+    - _SideAdv::TheLongDragon
+    - _Tower::ThyphloRuins
+    - _Tablet::S09
+    - _Tablet::S03
+    - _Npc<Golden Horse>:
+       coord: [-1820.87, 341.56, 3381.87]
+       comment: Ride towards stable
+    - _Npc<Penn>:
+       coord: [-1642.11, 339.2, 2575.8]
+       comment: Complete Zelda's Golden Horse
+    - _SideAdv::ZeldasGoldenHorse
+    - _Shrine::Orochium
+    - _Npc<Mastro>:
+       coord: [-1631.15, 339.38, 2589.63]
+       comment: Escort to Fairy Fountain
+    - _Fairy::GreatFairyFountain01<Mija>
+    - _SideAdv::SerenadetoMija
+    - _Enemy<Monster Forces>:
+       coord: [2428.1, 563.75, 2951.68]
+       comment: Bring Peace to Eldin!
+    - _SideAdv::BringPeacetoEldin
+    - _Chest::YigaArmor:
+       comment: Defeat Yigas and talk to merchant
+    - _Chest<Travel Medallion Prototype>:
+       coord: [4523.45, 352.99, 3163.68]
+       comment: In chest in same room
+    - _Tower::UlriMountain
+    - _Tablet::S11
+    - _Npc<Rhondson>:
+       coord: [3941.88, 235.06, 1593.23]
+       comment: Talk
+    - _Npc<Hudson>:
+       coord: [3941.33, 235.06, 1599.81]
+       comment: Talk
+    - _Npc<Mattison>:
+       coord: [3936.1, 241.83, 1593.1]
+       comment: Talk inside room upstairs, need shirt or pants
+    - _Npc<Mattison>:
+       coord: [3981.3, 233.38, 1613.63]
+       comment: Vaba
+    - _Npc<Mattison>:
+       coord: [3921.74, 234.16, 1598.42]
+       comment: Block view of railcar, send across
+    - _Material<Sundelion>:
+       coord: [3781.64, 201.89, 1546.43]
+       comment: Pick up and dupe 10
+    - _Npc<Hudson>:
+       coord: [3754.34, 195.25, 1616.34]
+       comment: Turn in 10 Sundelions
+    - _SideAdv::MattisonsIndependence
+    - _Npc<Kilton>:
+       coord: [3966, 234.09, 1644]
+       comment: Turn in picture of Boko, Horriblin, Battle Talus, Frox, King Gleeok
+    - _SideAdv::AMonsterousCollectionI
+    - _SideAdv::AMonsterousCollectionII
+    - _SideAdv::AMonsterousCollectionIII
+    - _SideAdv::AMonsterousCollectionIV
+    - _SideAdv::AMonsterousCollectionV
+    - _Npc<Penn>:
+       coord: [3208.78, 307.62, 1743.43]
+       comment: Start The All Clucking Cucco
+    - _Npc<Cucco>:
+       coord: [3227.84, 324.6, 1785.56]
+       comment: Complete Trials
+    - _SideAdv::TheAllCluckingCucco
+    - _Enemy<Monster Forces>:
+       coord: [3006.26, 412.1, 1225.11]
+       comment: Bring Peace to Akkala!
+    - _SideAdv::BringPeacetoAkkala
+    - _Npc<Penn>:
+       coord: [2594, 253.8, 1164.15]
+       comment: Complete For Our Princess
+    - _SideAdv::ForOurPrincess
+    - _Tower::UplandZorana
+    - _Tablet::S01
+    - _Npc<Yona>:
+       coord: [3304.96, 244.26, 473.96]
+       comment: Splash statue
+    - _Npc<Sidon>:
+       coord: [3847, 591.92, 568.5]
+       comment: Converse
+    - _Npc<Jiahto>:
+       coord: [3401.73, 506.99, 871.93]
+       comment: Repair slab and talk
+    - _Npc<Dorephan>:
+       coord: [3682.07, 310.28, 605.91]
+       comment: Receive King Scale x5
+    - _Temple::Water:
+       coord: [4094.22, 692.07, 529.48]
+  
+  - Return to Zora's Domain:
+    - _Warp::Npc<Sidon>:
+        coord: [3338.14, 271.89, 550.5]
+        comment: Sidon of the Zora
+        line-color: lightgreen
+        level: Surface
+    - _Shrine::Mogawak
+    - _Enemy<Master Kohga>:
+       coord: [3352.03, -637.44, 492.33]
+       comment: Dive down Chasm Under Zora's Domain
+  
+  - Necluda:
+    - _Warp::Shrine::Ukouh:
+       comment: WARP
+    - _Npc<Steward Construct>:
+       coord: [453.67, 1645.84, -800.44]
+       comment: Legend of the Great Sky Island
+    - _SideAdv::LegendoftheGreatSkyIsland
+    - _Npc<Penn>:
+       coord: [873.57, 131.26, -158.42]
+       comment: Start The Missing Farm Tools
+    - _Npc<Izra>:
+       coord: [834.88, 115, -118.49]
+       comment: Start Escort
+    - _Npc<Izra>:
+       coord: [849.67, 115.46, -827.67]
+       comment: End Escort
+    - _SideAdv::TheMissingFarmTools
+    - _Npc<Agus>:
+       coord: [539.01, 122.05, -1183.72]
+       comment: Cook with Hylian Rice, Rock Salt, Raw Meat
+    - _Npc<Penn>:
+       coord: [387.88, 121.51, -1044.12]
+       comment: Complete Gourmets Gone Missing
+    - _SideAdv::GourmetsGoneMissing
+    - _Tower::SahasraSlope
+    - _Npc<Beetz>:
+       coord: [2166.09, 214.5, -1379.43]
+       comment: Turn in 3 Bee Honey (already have from other quest)
+    - _SideAdv::HoneyBeeMine
+    - _Enemy<Monster Forces>:
+       coord: [2305.38, 121.23, -1838.43]
+       comment: Bring Peace to Necluda
+    - _SideAdv::BringPeacetoNecluda
+    - _Npc<Penn>:
+       coord: [1759.67, 145.98, -1925.56]
+       comment: Start Princess Zelda Kidnapped
+    - _Npc<Mastro>:
+       coord: [1756.12, 116.07, -1958.84]
+       comment: Start Escort
+    - _Fairy::GreatFairyFountain<Cotera>
+    - _SideAdv::SerenadetoCotera
+    - _Shrine::Eshos
+    - _Npc<Real Zelda>:
+       coord: [1313.21, 409.17, -1975.59]
+       comment: Encounter
+    - _SideAdv::PrincessZeldaKidnapped
+    - _Tower::PoplaFoothills
+    - _Tablet::S04
+    - _Shop<Beedle>:
+       coord: [485.16, 152.78, -3366.72]
+       notes: Buy Fireflies, dupe 10
+    - _Npc<Pyper>:
+       coord: [527.76, 153.69, -3398.91]
+       comment: Turn in Fireflies, lure Haite over
+    - _SideAdv::TheFlutePlayersPlan
+    - _Npc<Penn>:
+       coord: [504.45, 152.68, -3443.47]
+       comment: Start An Eerie Voice
+    - _Npc<Penn>:
+       coord: [381.77, 138.75, -3376.99]
+       comment: Progress to well and complete An Eerie Voice
+    - _SideAdv::AnEerieVoice
+    - _Enemy<Monster Forces>:
+       coord: [-56.96, 136.44, -3468.28]
+       comment: Bring Peace to Faron
+    - _SideAdv::BringPeacetoFaron
+    
+  - Hebra 2:
+    - _Warp::Shrine::Orochium:
+       comment: WARP
+    - _Enemy<Monster Forces>:
+       coord: [-1793.9, 374.36, 2226.77]
+       comment: Bring Peace to Hebra!
+    - _SideAdv::BringPeacetoHebra
+    - _Chest::YigaTights:
+       comment: Defeat Yiga
+ 
+  - Gerudo:
+    - _Warp::Shrine::Tsutsu-um:
+       comment: WARP
+    - _Npc<Mastro>:
+       coord: [-1405.81, 137.76, -1263.57]
+       comment: Escort with rocket
+    - _Fairy::GreatFairyFountain02<Kaysa>
+    - _SideAdv::SerenadetoKaysa
+    - _Npc<Yiga Blademaster>:
+       coord: [-2479.1, 242.97, -1796.44]
+       comment: Equip Yiga Set and start exam
+    - _Item<Statue 1>:
+       coord: [-2356.15, 197.46, -1814.14]
+       comment: Oh Banana
+    - _Item<Statue 2>:
+       coord: [-2432.61, 183.31, -2035.49]
+       comment: Oh Banana
+    - _Tower::GerudoCanyon:
+       notes: Make night with campfire
+    - _Npc<Penn>:
+       coord: [-2817, 134.87, -2236.5]
+       comment: Enter well and defeat the enemies
+    - _SideAdv::TheBlockedWell
+    - _Npc<Koltin>:
+       coord: [-2787.29, 306.08, -2422.94]
+       comment: Only talk, do not need to turn anything in
+    - _SideAdv::TheSearchforKoltin
+    - _Cave::GerudoCanyonMine00
+    - _Item<Statue 3>:
+       coord: [-2675.53, 199.38, -2496.61]
+       comment: Oh Banana
+    - _Item<Statue 4>:
+       coord: [-2301.11, 462.97, -2426.82]
+       comment: Oh Banana
+    - _Tablet::S05
+    - _Item<Statue 5>:
+       coord: [-1838.75, 147.18, -1943.96]
+       comment: Oh Banana
+    - _Npc<Yiga Blademaster>:
+       coord: [-2479.1, 242.97, -1796.44]
+       comment: Complete The Yiga Clan Exam
+    - _SideAdv::TheYigaClanExam
+    - _Npc<Mimos>:
+       coord: [-3687.06, 436.5, -1364.58]
+       comment: Equip Yiga Set AND Open the Door
+    - _SideAdv::InfiltratingtheYigaClan
+    - _Tower::GerudoHighlands
+    - _Tablet::S08
+  
+  - Faron:
+    - _Warp::Shrine::Joku-u:
+       comment: WARP
+    - _Npc<Cima>:
+       coord: [1545.4, 164.09, -3359.99]
+       comment: Complete The Beast and the Princess
+    - _SideAdv::TheBeastandthePrincess
+    - _Enemy<Monster Forces>:
+       coord: [2913.24, 128.38, -3447.42]
+       comment: Ruffian Infested Village
+    - _SideAdv::RuffianInfestedVillage
+    - _Npc<Bolson>:
+       coord: [2830.65, 107.37, -3385.97]
+       comment: Repair all the buildings
+    - _SideAdv::LurelinVillageRestorationProject
+    - _Tower::RabellaWetlands
+    - _Tablet::S06
+    - _Tower::MountLanayru
+    - _Tablet::S07
+    
+    - Make noon
+    - _Npc<Sophie + Cece + Cece + Sophie>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Open shop, talk to Cece inside shop, talk again to start mushroom delivery, talk to Sophie outside again
+    - _Npc<Leop>:
+       coord: [3325.66, 225.66, -2153.96]
+       comment: Give Shroom
+    - _Npc<Medda>:
+       coord: [3380.11, 225.72, -2104.59]
+       comment: Give Shroom
+    - _Npc<Tamana>:
+       coord: [3342.79, 218.85, -2083.32]
+       comment: Give Shroom
+    - _Npc<Uma>:
+       coord: [3346.54, 223.24, -2035.39]
+       comment: Start Garden, use anything, give shroom
+    - Enter well and ascend up to diary
+    - _Npc<Diary>:
+       coord: [3415.07, 238.58, -2085.43]
+       comment: Read Reede's Diary
+    - _Npc<Tokk>:
+       coord: [3800, 300, -2110]
+       comment: Talk to Tokk
+    - _Cave::RetsamForest00
+    - _Shrine::Mayahisik
+    - _Cave::RetsamForest01
+    - _Npc<Koyin>:
+       coord: [3632, 300, -2048]
+       comment: UH bottle to dock, give shroom
+    - _Npc<Dantz>:
+       coord: [3623.63, 283.43, -2078.87]
+       comment: Turn in shroom
+    - _Npc<Koyin>:
+       coord: [3633.99, 283.81, -2100.48]
+       comment: Receive Cheese
+    - _SideAdv::ALettertoKoyin
+    - _Npc<Worten>:
+       coord: [3470, 300, -2120]
+       comment: Is on dock
+    - _Item<Campfire>:
+       coord: [3436.875,150,-2103.875]
+       notes: sleep till night
+    - _Npc<Clavia>:
+       coord: [3443, 236.83, -2091.19]
+       comment: Turn in Diary
+    - _SideAdv::ReedesSecret
+    - _Npc<Reede>:
+       coord: [3428, 1311, -2083]
+       comment: Turn in cheese
+    - _SideAdv::ANewSignatureFood
+    - _Npc<Sneaky Cece>:
+       coord: [3385, 131, -2163]
+       comment: Sneak in through window and wait for Cece to enter this silo  
+    - _Npc<Cece + Sophie + Sophie + Cece>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Do election and then talk to Cece AFTER the election
+    - _SideAdv::TeamCeceorTeamReede
+    - _SideAdv::CecesSecret
+    - _SideAdv::TheMayoralElection
+    - _Npc<Nack>:
+       coord: [3306.43, 216.05, -2121.05]
+       comment: Defeat Stal enemies with Dazzlefruit
+    - _SideQuest::HomegrowninHateno 
+    - _Npc<Robbie>:
+       coord: [3778, 370, -2128]
+       comment: Upgrade Purah Pad AND Buy Full Compendium
+    - _SideAdv::HatenoVillageResearchLab
+    - _SideAdv::PresentingTheTravelMedallion
+    - _SideAdv::PresentingHerosPathMode
+    - _SideAdv::PresentingSensor+
+    - _SideAdv::FillingouttheCompendium
+    - _Npc<Wortsworth>: 
+       coord: [1830.72, 221.84, -955.9]
+       comment: SEldin Lanayru Hebra EHebra WNecluda Gerudo Necluda NeclSea NGerudo GHF SHyrule Sokkala
+    - _SideAdv::MessagesfromanAncientEra
+  
+  - Hebra 3:
+    - _Warp::Shrine::Orochium:
+       comment: WARP
+    - _Npc<Traysi>:
+       coord: [-3260.35, 224.96, 1761.88]
+       comment: Complete Potential Princess Sightings
+    - _SideAdv::PotentialPrincessSightings
+    - _Enemy<Hebra Kohga>:
+       coord: [-3459.56, -311.49, 1861.13]
+       comment: Defeat
+    - _SideAdv::MasterKohgaoftheYigaClan
+    
+    
+    
+    
+    
+    
+   
+  
+  
+    
+       
+    
+    
+    
+    
+    
+       
+
+    
+       
+       
+       
+    
+    
+   
+    
+       
+       
+    
+    
+    
+    
+    
+    
+    
+    
