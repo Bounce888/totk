@@ -26,6 +26,7 @@ _project:
     - BounceSR
     - DinoTechSR  
     - Xdri33s
+
   description: 100%
   name: 100%
   url: ""
@@ -33,15 +34,19 @@ _project:
   version: 3.1
 
 _route:
-  - Overview:
+  - Readme:
+    - This route is designed for v1.0.0 of the game.
     - What tech is used in the run? .link([See the Readme here] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8)
+    - Sample video with this route .link([here] https://www.youtube.com/watch?v=46bekQfaxcY&list=PLbnq-z_kmNWCAsKA2PV3ndiSi1A0e4GXG).
     - .link([Splits File] https://drive.google.com/file/d/1zqapWidAdhkRaRNRsuFvyt-jiOSa6WoP/view?usp=drive_link)
+    - .link([Speedrunning Discord] https://discord.com/invite/ZT5TG2KQnx)
+    
   - Great Sky Island:
     - _Special::StartPos Sky<Room of Awakening>:
-    - Cog Skip
+    - Cog Skip:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.m3euy7jb3q2p)
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.74]
-       notes: Sample video with this route .link([here] https://www.youtube.com/watch?v=46bekQfaxcY&list=PLbnq-z_kmNWCAsKA2PV3ndiSi1A0e4GXG).
     - Dupe 22 Wings
     - Enter the title cutscene
     - _Location::GreatSkyIsland:
@@ -55,7 +60,8 @@ _route:
     - _Npc<Temple of Time Door>:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
-    - Perform QDZ and retrieve the MNF
+    - Perform QDZ and retrieve the MNF:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.ublzvnexf1px)
     - _Warp::Npc<Steward Construct>:
        coord: [449.86, 1640.83, -1310.45]
        comment: Respawn here
@@ -70,7 +76,7 @@ _route:
        coord: [745.41, 1650.87, -1368.7]
     - _Cave::Bottomless01
     - _Shrine::Gutanbac:
-       notes: Pick up two bows; perform QDS
+       notes: Pick up two bows; perform QDS (.link([guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.ydkzlxl39h6))
     - Energy Cell
     - Wing + ASF to Fuse 
     - _Shrine::In-isa:
@@ -108,7 +114,8 @@ _route:
     - _Chest<Rocket x3>:
        coord: [891.57, 118.09, -541.65]
     - Dupe to 12 Rockets (along with Wings)
-    - PRAF (new shield) to Lookout Landing
+    - PRAF (new shield) to Lookout Landing:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.65zwxbrkb63f)
     - _Place::LookoutLanding:
        hide-icon-on-map: true
     - _Npc<Josha>:
@@ -134,7 +141,8 @@ _route:
     - _Equipment::Shield<Hylian Shield>:
        coord: [-154, 141.78, 1157.37] 
     - Dupe to 4 Hylian Shields; keep one at Full-Durability
-    - WST Broadsword onto MNF
+    - WST Broadsword onto MNF:
+       notes: .link([Guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.aaq1xtn3xvvt)
     - _Warp::Shrine::Kyononis:
        comment: WARP
     - Set up PR with Hylian Shield and Broadsword and Map Zuggle the Broadsword on back once
@@ -174,7 +182,7 @@ _route:
        coord: [-144.72, 128.56, -1824.89]
     - _Material<Farosh Horn>:
        coord: [40, 300, -2200]
-       notes: From Farosh
+       notes: From Farosh; .link([cycle info] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.mw6eju33ak27)
     - _Material<Fleet Lotus Seeds x4>:
        coord: [456.27, 115.86, -2007.45]
     - Dupe 8 Small Charges, 8 Farosh Horns, 8 Fleet Lotus
@@ -201,7 +209,8 @@ _route:
     - _Equipment::Weapon<Zonaite Spear x2>:
        coord: [1206.21, 201.92, -2496.47]
     - Drop Zuggled rocket holder
-    - DZuggle 9 Damaged MNFs
+    - DZuggle 9 Damaged MNFs:
+       notes: .link([guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.ya177ivuuu0z)
     - Use other Zonaite Spear as primary weapon for PR until later
     - _Shrine::Utojis:
        comment: Blessing
@@ -323,10 +332,11 @@ _route:
     - _Special::StartPos Depths<Autobuild>:
        notes: Build and favorite the demo vehicle; defeat Kohga and pick up chest afterwards
     - _SchemaStone::CentralMine
-    - Perform BID (.link([guide] https://docs.google.com/presentation/d/1_bsHBX-od2V1wXxUn52OarLQw6rCl6nM-5Rxu14c4q8/edit?usp=sharing))
+    - Perform BID (.link([guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.ylik45cptne5))
     - Dupe 510 Large Zonaite, 192 Diamonds, 180 Rubies, 180 Fairies, 120 Flint, 60 Wood, 50 Small Zonaite, 50 Fire Fruit, 35 Ancient Blades, 20 Dazzlefruit, 20 Splash Fruit, 10 Brightcaps, 10 Amber, 10 Sundelions
     - _Shop::ForgeConstruct10:
        comment: Farm to 2500 Crystallized Charges (CC) total
+       notes: .link([guide] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.4gjd2dfv70ah)
     - _Location::SecretSpringofRevival:
        hide-icon-on-map: true
     - _Poe::Grand:
@@ -472,7 +482,9 @@ _route:
     - _Tablet::S10
     - _Location::EastGerudoSkyArchipelago:
        hide-icon-on-map: true
-    - _Shrine::Rakashog
+    - _Shrine::Rakashog:
+       comment: (STICK)
+       notes: .link([guide for Zonai Storage] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.qfuq21wozga2)
     - _Tablet<Towards Smiling Spectacle Rock>:
        coord: [-1840, 1081.91, -2105]
        comment: Look southwest and down to form a face; ensure a piece of equipment is not the target of the photo
