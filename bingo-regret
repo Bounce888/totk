@@ -1,0 +1,91 @@
+---
+_config:
+_project: 
+  description: REGRET
+  authors:
+    - BounceSR
+    
+_route:
+  - Sky Setup:
+    - _Warp::ROA:
+       comment: Start here
+       line-color: white
+    - Ascend out
+    - Run to Wings chest
+    - _Chest<Wings x3>:
+       coord: [379.57, 2441.25, -1698.74]
+       comment: Pick up
+    - Glide off to island with the Large Zonai Charge (LZC)
+    - _Chest<Large Zonai Charge>:
+       coord: [501.28, 1893.86, -1613.06]
+       comment: UH out of the water and open
+    - Glide off and dive down to weapons near construct camp below
+    - _Equipment::Weapon<Tree Branch>:
+       coord: [427.09, 1518.52, -1594.14]
+    - _Equipment::Weapon<Rusty Broadsword>:
+       coord: [449.33, 1515.2, -1615.44]
+    - QDZ or Recall Sluggle for MNF
+    - Pick up equipment at camp after reloading
+    - _Equipment::Weapon<Rusty Broadsword>:
+       coord: [449.33, 1515.2, -1615.44]
+    - _Equipment::Bow<Old Wooden Bow>:
+       coord: [449.23, 1514.74, -1613.78]
+    - _Equipment::Shield<Rusty Shield>:
+       coord: [449.37, 1514.5, -1616.89]
+    - _Item<Boxes>:
+       coord: [472.44, 1514.79, -1615.43]
+       comment: Break crates with UH for arrows
+    - _Item<Fairy>:
+       coord: [926.96, 667.61, -2131.03]
+       comment: Pick up
+    - Fuse a Rocket to the Tree Branch
+    - Take slow Fan + Wing to Dragonhead, damage down the Tree Branch to one durability on the Wing (badly damaged + 1)
+    - _Dispenser::S02:
+       comment: Dupe 3 LZCs, use 2 at dispenser, pick up everything
+    - Glide to support pillar, ascend up
+    - _Shrine::Joku-u:
+       comment: Only activate
+   
+  - Surface Setup:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+    - _Equipment::Weapon<Knight's Broadsword>:
+       coord: [-300.53, 126.4, 106.26]
+       comment: Recall soldier's swords, pick up Broadsword
+    - WST Tree Branch onto MNF
+    - DZuggle 9 MNFs (ignore Knight's Broadsword)
+    - Slide to Topaz chest
+    - _Chest<Topaz>:
+       coord: [-335.05, 129.43, 391.17]
+       comment: Is buried in ground
+    - Slide to Docks, clip in, mount stick normally, light switch
+    - _Chest<Hylian Shield>:
+       coord: [-154, 141.78, 1157.37]
+       comment: Pick up and dupe
+    - Dupe and defeat Gloom Hands with Topazes, slash Phantom Ganon
+    - _Enemy<Phantom Ganon>:
+       coord: [-207.16, 129.45, 1199.97]
+       comment: Pick up Dark Clump, Bow, Spear
+    - _Item<Hearty Salmon>:
+       coord: [-251.64, 114.41, 1175.77]
+       comment: Is in water
+    - _Equipment::Weapon<Traveler's Claymore>:
+       coord: [-268.24, 131.21, 1153.31]
+       comment: Is on mound
+    - Ascend out, slide to Woodland Stable
+    - _Chest<Rockets x3>:
+       coord: [1038.57, 177.68, 1253.27]
+       comment: Is on pillar; dupe many
+    - _Item<Square Board>:
+       coord: [1116.18, 165.98, 1251.37]
+       comment: Fuse to Claymore
+    - Overload Dupe Knight's Broadswords (use as primary weapon) and Hylian Shields
+    - _Shrine::Ekochiu:
+       comment: Only activate
+    
+       
+       
+       
+       
+       
+    
