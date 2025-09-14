@@ -82,6 +82,137 @@ _route:
     - Overload Dupe Knight's Broadswords (use as primary weapon) and Hylian Shields
     - _Shrine::Ekochiu:
        comment: Only activate
+    - _Enemy<Blue Boss Bokoblin>:
+       coord: [1120.46, 215.87, 1336.82]
+       comment: Pick up horn
+    - _Enemy<Bokoblin>:
+       coord: [1116.39, 215.62, 1338.71]
+       comment: Pick up horn and Meat Packet
+    - Rocket up the cliff towards camp with three unique Moblins
+    - _Enemy<Black Moblin>:
+       coord: [1400.87, 525.1, 1943.41]
+       comment: Pick up horn
+    - _Enemy<Blue Moblin>:
+       coord: [1410.19, 519.41, 1965.3]
+       comment: Pick up horn 
+    - _Enemy<Moblin>:
+       coord: [1474.55, 417.92, 1861.31]
+       comment: Pick up horn
+    - Backtrack to nearby Octoroks
+    - _Enemy<Octorok 1>:
+       coord: [1449.79, 424.6, 1691.86]
+       comment: Deposit anything, slash for chance of eyeball
+    - _Enemy<Octorok 2>:
+       coord: [1515.43, 422.07, 1756.83]
+       comment: Deposit the same thing, slash for chance of eyeball
+    - Dip in the Hot Spring outside
+    - _Cave::WestRestaurant00
+    - _Item<Rock Roast>:
+       coord: [1661.4, 370.49, 1839.94]
+       comment: Fuse to Equipment
+    - Ascend out
+    - _Enemy<Fire Keese>:
+       coord: [1792.68, 437.53, 1971.37]
+       comment: Pick up Eyeball
+    - Rocket out
+    - _Shrine::Marakuguc:
+       comment: Only activate
+    - _Shop::GeneralStore06:
+       comment: Buy out entire shop
+    - _Enemy<Black Bokoblin>:
+       coord: [1435.75, 425.65, 2285.93]
+       comment: Pick up horn
+    - _Enemy<Blue Bokoblin>:
+       coord: [1371.41, 525.89, 2247.04]
+       comment: Pick up horn
+    - Clip down to Ember Piece, slightly away
+    - _Chest::EmberShirt
+    - _Npc<Misko's Tablet>:
+       coord: [1382.41, 399.97, 2245.35]
+       comment: Start Quest
+    - Ascend out
+    - Slide to Thyphlo Ruins, clip in
+    - _Chest<Dusk Claymore>:
+       coord: [386.03, 270.38, 3170.75]
+       comment: Keep
+    - _Npc<Slate>:
+       coord: [376.03, 270.38, 3160.75]
+       comment: Read for Diamond, Big Battery, LZC
+       
+  - Korok Forest Depths:
+    - Ascend out
+    - Rocket slightly south and clip down
+    - _Enemy::Gleeok::D01:
+       comment: Pick up three Horns and Guts
+    - _Chest::CapofTwilight
+    - Clip across to Schematic
+    - _YigaSchema::AerialCannon
+    - Clip across to Korok Mask
+    - _Enemy::Hinox::DE04:
+       comment: Pick up Horn and Guts
+    - _Chest::KorokMask
+    
+    
+    
+    - Buy Tabantha Wheat, Hylian Rice, Cane Sugar
+    - Do Hestu's Concerns
+    - Do Secret Room
+  
+  - Akkala:
+    - _Warp::Shrine::Ekochiu:
+       comment: WARP
+       line-color: orange
+    - _Tablet<Ostrich>:
+       coord: [2296.06, 260.32, 1525.04]
+       comment: Snap during daytime
+    - Snap Ostrich
+    - Ember Piece + Fierce Deity Sword
+    
+    
+    
+  
+  - Hebra:
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: deepskyblue
+    - _Cave::NorthHyrulePlain01
+    - _Chest::ClimbingGear
+    - Ascend out, slide, clip down
+    - _Cave::ThundraPlateau00
+    - _Chest::MaskofAwakening
+    - Ascend out, slide, clip down
+    - _Cave::AncientColumns00
+    - _Chest::TunicofAwakening
+    - Ascend out, slide, clip down
+    - _Chest::FrostbiteShirt
+    - Ascend out
+    - _Npc<Tulin>:
+       coord: [-3593.1, 317.95, 1800.98]
+       comment: Start Main Quest
+    - _Npc<Harth>:
+       coord: [-3571.2, 247.65, 2260.04]
+       comment: Progress Main Quest
+    - _Tower::RosproPass
+    - _Location::SturnidaSecretHotSpring
+    - _Cave::LakeKilsie00
+    - _Chest::FrostbiteHeaddress
+    - Ascend out, rocket, clip down
+    - _Chest::VahMedohDivineHelm
+    - _Location::SherfinsSecretHotSpring
+    - _Cave::HebraGreatSkeleton00
+    - _Location::GoflamsSecretHotSpring
+    - _Enemy<Aerocuda>:
+       coord: [-3022.67, 664.12, 2748.73]
+       comment: Recover Tulin's Bow
+     
+    
+    
+       
+    
+    
+    
+    
+       
     
        
        
