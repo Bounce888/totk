@@ -39,7 +39,8 @@ _route:
        coord: [926.96, 667.61, -2131.03]
        comment: Pick up
     - Fuse a Rocket to the Tree Branch
-    - Take slow Fan + Wing to Dragonhead, damage down the Tree Branch to one durability on the Wing (badly damaged + 1)
+    - Take slow Fan + Wing to Dragonhead, damage down the Tree Branch to one durability on the Wing:
+       notes: Badly Damaged message and one more durability; use LZC if needed
     - _Dispenser::S02:
        comment: Dupe 3 LZCs, use 2 at dispenser, pick up everything
     - Glide to support pillar, ascend up
@@ -54,6 +55,13 @@ _route:
        comment: Recall soldier's swords, pick up Broadsword
     - WST Tree Branch onto MNF
     - DZuggle 9 MNFs (ignore Knight's Broadsword)
+    - _Npc<Purah>:
+       coord: [-251.26, 126.18, 155.25]
+       comment: Start Regional Phenomena Quest
+    - _Npc<Josha>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Start Camera Quest
+       notes: Use Wing to skip running
     - Slide to Topaz chest
     - _Chest<Topaz>:
        coord: [-335.05, 129.43, 391.17]
@@ -119,6 +127,9 @@ _route:
        comment: Only activate
     - _Shop::GeneralStore06:
        comment: Buy out entire shop
+    - _Npc<Slergo>:
+       coord: [1647.5, 487.5, 2436.5]
+       comment: Start Yunobo Main Quest
     - _Enemy<Black Bokoblin>:
        coord: [1435.75, 425.65, 2285.93]
        comment: Pick up horn
@@ -151,22 +162,152 @@ _route:
     - _Enemy::Hinox::DE04:
        comment: Pick up Horn and Guts
     - _Chest::KorokMask
-    
-    
-    
+    - _Lightroot::Ramobnukas
+    - _Lightroot::Eknupup
+    - _Lightroot::Sijnin
+    - _Lightroot::Rikonasum
+    - Clip to Deku Tree, defeat Phantom Ganon, ascend up
     - Buy Tabantha Wheat, Hylian Rice, Cane Sugar
     - Do Hestu's Concerns
     - Do Secret Room
+
+  - GSI Something:
+    - _Warp::Shrine::Gutanbac:
+       comment: WARP
+       line-color: yellow
+    - _Enemy::FluxConstruct::SC02
+    - _Enemy::FluxConstruct::SC04
+    - _Enemy::FluxConstruct::SC03:
+       notes: Can possibly get some Old Maps here?
+       
+   
+  - Some Central Stuff:
+    - _Enemy::Gleeok::G07
+    - _Chest::TrousersofAwakening
+    - _Chest::FierceDeityBoots
+  
+  - Depths Central:
+    - _Chest::MinersTop
+    - _Lightroot::Iayusus
+    - _Npc<Robbie>:
+       coord: [-803.81, -365.4, -452.58]
+       comment: Obtain Camera, finish quest
+    - _Enemy::Frox::DC09:
+       comment: Pick up Frox Fang
+    - _Chest::MajorasMask
+    - _Location::SecretSpringofRevival
+    - _Special::StartPos Depths<Autobuild>
+    - _Tablet<Master Kohga>:
+       coord: [-737.19, -414.31, -1867.57]
+       comment: Snap
+    - _Enemy<Master Kohga>:
+       coord: [-727.19, -414.31, -1857.57]
+       comment: Defeat
+    - _Item<Pristine 1>:
+       coord: [-543.03, -408.49, -1963.11]
+    - _Item<Pristine 2>:
+       coord: [-479, -408.6, -1953.02]
+    - _Item<Pristine 3>:
+       coord: [-507.9, -408.68, -2003.1]
+    - _Lightroot::Koradat
+    - _Chest::MinersTrousers
+    - _YigaSchema::Monocycle
+    - _Chest::EvilSpiritMask
+    - _YigaSchema::BeamTurret
+    - _YigaSchema::ShockTrap
+    - _Enemy::Frox::DG06:
+       comment: Pick up Obsidian Frox Fang
+    - _Chest::MinersMask
+    - _SchemaStone::KaraKaraMine
+    - _Shop::ForgeConstruct02
+    - _Enemy<Master Kohga>:
+       coord: [-3827.73, -382.36, -2908.4]
+       comment: Defeat
+    - _SchemaStone::GerudoMine
+    - _Shop::ForgeConstruct01
+    - _Chest::SheiksMask
+    - _Location::GerudoDarkSkeleton
+    - _Location<TooreroofRuins>:
+       coord: [-4774.8, -300.12, -3894.64]
+       comment: Ascend out of the Depths
+  
+  - More Gerudo Stuff:
+    - _Cave::GerudoGreatSkeleton00
+    - _Shrine::Soryotanog:
+       comment: Use Small Key
+    - _Item<Seal Toy>:
+       coord: [-3879.79, 169.07, -2957.52]
+       comment: Fuse to Equipment
+    - _Enemy::Molduga::SG01:
+       comment: Pick up Molduga Jaw and Molduga Guts
+    - _Item<Zapshroom>:
+       coord: [-3759.83, 136.82, -2538.05]
+       comment: Clip, get 5 Gerudo Equipment
+    - Ascend out
+    - _Npc<Riju>:
+       coord: [-3782.48, 137.99, -2639.96]
+       comment: Train, optional arrows
+    - _Npc<Gibdos>:
+       coord: [-3192.69, 129.25, -2513.82]
+       comment: Save Kara Kara Bazaar
+    - Get Heart Soup + Noble Pursuit ingredients
+    - Buy Chuchu Jellies
+    - Buy Oil Jar 
+    - other stuff...?
+  
+  
+  - Yunobo:
+    - _Warp::Shrine::Marakuguc:
+       comment: WARP
+       line-color: orange
+    - _Cave::YunoboCoHQSouth00
+    - _Chest::EmberHeaddress
+    - Ascend out
+    - _Enemy<Yunobo>:
+       coord: [1642.65, 510.5, 2908.4]
+       comment: Defeat
+    - _Cave::Lizard'sBurrow00
+    - _Chest::VahRudaniaDivineHelm
+    - Clip down
+    - _Chest::ZantsHelmet
+       
   
   - Akkala:
     - _Warp::Shrine::Ekochiu:
        comment: WARP
-       line-color: orange
     - _Tablet<Ostrich>:
        coord: [2296.06, 260.32, 1525.04]
        comment: Snap during daytime
-    - Snap Ostrich
-    - Ember Piece + Fierce Deity Sword
+    - _Cave::CephlaLake00
+    - _Chest::EmberTrousers
+    - _Chest<Fierce Deity Sword>:
+       coord: [2624.09, 241.94, 1417.55]
+       notes: Clip across
+    - Ascend out
+    - _Cave::AkkalaCitadelRuinsSummit00
+    - _Chest::FierceDeityArmor
+    - Ascend out
+    - _Enemy::Gleeok::G03
+    - _Shop::GeneralStore15:
+       comment: Buy Monster Extract
+    - _Enemy<Monster Forces>:
+       coord: [4853.61, 128.72, 2769.59]
+       comment: Defeat (all Pirate Ships)
+    - _Chest::YigaArmor
+    - _Chest<Travel Medallion Prototype>:
+       coord: [4523.45, 352.99, 3163.68]
+       comment: Free Key Item Slot
+    - _Fairy::MalanyaSpring:
+       notes: (need to get Endura Carrot and register Spotted Horse somewhere)
+    - Clip down
+    - _Chest::FierceDeityMask
+    - Ascend out
+    - _Chasm::SkullLake:
+       comment: Pick up Biggoron's Sword + Stalnox Horn
+    - _Chest::EvilSpiritArmor:
+       comment: OOB Slide (need to test if realistic)
+    
+    
     
     
     
@@ -183,28 +324,117 @@ _route:
     - Ascend out, slide, clip down
     - _Cave::AncientColumns00
     - _Chest::TunicofAwakening
-    - Ascend out, slide, clip down
+    - _Enemy::Gleeok::G05
+    - _Chest<Falcon Bow>:
+       coord: [-3296.13, 249.96, 1362.79]
+       comment: Use rocket arrows
     - _Chest::FrostbiteShirt
-    - Ascend out
+    - _Chest<Kite Shield>:
+       coord: [-3186, 313.66, 1904]
+    - _Npc<Penn>:
+       coord: [-3260.35, 224.96, 1761.88]
+       comment: Start Penn Quests
     - _Npc<Tulin>:
        coord: [-3593.1, 317.95, 1800.98]
        comment: Start Main Quest
+    - _Equipment::Weapon<Feathered Spear>:
+       coord: [-3388.5, 333.08, 2144.5]
+       comment: From Ice Lizalfos
     - _Npc<Harth>:
        coord: [-3571.2, 247.65, 2260.04]
        comment: Progress Main Quest
     - _Tower::RosproPass
+    - _Equipment::Weapon<Feathered Edge>:
+       coord: [-3421.5, 371.04, 2375.01]
+       comment: From Blue Bokoblin
+    - _Chest<Swallow Bow>:
+       coord: [-3189.08, 564.19, 2562.46]
+       comment: In chest near Bokoblin camp
+    - _Cave::HebraHeadspring00
+    - _Chest::FrostbiteTrousers
+    - _Enemy<Aerocuda>:
+       coord: [-3022.67, 664.12, 2748.73]
+       comment: Recover Tulin's Bow
+    - _Temple::Wind
+    
+  - Return to Rito Village:
+    - _Warp::Npc<Tulin>:
+       coord: [-3593.1, 317.95, 1800.98]
+       comment: Tulin of Rito Village
+       line-color: lightsalmon
     - _Location::SturnidaSecretHotSpring
     - _Cave::LakeKilsie00
     - _Chest::FrostbiteHeaddress
-    - Ascend out, rocket, clip down
+    - Ascend out
+    - _Enemy::Gleeok::G02
+    - _Cave::EastBironSnowshelf00
+    - _Npc<Selmie>:
+       coord: [-3668.34, 335.72, 3102.31]
+       comment: Break rocks
     - _Chest::VahMedohDivineHelm
     - _Location::SherfinsSecretHotSpring
     - _Cave::HebraGreatSkeleton00
     - _Location::GoflamsSecretHotSpring
-    - _Enemy<Aerocuda>:
-       coord: [-3022.67, 664.12, 2748.73]
-       comment: Recover Tulin's Bow
-     
+    - _Npc<Selmie>:
+       coord: [-2951.24, 677.55, 3140.54]
+       comment: Complete Quest, buy 3 Animal Design Shields
+    - _Npc<Golden Horse>:
+       coord: [-1820.87, 341.56, 3381.87]
+       comment: Ride to stable
+    - _Place::SnowfieldStable
+    - idk...?
+  
+  - Castle:
+    - _Warp::Shrine::Ekochiu:
+       comment: WARP
+       line-color: lightgreen
+    - _Equipment::Bow<Dusk Bow>:
+       coord: [-256.03, 616.32, 1062.02]
+       comment: Pick up
+    - Sapphire?, Rupee Types?
+    - _Chest::ChampionsLeathers
+    - _Enemy<Fire Like>:
+       coord: [-318.58, 378.37, 892.04]
+    - _Enemy<Ice Like>:
+       coord: [-346.88, 374.32, 968.09]
+    - _Enemy<Normal Like>:
+       coord: [-323.34, 353.09, 1100.74]
+    - _Enemy<Shock Like>:
+       coord: [-425, 140.5, 1087]
+       notes: Is inside Lockup behind grate
+    - _Equipment::Weapon<Zelda's Torch>:
+       coord: [-257.09, -1684.76, 1023.05]
+       comment: Clip down
+    
+    
+  
+  - Faronish:
+    - _Warp::Shrine::Joku-u:
+       comment: WARP
+    - _Npc<Dondon>:
+       coord: [1545.4, 164.09, -3359.99]
+       comment: Feed a Luminous Stone
+    - Clip down
+    - _Chest::RubberHelm
+    - _Npc<Giant White Stallion>:
+       coord: [799.59, 186.42, -3719.61]
+       comment: Ride to stable
+    - _Npc<Padok>:
+       coord: [523.51, 153.41, -3446.07]
+       comment: Register horse
+    - _Cave::PufferBeachOverhead00
+    - _Chest::PhantomHelmet
+    - Ascend out
+    - _Enemy<Monster Forces>:
+       coord: [-56.96, 136.44, -3468.28]
+       comment: Defeat (has Pirate Ship)
+    - _Shrine::Siyamotsus:
+       comment: Complete
+    - _Shrine::Motsusis:
+       comment: Complete
+    
+    
+    
     
     
        
