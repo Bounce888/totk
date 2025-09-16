@@ -50,6 +50,9 @@ _route:
   - Surface Setup:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
+    - _Tower::LookoutLanding
+    - _Place::LookoutLanding:
+       hide-icon-on-map: true
     - _Equipment::Weapon<Knight's Broadsword>:
        coord: [-300.53, 126.4, 106.26]
        comment: Recall soldier's swords, pick up Broadsword
@@ -96,16 +99,44 @@ _route:
     - _Enemy<Bokoblin>:
        coord: [1116.39, 215.62, 1338.71]
        comment: Pick up horn and Meat Packet
-    - Rocket up the cliff towards camp with three unique Moblins
-    - _Enemy<Black Moblin>:
-       coord: [1400.87, 525.1, 1943.41]
-       comment: Pick up horn
-    - _Enemy<Blue Moblin>:
-       coord: [1410.19, 519.41, 1965.3]
-       comment: Pick up horn 
-    - _Enemy<Moblin>:
-       coord: [1474.55, 417.92, 1861.31]
-       comment: Pick up horn
+    - _Item<Swift Violet>:
+       coord: [1204.67, 223.87, 1286.7]
+       comment: Pick up
+    - _Item<Sundelion>:
+       coord: [1253.04, 202.7, 1255.45]
+       comment: Pick up
+    - _Item<Fire Fruit>:
+       coord: [1254.02, 205.7, 1249.89]
+       comment: Pick up
+    - _Npc<Kilton>:
+       coord: [1228.03, 126.81, 1215.17]
+       comment: Bokoblin Mask
+       notes: Use the Bubbulgem in the cave here
+    - _SideAdv::TheHuntforBubbulGems
+    - _Item<Zapshroom>:
+       coord: [1251.01, 127.33, 1091.09]
+       comment: Pick up
+    - _Npc<Bad Horse>:
+       coord: [1150.29, 134.12, 1104.85]
+    - _Npc<Kish>:
+       coord: [1061.47, 128.06, 1134.35]
+       comment: Register as a Pony Points Member and Register the Horse
+    - _PonyPoint::Registration
+    - _PonyPoint::RegisterHorse
+    - _Item<Razorshroom>:
+       coord: [1068.6, 127.34, 1124.7]
+       comment: Pick up
+    - _Npc<Dog>:
+       coord: [1083.22, 127.48, 1144.29]
+       comment: Feed 4 Fire Fruit
+    - _Chest<Giant Brightbloom Seed x5>:
+       coord: [1100, 126.75, 1113]
+       comment: Dog Treasure Chest
+    - _Item<Blupee>:
+       coord: [1104.63, 126.31, 1162.8]
+       comment: Get Rupee
+    
+   
     - Backtrack to nearby Octoroks
     - _Enemy<Octorok 1>:
        coord: [1449.79, 424.6, 1691.86]
@@ -130,18 +161,16 @@ _route:
     - _Npc<Slergo>:
        coord: [1647.5, 487.5, 2436.5]
        comment: Start Yunobo Main Quest
-    - _Enemy<Black Bokoblin>:
-       coord: [1435.75, 425.65, 2285.93]
-       comment: Pick up horn
-    - _Enemy<Blue Bokoblin>:
-       coord: [1371.41, 525.89, 2247.04]
-       comment: Pick up horn
     - Clip down to Ember Piece, slightly away
     - _Chest::EmberShirt
     - _Npc<Misko's Tablet>:
        coord: [1382.41, 399.97, 2245.35]
        comment: Start Quest
     - Ascend out
+    - _Chest<Glide Tights>:
+       coord: [231.18, 858.7, 2014.17]
+       comment: Pick up
+       notes: Need to find better spot
     - Slide to Thyphlo Ruins, clip in
     - _Chest<Dusk Claymore>:
        coord: [386.03, 270.38, 3170.75]
@@ -175,6 +204,7 @@ _route:
     - _Warp::Shrine::Gutanbac:
        comment: WARP
        line-color: yellow
+       notes: UPR if going for sub hour
     - _Enemy::FluxConstruct::SC02
     - _Enemy::FluxConstruct::SC04
     - _Enemy::FluxConstruct::SC03:
@@ -182,6 +212,9 @@ _route:
        
    
   - Some Central Stuff:
+    - _Npc<Strade>:
+       coord: [-1273.68, 281.63, -1385.59]
+       comment: Purple Rupee
     - _Enemy::Gleeok::G07
     - _Chest::TrousersofAwakening
     - _Chest::FierceDeityBoots
@@ -212,7 +245,8 @@ _route:
     - _Lightroot::Koradat
     - _Chest::MinersTrousers
     - _YigaSchema::Monocycle
-    - _Chest::EvilSpiritMask
+    - _Chest::EvilSpiritMask:
+       notes: Need to move elsewhere if clipping
     - _YigaSchema::BeamTurret
     - _YigaSchema::ShockTrap
     - _Enemy::Frox::DG06:
@@ -233,27 +267,42 @@ _route:
   
   - More Gerudo Stuff:
     - _Cave::GerudoGreatSkeleton00
+    - _Chest::VahNaborisDivineHelm
     - _Shrine::Soryotanog:
        comment: Use Small Key
     - _Item<Seal Toy>:
        coord: [-3879.79, 169.07, -2957.52]
        comment: Fuse to Equipment
-    - _Enemy::Molduga::SG01:
-       comment: Pick up Molduga Jaw and Molduga Guts
+    - _Npc<Riju>:
+       coord: [-3782.48, 137.99, -2639.96]
+       comment: Train, optional arrows
     - _Item<Zapshroom>:
        coord: [-3759.83, 136.82, -2538.05]
        comment: Clip, get 5 Gerudo Equipment
     - Ascend out
-    - _Npc<Riju>:
-       coord: [-3782.48, 137.99, -2639.96]
-       comment: Train, optional arrows
     - _Npc<Gibdos>:
        coord: [-3192.69, 129.25, -2513.82]
        comment: Save Kara Kara Bazaar
-    - Get Heart Soup + Noble Pursuit ingredients
-    - Buy Chuchu Jellies
-    - Buy Oil Jar 
-    - other stuff...?
+    - _Item<Voltfruit>:
+       coord: [-3262.88, 141.08, -2424.9]
+    - _Item<Hydromelon>:
+       coord: [-3272.82, 134.37, -2464.06]
+    - _Item<Palm Fruit>:
+       coord: [-3269.64, 139.44, -2528.67]
+    - _Shop::GeneralStore12:
+       notes: Buy Oil Jar
+    - _Shop::GeneralStore11:
+       notes: Buy all 4 Chuchu Jellies
+    - _Well::KaraKaraBazaar:
+       comment: Enter for Crab if not gotten at Satori Mt
+    - _Enemy::Molduga::SG03
+    - _Cave::AncientAltarRuins04
+    - _Chest::PhantomGreaves
+    - _Shrine::Siyamotsus:
+       comment: Complete
+    - _Shrine::Motsusis:
+       comment: Complete
+   
   
   
   - Yunobo:
@@ -290,6 +339,7 @@ _route:
     - _Enemy::Gleeok::G03
     - _Shop::GeneralStore15:
        comment: Buy Monster Extract
+    - _Chest::ZonaiteShinGuards
     - _Enemy<Monster Forces>:
        coord: [4853.61, 128.72, 2769.59]
        comment: Defeat (all Pirate Ships)
@@ -319,12 +369,29 @@ _route:
     - _Cave::NorthHyrulePlain01
     - _Chest::ClimbingGear
     - Ascend out, slide, clip down
+    - _Chest<Glide Shirt>:
+       coord: [-2335.06, 715.1, 780.38]
+       comment: Repeat dive trial twice
     - _Cave::ThundraPlateau00
     - _Chest::MaskofAwakening
-    - Ascend out, slide, clip down
+    - _Item<Satori Mt>:
+       coord: [-2562.91, 307, -659.52]
+       comment: Copious, Mounts, Compendium, etc...
+    - _Cave::TamioRiverDownstream00
+    - _Chest::PhantomArmor
+    - _Shrine::Otutsum
+    - _Chest::TinglesHood
+    - _Chest::ZonaiteHelm
+    - _Enemy::Gleeok::G05
     - _Cave::AncientColumns00
     - _Chest::TunicofAwakening
-    - _Enemy::Gleeok::G05
+    - _Npc<Tabult>:
+       coord: [-3330.7, 263.89, 406]
+       comment: Purple Rupee
+    - _Npc<Modar>:
+       coord: [-3129.93, 24.43, 612.52]
+       comment: Purple Rupee
+       
     - _Chest<Falcon Bow>:
        coord: [-3296.13, 249.96, 1362.79]
        comment: Use rocket arrows
@@ -381,8 +448,14 @@ _route:
     - _Npc<Golden Horse>:
        coord: [-1820.87, 341.56, 3381.87]
        comment: Ride to stable
-    - _Place::SnowfieldStable
-    - idk...?
+    - _Npc<Penn>:
+       coord: [-1642.11, 339.2, 2575.8]
+       commment: Turn in horse, get 2 free Key Item Slots
+    - _Npc<Varke>:
+       coord: [-1648.72, 339.78, 2569.43]
+       comment: Register Golden Horse
+    - _Chest::YigaTights
+    - _Chest::EvilSpiritGreaves
   
   - Castle:
     - _Warp::Shrine::Ekochiu:
@@ -405,17 +478,131 @@ _route:
     - _Equipment::Weapon<Zelda's Torch>:
        coord: [-257.09, -1684.76, 1023.05]
        comment: Clip down
+  
+  - Mineru Mask Surface:
+    - _Warp::Shrine::Joku-u:
+       comment: WARP
+    - _Item<Mineru's Mask>:
+       coord: [1358.08, 575.80, -3234.40]
+       comment: Clip in and deliver to factory
+    - _Chasm::TobiosHollow
+  
+  - Construct Factory:
+    - _Warp::Lightroot::Muokuij
+    - _Lightroot::Muokuij
+    - 150 Poes
+    - _Shop::BargainerStatue04
+    - _Chest::RaviosHood
+   
+  - Approach to Hateno:
+    - _Warp::Shrine::Ukouh:
+       comment: WARP
+    - _Item<Tomato>:
+       coord: [320.6, 116.8, -1130.27]
+       comment: Pick up
+    - _Item<Beetle>:
+       coord: [317.62, 118.18, -1127.62]
+       comment: Give to Beedle
+    - _Chest::RubberArmor:
+       notes: Get Electric + Normal Keese nearby optionally
+    - _Chasm::GreatPlateauNorth
+    - _Chasm::GreatPlateauWest
+    - _Chasm::GreatPlateauSouth
+    - _Chest::YigaMask:
+       notes: Get 2 Sheikah Equipment here
+    - _Chasm::GreatPlateauEast
+    - _Chasm::ForestofTime
+    - _Well::DeyaVillageRuinsNorth
+    - _Well::DeyaVillageRuins
+    - _Well::DeyaVillageRuinsEast
+    - _Well::DeyaVillageRuinsSouth
+    - _Well::HillsofBaumer
+    - _Chasm::HillsofBaumer
+    - _Chest<Ancient Blade>:
+       coord: [391.11, 114.24, -2316.78]
+    - _Chest<Gnarled Thick Stick>:
+       coord: [567.32, 200.49, -2380.95]
+    - _Well::PoplaFoothillsSouth
+    - _Well::PoplaFoothillsNorth
+    - _Chest<Shield of the Mind's Eye>:
+       coord: [736.85, 216.51, -2237.77]
+    - _Chest<Phrenic Bow>:
+       coord: [679.48, 162.95, -1886.24]
+    - _Cave::DuelingPeaksSouth00
+    - _Chest::TinglesShirt
+    - _Enemy::Hinox::GF02
+    - _Chest::RubberHelm
+    - _Shrine::Zanmik
+    - Hateno Stuff
+  
+  - Hateno Sky:
+    - _Chest::ZonaiteWaistguard
+    - _Dispenser::S01
+    - _Dispenser::S07:
+       notes: Need to time
+    - _Dispenser::S24
+    - _Chest<Glide Mask>:
+       coord: [4474.33, 1220.74, -808.34]
+       comment: Do Dive Trial twice
+    - _Shrine::Sihajog:
+       comment: Complete Blessing
+  
+  - Zora:
+    - _Chest::RubberTights
+    - _Enemy<Lizalfos>:
+       coord: [2984.61, 383.19, -213.86]
+       comment: Zora Sword
+    - _Enemy<Blue Lizalfos>:
+       coord: [2993.1, 384.07, -213.03]
+       comment: Zora Longsword
+    - _Cave::Luto'sChannel00
+    - _Chest<Zora Shield>:
+       coord: [3137.57, 185.33, -119.66]
+       comment: Should find other Zora Shield spot
+    - _Chest<Zora Bow>:
+       coord: [2849.96, 188.43, 26.76]
+       comment: Is in open chest at Lizalfos camp
+    - _Cave::UplandZoranaByroad01
+    - _Chest::ClimbingBoots
+    - Pick up Glowing Cave Fish, Staminoka Bass, Bright Eyed Crab...?
+    - Ascend up
+    - _Npc<Bazz>:
+       coord: [2852.97, 480.91, 592.72]
+       comment: Use splash fruit from nearby
+       notes: Make room for Zora Spear, get 5 Zora Eqt
+    - _Tower::UplandZorana
+    - _Npc<Yona>:
+       coord: [3304.96, 244.26, 473.96]
+       comment: Splash Statue
+    - _Cave::PloymusMountain00
+    - _Chest::ClimbersBandanna
+    - _Npc<Sidon>:
+       coord: [3845.6, 591.74, 576.94]
+       comment: Talk
+    - _Npc<Jiahto>:
+       coord: [3401.73, 506.99, 871.93]
+       comment: Repair slate
+    - _Cave::PristineSanctum01
+    - _Npc<Dorephan>:
+       coord: [3682.07, 310.28, 605.91]
+       comment: King Scale
+    - Ruta Divine Helm (need to cut one out)
+    - _Enemy<Master Kohga>:
+       coord: [3299.39, -644.89, 559.1]
+       comment: Go down
+       notes: Need to move layer for this
+    - Forge Construct and Schema Stone here
     
-    
+       
+       
   
   - Faronish:
     - _Warp::Shrine::Joku-u:
        comment: WARP
+       line-color: turquoise
     - _Npc<Dondon>:
        coord: [1545.4, 164.09, -3359.99]
        comment: Feed a Luminous Stone
-    - Clip down
-    - _Chest::RubberHelm
     - _Npc<Giant White Stallion>:
        coord: [799.59, 186.42, -3719.61]
        comment: Ride to stable
@@ -428,10 +615,40 @@ _route:
     - _Enemy<Monster Forces>:
        coord: [-56.96, 136.44, -3468.28]
        comment: Defeat (has Pirate Ship)
-    - _Shrine::Siyamotsus:
-       comment: Complete
-    - _Shrine::Motsusis:
-       comment: Complete
+       
+  - Eventide:
+    - _Warp::Shrine::Zanmik:
+       comment: WARP (need to path here first)
+    - _Npc<Sayge>:
+       coord: [3409.1, 226.72, -2150.45]
+       comment: Dye 15 colors, turn in Fabric pictures
+    - _Item<Cook Set>:
+       coord: [3357.76, 215.82, -2095.69]
+       comment: COOK
+    - Copious + Cake + Crab
+    - Monster + Dark + Curry + Golden Apple
+    - Noble Pursuit + Heart Soup + Boiled Egg
+    - Pizza + Crepe + Chicken and Sauce
+    - 7 + 11 + 12 + 17 + 19 + 25 Yellow Hearts
+    - Level 3 Effects + Elixirs + Total Recipes
+    - _Shrine::Sifumim:
+       comment: Complete Proving Grounds
+    - _Enemy<Monster Forces>:
+       coord: [2913.24, 128.38, -3447.42]
+       comment: Defeat
+    - _SideAdv::RuffianInfestedVillage
+    - _Chest::TinglesTights
+    - _Enemy<Monster Forces>:
+       coord: [4458.14, 150.2, -3743.46]
+    - _Enemy<Monster Forces>:
+       coord: [4584.86, 150.84, -3520.82]
+    - _Enemy<Monster Forces>:
+       coord: [4678.78, 64.96, -3743.48]
+    - _Enemy<Monster Forces>:
+       coord: [4618.71, 168, -3716.1]
+       comment: Pirate Ship
+    - _Chest::MidnasHelmet:
+       comment: Clip
     
     
     
