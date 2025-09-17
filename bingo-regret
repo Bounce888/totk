@@ -46,6 +46,8 @@ _route:
     - Glide to support pillar, ascend up
     - _Shrine::Joku-u:
        comment: Only activate
+    - Game Over from Lightning
+    - Big Hearty Radish (?)
    
   - Surface Setup:
     - _Warp::Tower::LookoutLanding:
@@ -93,12 +95,6 @@ _route:
     - Overload Dupe Knight's Broadswords (use as primary weapon) and Hylian Shields
     - _Shrine::Ekochiu:
        comment: Only activate
-    - _Enemy<Blue Boss Bokoblin>:
-       coord: [1120.46, 215.87, 1336.82]
-       comment: Pick up horn
-    - _Enemy<Bokoblin>:
-       coord: [1116.39, 215.62, 1338.71]
-       comment: Pick up horn and Meat Packet
     - _Item<Swift Violet>:
        coord: [1204.67, 223.87, 1286.7]
        comment: Pick up
@@ -126,6 +122,9 @@ _route:
     - _Item<Razorshroom>:
        coord: [1068.6, 127.34, 1124.7]
        comment: Pick up
+    - _Shop<Beedle>:
+       coord: [1092.11, 127.43, 1096.44]
+       comment: Farm Arrows (to 200 if not wanting to worry about other shops), buy bugs once
     - _Npc<Dog>:
        coord: [1083.22, 127.48, 1144.29]
        comment: Feed 4 Fire Fruit
@@ -136,8 +135,9 @@ _route:
        coord: [1104.63, 126.31, 1162.8]
        comment: Get Rupee
     
-   
-    - Backtrack to nearby Octoroks
+    - _Chasm::MinshiWoods
+    - _Enemy::Talus::GE07:
+       notes: Fuse Heart to Equipment, KEEP
     - _Enemy<Octorok 1>:
        coord: [1449.79, 424.6, 1691.86]
        comment: Deposit anything, slash for chance of eyeball
@@ -153,31 +153,40 @@ _route:
     - _Enemy<Fire Keese>:
        coord: [1792.68, 437.53, 1971.37]
        comment: Pick up Eyeball
-    - Rocket out
-    - _Shrine::Marakuguc:
-       comment: Only activate
-    - _Shop::GeneralStore06:
-       comment: Buy out entire shop
-    - _Npc<Slergo>:
-       coord: [1647.5, 487.5, 2436.5]
-       comment: Start Yunobo Main Quest
-    - Clip down to Ember Piece, slightly away
     - _Chest::EmberShirt
     - _Npc<Misko's Tablet>:
        coord: [1382.41, 399.97, 2245.35]
        comment: Start Quest
     - Ascend out
-    - _Chest<Glide Tights>:
-       coord: [231.18, 858.7, 2014.17]
-       comment: Pick up
-       notes: Need to find better spot
-    - Slide to Thyphlo Ruins, clip in
+    - _Npc<Slergo>:
+       coord: [1647.5, 487.5, 2436.5]
+       comment: Start Yunobo Main Quest
+    - _Shop::GeneralStore06:
+       comment: Buy out entire shop
+    - _Shrine::Marakuguc:
+       comment: Only activate
+    - _Cave::YunoboCoHQSouth00
+    - _Chest::EmberHeaddress
+    - Ascend out
+    - _Equipment::Shield<Armor Shard Shield>:
+       coord: [1595.32, 509.6, 2673.79]
+       comment: From Bokoblin
+    - _Enemy<Yunobo>:
+       coord: [1642.65, 510.5, 2908.4]
+       comment: Defeat
+    - Slide to Thyphlo Ruins
+    - _Tower::ThyphloRuins
     - _Chest<Dusk Claymore>:
        coord: [386.03, 270.38, 3170.75]
        comment: Keep
     - _Npc<Slate>:
        coord: [376.03, 270.38, 3160.75]
-       comment: Read for Diamond, Big Battery, LZC
+       comment: Read for Diamond, Big Battery, LZC, Side Advs
+    - _SideAdv::InvestigatetheThyphloRuins
+    - _SideAdv::TheOwlProtectedbyDragons
+    - _SideAdv::TheCorridorbetweenTwoDragons
+    - _SideAdv::TheSixDragons
+    - _SideAdv::TheLongDragon
        
   - Korok Forest Depths:
     - Ascend out
@@ -187,6 +196,12 @@ _route:
     - _Chest::CapofTwilight
     - Clip across to Schematic
     - _YigaSchema::AerialCannon
+    - _Lightroot::Nikakik
+    - _Shop::BargainerStatue02
+    - _Chest::EvilSpiritGreaves
+    
+    - _Warp::Lightroot::Nikakik:
+       comment: WARP
     - Clip across to Korok Mask
     - _Enemy::Hinox::DE04:
        comment: Pick up Horn and Guts
@@ -195,31 +210,61 @@ _route:
     - _Lightroot::Eknupup
     - _Lightroot::Sijnin
     - _Lightroot::Rikonasum
-    - Clip to Deku Tree, defeat Phantom Ganon, ascend up
-    - Buy Tabantha Wheat, Hylian Rice, Cane Sugar
-    - Do Hestu's Concerns
-    - Do Secret Room
+    - _Enemy<Phantom Ganon>
 
-  - GSI Something:
-    - _Warp::Shrine::Gutanbac:
+
+  - GSI Koroks:
+    - _Warp::ROA:
        comment: WARP
        line-color: yellow
-       notes: UPR if going for sub hour
+    - _Shrine::Gutanbac:
+       hide-icon-on-map: true
+    - _Shrine::In-isa:
+       hide-icon-on-map: true
+    - _Shrine::Ukouh:
+       hide-icon-on-map: true
+    - _Shrine::Nachoyah:
+       hide-icon-on-map: true
+    - _Korok::GSI16
+    - _Korok::GSI15
+    - _Korok::GSI07
     - _Enemy::FluxConstruct::SC02
-    - _Enemy::FluxConstruct::SC04
-    - _Enemy::FluxConstruct::SC03:
-       notes: Can possibly get some Old Maps here?
-       
-   
-  - Some Central Stuff:
+    - Large Zonaite, Opal
+  
+  - Central:
+    - _Item<Tomato>:
+       coord: [320.6, 116.8, -1130.27]
+       comment: Pick up
+    - _Item<Beetle>:
+       coord: [317.62, 118.18, -1127.62]
+       comment: Give to Beedle
+    - _Chest::RubberArmor:
+       notes: Get Electric + Normal Keese nearby optionally
+    - _Shrine::Kamizun
+    - _Chasm::ForestofTime
+    - _Chasm::GreatPlateauEast
+    - _Chest::YigaMask:
+       notes: Get 2 Sheikah Equipment here
+    - _Chasm::GreatPlateauSouth
+    - _Chasm::GreatPlateauWest
+    - _Cave::ShrineofResurrection00
+    - Defeat Yiga, ignore Schema Stone (unfortunately)
     - _Npc<Strade>:
        coord: [-1273.68, 281.63, -1385.59]
        comment: Purple Rupee
     - _Enemy::Gleeok::G07
     - _Chest::TrousersofAwakening
+    - _Enemy<Black Boss Bokoblin>:
+       coord: [-883.06, 140.45, -1340.05]
+    - _Chasm::GreatPlateauNorth
+    - _Tower::HyruleField
+    - _Enemy<Blue Boss Bokoblin>:
+       coord: [-718.08, 166.6, -987.92]
+    - _Enemy<Boss Bokoblin>:
+       coord: [-985.91, 131.7, -800.54]
     - _Chest::FierceDeityBoots
   
-  - Depths Central:
+  - Depths 1:
     - _Chest::MinersTop
     - _Lightroot::Iayusus
     - _Npc<Robbie>:
@@ -227,7 +272,8 @@ _route:
        comment: Obtain Camera, finish quest
     - _Enemy::Frox::DC09:
        comment: Pick up Frox Fang
-    - _Chest::MajorasMask
+    - _Chest::MajorasMask:
+       notes: White + Silver Lynel [4 Horns], get Guts; maybe defeat all Lynels for arrows
     - _Location::SecretSpringofRevival
     - _Special::StartPos Depths<Autobuild>
     - _Tablet<Master Kohga>:
@@ -236,6 +282,9 @@ _route:
     - _Enemy<Master Kohga>:
        coord: [-727.19, -414.31, -1857.57]
        comment: Defeat
+    - _Shop::BargainerStatue
+    - _Shop::ForgeConstruct10
+    - _SchemaStone::CentralMine
     - _Item<Pristine 1>:
        coord: [-543.03, -408.49, -1963.11]
     - _Item<Pristine 2>:
@@ -244,9 +293,6 @@ _route:
        coord: [-507.9, -408.68, -2003.1]
     - _Lightroot::Koradat
     - _Chest::MinersTrousers
-    - _YigaSchema::Monocycle
-    - _Chest::EvilSpiritMask:
-       notes: Need to move elsewhere if clipping
     - _YigaSchema::BeamTurret
     - _YigaSchema::ShockTrap
     - _Enemy::Frox::DG06:
@@ -259,15 +305,15 @@ _route:
        comment: Defeat
     - _SchemaStone::GerudoMine
     - _Shop::ForgeConstruct01
+    - _Enemy::FluxConstruct::DG03
     - _Chest::SheiksMask
     - _Location::GerudoDarkSkeleton
     - _Location<TooreroofRuins>:
        coord: [-4774.8, -300.12, -3894.64]
        comment: Ascend out of the Depths
   
-  - More Gerudo Stuff:
+  - Western:
     - _Cave::GerudoGreatSkeleton00
-    - _Chest::VahNaborisDivineHelm
     - _Shrine::Soryotanog:
        comment: Use Small Key
     - _Item<Seal Toy>:
@@ -279,6 +325,7 @@ _route:
     - _Item<Zapshroom>:
        coord: [-3759.83, 136.82, -2538.05]
        comment: Clip, get 5 Gerudo Equipment
+       notes: Pick up gems, make 3 Elemental Weapons; destroy after to not mess with Cart Slides
     - Ascend out
     - _Npc<Gibdos>:
        coord: [-3192.69, 129.25, -2513.82]
@@ -295,93 +342,26 @@ _route:
        notes: Buy all 4 Chuchu Jellies
     - _Well::KaraKaraBazaar:
        comment: Enter for Crab if not gotten at Satori Mt
-    - _Enemy::Molduga::SG03
-    - _Cave::AncientAltarRuins04
-    - _Chest::PhantomGreaves
-    - _Shrine::Siyamotsus:
-       comment: Complete
-    - _Shrine::Motsusis:
-       comment: Complete
-   
-  
-  
-  - Yunobo:
-    - _Warp::Shrine::Marakuguc:
-       comment: WARP
-       line-color: orange
-    - _Cave::YunoboCoHQSouth00
-    - _Chest::EmberHeaddress
-    - Ascend out
-    - _Enemy<Yunobo>:
-       coord: [1642.65, 510.5, 2908.4]
-       comment: Defeat
-    - _Cave::Lizard'sBurrow00
-    - _Chest::VahRudaniaDivineHelm
-    - Clip down
-    - _Chest::ZantsHelmet
-       
-  
-  - Akkala:
-    - _Warp::Shrine::Ekochiu:
-       comment: WARP
-    - _Tablet<Ostrich>:
-       coord: [2296.06, 260.32, 1525.04]
-       comment: Snap during daytime
-    - _Cave::CephlaLake00
-    - _Chest::EmberTrousers
-    - _Chest<Fierce Deity Sword>:
-       coord: [2624.09, 241.94, 1417.55]
-       notes: Clip across
-    - Ascend out
-    - _Cave::AkkalaCitadelRuinsSummit00
-    - _Chest::FierceDeityArmor
-    - Ascend out
-    - _Enemy::Gleeok::G03
-    - _Shop::GeneralStore15:
-       comment: Buy Monster Extract
-    - _Chest::ZonaiteShinGuards
-    - _Enemy<Monster Forces>:
-       coord: [4853.61, 128.72, 2769.59]
-       comment: Defeat (all Pirate Ships)
-    - _Chest::YigaArmor
-    - _Chest<Travel Medallion Prototype>:
-       coord: [4523.45, 352.99, 3163.68]
-       comment: Free Key Item Slot
-    - _Fairy::MalanyaSpring:
-       notes: (need to get Endura Carrot and register Spotted Horse somewhere)
-    - Clip down
-    - _Chest::FierceDeityMask
-    - Ascend out
-    - _Chasm::SkullLake:
-       comment: Pick up Biggoron's Sword + Stalnox Horn
-    - _Chest::EvilSpiritArmor:
-       comment: OOB Slide (need to test if realistic)
-    
-    
-    
-    
-    
-  
-  - Hebra:
-    - _Warp::Tower::LookoutLanding:
-       comment: WARP
-       line-color: deepskyblue
+    - _Chest<Pristine Eightfold Longblade>:
+       coord: [-2504.78, 244.06, -1781.56]
+       comment: Pick up
+    - _Shrine::Rotsumamu
+    - _Chasm::YigaClanHideout
+    - Talus Hearts here    
+    - _Cave::TamioRiverDownstream00
+    - _Chest::PhantomArmor
+    - _Item<Satori Mt>:
+       coord: [-2562.91, 307, -659.52]
+       comment: Copious, Mounts, Compendium, etc...
     - _Cave::NorthHyrulePlain01
     - _Chest::ClimbingGear
     - Ascend out, slide, clip down
+    - _Tower::Lindor'sBrow
     - _Chest<Glide Shirt>:
        coord: [-2335.06, 715.1, 780.38]
        comment: Repeat dive trial twice
     - _Cave::ThundraPlateau00
     - _Chest::MaskofAwakening
-    - _Item<Satori Mt>:
-       coord: [-2562.91, 307, -659.52]
-       comment: Copious, Mounts, Compendium, etc...
-    - _Cave::TamioRiverDownstream00
-    - _Chest::PhantomArmor
-    - _Shrine::Otutsum
-    - _Chest::TinglesHood
-    - _Chest::ZonaiteHelm
     - _Enemy::Gleeok::G05
     - _Cave::AncientColumns00
     - _Chest::TunicofAwakening
@@ -419,6 +399,7 @@ _route:
        comment: In chest near Bokoblin camp
     - _Cave::HebraHeadspring00
     - _Chest::FrostbiteTrousers
+    - Ice Keese
     - _Enemy<Aerocuda>:
        coord: [-3022.67, 664.12, 2748.73]
        comment: Recover Tulin's Bow
@@ -451,16 +432,25 @@ _route:
     - _Npc<Penn>:
        coord: [-1642.11, 339.2, 2575.8]
        commment: Turn in horse, get 2 free Key Item Slots
+    - _SideAdv::ZeldasGoldenHorse
     - _Npc<Varke>:
        coord: [-1648.72, 339.78, 2569.43]
        comment: Register Golden Horse
+    - _Shrine::Orochium:
+       notes: Use Small Key
+    - _Npc<Juney>:
+       coord: [-1558.23, 212.42, 1805.16]
+       comment: Purple Rupee
     - _Chest::YigaTights
-    - _Chest::EvilSpiritGreaves
-  
-  - Castle:
-    - _Warp::Shrine::Ekochiu:
-       comment: WARP
-       line-color: lightgreen
+    - _Chest<Glide Tights>:
+       coord: [231.18, 858.7, 2014.17]
+       comment: Pick up
+    - _Shrine::Simosiwak
+    - Buy Tabantha Wheat, Hylian Rice, Cane Sugar
+    - Do Hestu's Concerns
+    - _SideAdv::HestusConcerns
+    - Do Secret Room
+    - _SideQuest::TheSecretRoom
     - _Equipment::Bow<Dusk Bow>:
        coord: [-256.03, 616.32, 1062.02]
        comment: Pick up
@@ -479,9 +469,60 @@ _route:
        coord: [-257.09, -1684.76, 1023.05]
        comment: Clip down
   
+
+  - Dragons:
+    - _Warp::Shrine::Marakuguc:
+       comment: WARP
+       line-color: deepskyblue
+    - Get Zelda and Dinraal Horns, snap one
+    - _Chest::ZantsHelmet
+    
+  - Akkala:
+    - _Warp::Shrine::Ekochiu:
+       comment: WARP
+    - _Tower::EldinCanyon
+    - _Tablet<Ostrich>:
+       coord: [2296.06, 260.32, 1525.04]
+       comment: Snap during daytime
+    - _Cave::CephlaLake00
+    - _Chest::EmberTrousers
+    - _Chest<Fierce Deity Sword>:
+       coord: [2624.09, 241.94, 1417.55]
+       notes: Clip across
+    - Ascend out
+    - _Cave::AkkalaCitadelRuinsSummit00
+    - _Chest::FierceDeityArmor
+    - Ascend out
+    - _Enemy::Gleeok::G03
+    - _Shop::GeneralStore15:
+       comment: Buy Monster Extract
+       notes: Break down pot equipment here
+    - _Chest::ZonaiteShinGuards
+    - _Enemy<Monster Forces>:
+       coord: [4853.61, 128.72, 2769.59]
+       comment: Defeat (all Pirate Ships)
+    - _Chest::YigaArmor
+    - _Chest<Travel Medallion Prototype>:
+       coord: [4523.45, 352.99, 3163.68]
+       comment: Free Key Item Slot
+    - _Fairy::MalanyaSpring:
+       notes: (need to get Endura Carrot and register Spotted Horse somewhere)
+    - _Chest::FierceDeityMask
+    - _Chasm::SkullLake:
+       comment: Pick up Biggoron's Sword + Stalnox Horn
+    - _Enemy::FluxConstruct::DA01
+    - _Chest::EvilSpiritArmor:
+       comment: OOB Slide (need to test if realistic)
+  
+    
+    
+    
+    
+  
   - Mineru Mask Surface:
     - _Warp::Shrine::Joku-u:
        comment: WARP
+       line-color: lightgreen
     - _Item<Mineru's Mask>:
        coord: [1358.08, 575.80, -3234.40]
        comment: Clip in and deliver to factory
@@ -494,38 +535,29 @@ _route:
     - _Shop::BargainerStatue04
     - _Chest::RaviosHood
    
-  - Approach to Hateno:
-    - _Warp::Shrine::Ukouh:
+  
+  - Hateno Approach:
+    - _Warp::Shrine::Kamizun:
        comment: WARP
-    - _Item<Tomato>:
-       coord: [320.6, 116.8, -1130.27]
-       comment: Pick up
-    - _Item<Beetle>:
-       coord: [317.62, 118.18, -1127.62]
-       comment: Give to Beedle
-    - _Chest::RubberArmor:
-       notes: Get Electric + Normal Keese nearby optionally
-    - _Chasm::GreatPlateauNorth
-    - _Chasm::GreatPlateauWest
-    - _Chasm::GreatPlateauSouth
-    - _Chest::YigaMask:
-       notes: Get 2 Sheikah Equipment here
-    - _Chasm::GreatPlateauEast
-    - _Chasm::ForestofTime
     - _Well::DeyaVillageRuinsNorth
     - _Well::DeyaVillageRuins
+    - Defeat the Phantom Ganon here
     - _Well::DeyaVillageRuinsEast
     - _Well::DeyaVillageRuinsSouth
     - _Well::HillsofBaumer
     - _Chasm::HillsofBaumer
     - _Chest<Ancient Blade>:
        coord: [391.11, 114.24, -2316.78]
+       notes: Use on any enemy at next camp
     - _Chest<Gnarled Thick Stick>:
        coord: [567.32, 200.49, -2380.95]
-    - _Well::PoplaFoothillsSouth
-    - _Well::PoplaFoothillsNorth
+       notes: Open Luminous Stone chest
     - _Chest<Shield of the Mind's Eye>:
        coord: [736.85, 216.51, -2237.77]
+    - Make 69 and 100+ Power Weapon
+    - Can get Knight's Claymore from Boss Boko if no Knight's Weapon
+    - _Well::PoplaFoothillsSouth
+    - _Well::PoplaFoothillsNorth
     - _Chest<Phrenic Bow>:
        coord: [679.48, 162.95, -1886.24]
     - _Cave::DuelingPeaksSouth00
@@ -534,12 +566,17 @@ _route:
     - _Chest::RubberHelm
     - _Shrine::Zanmik
     - Hateno Stuff
+    - _SideAdv::ALettertoKoyin
+    - _SideQuest::PhotographingaChuchu
+    - Game Over to Cuccos
+    - Game Over to Bees
   
   - Hateno Sky:
     - _Chest::ZonaiteWaistguard
     - _Dispenser::S01
-    - _Dispenser::S07:
-       notes: Need to time
+    - _Dispenser::S07
+    - _OldMap::ValorIsland_01
+    - _OldMap::ValorIsland
     - _Dispenser::S24
     - _Chest<Glide Mask>:
        coord: [4474.33, 1220.74, -808.34]
@@ -586,15 +623,31 @@ _route:
     - _Npc<Dorephan>:
        coord: [3682.07, 310.28, 605.91]
        comment: King Scale
-    - Ruta Divine Helm (need to cut one out)
+    - _Chest::VahRutaDivineHelm
+    - _Chasm::UnderZorasDomain
     - _Enemy<Master Kohga>:
        coord: [3299.39, -644.89, 559.1]
        comment: Go down
        notes: Need to move layer for this
-    - Forge Construct and Schema Stone here
-    
+    - _Shop::ForgeConstruct03
+    - _SchemaStone::LanayruMine
        
-       
+
+  - Blademaster Entry:
+    - _Warp::Shrine::Rotsumamu:
+       comment: WARP
+    - _Npc<Yiga Blademaster>:
+       coord: [-3510.24, 442.38, -1297.11]
+       comment: Activate warp, return later (?)
+    - _Tower::GerudoHighlands
+    - _Chest::VahNaborisDivineHelm
+    - _Shrine::Otutsum
+    - _Chest::TinglesHood
+    - Activate terminal
+    - _Chest::ZonaiteHelm
+    - _Shrine::Ga-ahisas:
+       notes: Get Star Fragment
+         
   
   - Faronish:
     - _Warp::Shrine::Joku-u:
@@ -609,13 +662,31 @@ _route:
     - _Npc<Padok>:
        coord: [523.51, 153.41, -3446.07]
        comment: Register horse
-    - _Cave::PufferBeachOverhead00
-    - _Chest::PhantomHelmet
-    - Ascend out
+    - Do Penn SA
+    - _SideAdv::AnEerieVoice
     - _Enemy<Monster Forces>:
        coord: [-56.96, 136.44, -3468.28]
        comment: Defeat (has Pirate Ship)
-       
+    - _Cave::PufferBeachOverhead00
+    - _Chest::PhantomHelmet
+    - Ascend out
+    - _Cave::AncientAltarRuins04
+    - _Chest::PhantomGreaves
+    - _Enemy::Molduga::SG03
+    - Need Gibdo Bone Somewhere
+    - _Chasm::EastGerudo
+    - _Shrine::Siyamotsus:
+       comment: Complete
+    - Get Zonaite Equipment
+    - _Shrine::Motsusis:
+       comment: Complete
+    - _Chasm::SouthLomei
+  
+  - Gerudo Depths:
+    - _Chest::EvilSpiritMask:
+       notes: Need to move elsewhere if clipping
+
+  
   - Eventide:
     - _Warp::Shrine::Zanmik:
        comment: WARP (need to path here first)
