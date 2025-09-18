@@ -6,31 +6,19 @@ _project:
     - BounceSR
     
 _route:
-  - Sky Setup:
+  - Dragonhead:
     - _Warp::ROA:
-       comment: Start here
        line-color: white
-       notes: For now, this doc is currently a mess. details are likely wrong, missing, or incomplete...
-    - Ascend out:
-       notes: use at your own risk (since you might be breaking down due to how messy this doc is)
-    - Run to Wings chest
-    - _Chest<Wings x3>:
-       coord: [379.57, 2441.25, -1698.74]
-       comment: Pick up
-       notes: Needs fixing - all recipes, total weapons/bows/shields, equipment fuses, best Korok Seeds, compendium entries
-    - Glide off to island with the Large Zonai Charge (LZC)
+       notes: Known to be missing Total Equipment, Recipes, Korok Seeds, Compendium, Sage Wills, Zonaite Eqt, Wizzrobes, Negative Shrines
     - _Chest<Large Zonai Charge>:
        coord: [501.28, 1893.86, -1613.06]
        comment: UH out of the water and open
-    - Glide off and dive down to weapons near construct camp below
     - _Equipment::Weapon<Tree Branch>:
        coord: [427.09, 1518.52, -1594.14]
     - _Equipment::Weapon<Rusty Broadsword>:
        coord: [449.33, 1515.2, -1615.44]
-    - QDZ or Recall Sluggle for MNF
-    - Pick up equipment at camp after reloading
-    - _Equipment::Weapon<Rusty Broadsword>:
-       coord: [449.33, 1515.2, -1615.44]
+    - _Equipment::Weapon<MsgNotFound Sword (MNF)>:
+       notes: Use QDZ or Recall Sluggle
     - _Equipment::Bow<Old Wooden Bow>:
        coord: [449.23, 1514.74, -1613.78]
     - _Equipment::Shield<Rusty Shield>:
@@ -38,20 +26,19 @@ _route:
     - _Item<Boxes>:
        coord: [472.44, 1514.79, -1615.43]
        comment: Break crates with UH for arrows
-    - _Item<Fairy>:
-       coord: [926.96, 667.61, -2131.03]
-       comment: Pick up
-    - Fuse a Rocket to the Tree Branch
-    - Take slow Fan + Wing to Dragonhead, damage down the Tree Branch to one durability on the Wing:
-       notes: Badly Damaged message and one more durability; use LZC if needed
+    - _Equipment::Weapon<Rusty Claymore>:
+       coord: [664.38, 140.95, -1640.49]
+       comment: Dive down to surface
+    - _Item<Square Board and Lumber>:
+       coord: [582.77, 116.82, -1566.38]
+       comment: Fuse Square Board to Claymore, slide with Lumber to Dragonhead
     - _Dispenser::S02:
        comment: Dupe 3 LZCs, use 2 at dispenser, pick up everything
+    - Fuse nearby rocket to weapon
     - Glide to support pillar, ascend up
     - _Shrine::Joku-u
-    - Game Over from Lightning
-    - Big Hearty Radish (?)
    
-  - Surface Setup:
+  - Thyphlo Ruins Surface:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
     - _Tower::LookoutLanding
@@ -137,7 +124,9 @@ _route:
     - _Item<Blupee>:
        coord: [1104.63, 126.31, 1162.8]
        comment: Get Rupee
-    
+    - _Item<Fairy>:
+       coord: [841.56, 157.17, 1362]
+       comment: Silly little clip
     - _Chasm::MinshiWoods
     - _Enemy::Talus::GE07:
        notes: Fuse Heart to Equipment, KEEP
@@ -161,7 +150,7 @@ _route:
     - _Npc<Misko's Tablet>:
        coord: [1382.41, 399.97, 2245.35]
        comment: Start Quest
-    - Ascend out
+       
     - _Npc<Slergo>:
        coord: [1647.5, 487.5, 2436.5]
        comment: Start Yunobo Main Quest
@@ -177,7 +166,9 @@ _route:
     - _Enemy<Yunobo>:
        coord: [1642.65, 510.5, 2908.4]
        comment: Defeat
-    - Slide to Thyphlo Ruins
+    - _Item<Endura Carrot>:
+       coord: [1241.31, 525.06, 2961.91]
+       comment: Pick up
     - _Tower::ThyphloRuins
     - _Chest<Dusk Claymore>:
        coord: [386.03, 270.38, 3170.75]
@@ -207,7 +198,7 @@ _route:
   - Korok Forest Depths:
     - _Warp::Lightroot::Nikakik:
        comment: WARP
-       line-color: yellow
+       line-color: beige
     - Clip across to Korok Mask
     - _Enemy::Hinox::DE04:
        comment: Pick up Horn and Guts
@@ -235,25 +226,27 @@ _route:
     - _Chest::ZantsHelmet
     - Moblin Gut (3)
 
-  - Construct Factory Approach:
+  - Construct Factory Surface:
     - _Warp::Shrine::Joku-u:
        comment: WARP
+    - Big Hearty Radish
+    - Game Over from Lightning
     - _Item<Mineru's Mask>:
        coord: [1358.08, 575.80, -3234.40]
        comment: Clip in and deliver to factory
     - _Chasm::TobiosHollow
   
   - Construct Factory Depths:
-    - _Warp::Lightroot::Muokuij
     - _Lightroot::Muokuij
     - 150 Poes
     - _Shop::BargainerStatue04:
        notes: Buy Tunic of the Depths
     - _Chest::RaviosHood
   
-  - Centr:
+  - Central A:
     - _Warp::Shrine::Joku-u:
        comment: WARP
+       line-color: yellow
     - _Chest::RubberHelm
     - _Cave::DuelingPeaksSouth00
     - _Chest::TinglesShirt
@@ -264,8 +257,6 @@ _route:
     - _Well::PoplaFoothillsSouth
     - _Chest<Shield of the Mind's Eye>:
        coord: [736.85, 216.51, -2237.77]
-    
-    
     - _Well::DeyaVillageRuinsNorth
     - _Well::DeyaVillageRuins
     - Defeat the Phantom Ganon here
@@ -293,11 +284,15 @@ _route:
     - _Chasm::GreatPlateauWest
     - _Cave::ShrineofResurrection00
     - Defeat Yiga, ignore Schema Stone (unfortunately)
+  
+  - Central B:
     - _SagesWill::SouthHyrule
     - _OldMap::SouthHyrule_02
     - _OldMap::SouthHyrule_01
     - _OldMap::SouthHyrule_03
     - _OldMap::SouthHyrule
+  
+  - Central C:
     - _Npc<Strade>:
        coord: [-1273.68, 281.63, -1385.59]
        comment: Purple Rupee
@@ -375,7 +370,7 @@ _route:
        coord: [-4774.8, -300.12, -3894.64]
        comment: Ascend out of the Depths
   
-  - Western:
+  - Gerudo:
     - _Cave::GerudoGreatSkeleton00
     - _Enemy::Molduga::SG04:
        notes: Jaw and Gut (6)
@@ -421,8 +416,7 @@ _route:
     - _Enemy::Talus::GG02:
        notes: Fuse Heart
     - _Shrine::Rotsumamu
-    - _Chasm::YigaClanHideout  
-    - _Cave::TamioRiverDownstream00
+    - _Chasm::YigaClanHideout 
     - _Chest::PhantomArmor
     - _Item<Satori Mt>:
        coord: [-2562.91, 307, -659.52]
@@ -431,7 +425,7 @@ _route:
     - Mount Buck + Doe
     - Sword of the Hero
   
-  - Hebr:
+  - Lindor's Brow:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
        line-color: deepskyblue
@@ -448,42 +442,33 @@ _route:
     - _Chest::ClimbingGear
     - Ascend out, slide, clip down
     - _Tower::Lindor'sBrow
-    - _Chest<Glide Shirt>:
-       coord: [-2335.06, 715.1, 780.38]
-       comment: Repeat dive trial twice
-    - _Dispenser::S21
-    - _Shrine::Taunhiy
     - _Cave::ThundraPlateau00
     - _Chest::MaskofAwakening
     - _Enemy::Hinox::GR06
-    - _Chasm::HyruleRidge
-    - _Npc<Modar>:
-       coord: [-3129.93, 24.43, 612.52]
-       comment: Purple Rupee
-    - _Npc<Tabult>:
-       coord: [-3330.7, 263.89, 406]
-       comment: Purple Rupee
-    - _Cave::AncientColumns00
-    - _Chest::TunicofAwakening
-    - _Enemy::Gleeok::G05
-    - _Enemy<Electric Wizzrobe>:
-       coord: [-4140.3, 204.12, 410.37]
-    - _Enemy<Meteo Wizzrobe>:
-       coord: [-3754.18, 271.52, -147.85]
-    - _Enemy<Blizzrobe>:
-       coord: [-4176.83, 641.75, -545.45]
-    - _Chasm::GerudoSummit
-    - _Shrine::Otutsum
-    - _Chest::TinglesHood
+  
+  - Tabantha Skydiving:
+    - _Chest<Glide Shirt>:
+       coord: [-2335.06, 715.1, 780.38]
+       comment: Repeat dive trial twice
+       level: Sky
+    - _Dispenser::S21
+    - _Shrine::Taunhiy
     - Activate terminal
     - _Chest::ZonaiteHelm
     - _Shrine::Ga-ahisas:
        notes: Get Star Fragment
-    - _Chest<Falcon Bow>:
-       coord: [-3296.13, 249.96, 1362.79]
-       comment: Use rocket arrows
+  
+  - Tulin:
+    - _Enemy::Gleeok::G05
+    - _Chest::TunicofAwakening
+    - _Npc<Tabult>:
+       coord: [-3330.7, 263.89, 406]
+       comment: Purple Rupee
+    - _Npc<Modar>:
+       coord: [-3129.93, 24.43, 612.52]
+       comment: Purple Rupee
     - _Item<Wildberry>:
-       coord: [-3078.43, 328.16, 1368.02]
+       coord: [-3031.65, 336.33, 1545]
        comment: Pick up
     - _Chest::FrostbiteShirt
     - _Chest<Kite Shield>:
@@ -531,6 +516,9 @@ _route:
        coord: [-3668.34, 335.72, 3102.31]
        comment: Break rocks
     - _Chest::VahMedohDivineHelm
+    - _Chest<Falcon Bow>:
+       coord: [-4366.14, 491.72, 3514.09]
+       comment: Pick up (melt ice too)
     - _Location::SherfinsSecretHotSpring
     - _Cave::HebraGreatSkeleton00
     - _Location::GoflamsSecretHotSpring
@@ -553,11 +541,16 @@ _route:
        coord: [-1558.23, 212.42, 1805.16]
        comment: Purple Rupee
     - _Chest::YigaTights
+  
+  - Thyphlo Skydiving:
     - _Chest<Glide Tights>:
        coord: [231.18, 858.7, 2014.17]
        comment: Pick up
+       level: Sky
     - _Dispenser::S15
     - _Shrine::Simosiwak
+  
+  - Castle:
     - _Equipment::Bow<Dusk Bow>:
        coord: [-256.03, 616.32, 1062.02]
        comment: Pick up
@@ -580,7 +573,7 @@ _route:
        comment: Clip down
     
   
-  - Akkala:
+  - Akkala Approach:
     - _Warp::Shrine::Ekochiu:
        comment: WARP
     - _Tower::EldinCanyon
@@ -607,10 +600,14 @@ _route:
     - _Shop::GeneralStore15:
        comment: Buy Monster Extract
        notes: Portable Pot, Sky Pot, Surface Pot, Gerudo Pot (Bazaar OR Sinkhole), Rito Pot
+  
+  - Sky Mine:
     - _Chest::ZonaiteShinGuards
     - _Shrine::Gikaku::Start
     - _Shrine::Gikaku
     - _Dispenser::S12
+  
+  - Akkala Northeast:
     - _Enemy<Monster Forces>:
        coord: [4853.61, 128.72, 2769.59]
        comment: Defeat (all Pirate Ships)
@@ -623,13 +620,15 @@ _route:
     - _Chest::FierceDeityMask
     - _Chasm::SkullLake:
        comment: Pick up Biggoron's Sword + Stalnox Horn
+  
+  - Akkala Depths:
     - _Enemy::FluxConstruct::DA01
     - _Chest::EvilSpiritArmor:
        comment: OOB Slide (need to test if realistic)
     - _Chasm::LomeiLabyrinth
     
   
-  - GSI Koroks:
+  - Great Sky Island:
     - _Warp::ROA:
        comment: WARP
        line-color: lightgreen
@@ -659,7 +658,7 @@ _route:
     - _Korok::GSI17::Start
     - _Korok::GSI04::Start
   
-  - Central:
+  - Lanayru:
     - _Korok::HF43::Start
     - _Korok::PF14::Start
     - _Item<Tomato>:
@@ -718,16 +717,16 @@ _route:
     - _Bubbulfrog::AncientZoraWaterworks
     - _Chest::RubberTights
   
-  - Hateno Sky:
-    - _Dispenser::S07:
-       notes: Use dispenser
-    - _OldMap::ValorIsland_01
+  - Lanayru Skydiving:
     - _OldMap::ValorIsland
-    - _Dispenser::S24:
+    - _OldMap::ValorIsland_01
+    - _Dispenser::S07:
        notes: Use dispenser
     - _Chest<Glide Mask>:
        coord: [4474.33, 1220.74, -808.34]
        comment: Do Dive Trial twice
+    - _Dispenser::S24:
+       notes: Use dispenser
     - _Shrine::Sihajog:
        comment: Complete Blessing
     - _Chest::ZonaiteWaistguard
@@ -817,26 +816,27 @@ _route:
     - _Chasm::SouthLomei
     - _Chest::EvilSpiritMask
 
-  - Blademaster Entry:
+  - Gerudo Highlands:
     - _Warp::Shrine::Rotsumamu:
        comment: WARP
     - _Npc<Yiga Blademaster>:
        coord: [-3510.24, 442.38, -1297.11]
     - _Tower::GerudoHighlands
-  
+    - _Chasm::GerudoSummit
+    - _Shrine::Otutsum
+    - _Chest::TinglesHood
   
   - Lanayru Kohga Approach:
     - _Warp::Shrine::Mogawak:
        comment: WARP
     - _Chest::VahRutaDivineHelm
-    - _Chasm::UnderZorasDomain
+    - _Chasm::UnderZorasDomain:
+       comment: Dive down chasm
   
   - Lanayru Kohga Depths:
     - _Lightroot::Kawagom
     - _Enemy<Master Kohga>:
        coord: [3299.39, -644.89, 559.1]
-       comment: Go down
-       notes: Need to move layer for this
     - _Shop::ForgeConstruct03
     - _SchemaStone::LanayruMine
     - 100 Poes
