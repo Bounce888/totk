@@ -17,7 +17,7 @@ _route:
     - _Chest<Wings x3>:
        coord: [379.57, 2441.25, -1698.74]
        comment: Pick up
-       notes: Needs full routing - all recipes, total weapons/bows/shields, equipment fuses, best Korok Seeds, compendium entries
+       notes: Needs fixing - all recipes, total weapons/bows/shields, equipment fuses, best Korok Seeds, compendium entries
     - Glide off to island with the Large Zonai Charge (LZC)
     - _Chest<Large Zonai Charge>:
        coord: [501.28, 1893.86, -1613.06]
@@ -191,7 +191,7 @@ _route:
     - _SideAdv::TheSixDragons
     - _SideAdv::TheLongDragon
        
-  - Korok Forest Depths:
+  - Thyphlo Ruins Depths:
     - Ascend out
     - Rocket slightly south and clip down
     - _Enemy::Gleeok::D01:
@@ -203,9 +203,11 @@ _route:
     - _Lightroot::Nikakik
     - _Shop::BargainerStatue02
     - _Chest::EvilSpiritGreaves
-    
+  
+  - Korok Forest Depths:
     - _Warp::Lightroot::Nikakik:
        comment: WARP
+       line-color: yellow
     - Clip across to Korok Mask
     - _Enemy::Hinox::DE04:
        comment: Pick up Horn and Guts
@@ -216,7 +218,8 @@ _route:
     - _Lightroot::Sijnin
     - _Lightroot::Rikonasum
     - _Enemy<Phantom Ganon>
-    
+  
+  - Korok Forest Surface:
     - Buy Tabantha Wheat, Hylian Rice, Cane Sugar
     - Do Hestu's Concerns
     - _SideAdv::HestusConcerns
@@ -226,50 +229,63 @@ _route:
   - Dragon Horns:
     - _Warp::Shrine::Marakuguc:
        comment: WARP
-       line-color: deepskyblue
+       level: Surface
     - Get Zelda and Dinraal Horns, touch MS
     - Take picture later
     - _Chest::ZantsHelmet
     - Moblin Gut (3)
 
-  - GSI Koroks:
-    - _Warp::ROA:
+  - Construct Factory Approach:
+    - _Warp::Shrine::Joku-u:
        comment: WARP
-    - _Shrine::Gutanbac:
-       hide-icon-on-map: true
-    - _Shrine::In-isa:
-       hide-icon-on-map: true
-    - _Shrine::Ukouh:
-       hide-icon-on-map: true
-    - _Shrine::Nachoyah:
-       hide-icon-on-map: true
-    - _Korok::GSI16
-    - _Dispenser::S06
-    - _Korok::GSI12
-    - _Korok::GSI14
-    - _Korok::GSI06
-    - _Dispenser::S03
-    - _Korok::GSI05
-    - _Korok::GSI07
-    - _Enemy::FluxConstruct::SC02
-    - Large Zonaite, Opal, Portable Pot
-    - _Korok::GSI09
-    - _Korok::GSI03
-    - _Korok::GSI01
-    - _Korok::GSI02
+    - _Item<Mineru's Mask>:
+       coord: [1358.08, 575.80, -3234.40]
+       comment: Clip in and deliver to factory
+    - _Chasm::TobiosHollow
   
-  - Central:
-    - _Item<Tomato>:
-       coord: [320.6, 116.8, -1130.27]
-       comment: Pick up
-    - _Item<Beetle>:
-       coord: [317.62, 118.18, -1127.62]
-       comment: Give to Beedle
-    - _Well::RiversideStable
-    - _Chest::RubberArmor:
-       notes: Get Electric + Normal Keese + Aerocuda Eyeball nearby
-    - _Shrine::Kamizun
-    - _Chasm::ForestofTime
+  - Construct Factory Depths:
+    - _Warp::Lightroot::Muokuij
+    - _Lightroot::Muokuij
+    - 150 Poes
+    - _Shop::BargainerStatue04:
+       notes: Buy Tunic of the Depths
+    - _Chest::RaviosHood
+  
+  - Centr:
+    - _Warp::Shrine::Joku-u:
+       comment: WARP
+    - _Chest::RubberHelm
+    - _Cave::DuelingPeaksSouth00
+    - _Chest::TinglesShirt
+    - _Enemy::Hinox::GF02
+    - _Chest<Phrenic Bow>:
+       coord: [679.48, 162.95, -1886.24]
+    - _Well::PoplaFoothillsNorth
+    - _Well::PoplaFoothillsSouth
+    - _Chest<Shield of the Mind's Eye>:
+       coord: [736.85, 216.51, -2237.77]
+    
+    
+    - _Well::DeyaVillageRuinsNorth
+    - _Well::DeyaVillageRuins
+    - Defeat the Phantom Ganon here
+    - _Shrine::Susub:
+       comment: (likely)
+    - Giant Boomerang here
+    - _Well::DeyaVillageRuinsEast
+    - _Well::DeyaVillageRuinsSouth
+    - _Well::HillsofBaumer
+    - _Chasm::HillsofBaumer
+    - _Chest<Gnarled Thick Stick>:
+       coord: [567.32, 200.49, -2380.95]
+       notes: Open Luminous Stone chest
+    - Make 69 and 100+ Power Weapon
+    - Can get Knight's Claymore from Boss Boko if no Knight's Weapon
+    - _Chest<Ancient Blade>:
+       coord: [391.11, 114.24, -2316.78]
+       notes: Use on any enemy at next camp
+    
+    
     - _Chasm::GreatPlateauEast
     - _Chest::YigaMask:
        notes: Get 2 Sheikah Equipment here
@@ -418,6 +434,7 @@ _route:
   - Hebr:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
+       line-color: deepskyblue
     - _Shop::BargainerStatue06
     - _Well::LookoutLanding
     - _Shop::CrystalRefinery01:
@@ -561,17 +578,6 @@ _route:
     - _Equipment::Weapon<Zelda's Torch>:
        coord: [-257.09, -1684.76, 1023.05]
        comment: Clip down
-  
-  - Glue and Boomerangs:
-    - _Warp::Shrine::Nachoyah:
-       comment: WARP
-    - _Korok::GSI17::Start
-    - _Korok::GSI04::Start
-    - _Korok::HF43::Start
-    - _Korok::PF14::Start
-    - _Chest<Boomerangs>:
-       coord: [1058.58, 119.67, -313.6]
-       comment: Boomerang, Lizal Boomerang, and Lizalfos Arm (giant boomerang at deya village ruins)
     
   
   - Akkala:
@@ -622,92 +628,52 @@ _route:
        comment: OOB Slide (need to test if realistic)
     - _Chasm::LomeiLabyrinth
     
-    
-    
-    
   
-  - Mineru Mask Surface:
-    - _Warp::Shrine::Joku-u:
+  - GSI Koroks:
+    - _Warp::ROA:
        comment: WARP
        line-color: lightgreen
-    - _Item<Mineru's Mask>:
-       coord: [1358.08, 575.80, -3234.40]
-       comment: Clip in and deliver to factory
-    - _Chasm::TobiosHollow
+    - _Shrine::Gutanbac:
+       hide-icon-on-map: true
+    - _Shrine::In-isa:
+       hide-icon-on-map: true
+    - _Shrine::Ukouh:
+       hide-icon-on-map: true
+    - _Shrine::Nachoyah:
+       hide-icon-on-map: true
+
+    - _Korok::GSI16
+    - _Dispenser::S06
+    - _Korok::GSI12
+    - _Korok::GSI14
+    - _Korok::GSI06
+    - _Dispenser::S03
+    - _Korok::GSI05
+    - _Korok::GSI07
+    - _Enemy::FluxConstruct::SC02
+    - Large Zonaite, Opal, Portable Pot
+    - _Korok::GSI09
+    - _Korok::GSI03
+    - _Korok::GSI01
+    - _Korok::GSI02
+    - _Korok::GSI17::Start
+    - _Korok::GSI04::Start
   
-  - Construct Factory:
-    - _Warp::Lightroot::Muokuij
-    - _Lightroot::Muokuij
-    - 150 Poes
-    - _Shop::BargainerStatue04:
-       notes: Buy Tunic of the Depths
-    - _Chest::RaviosHood
-   
-  
-  - Hateno Approach:
-    - _Warp::Shrine::Kamizun:
-       comment: WARP
-    - _Well::DeyaVillageRuinsNorth
-    - _Well::DeyaVillageRuins
-    - Defeat the Phantom Ganon here
-    - _Shrine::Susub:
-       comment: (likely)
-    - Giant Boomerang here
-    - _Well::DeyaVillageRuinsEast
-    - _Well::DeyaVillageRuinsSouth
-    - _Well::HillsofBaumer
-    - _Chasm::HillsofBaumer
-    - _Chest<Ancient Blade>:
-       coord: [391.11, 114.24, -2316.78]
-       notes: Use on any enemy at next camp
-    - _Chest<Gnarled Thick Stick>:
-       coord: [567.32, 200.49, -2380.95]
-       notes: Open Luminous Stone chest
-    - _Chest<Shield of the Mind's Eye>:
-       coord: [736.85, 216.51, -2237.77]
-    - Make 69 and 100+ Power Weapon
-    - Can get Knight's Claymore from Boss Boko if no Knight's Weapon
-    - _Well::PoplaFoothillsSouth
-    - _Well::PoplaFoothillsNorth
-    - _Chest<Phrenic Bow>:
-       coord: [679.48, 162.95, -1886.24]
-    - _Cave::DuelingPeaksSouth00
-    - _Chest::TinglesShirt
-    - _Enemy::Hinox::GF02
-    - _Chest::RubberHelm
-    - _Shrine::Zanmik
-    - Hateno Stuff
-    - _Well::Zelda'sSecret
-    - _Well::HatenoVillageSouth
-    - _Well::HatenoVillageEast
-    - _Well::HatenoVillageNorth
-    - _Well::HatenoVillageWest
-    - 2 Dog Treasures
-    - _SideAdv::ALettertoKoyin
-    - _SideQuest::PhotographingaChuchu
-    - Game Over to Cuccos
-    - Game Over to Bees
-  
-  - Hateno Sky:
-    - _Chest::ZonaiteWaistguard
-    - _Dispenser::S01:
-       notes: Use dispenser
-    - _Shrine::Yansamin:
-       comment: PROV
-    - _Dispenser::S07:
-       notes: Use dispenser
-    - _OldMap::ValorIsland_01
-    - _OldMap::ValorIsland
-    - _Dispenser::S24:
-       notes: Use dispenser
-    - _Chest<Glide Mask>:
-       coord: [4474.33, 1220.74, -808.34]
-       comment: Do Dive Trial twice
-    - _Shrine::Sihajog:
-       comment: Complete Blessing
-  
-  - Zora:
-    - _Chest::RubberTights
+  - Central:
+    - _Korok::HF43::Start
+    - _Korok::PF14::Start
+    - _Item<Tomato>:
+       coord: [320.6, 116.8, -1130.27]
+       comment: Pick up
+    - _Item<Beetle>:
+       coord: [317.62, 118.18, -1127.62]
+       comment: Give to Beedle
+    - _Well::RiversideStable
+    - _Chest::RubberArmor:
+       notes: Get Electric + Normal Keese + Aerocuda Eyeball nearby
+    - _Chest<Boomerangs>:
+       coord: [1058.58, 119.67, -313.6]
+       comment: Boomerang, Lizal Boomerang, and Lizalfos Arm (giant boomerang at deya village ruins) 
     - _Enemy<Lizalfos>:
        coord: [2984.61, 383.19, -213.86]
        comment: Zora Sword
@@ -737,9 +703,6 @@ _route:
        coord: [3304.96, 244.26, 473.96]
        comment: Splash Statue
     - _Shrine::Mogawak
-    - _Cave::PloymusMountain00
-    - _Chest::ClimbersBandanna
-    - _Bubbulfrog::AncientZoraWaterworks
     - _Npc<Sidon>:
        coord: [3845.6, 591.74, 576.94]
        comment: Talk
@@ -750,26 +713,76 @@ _route:
     - _Npc<Dorephan>:
        coord: [3682.07, 310.28, 605.91]
        comment: King Scale
-    - _Chest::VahRutaDivineHelm
-    - _Chasm::UnderZorasDomain
-    - _Lightroot::Kawagom
-    - _Enemy<Master Kohga>:
-       coord: [3299.39, -644.89, 559.1]
-       comment: Go down
-       notes: Need to move layer for this
-    - _Shop::ForgeConstruct03
-    - _SchemaStone::LanayruMine
-    - 100 Poes
-       
+    - _Cave::PloymusMountain00
+    - _Chest::ClimbersBandanna
+    - _Bubbulfrog::AncientZoraWaterworks
+    - _Chest::RubberTights
+  
+  - Hateno Sky:
+    - _Dispenser::S07:
+       notes: Use dispenser
+    - _OldMap::ValorIsland_01
+    - _OldMap::ValorIsland
+    - _Dispenser::S24:
+       notes: Use dispenser
+    - _Chest<Glide Mask>:
+       coord: [4474.33, 1220.74, -808.34]
+       comment: Do Dive Trial twice
+    - _Shrine::Sihajog:
+       comment: Complete Blessing
+    - _Chest::ZonaiteWaistguard
+    - _Dispenser::S01:
+       notes: Use dispenser
+    - _Shrine::Yansamin:
+       comment: PROV
+ 
+  - Hateno Surface:
+    - _Shrine::Zanmik
+    - Hateno Stuff
+    - _Well::Zelda'sSecret
+    - _Well::HatenoVillageSouth
+    - _Well::HatenoVillageEast
+    - _Well::HatenoVillageNorth
+    - _Well::HatenoVillageWest
+    - 2 Dog Treasures
+    - _SideAdv::ALettertoKoyin
+    - _SideQuest::PhotographingaChuchu
+    - Game Over to Cuccos
+    - Game Over to Bees
+    - _Npc<Sayge>:
+       coord: [3409.1, 226.72, -2150.45]
+       comment: Dye 15 colors, turn in Fabric pictures (Chuchu and Cucco)
+    - _Item<Cook Set>:
+       coord: [3357.76, 215.82, -2095.69]
+       comment: COOK
+       notes: Snap Naydra when convenient
+    - _SideQuest::ANewChampionsTunic
+    - Copious + Cake + Crab
+    - Monster + Dark + Curry + Golden Apple
+    - Noble Pursuit + Heart Soup + Boiled Egg
+    - Pizza + Crepe + Chicken and Sauce
+    - 7 + 11 + 12 + 17 + 19 + 25 Yellow Hearts
+    - Level 3 Effects + Elixirs + Total Recipes
+    - _Shrine::Sifumim
+    - _Enemy<Monster Forces>:
+       coord: [2913.24, 128.38, -3447.42]
+       comment: Defeat
+    - _SideAdv::RuffianInfestedVillage
+    - _Chest::TinglesTights
+    - _Enemy<Monster Forces>:
+       coord: [4458.14, 150.2, -3743.46]
+    - _Enemy<Monster Forces>:
+       coord: [4584.86, 150.84, -3520.82]
+    - _Enemy<Monster Forces>:
+       coord: [4678.78, 64.96, -3743.48]
+    - _Enemy<Monster Forces>:
+       coord: [4618.71, 168, -3716.1]
+       comment: Pirate Ship
+    - _Shrine::Marari-in
+    - _Chest::MidnasHelmet:
+       comment: Clip
+       notes: Boko gut (7)
 
-  - Blademaster Entry:
-    - _Warp::Shrine::Rotsumamu:
-       comment: WARP
-    - _Npc<Yiga Blademaster>:
-       coord: [-3510.24, 442.38, -1297.11]
-    - _Tower::GerudoHighlands
-   
-         
   
   - Faronish:
     - _Warp::Shrine::Joku-u:
@@ -802,48 +815,35 @@ _route:
     - _Shrine::Motsusis:
        comment: Complete
     - _Chasm::SouthLomei
-  
-  - Gerudo Depths:
-    - _Chest::EvilSpiritMask:
-       notes: Need to move elsewhere if clipping
+    - _Chest::EvilSpiritMask
 
+  - Blademaster Entry:
+    - _Warp::Shrine::Rotsumamu:
+       comment: WARP
+    - _Npc<Yiga Blademaster>:
+       coord: [-3510.24, 442.38, -1297.11]
+    - _Tower::GerudoHighlands
   
-  - Eventide:
-    - _Warp::Shrine::Zanmik:
-       comment: WARP (need to path here first)
-    - _Npc<Sayge>:
-       coord: [3409.1, 226.72, -2150.45]
-       comment: Dye 15 colors, turn in Fabric pictures (Chuchu and Cucco)
-    - _Item<Cook Set>:
-       coord: [3357.76, 215.82, -2095.69]
-       comment: COOK
-       notes: Snap Naydra when convenient
-    - _SideQuest::ANewChampionsTunic
-    - Copious + Cake + Crab
-    - Monster + Dark + Curry + Golden Apple
-    - Noble Pursuit + Heart Soup + Boiled Egg
-    - Pizza + Crepe + Chicken and Sauce
-    - 7 + 11 + 12 + 17 + 19 + 25 Yellow Hearts
-    - Level 3 Effects + Elixirs + Total Recipes
-    - _Enemy<Monster Forces>:
-       coord: [2913.24, 128.38, -3447.42]
-       comment: Defeat
-    - _SideAdv::RuffianInfestedVillage
-    - _Chest::TinglesTights
-    - _Enemy<Monster Forces>:
-       coord: [4458.14, 150.2, -3743.46]
-    - _Enemy<Monster Forces>:
-       coord: [4584.86, 150.84, -3520.82]
-    - _Enemy<Monster Forces>:
-       coord: [4678.78, 64.96, -3743.48]
-    - _Enemy<Monster Forces>:
-       coord: [4618.71, 168, -3716.1]
-       comment: Pirate Ship
-    - _Shrine::Marari-in
-    - _Chest::MidnasHelmet:
-       comment: Clip
-       notes: Boko gut (7)
+  
+  - Lanayru Kohga Approach:
+    - _Warp::Shrine::Mogawak:
+       comment: WARP
+    - _Chest::VahRutaDivineHelm
+    - _Chasm::UnderZorasDomain
+  
+  - Lanayru Kohga Depths:
+    - _Lightroot::Kawagom
+    - _Enemy<Master Kohga>:
+       coord: [3299.39, -644.89, 559.1]
+       comment: Go down
+       notes: Need to move layer for this
+    - _Shop::ForgeConstruct03
+    - _SchemaStone::LanayruMine
+    - 100 Poes
+
+         
     
+  
        
     
     
