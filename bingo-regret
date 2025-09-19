@@ -9,7 +9,7 @@ _route:
   - Dragonhead:
     - _Warp::ROA:
        line-color: white
-       notes: Known to be missing Total Equipment, Recipes, Satori Mt Routing, Korok Seeds, Compendium, Sage Wills, Zonaite Eqt, Wizzrobes, Negative Shrines
+       notes: Do Compendium + Total Eqt on the way (needs more testing)
     - _Chest<Large Zonai Charge>:
        coord: [501.28, 1893.86, -1613.06]
        comment: UH out of the water and open
@@ -53,6 +53,9 @@ _route:
        coord: [-248.72, 126.36, 148.83]
        comment: Start Camera Quest
        notes: Use Wing to skip running
+    - _Item<Bird Egg>:
+       coord: [-284.76, 132.61, 173.7]
+       comment: Pick up
     - Slide to Topaz chest
     - _Chest<Topaz>:
        coord: [-335.05, 129.43, 391.17]
@@ -74,6 +77,8 @@ _route:
     - _Shrine::Ekochiu
     - _Item<Swift Violet>:
        coord: [1204.67, 223.87, 1286.7]
+    - _Item<Silent Shroom>:
+       coord: [1172.56, 179.11, 1286.03]
        comment: Pick up
     - _Item<Sundelion>:
        coord: [1253.04, 202.7, 1255.45]
@@ -110,9 +115,15 @@ _route:
        coord: [1100, 126.75, 1113]
        comment: Dog Treasure Chest
     - _Well::WoodlandStable
+    - _Item<Hylian Shroom>:
+       coord: [1091.8, 127.44, 1162.55]
     - _Item<Blupee>:
        coord: [1104.63, 126.31, 1162.8]
        comment: Get Rupee
+    - _Item<Blue Nightshade>:
+       coord: [959.29, 125.75, 1141.02]
+    - _Item<Hyrule Herb>:
+       coord: [944.46, 125.17, 1152.4]
     - _Item<Fairy>:
        coord: [841.56, 157.17, 1362]
        comment: Silly little clip
@@ -126,25 +137,38 @@ _route:
     - _Enemy<Octorok 2>:
        coord: [1515.43, 422.07, 1756.83]
        comment: Upgrade bow or other
-    - Dip in the Hot Spring outside
+    - Dip in the Hot Spring outside, drop Egg
     - _Cave::WestRestaurant00
+    - _MainQuest<Hard Boiled Egg>
     - _Item<Rock Roast>:
        coord: [1661.4, 370.49, 1839.94]
        comment: Fuse to Equipment
+    - _Item<Giant Brightbloom Seed x2>:
+       coord: [1680.02, 373.95, 1830.58]
+       comment: Pick up
     - Ascend out
+    - _Korok::EC31
     - _Enemy<Fire Keese>:
        coord: [1792.68, 437.53, 1971.37]
        comment: Pick up Eyeball
+    - _SagesWill::Eldin
+    - _Item<Korok Starting Block>:
+       coord: [1799.11, 602.53, 2210.18]
+    - _Korok::EC28
     - _Chest::EmberShirt
     - _Npc<Misko's Tablet>:
        coord: [1382.41, 399.97, 2245.35]
        comment: Start Quest
-       
+    - _Korok::EC29
+    - _Korok::EC19
+    - _Korok::EC21
     - _Npc<Slergo>:
        coord: [1647.5, 487.5, 2436.5]
        comment: Start Yunobo Main Quest
     - _Shop::GeneralStore06:
        comment: Buy out entire shop
+    - _Korok::EC20
+    - _Korok::EC16
     - _Shrine::Marakuguc
     - _Cave::YunoboCoHQSouth00
     - _Chest::EmberHeaddress
@@ -154,10 +178,14 @@ _route:
        comment: From Bokoblin
     - _Enemy<Yunobo>:
        coord: [1642.65, 510.5, 2908.4]
-       comment: Defeat
+       comment: Defeat, reload after
+    - _Korok::EC13
+    - _Korok::EC11
+    - _Korok::EC12
     - _Item<Endura Carrot>:
        coord: [1241.31, 525.06, 2961.91]
        comment: Pick up
+    - _Korok::
     - _Tower::ThyphloRuins
     - _Chest<Dusk Claymore>:
        coord: [386.03, 270.38, 3170.75]
@@ -170,15 +198,20 @@ _route:
     - _SideAdv::TheCorridorbetweenTwoDragons
     - _SideAdv::TheSixDragons
     - _SideAdv::TheLongDragon
+    - _Korok::TR08
+    - _Korok::TR11
+    - _Korok::TR05
+    - _Korok::TR06
+    - _Chasm::DrenanHighlands
        
   - Thyphlo Ruins Depths:
-    - Ascend out
-    - Rocket slightly south and clip down
     - _Enemy::Gleeok::D01:
        comment: Pick up three Horns and Guts
     - Gleeok Gut (1)
     - _Chest::CapofTwilight
     - Clip across to Schematic
+    - _Poe::Grand:
+       coord: [142.8, -499.14, 2856.49]
     - _YigaSchema::AerialCannon
     - _Lightroot::Nikakik
     - _Shop::BargainerStatue02
@@ -225,13 +258,20 @@ _route:
        coord: [603.17, -503.91, 1924.13]
     - _Lightroot::Sijnin
     - _Lightroot::Rikonasum
-    - _Enemy<Phantom Ganon>
+    - _Enemy<Phantom Ganon>:
+       coord: [411.39, -481.78, 2192.07]
   
   - Korok Forest Surface:
-    - Buy Tabantha Wheat, Hylian Rice, Cane Sugar
-    - Do Hestu's Concerns
+    - _Shop::GeneralStore10:
+       notes: Buy Tabantha Wheat, Hylian Rice, Cane Sugar
+    - _Npc<Hestu>:
+       coord: [419.49, 248.71, 2119.06]
+       comment: Upgrade 2 Weapons, 2 Bows, 2 Shields (minus 9 Koroks)
     - _SideAdv::HestusConcerns
-    - Do Secret Room
+    - _MainQuest<Hestu's Concerns>
+    - _Npc<Walton>:
+       coord: [417.59, 334.03, 2180.27]
+       comment: The Secret Room
     - _SideQuest::TheSecretRoom
     - _MainQuest<Korok Fabric>
   
@@ -262,6 +302,7 @@ _route:
     - _MainQuest<Game Over from Lightning>
     - _Material<Big Hearty Radish>:
        coord: [1400, 574.2, -3235.81]
+    - _SagesWill::ThunderheadIsles_01
     - _Item<Mineru's Mask>:
        coord: [1358.08, 575.80, -3234.40]
        comment: Clip in and deliver to factory
@@ -285,6 +326,10 @@ _route:
        coord: [880, -435.31, -2093.73]
     - _Poe::Grand:
        coord: [881.27, -435.06, -2116.9]
+    - _Poe::Large:
+       coord: [894.24, -419.43, -2128.13]
+    - _Poe::Large:
+       coord: [882.5, -401.67, -2138.73]
     - _Shop::BargainerStatue04
     - _Poe::Grand:
        coord: [910.77, -354.38, -2513.94]
@@ -346,6 +391,8 @@ _route:
        comment: Defeat for equipment
     - _Well::DeyaVillageRuins
     - _Well::DeyaVillageRuinsNorth
+    - _Enemy<Fire Wizzrobe>:
+       coord: [-57.89, 120.77, -1558.67]
     - _Chasm::ForestofTime
     - _Chasm::GreatPlateauNorth
     - _Chasm::GreatPlateauEast
@@ -398,9 +445,14 @@ _route:
        notes: MOUNT ONE, defeat White + Silver, get 4 Horns + Guts
     - _Lightroot::Mu-ustust
     - _Lightroot::Kogoir
+    - _Location::SecretSpringofRevival:
+       hide-icon-on-map: true
     - _Poe::Grand:
        coord: [-1160.64, -428.48, -1813.99]
-    - _Location::SecretSpringofRevival
+    - _Poe::Large:
+       coord: [-1111.67, -500.81, -1957.67]
+    - _Poe::Large:
+       coord: [-1111.3, -500.66, -1957.1]
     - _Poe::Grand:
        coord: [-1031.94, -508.81, -1917.7]
     - _Poe::Large:
@@ -433,6 +485,12 @@ _route:
     - _Lightroot::Koradat
     - _Chest::MinersTrousers
     - _YigaSchema::Monocycle
+    - _Poe::Large:
+       coord: [-1233.75, -387.63, -2693.3]
+    - _Poe::Large:
+       coord: [-1241.05, -381.25, -2686.5]
+    - _Poe::Grand:
+       coord: [-2685.84, -332.6, -2905.19]
     - _YigaSchema::ShockTrap
     - _Chest::MinersMask
     - _SchemaStone::KaraKaraMine
@@ -489,41 +547,61 @@ _route:
        notes: Buy Oil Jar
     - _Shop::GeneralStore11:
        notes: Buy all 4 Chuchu Jellies
-    - _Well::KaraKaraBazaar:
-       comment: Enter for Crab if not gotten at Satori Mt
-    - _Chest<Pristine Eightfold Longblade>:
+    - _Chest<Ruby>:
        coord: [-2504.78, 244.06, -1781.56]
        comment: Pick up
-    - Get RUBY as well
+    - _Chest<Pristine Eightfold Longblade>:
+       coord: [-2508.1, 245.71, -1779.78]
+    - _MainQuest<4 Pristine Equipment>
+    - _MainQuest<4 Sheikah Equipment>
     - _Shrine::Suariwak
     - _Enemy::Talus::GG04:
        notes: Fuse Heart
     - _Enemy::Talus::GG02:
        notes: Fuse Heart
+    - _Npc<Grizzlemaw Bear>:
+       coord: [-2992.78, 642.85, -1277.98]
+       comment: Mount
     - _Shrine::Rotsumamu
     - _Chasm::YigaClanHideout 
     - _Chest::PhantomArmor
-    - _Item<Satori Mt>:
+    - _Item<Energetic Rhino Beetle>:
        coord: [-2562.91, 307, -659.52]
-       comment: Copious, Mounts, Compendium, etc...
+       comment: Three beetles on same tree
+    - _Item<Rugged Rhino Beetle>:
+       coord: [-2562.91, 307, -659.52]
+    - _Item<Bladed Rhino Beetle>:
+       coord: [-2562.91, 307, -659.52]
     - _Enemy::Talus::GC04
-    - Mount Buck + Doe
-    - Sword of the Hero
+    - _Item<Raw Meat>
+    - _Item<Raw Prime Meat>
+    - _Item<Raw Bird Drumstick>
+    - _Item<Raw Bird Thigh>
+    - _Npc<Honeyvore Bear>:
+       coord: [-2113.67, 211.54, -1158.2]
+       comment: Mount
+    - _Chest<Sword of the Hero>:
+       coord: [-2048.12, -440.85, -1128.88]
+       comment: Clip to Depths
   
   - Lindor's Brow:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
        line-color: deepskyblue
-    - _Shop::BargainerStatue06
     - _Well::LookoutLanding
+    - _Shop::BargainerStatue06
     - _Shop::CrystalRefinery01:
        notes: Upgrade battery
+    - _Korok::LL42
+    - _Korok::LL41
     - _Chest<Red Rupee>:
        coord: [-421.66, 133.18, 394.31]
     - _Chest<Opal>:
        coord: [-525.63, 132.82, 454.79]
     - _Chest<Blue Rupee>:
        coord: [-580.1, 126.32, 527.27]
+    - _Korok::LL35
+    - _Korok::LL34
     - _Chasm::HyruleCastleMoatWest
     - _Cave::NorthHyrulePlain01
     - _Chest::ClimbingGear
@@ -650,6 +728,10 @@ _route:
        coord: [-346.88, 374.32, 968.09]
     - _Enemy<Normal Like>:
        coord: [-323.34, 353.09, 1100.74]
+    - _Item<Korok Starting Block>:
+       coord: [-302.86, 195.56, 1123.4]
+    - _Korok::LL02
+    - _Korok::LL03
     - _Enemy<Shock Like>:
        coord: [-425, 140.5, 1087]
        notes: Is inside Lockup behind grate
@@ -685,10 +767,11 @@ _route:
     - _Enemy::Gleeok::G03
     - _Dispenser::G01
     - _Shop::GeneralStore15:
-       comment: Buy Monster Extract
+       comment: Buy Monster Extract and Dazzlefruit
        notes: Portable Pot, Sky Pot, Surface Pot, Gerudo Pot (Bazaar OR Sinkhole), Rito Pot
   
   - Sky Mine:
+    - _SagesWill::Akkala
     - _Chest::ZonaiteShinGuards
     - _Shrine::Gikaku::Start
     - _Shrine::Gikaku
@@ -765,6 +848,7 @@ _route:
     - _Item<Beetle>:
        coord: [317.62, 118.18, -1127.62]
        comment: Give to Beedle
+       notes: Also buy Thunderwing Butterfly + Tireless Frog
     - _Korok::PF14::Start
     - _Korok::HF43::Start
     - _Cave::WhistlingHill00
@@ -778,7 +862,6 @@ _route:
     - _Chest<Boomerangs>:
        coord: [1058.58, 119.67, -313.6]
        comment: Boomerang, Lizal Boomerang, and Lizalfos Arm (giant boomerang at deya village ruins) 
-    - _Well::LanayruWetlands
     - _Enemy<Lizalfos>:
        coord: [2984.61, 383.19, -213.86]
        comment: Zora Sword
@@ -835,6 +918,12 @@ _route:
        notes: Use dispenser
     - _Shrine::Sihajog:
        comment: Complete Blessing
+    - _Shrine::Igoshon
+    - _SagesWill::WellspringIsland
+    - _Shrine::Jirutagumac
+    - _SagesWill::Lanayru
+    - _SagesWill::Lanayru_01
+    - _SagesWill::Necluda
     - _Chest::ZonaiteWaistguard
     - _Dispenser::S01:
        notes: Use dispenser
@@ -859,6 +948,7 @@ _route:
        comment: Snap    
     - _Well::HatenoVillageWest
     - _Well::HatenoVillageNorth
+    - _Korok::ML21
     - _Npc<Bottled Letter>:
        coord: [3655.39, 279.89, -2010.5]
        comment: Bring to Koyin
@@ -892,6 +982,10 @@ _route:
     - _MainQuest<3 Dog Treasure Chests>
     - _Well::HatenoVillageEast    
     - _Shrine::Zanmik
+    - _Item<Golden Apple>:
+       coord: [3426.98, 229.07, -2128.73]
+    - _Item<Apple>:
+       coord: [3427.22, 229.54, -2127.71]
     - _Npc<Sayge>:
        coord: [3409.1, 226.72, -2150.45]
        comment: Dye 15 colors, turn in Fabric pictures (Chuchu and Cucco)
@@ -899,15 +993,57 @@ _route:
     - _Shop::GeneralStore07:
        comment: Buy Fresh Milk (at a minimum)
     - _Well::HatenoVillageSouth
+    - _Korok::ML31
+    - _Korok::ML34
+    - Dupe to 14 Salmons, 9 Big Hearty Radish, 9 Gapples, 8 Hinox Horns, 6 Swift Violets, 6 Silent Shrooms, 6 Zapshrooms, 6 Razorshrooms
+    - Dupe 4 Bird Thighs, 4 Hylian Rice, 4 Rock Salt
+    - Dupe 3 Crabs, 3 Tabantha Wheat, 3 Goron Spice, 3 Extract, 3 Clump
+    - Dupe 2 Apples, 2 Cane Sugar, 2 Voltfruit, 2 Hydromelon, 2 Fresh Milk
+    - Need only one of but should have... Fire Fruit, Dazzlefruit, Glowing Cave Fish, Staminoka Bass, Sundelion, Hyrule Herb, Raw Meat, Raw Prime Meat, Raw Bird Drumstick, Hylian Shroom, Oil Jar, Palm Fruit, Hateno Cheese, Hylian Tomato, Wildberry, Critters [8], Fairy, LZC, Topaz
     - _Item<Cooking Pot>:
        coord: [3333.19, 235.33, -2283.12]
        comment: See below
-    - Copious + Cake + Crab
-    - Monster + Dark + Curry + Golden Apple
-    - Noble Pursuit + Heart Soup + Boiled Egg
-    - Pizza + Crepe + Chicken and Sauce
-    - 7 + 11 + 12 + 17 + 19 + 25 Yellow Hearts
-    - Level 3 Effects + Elixirs + Total Recipes
+    - (Fruit) Golden Apple, Apple, Fire Fruit, Dazzlefruit
+    - (Fish) Hearty Salmon, Glowing Cave Fish, Staminoka Bass, Bright Eyed Crab
+    - (Greens) Swift Violet, Sundelion, Hyrule Herb, Blue Nightshade
+    - (Meat) Meat, Prime Meat, Bird Drumstick, Bird Thigh
+    - (Mushroom) Silent Shroom, Zapshroom, Razorshroom, Hylian Shroom
+    - Golden Apple + Apple + Cane Sugar + Tabantha Wheat
+    - Bird Thigh + Oil Jar
+    - Bright Eyed Crab + Goron Spice	
+    - Bright Eyed Crab + Rock Salt	
+    - Monster Extract + Hylian Rice + Goron Spice
+    - Monster Extract + Hylian Rice + Rock Salt
+    - Monster Extract + Bird Thigh + Hearty Salmon
+    - Dark Clump + Hylian Rice + Goron Spice
+    - Dark Clump + Hylian Rice + Rock Salt
+    - Dark Clump + Bird Thigh + Hearty Salmon
+    - Voltfruit, Hydromelon, Palm Fruit, Rock Salt
+    - Voltfruit, Hydromelon, Hearty Radish, Fresh Milk
+    - Wheat, Cheese, Tomato
+    - Wheat, Wildberry, Bird Egg, Fresh Milk, Cane Sugar
+    - 5 Swift Violets
+    - 5 Silent Shrooms
+    - 5 Zapshrooms
+    - 5 Razorshrooms
+    - Fairy
+    - Hinox Horn + Fireproof Lizard 
+    - Hinox Horn + Hearty Lizard
+    - Hinox Horn + Cold Darner
+    - Hinox Horn + Energetic Rhino Beetle
+    - Hinox Horn + Rugged Rhino Beetle 
+    - Hinox Horn + Bladed Rhino Beetle (sauce)
+    - Hinox Horn + Thunderwing Butterfly
+    - Hinox Horn + Tireless Frog
+    - Large Zonai Charge
+    - Topaz
+    - (7) 1 Salmon + 3 Golden Apples 
+    - (11) 2 Salmon + 3 Golden Apples
+    - (12) 3 Salmon
+    - (17) 4 Salmon + 1 Golden Apple
+    - (19) 3 Big Radishes + 1 Salmon
+    - (25) 5 Big Radishes
+    - Ensure that Hearts match, can sometimes get a crit which would not complete the goal
     - _Well::Zelda'sSecret:
        comment: Enter well
     - _Npc<Zelda's Diary>:
@@ -976,6 +1112,8 @@ _route:
        coord: [-3510.24, 442.38, -1297.11]
     - _Tower::GerudoHighlands
     - _Chasm::GerudoSummit
+    - _Enemy<Blizzrobe>:
+       coord: [-4176.83, 641.75, -545.45]
     - _Shrine::Otutsum
     - _Chest::TinglesHood
   
