@@ -92,9 +92,23 @@ _route:
        notes: Use the Bubbulgem in the cave here
     - _SideAdv::TheHuntforBubbulGems
     - _MainQuest<Bokoblin Mask>
-    - _Item<Zapshroom>:
-       coord: [1251.01, 127.33, 1091.09]
-       comment: Pick up
+    - _Item<Blupee>:
+       coord: [1104.63, 126.31, 1162.8]
+       comment: Get Rupee
+    - _Item<Hylian Shroom>:
+       coord: [1091.8, 127.44, 1162.55]
+    - _Well::WoodlandStable
+    - _Item<Wood>:
+       coord: [1079.53, 127.6, 1142.38]
+    - _Npc<Dog>:
+       coord: [1083.22, 127.48, 1144.29]
+       comment: Feed 4 Fire Fruit
+    - _Chest<Giant Brightbloom Seed x5>:
+       coord: [1100, 126.75, 1113]
+       comment: Dog Treasure Chest
+    - _Shop<Beedle>:
+       coord: [1092.11, 127.43, 1096.44]
+       comment: Buy arrows and all available bugs; buy at shops until 200 
     - _Npc<Bad Horse>:
        coord: [1150.29, 134.12, 1104.85]
     - _Npc<Kish>:
@@ -105,21 +119,6 @@ _route:
     - _Item<Razorshroom>:
        coord: [1068.6, 127.34, 1124.7]
        comment: Pick up
-    - _Shop<Beedle>:
-       coord: [1092.11, 127.43, 1096.44]
-       comment: Farm Arrows (to 200 if not wanting to worry about other shops), buy bugs once
-    - _Npc<Dog>:
-       coord: [1083.22, 127.48, 1144.29]
-       comment: Feed 4 Fire Fruit
-    - _Chest<Giant Brightbloom Seed x5>:
-       coord: [1100, 126.75, 1113]
-       comment: Dog Treasure Chest
-    - _Well::WoodlandStable
-    - _Item<Hylian Shroom>:
-       coord: [1091.8, 127.44, 1162.55]
-    - _Item<Blupee>:
-       coord: [1104.63, 126.31, 1162.8]
-       comment: Get Rupee
     - _Item<Blue Nightshade>:
        coord: [959.29, 125.75, 1141.02]
     - _Item<Hyrule Herb>:
@@ -530,10 +529,10 @@ _route:
     - _Item<Zapshroom>:
        coord: [-3759.83, 136.82, -2538.05]
        comment: Clip, get 5 Gerudo Equipment
-       notes: Make and then immediately destroy 3 Elemental Weapons
-    - Ascend out:
-       notes: PICK UP GOLD RUPEE CHEST
-    - Gold Rupee from here, Purple from minigame, Green from Blupee, Red/Blue in Castle Town, Silver on Eventide
+       notes: ALSO PICK UP THIS SHROOM
+    - OPEN CENTER CHEST WITH GOLD RUPEE
+    - Fuse Ruby/Topaz/Sapphire directly to the 3 Gerudo Weapons (dont pick up and then dupe, separate chests are likely faster)
+    - After picking up the Gerudo Bow/Shield and marking the goal, drop the 3 Gerudo Elemental Weapons
     - _Npc<Gibdos>:
        coord: [-3192.69, 129.25, -2513.82]
        comment: Save Kara Kara Bazaar
