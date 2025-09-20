@@ -392,6 +392,7 @@ _route:
     - _Well::DeyaVillageRuinsNorth
     - _Enemy<Fire Wizzrobe>:
        coord: [-57.89, 120.77, -1558.67]
+    - _Shrine::Kamizun
     - _Chasm::ForestofTime
     - _Chasm::GreatPlateauNorth
     - _Chasm::GreatPlateauEast
@@ -546,6 +547,7 @@ _route:
        notes: Buy Oil Jar
     - _Shop::GeneralStore11:
        notes: Buy all 4 Chuchu Jellies
+    - _Well::KaraKaraBazaar
     - _Chest<Ruby>:
        coord: [-2504.78, 244.06, -1781.56]
        comment: Pick up
@@ -994,67 +996,58 @@ _route:
     - _Well::HatenoVillageSouth
     - _Korok::ML31
     - _Korok::ML34
-    - Dupe to 14 Salmons, 9 Big Hearty Radish, 9 Gapples, 8 Hinox Horns, 6 Swift Violets, 6 Silent Shrooms, 6 Zapshrooms, 6 Razorshrooms
-    - Dupe 4 Bird Thighs, 4 Hylian Rice, 4 Rock Salt
-    - Dupe 3 Crabs, 3 Tabantha Wheat, 3 Goron Spice, 3 Extract, 3 Clump
-    - Dupe 2 Apples, 2 Cane Sugar, 2 Voltfruit, 2 Hydromelon, 2 Fresh Milk
-    - Need only one of but should have... Fire Fruit, Dazzlefruit, Glowing Cave Fish, Staminoka Bass, Sundelion, Hyrule Herb, Raw Meat, Raw Prime Meat, Raw Bird Drumstick, Hylian Shroom, Oil Jar, Palm Fruit, Hateno Cheese, Hylian Tomato, Wildberry, Critters [8], Fairy, LZC, Topaz
+    - 2Apple, 9BigHeartyRadish, 1BirdEgg, 1BladedRhinoBeetle, 1BlueNightshade, 3BrightEyedCrab, 2CaneSugar, 1ColdDarner, 3DarkClump, 1Dazzlefruit, 1EnergeticRhinoBeetle, 1Fairy, 1FireFruit, 1FireproofLizard, 2FreshMilk, 1GlowingCaveFish, 9GoldenApple, 3GoronSpice, 1HatenoCheese, 1HeartyLizard
+    - 14HeartySalmon, 8Horn, 2Hydromelon, 4HylianRice, 1HylianShroom, 1HylianTomato, 1HyruleHerb, 1LZC, 3MonsterExtract, 1OilJar, 1PalmFruit, 1RawBirdDrumstick, 4RawBirdThigh, 1RawMeat, 1RawPrimeMeat, 6Razorshroom, 4RockSalt, 1RuggedRhinoBeetle, 6SilentShroom, 1StaminokaBass, 1Sundelion, 6SwiftViolet, 3TabanthaWheat, 1ThunderwingButterfly, 1TirelessFrog, 1Topaz, 2Voltfruit, 1Wildberry, 6Zapshroom    
     - _Item<Cooking Pot>:
        coord: [3333.19, 235.33, -2283.12]
        comment: See below
-    - (Fruit) Golden Apple, Apple, Fire Fruit, Dazzlefruit
-    - (Fish) Hearty Salmon, Glowing Cave Fish, Staminoka Bass, Bright Eyed Crab
-    - (Greens) Swift Violet, Sundelion, Hyrule Herb, Blue Nightshade
-    - (Meat) Meat, Prime Meat, Bird Drumstick, Bird Thigh
-    - (Mushroom) Silent Shroom, Zapshroom, Razorshroom, Hylian Shroom
+       notes: Ensure the Heart Count for Hearty Meals match
+    - Golden Apple + Apple + Fire Fruit + Dazzlefruit
+    - Hearty Salmon + Glowing Cave Fish + Staminoka Bass + Bright Eyed Crab
+    - Swift Violet + Sundelion + Hyrule Herb + Blue Nightshade
+    - Raw Meat + Raw Prime Meat + Raw Bird Drumstick + Raw Bird Thigh
+    - Silent Shroom + Zapshroom + Razorshroom + Hylian Shroom
     - Golden Apple + Apple + Cane Sugar + Tabantha Wheat
-    - Bird Thigh + Oil Jar
-    - Bright Eyed Crab + Goron Spice	
-    - Bright Eyed Crab + Rock Salt	
+    - Raw Bird Thigh + Oil Jar
+    - Bright Eyed Crab + Goron Spice    
+    - Bright Eyed Crab + Rock Salt
     - Monster Extract + Hylian Rice + Goron Spice
     - Monster Extract + Hylian Rice + Rock Salt
-    - Monster Extract + Bird Thigh + Hearty Salmon
+    - Monster Extract + Raw Bird Thigh + Hearty Salmon
     - Dark Clump + Hylian Rice + Goron Spice
     - Dark Clump + Hylian Rice + Rock Salt
-    - Dark Clump + Bird Thigh + Hearty Salmon
-    - Voltfruit, Hydromelon, Palm Fruit, Rock Salt
-    - Voltfruit, Hydromelon, Hearty Radish, Fresh Milk
-    - Wheat, Cheese, Tomato
-    - Wheat, Wildberry, Bird Egg, Fresh Milk, Cane Sugar
-    - 5 Swift Violets
-    - 5 Silent Shrooms
-    - 5 Zapshrooms
-    - 5 Razorshrooms
+    - Dark Clump + Raw Bird Thigh + Hearty Salmon
+    - Voltfruit + Hydromelon + Palm Fruit + Rock Salt
+    - Voltfruit + Hydromelon + Big Hearty Radish + Fresh Milk
+    - Tabantha Wheat + Hateno Cheese + Hylian Tomato
+    - Tabantha Wheat + Wildberry + Bird Egg + Fresh Milk + Cane Sugar
+    - (07) 1 Hearty Salmon + 3 Golden Apple 
+    - (11) 2 Hearty Salmon + 3 Golden Apple
+    - (12) 3 Hearty Salmon
+    - (17) 4 Hearty Salmon + 1 Golden Apple
+    - (19) 3 Big Hearty Radish + 1 Hearty Salmon
+    - (25) 5 Big Hearty Radish
+    - 5 Swift Violet
+    - 5 Silent Shroom
+    - 5 Zapshroom
+    - 5 Razorshroom    
+    - Horn + Fireproof Lizard 
+    - Horn + Hearty Lizard
+    - Horn + Cold Darner
+    - Horn + Energetic Rhino Beetle
+    - Horn + Rugged Rhino Beetle 
+    - Horn + Bladed Rhino Beetle
+    - Horn + Thunderwing Butterfly
+    - Horn + Tireless Frog
     - Fairy
-    - Hinox Horn + Fireproof Lizard 
-    - Hinox Horn + Hearty Lizard
-    - Hinox Horn + Cold Darner
-    - Hinox Horn + Energetic Rhino Beetle
-    - Hinox Horn + Rugged Rhino Beetle 
-    - Hinox Horn + Bladed Rhino Beetle (sauce)
-    - Hinox Horn + Thunderwing Butterfly
-    - Hinox Horn + Tireless Frog
-    - Large Zonai Charge
     - Topaz
-    - (7) 1 Salmon + 3 Golden Apples 
-    - (11) 2 Salmon + 3 Golden Apples
-    - (12) 3 Salmon
-    - (17) 4 Salmon + 1 Golden Apple
-    - (19) 3 Big Radishes + 1 Salmon
-    - (25) 5 Big Radishes
-    - Ensure that Hearts match, can sometimes get a crit which would not complete the goal
+    - LZC
     - _Well::Zelda'sSecret:
        comment: Enter well
     - _Npc<Zelda's Diary>:
        coord: [3307.49, 219.15, -2297.56]
        comment: A New Champion's Tunic
     - _SideQuest::ANewChampionsTunic
-    - _Shrine::Sifumim
-    - _Well::LurelinVillage
-    - _Enemy<Monster Forces>:
-       coord: [2913.24, 128.38, -3447.42]
-       comment: Defeat
-    - _SideAdv::RuffianInfestedVillage
     - _Chest::TinglesTights
     - _Enemy<Monster Forces>:
        coord: [4458.14, 150.2, -3743.46]
