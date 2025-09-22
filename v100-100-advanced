@@ -2024,14 +2024,15 @@ _route:
        coord: [3069.58, 367.53, 177.36]
     - _Korok::UZ38
     - _Cave::RalisChannel00
-    - _Korok::UZ40
+    - _Korok::UZ40:
+       movements:
+       - to: [2941.59, 312.48, 210.35]
+         away: true
+    - _Cave::UplandZoranaByroad01
     - _Cave::RalisChannel01
     - _Shrine::Joniu::Start
     - _Shrine::Joniu
     - _Bubbulfrog::RalisChannel
-    - Ascend out
-    - _Cave::UplandZoranaByroad01
-    - Rocket to back of cave
     - Raise up floodgate with UH
     - _Bubbulfrog::UplandZoranaByroad
     - _Chest::ClimbingBoots
@@ -3542,12 +3543,19 @@ _route:
        coord: [2166.09, 214.5, -1379.43]
        comment: Honey, Bee Mine
        notes: Use Courser Bee Honey x3 from Eustus
-    - _Korok::SS52
     - _Korok::SS53
+    - _Korok::SS52:
+       movements:
+       - to: [2300.22, 224.66, -1357.35]
+         away: true
     - _Korok::SS56
     - _Korok::SS55
     - _Location::KakarikoBridge
-    - _Korok::SS57 
+    - _Korok::SS57
+    - _Korok::SS60::Start
+    - _Shop<Beedle>:
+       coord: [1752.92, 117.12, -1870.14]
+       notes: Buy arrows
     - _Place::DuelingPeaksStable:
        hide-icon-on-map: true
     - _Npc<Penn>:
@@ -3566,12 +3574,8 @@ _route:
     - _Korok::RW04
     - _Korok::RW02
     - _Enemy::Hinox::GL03
-    - _Korok::RW01
     - _Addison::A52
-    - _Shop<Beedle>:
-       coord: [1752.92, 117.12, -1870.14]
-       notes: Buy arrows
-    - _Korok::SS60::Start
+    - _Korok::RW01
     - _Korok::SS60::End
     - _Cave::FortHateno00
     - _Bubbulfrog::FortHatenoCave
@@ -5217,9 +5221,6 @@ _route:
     - _Korok::SS72::Start
     - _Korok::PF24
     - _Korok::SS72::End   
-    - _Enemy::Hinox::GF03 
-    - _Korok::SS71
-    - _Enemy::Hinox::GF02
     - Clip out, rocket across, clip in
     - _Bubbulfrog::Tobio'sHollowCave
     - Clip across
@@ -5304,6 +5305,9 @@ _route:
   - Tobio Hollow Chasm:
     - _Korok::PF44
     - _Korok::PF38
+    - _Enemy::Hinox::GF03 
+    - _Korok::SS71
+    - _Enemy::Hinox::GF02
     - _Chasm::TobiosHollow:
        comment: Deposit mask to chasm
   
