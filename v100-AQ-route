@@ -2130,6 +2130,24 @@ _route:
        coord: [-3687.06, 436.5, -1364.58]
        comment: Show Yiga Set AND unlock door to hideout
     - _SideAdv::InfiltratingtheYigaClan
+  
+  - Hebra 3:
+    - _Warp::Shrine::Orochium:
+       comment: WARP
+    - _Npc<Varke>:
+       coord: [-1648.72, 339.78, 2569.43]
+       comment: Turn in White Bird picture
+    - _SideQuest::APictureforSnowfieldStable
+    - _Enemy<Monster Forces>:
+       coord: [-1793.9, 374.36, 2226.77]
+       comment: Bring Peace to Hebra!
+    - _SideAdv::BringPeacetoHebra
+    - _Npc<Huck>:
+       coord: [-2174.61, 469.49, 2029.75]
+       comment: Defeat Aerocudas in the sky
+    - _SideQuest::SupplyEyeingFliers
+    - _Shrine::Nouda:
+       comment: (GOHMA)
     
   - Ring Ruins:
     - _Warp::Tower::LookoutLanding:
@@ -2200,48 +2218,14 @@ _route:
        comment: Just talk, no need to do anything
     - _SideAdv::TheSearchforKoltin
   
-  - Hebra 3:
+  - Hebra 4:
     - _Warp::Shrine::Mayausiy:
        comment: WARP
     - _Npc<Statue>:
        coord: [-1057.92, 20.77, 2697.54]
        comment: Make room for White Sword of the Sky
     - _SideQuest::TheMotherGoddessStatue
-    
-    - _Warp::Shrine::Orochium:
-       comment: WARP
-    - _Npc<Varke>:
-       coord: [-1648.72, 339.78, 2569.43]
-       comment: Turn in White Bird picture
-    - _SideQuest::APictureforSnowfieldStable
-    - _Enemy<Monster Forces>:
-       coord: [-1793.9, 374.36, 2226.77]
-       comment: Bring Peace to Hebra!
-    - _SideAdv::BringPeacetoHebra
-    - _Npc<Huck>:
-       coord: [-2174.61, 469.49, 2029.75]
-       comment: Defeat Aerocudas in the sky
-    - _SideQuest::SupplyEyeingFliers
-    - _Shrine::Nouda
    
-  - Great Sky Island 2:
-    - _Warp::Shrine::Gemimik:
-       comment: WARP
-    - _Tear::G11
-    - _MainQuest::TheDragonsTears
-    - _Warp::Npc<Master Sword>:
-       coord: [453.76, 1579.32, -636.17]
-       comment: Obtain the Master Sword
-       level: Sky
-    - _MainQuest::RecoveringtheHerosSword
-    - _Chest::AncientHerosAspect
-    - _SideQuest::TheShrineExplorer
-    - Ascend up
-    - _Npc<Steward Construct>:
-       coord: [453.67, 1645.84, -800.44]
-       comment: Complete Legend of GSI
-    - _SideAdv::LegendoftheGreatSkyIsland
-    
     - _Warp::Shrine::Oromuwak:
        comment: WARP
     - _Npc<Traysi>:
