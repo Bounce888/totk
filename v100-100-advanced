@@ -311,6 +311,9 @@ _route:
     - _Shop::BargainerStatue01:
        coord: [453.46, -300, -800.35]
        notes: Talk to discover shop location
+    - _Item<Stone Slab>:
+       coord: [600.73, -397.48, -673.85]
+       notes: Fuse to Claymore
     - _Enemy::FluxConstruct::DC03
     - _Enemy::Hinox::DC02
     - _Location::AppleanGrove:
@@ -502,9 +505,6 @@ _route:
     - _Addison::A32:
        notes: use a cart at a 45 degree angle
     - _Shrine::Mayachin
-    - _Item<Stone Slab>:
-       coord: [-720.92, 134.67, -885.69]
-       notes: fuse to royal claymore. Perform ODZ Clay
     - _Tower::HyruleField:
        comment: Launch from the tower
        notes: When you see Farosh again, get a claw
@@ -728,6 +728,7 @@ _route:
     - _Warp::Npc<Tulin>:
        coord: [-3590, 317.93, 1802.5]
        comment: Tulin of Rito Village
+       line-color: khaki
     - _Material<Staminoka Bass>:
        coord: [-3493.49, 258.08, 1853.66]
        notes: Pick up
@@ -1654,7 +1655,7 @@ _route:
   - Woodland Stable:
     - _Warp::Tower::LookoutLanding:
        comment: WARP
-       line-color: mediumpurple
+       line-color: rgb(200, 200, 255)
     - _Npc<Josha>:
        coord: [-253.47, 124.43, 135.43]
        comment: Let her start walking   
@@ -2115,6 +2116,24 @@ _route:
        comment: For Our Princess!
     - _Shrine::Kisinona:
        comment: (STICK OPTION)
+    - _Cave::CephlaLake00
+    - _Bubbulfrog::CephlaLakeCave
+    - _Chest::EmberTrousers
+    - ABC-Clip through stone wall
+    - _Equipment::Weapon<Fierce Deity Sword>:
+       coord: [2624.09, 241.94, 1417.55]
+       comment: Misko's Treasure The Fierce Deity
+    - Ascend out    
+    - _Tablet<Eldin Ostrich>:
+       coord: [2296.06, 260.32, 1525.04]
+       comment: Snap  
+    - Make a manual save 
+    - _Npc<Sango>:
+       coord: [2277.64, 264.12, 1515.73]
+       comment: Proving Grounds
+       notes: Ensure you do not have an ABC active when entering this cutscene, otherwise the game may crash.
+    - _Cave::FoothillMonsterDen00
+    - _Bubbulfrog::FoothillMonsterDen
     - _Korok::EC54::Start
     - _Location::MawofDeathMountain
     - _Korok::EC49
@@ -2161,6 +2180,9 @@ _route:
        comment: Yunobo of Goron City
     - _Shop::GeneralStore06:
        notes: Buy Goron Spice and arrows
+    - _Tablet<Soaking Goron>:
+       coord: [1710, 497, 2480]
+       comment: Snap for Woodland Stable
     - _Tablet<Daruk Statue>:
        coord: [1752.49, 539, 2499.65]
        comment: Snap for Foothill Stable
@@ -2210,8 +2232,9 @@ _route:
     - _Enemy::Hinox::GE02
     - _Korok::EC08
     - _Cave::Lizard'sBurrow00
-    - _Chest::VahRudaniaDivineHelm
     - _Bubbulfrog::Lizard'sBurrow
+    - _Chest::VahRudaniaDivineHelm
+    - Ascend out
     - _Cave::LakeDarmanMonsterDen00
     - _Enemy<Monster Forces>:
        coord: [2428.1, 563.75, 2951.68]
@@ -2541,7 +2564,6 @@ _route:
   - Fire Temple:
     - _Warp::Lightroot::Mustis:
        comment: WARP
-       line-color: khaki
     - _Npc<Yunobo>:
        coord: [2338, -949, 2587]
        comment: Yunobo of Goron City
@@ -2568,6 +2590,7 @@ _route:
     - _Warp::Npc<Yunobo>:
        coord: [1652.15, 487.3, 2443.18]
        comment: Yunobo of Goron City
+       line-color: rgb(150, 255, 50)
     - _Npc<Bludo>:
        coord: [1652.15, 487.3, 2437.18]
        comment: The Hidden Treasure at Lizard Lakes
@@ -2602,15 +2625,13 @@ _route:
        coord: [1830.87, 427.25, 2080.46]
        comment: Mine-Cart Land Quickshot Course
     - _Bubbulfrog::SouthernMine 
-    - Ascend out
-    - GAS Launch up to Island
+    - Ascend out, launch up
+    - _Location::EldinSkyArchipelago:
+       hide-icon-on-map: true
     - _SagesWill::Eldin<Sage Will>
     - _Item<Korok Starting Block>:
        coord: [1799.11, 602.53, 2210.18]
     - _Korok::EC28
-    - _Tablet<Soaking Goron>:
-       coord: [1775.96, 0, 2255.68]
-       comment: Snap for Woodland Stable
     - _Korok::EC25
     - _Korok::EC20
     - _Korok::EC16
@@ -2619,14 +2640,12 @@ _route:
     - _Cave::DeathMountainFoothill00
     - _Addison::A47
     - _Korok::EC15::End
+    - _Enemy::Talus::GE05
+    - _Korok::EC24 
     - _Npc<Kabetta>:
        coord: [2363, 932.75, 2599.5]
        comment: Mine-Cart Land Death Mountain  
-    - _Shrine::Sitsum
-    - _Location::EldinSkyArchipelago:
-       hide-icon-on-map: true
-    - _Enemy::Talus::GE05
-    - _Korok::EC24    
+    - _Shrine::Sitsum   
     - _Korok::EC22::Trail
     - _Location::BridgeofEldin
     - _Addison::A56
@@ -2640,9 +2659,9 @@ _route:
     - _Cave::GorkoTunnel00
     - _Korok::EC33::Start
     - _Korok::EC33::End
-    - _Item<Rock Roast>:
+    - _Item<TWO Rock Roast>:
        coord: [1667.56, 369.49, 1840.24]
-       comment: Escort back to Bedrock Bistro
+       comment: Escort TWO back to Bedrock Bistro
     - _Bubbulfrog::WestRestaurantCave
     - _Cave::WestRestaurant00
     - _Place::BedrockBistro:
@@ -2650,33 +2669,16 @@ _route:
     - _Korok::EC43
     - _Npc<Cooke>:
        coord: [1761.51, 384.49, 1546.32]
-       comment: Rock Roast or Dust
+       comment: Rock Roast or Dust, Meat for Meat
+       notes: Drop PR Shield, FE the second Rock Roast to shield away from counter, turn in first Rock Roast
+    - _Npc<Gomo>:
+       coord: [1752.37, 384.23, 1530.77]
+       comment: Cash in on Ripened Flint
+       notes: Turn in 100 Flint
     - _Korok::EC42::Start
     - _Korok::EC42::End
     - _Cave::EastRestaurant00
     - _Bubbulfrog::EastRestaurantCave
-    - _Item<Rock Roast>:
-       coord: [1952.89, 395.55, 1804.17]
-       comment: Escort back to Bedrock Bistro
-    - _Npc<Cooke>:
-       coord: [1761.51, 384.49, 1546.32]
-       comment: Meat for Meat
-    - _Npc<Gomo>:
-       coord: [1752.37, 384.23, 1530.77]
-       comment: Cash in on Ripened Flint
-       notes: Turn in 100 Flint    
-    - Slide to cave east
-    - _Tablet<Eldin Ostrich>:
-       coord: [2296.06, 260.32, 1525.04]
-       comment: Snap  
-    - Make a manual save 
-    - _Npc<Sango>:
-       coord: [2277.64, 264.12, 1515.73]
-       comment: Proving Grounds
-       notes: Ensure you do not have an ABC active when entering this cutscene, otherwise the game may crash.
-    - _Cave::FoothillMonsterDen00
-    - _Bubbulfrog::FoothillMonsterDen
-    - Ascend out
     - _Enemy::Talus::GE06
     - _Korok::EC34::Trail
     - _Korok::EC40
@@ -2905,14 +2907,6 @@ _route:
     - _Npc<Ozunda>:
        coord: [2607.23, 253.85, 1137.91]
        comment: A Picture for Foothill Stable
-    - _Cave::CephlaLake00
-    - _Bubbulfrog::CephlaLakeCave
-    - _Chest::EmberTrousers
-    - ABC-Clip through stone wall
-    - _Equipment::Weapon<Fierce Deity Sword>:
-       coord: [2624.09, 241.94, 1417.55]
-       comment: Misko's Treasure The Fierce Deity
-    - Ascend out
     - _Npc<Domidak>:
        coord: [2612, 254.81, 1315.07]
        comment: Misko's Treasure [3]
@@ -2995,7 +2989,6 @@ _route:
     - _Shop::MonsterGallery
     - _Material<Monster Extract>
     - _Addison::A76
-    - _Enemy::Talus::GA03
     - _Chasm::EastAkkalaPlains
     - _Shrine::Sinatanika:
        comment: (STICK)
@@ -3004,17 +2997,14 @@ _route:
     - _Korok::UM25::Start
     - _Addison::A66:
        notes: Use 2 Hover Stones
-    - _Korok::UM24
     - _Tablet<Octorok Lake>:
        coord: [4100, 234.09, 2500]
        comment: Snap
+    - _Korok::UM24
+    - _Enemy::Talus::GA03
     - _Korok::UM25::End
     - _Korok::UM23
     - _Korok::UM17::Start
-    - _Addison::A75
-    - _Shop<Beedle>:
-       coord: [4191.88, 221.35, 2655.44]
-       notes: Buy arrows
     - _Korok::UM19
     - _Korok::UM17::End
     - _Material<Porgy x2>:
@@ -3066,6 +3056,10 @@ _route:
        comment: Strongest in the World
        notes: Fuse a Lynel Horn to a Weapon
     - _Korok::UM21::Start
+    - _Addison::A75
+    - _Shop<Beedle>:
+       coord: [4191.88, 221.35, 2655.44]
+       notes: Buy arrows
     - _Korok::UM21::End
     - _Korok::UM20
     - _Location::SpringofPower:
@@ -3555,7 +3549,6 @@ _route:
     - _Korok::SS55
     - _Location::KakarikoBridge
     - _Korok::SS57
-    - _Korok::SS60::Start
     - _Shop<Beedle>:
        coord: [1752.92, 117.12, -1870.14]
        notes: Buy arrows
@@ -3577,8 +3570,9 @@ _route:
     - _Korok::RW04
     - _Korok::RW02
     - _Enemy::Hinox::GL03
-    - _Addison::A52
     - _Korok::RW01
+    - _Addison::A52
+    - _Korok::SS60::Start
     - _Korok::SS60::End
     - _Cave::FortHateno00
     - _Bubbulfrog::FortHatenoCave
@@ -5224,7 +5218,7 @@ _route:
     - _Korok::SS72::Start
     - _Korok::PF24
     - _Korok::SS72::End   
-    - Clip out, rocket across, clip in
+    - ABC-Overload-Clip into cave (normal clip culls)
     - _Bubbulfrog::Tobio'sHollowCave
     - Clip across
     - _Chest::TinglesShirt
