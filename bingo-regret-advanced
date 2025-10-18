@@ -863,10 +863,9 @@ _route:
     - _Equipment::Weapon<Zelda's Torch>:
        coord: [-257.09, -1684.76, 1023.05]
        comment: Clip down
-    - _MainQuest<🔴✂️ Retrieve Zeldas Torch>:
-        coord: [1036.58, 145.61, 1239.07]
-        
+  
   - Akkala 1: 
+    - _Warp::Shrine::Ekochiu
     - _Item<Swift Violet>:
        coord: [1204.67, 223.87, 1286.7]
     - _Item<Sundelion>:
