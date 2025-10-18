@@ -857,7 +857,6 @@ _route:
        comment: Is inside Lockup behind grate
     - _Chasm::HyruleCastle
 
-
   - Castle - Depths (altered):
     - _Lightroot::Camobatures
     - _Equipment::Weapon<Zelda's Torch>:
@@ -932,17 +931,7 @@ _route:
     - _Chest::FierceDeityArmor
     - _Item<Pot>:
        coord: [3330.62, 527.71, 1480.88]
-       comment: Fuse to weapon 
-  
-  
-  - Sky Mine (altered):
-    - _Chest::ZonaiteShinGuards
-    - _SagesWill::Akkala
-    - _Dispenser::S20:
-       comment: Activate, don't use		
-
-
-  - Akkala Northeast (unaltered):
+       comment: Fuse to weapon
     - _Place::TarreyTown:
        hide-icon-on-map: true
        comment: Settlement
@@ -951,6 +940,10 @@ _route:
     - _Shop::BreakaPartShop:
        comment: Break and glue Pots
        notes: Gerudo Pot, Korok Pot, Rito Pot, Surface Pot, Portable Pot
+    - _Dispenser::S20:
+       comment: Activate, don't use	
+    - _SagesWill::Akkala
+    - _Chest::ZonaiteShinGuards
     - _Enemy<Monster Forces>:
        coord: [4853.61, 128.72, 2769.59]
        comment: Defeat (all Pirate Ships)
@@ -995,8 +988,6 @@ _route:
 
 
   - Lanayru Skydiving (altered):
-    - _Shrine::Igoshon:
-       comment: Complete
     - _Dispenser::S08:
        comment: Activate, don't use
     - _SagesWill::WellspringIsland
@@ -1071,6 +1062,8 @@ _route:
        comment: Settlement
        hide-icon-on-map: true
     - _Well::HatenoVillageEast  
+    - _Shrine::Zanmik:
+       comment: complete
     - _Well::HatenoVillageNorth  
     - _Well::HatenoVillageWest
 
