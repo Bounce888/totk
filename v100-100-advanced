@@ -184,21 +184,16 @@ _route:
     - _Chest<Cannon>:
        coord: [238.57, 113.53, -1648.46]
        comment: Is buried inside the water, use a wing to reach
-    - _Korok::PF18
-    - _Location::DeyaVillageRuins:
-       hide-icon-on-map: true
-    - _Well::DeyaVillageRuinsNorth
-    - _Korok::PF20
-    - _Well::DeyaVillageRuinsSouth
-    - _Well::HillsofBaumer
+    - _Material<Farosh Horn>:
+       coord: [40, 300, -2200]
+       notes: From Farosh
+    - _Korok::HF69
     - _Enemy<Wizzrobe>:
        coord: [283.19, 151.91, -2314.28]
        notes: Pick up Zonaite Sword
     - _Korok::PF23::Trail
-    - _Material<Farosh Horn>:
-       coord: [40, 300, -2200]
-       notes: From Farosh; .link([cycle info] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.mw6eju33ak27)
     - _Chasm::HillsofBaumer
+    - _Korok::PF20
     - _Well::DeyaVillageRuinsEast
     - _Material<Fleet Lotus Seeds x4>:
        coord: [456.27, 115.86, -2007.45]
@@ -5123,6 +5118,9 @@ _route:
     - _Korok::HF45
     - _Location::OutpostRuins
     - _Chasm::ForestofTime
+    - _Korok::HF61
+    - _Korok::HF59::Trail
+    - _Korok::PF19
     - _Korok::HF53
     - _Korok::PF12::Start
     - _Location::EastPostRuins
@@ -5138,12 +5136,19 @@ _route:
     - _Korok::PF09
     - _Korok::PF12::End
     - _Korok::PF14::End
-    - _Korok::PF16
-    - _Well::DeyaVillageRuins
+    - _Korok::PF16    
+    - _Korok::PF18
+    - _Location::DeyaVillageRuins:
+       hide-icon-on-map: true
+    - _Well::DeyaVillageRuinsNorth
+    - _Well::DeyaVillageRuins:
+       comment: Enter well
     - _Enemy::Talus::SF03:
        comment: Back
     - _Shrine::Susub
-    - Ascend out
+    - Ascend out    
+    - _Well::DeyaVillageRuinsSouth
+    - _Well::HillsofBaumer
     - _Item<Korok Starting Block>:
        coord: [350.49, 167.94, -2158.33]
     - _Korok::PF21
@@ -5190,10 +5195,6 @@ _route:
     - _Enemy::Gleeok::G08
     - _Korok::PF31
     - _Korok::HF75
-    - _Korok::HF69
-    - _Korok::PF19
-    - _Korok::HF59::Trail
-    - _Korok::HF61
     - _Addison::A34
     - _Korok::HF70
     - _Korok::PF34::Start
