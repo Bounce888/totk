@@ -184,16 +184,21 @@ _route:
     - _Chest<Cannon>:
        coord: [238.57, 113.53, -1648.46]
        comment: Is buried inside the water, use a wing to reach
-    - _Material<Farosh Horn>:
-       coord: [40, 300, -2200]
-       notes: From Farosh; .link([cycle info] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.mw6eju33ak27)
-    - _Korok::HF69   
+    - _Korok::PF18
+    - _Location::DeyaVillageRuins:
+       hide-icon-on-map: true
+    - _Well::DeyaVillageRuinsNorth
+    - _Korok::PF20
+    - _Well::DeyaVillageRuinsSouth
+    - _Well::HillsofBaumer
     - _Enemy<Wizzrobe>:
        coord: [283.19, 151.91, -2314.28]
        notes: Pick up Zonaite Sword
     - _Korok::PF23::Trail
+    - _Material<Farosh Horn>:
+       coord: [40, 300, -2200]
+       notes: From Farosh; .link([cycle info] https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit?tab=t.fzqomwc1edws#heading=h.mw6eju33ak27)
     - _Chasm::HillsofBaumer
-    - _Korok::PF20
     - _Well::DeyaVillageRuinsEast
     - _Material<Fleet Lotus Seeds x4>:
        coord: [456.27, 115.86, -2007.45]
@@ -852,13 +857,15 @@ _route:
     - _Enemy::Talus::GR01
     - _Korok::LB11
     - _Korok::LB14
-    - _Enemy::Talus::GR02
+    - _Enemy::Talus::GR02:
+       comment: Right 
     - _Korok::LB30::Start
     - _Korok::LB30::End
     - _Korok::LB31
     - _Korok::LB33
     - _Korok::LB36
-    - _Enemy::Talus::GR04
+    - _Enemy::Talus::GR04:
+       comment: Right
     - _Korok::LB39
     - _Location::UltraBallHaulCheckIn:
        coord: [-3185, 300, 680]
@@ -912,7 +919,8 @@ _route:
     - _Korok::GH04
     - _Shrine::Turakawak
     - _Korok::GH03::Start
-    - _Enemy::Talus::GR05
+    - _Enemy::Talus::GR05:
+       comment: Back
     - _Korok::GH02
     - _Korok::GH01
     - _Korok::GH03::End
@@ -1237,7 +1245,8 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [-2838.84, 157.52, -437.44]
     - _Korok::GH08
-    - _Enemy::Talus::GC03
+    - _Enemy::Talus::GC03:
+       comment: Right
     - _Korok::HF06
     - _Korok::HF12
     - _Material<Bright Eyed Crab>:
@@ -1252,7 +1261,8 @@ _route:
     - _Korok::HF08
     - _Korok::HF17
     - _Korok::HF16
-    - _Enemy::Talus::GC04
+    - _Enemy::Talus::GC04:
+       comment: Back 
     - _Korok::HF03
     - _Cave::SatoriMountain00
     - Clip across (from inside cave)
@@ -1756,7 +1766,8 @@ _route:
     - _Location::LostWoods
     - _Korok::EC35
     - _Chasm::MinshiWoods
-    - _Enemy::Talus::GE07
+    - _Enemy::Talus::GE07:
+       comment: Right
     - _Korok::EC45    
     - _Korok::EC48    
     - _Npc<Kilton>:
@@ -1786,7 +1797,8 @@ _route:
  
   - To Zora's Domain:
     - _Korok::EC56
-    - _Enemy::Talus::GZ02 
+    - _Enemy::Talus::GZ02:
+       comment: Right
     - _Place::FoothillStable:
        hide-icon-on-map: true
     - _Addison::A57
@@ -1948,13 +1960,15 @@ _route:
     - _Korok::UZ16
     - _Cave::UlriaGrottoSouth00
     - _Bubbulfrog::UlriaGrottoSouthCave
-    - _Enemy::Talus::GZ03
+    - _Enemy::Talus::GZ03:
+       comment: Right
     - Ascend out
     - _Korok::UZ27
     - Equip Zora Armor
     - Ride up waterfall
     - _Korok::UZ28
-    - _Enemy::Talus::GZ04
+    - _Enemy::Talus::GZ04:
+       comment: Left
     - _Korok::UZ33
     - _Korok::UZ46
     - _Korok::UZ43
@@ -2074,7 +2088,8 @@ _route:
        coord: [3594.67, 316.50, 338.88]
        comment: The Blue Stone
     - _Bubbulfrog::AncientZoraWaterworks
-    - _Enemy::Talus::SZ05
+    - _Enemy::Talus::SZ05:
+       comment: Right
     - _Chest::ZoraGreaves
     - Ascend out
     - _Enemy::Hinox::GZ02
@@ -2219,7 +2234,8 @@ _route:
        coord: [1861,150,3182]
        notes: dont set if you can get to the stalnox before 5am
     - Ascend out
-    - _Enemy::Talus::GE03
+    - _Enemy::Talus::GE03:
+       comment: Left
     - _Item<Korok Starting Block>:
        coord: [2194.43, 613.08, 3008.75]
     - _Korok::EC07
@@ -2635,7 +2651,8 @@ _route:
     - _Cave::DeathMountainFoothill00
     - _Addison::A47
     - _Korok::EC15::End
-    - _Enemy::Talus::GE05
+    - _Enemy::Talus::GE05:
+       comment: Left
     - _Korok::EC24 
     - _Npc<Kabetta>:
        coord: [2363, 932.75, 2599.5]
@@ -2674,7 +2691,8 @@ _route:
     - _Korok::EC42::End
     - _Cave::EastRestaurant00
     - _Bubbulfrog::EastRestaurantCave
-    - _Enemy::Talus::GE06
+    - _Enemy::Talus::GE06:
+       comment: Right
     - _Korok::EC34::Trail
     - _Korok::EC40
     - _Cave::LakeIntenoch00
@@ -3007,7 +3025,8 @@ _route:
        notes: Pick up
     - _Enemy<Monster Forces>:
        coord: [4853.61, 128.72, 2769.59]
-    - _Enemy::Talus::GA01
+    - _Enemy::Talus::GA01:
+       comment: Left
     - _Cave::NorthAkkalaBeach00
     - _Shrine::Rasiwak:
        comment: (STICK OPTION)
@@ -3063,7 +3082,8 @@ _route:
        coord: [3760.55, 111.16, 2679.37]
        comment: Offer Dinraal Claw
     - _Korok::UM22
-    - _Enemy::Talus::GA02
+    - _Enemy::Talus::GA02:
+       comment: Back
     - _Korok::UM09::Start
     - _Korok::UM10
     - _Korok::UM06
@@ -3101,10 +3121,12 @@ _route:
     - _Location::GutCheckRock:
        hide-icon-on-map: true
     - _Korok::EC04
-    - _Enemy::Talus::GE02
+    - _Enemy::Talus::GE02:
+       comment: Right
     - _Shrine::Sibajitak
     - _Korok::EC05
-    - _Enemy::Talus::GE01
+    - _Enemy::Talus::GE01:
+       comment: Back
     - _Korok::EC02
     - _Location::EldinGreatSkeleton:
        hide-icon-on-map: true
@@ -3116,7 +3138,8 @@ _route:
     - _Shrine::Mayak:
        comment: (STICK)
     - _Korok::TR02::Start
-    - _Enemy::Talus::GT01
+    - _Enemy::Talus::GT01:
+       comment: Right
     - _Korok::TR02::End
     - _Korok::TR03::Start
     - _Korok::TR03::End
@@ -3148,7 +3171,8 @@ _route:
     - _Shrine::Kikakin:
        comment: (STICK)
     - _Korok::TR14
-    - _Enemy::Talus::GT02
+    - _Enemy::Talus::GT02:
+       comment: Left
     - _Addison::A28
     - _Korok::TR07
     - _Korok::TR09::Start
@@ -3288,7 +3312,8 @@ _route:
     - _Korok::RP10
     - _Location::SherfinsSecretHotSpring
     - _Korok::RP12
-    - _Enemy::Talus::GH01
+    - _Enemy::Talus::GH01:
+       comment: Right
     - _Item<Korok Starting Block>:
        coord: [-4422.64, 496.87, 3216.01]
     - _Korok::RP21
@@ -3297,7 +3322,8 @@ _route:
        comment: (STICK)
     - _Korok::RP28
     - _Korok::RP33    
-    - _Enemy::Talus::GH03
+    - _Enemy::Talus::GH03:
+       comment: Left
     - _Korok::RP42
     - _Korok::RP38::Start
     - _Korok::RP38::End
@@ -3349,7 +3375,8 @@ _route:
     - _Korok::SS04
     - _Cave::CrenelHills00
     - _Bubbulfrog::CrenelHillsCave
-    - _Enemy::Talus::GK01
+    - _Enemy::Talus::GK01:
+       comment: Right
     - _Chest::BarbarianArmor
     - Ascend out
     - _Shrine::Ren-iz:
@@ -3430,7 +3457,8 @@ _route:
     - _Korok::SS33
     - _Cave::ByroadtoLanayruWetlands01
     - _Bubbulfrog::ByroadtoLanayruWetlands
-    - _Enemy::Talus::GK03
+    - _Enemy::Talus::GK03:
+       comment: Right
     - Ascend out
     - _Addison::A51
     - _Korok::SS45
@@ -3671,7 +3699,8 @@ _route:
     - _Korok::ML07
     - _Korok::ML12
     - _Addison::A71
-    - _Enemy::Talus::GL02
+    - _Enemy::Talus::GL02:
+       comment: Right
     - _Korok::ML17
     - _Korok::ML26::Start
     - _Item<Korok Starting Block>:
@@ -3738,7 +3767,8 @@ _route:
     - _Korok::ML08::End
     - _Korok::ML06
     - _Korok::ML04
-    - _Enemy::Talus::GL01
+    - _Enemy::Talus::GL01:
+       comment: Back
     - _Addison::A79
     - _Korok::ML10
     - _Korok::ML11::Trail
@@ -3892,7 +3922,8 @@ _route:
        comment: A Picture for Lakeside Stable
        notes: Sunny, towards waterfall
     - _Korok::PF75
-    - _Enemy::Talus::GF05
+    - _Enemy::Talus::GF05:
+       comment: Right
     - _Korok::PF67::End
     - _Korok::PF64
     - _Korok::PF61
@@ -3999,7 +4030,8 @@ _route:
     - _Korok::RW22
     - _Korok::RW24::End
     - _Korok::RW21
-    - _Enemy::Talus::GL03
+    - _Enemy::Talus::GL03:
+       comment: Back
     - _Cave::MountDunsel00
     - Clip across
     - _Shrine::Bamitok
@@ -4108,7 +4140,8 @@ _route:
     - _Korok::PF55
     - _Location::GuchiniPlainBarrows:
        hide-icon-on-map: true
-    - _Enemy::Talus::GF04
+    - _Enemy::Talus::GF04:
+       comment: Right
     - _Korok::PF71
     - _Korok::PF65
     - _Shrine::Utsushok:
@@ -4119,7 +4152,8 @@ _route:
     - _Korok::PF73::End
     - _Korok::PF76
     - _Korok::PF77
-    - _Enemy::Talus::GF06
+    - _Enemy::Talus::GF06:
+       comment: Right
     - _Korok::PF80
     - _Korok::PF79::Trail
     - _Tablet<Giant Horse>:
@@ -4370,7 +4404,8 @@ _route:
     - _Korok::GH10::Start
     - _Addison::A01
     - _Enemy::Hinox::GG01
-    - _Enemy::Talus::GG01
+    - _Enemy::Talus::GG01:
+       comment: Back
     - _Korok::GH24
     - _Korok::GH13
     - _Korok::GH10::End
@@ -4426,14 +4461,16 @@ _route:
     - _Chest::PhantomArmor
     - Ascend out
     - _Korok::GH25
-    - _Enemy::Talus::GG02
+    - _Enemy::Talus::GG02:
+       comment: Left
     - _Korok::GH30
     - _Korok::GH36
     - _Korok::GH39
     - Equip the Yiga Set
     - Clip down
     - _Bubbulfrog::TaafeiHillCave
-    - _Enemy::Talus::GG04
+    - _Enemy::Talus::GG04:
+       comment: Right
     - _Cave::TaafeiHill00:
        comment: Exit cave, ensure cave entrance is marked
     - _Cave::YigaBlademasterStation00:
@@ -4668,7 +4705,8 @@ _route:
        coord: [-2731.97, 140.68, -2820.41]
     - _Korok::GC28
     - _Cave::GerudoCanyonMine01 
-    - _Enemy::Talus::GG05
+    - _Enemy::Talus::GG05:
+       comment: Right
     - _Item<Secret Base Frog Statue>:
        coord: [-2301.11, 462.97, -2426.82]
        comment: Deposit Banana
@@ -5085,9 +5123,6 @@ _route:
     - _Korok::HF45
     - _Location::OutpostRuins
     - _Chasm::ForestofTime
-    - _Korok::HF61
-    - _Korok::HF59::Trail
-    - _Korok::PF19
     - _Korok::HF53
     - _Korok::PF12::Start
     - _Location::EastPostRuins
@@ -5103,17 +5138,12 @@ _route:
     - _Korok::PF09
     - _Korok::PF12::End
     - _Korok::PF14::End
-    - _Korok::PF16    
-    - _Korok::PF18
-    - _Location::DeyaVillageRuins:
-       hide-icon-on-map: true
-    - _Well::DeyaVillageRuinsNorth
+    - _Korok::PF16
     - _Well::DeyaVillageRuins
-    - _Enemy::Talus::SF03
+    - _Enemy::Talus::SF03:
+       comment: Back
     - _Shrine::Susub
     - Ascend out
-    - _Well::DeyaVillageRuinsSouth
-    - _Well::HillsofBaumer
     - _Item<Korok Starting Block>:
        coord: [350.49, 167.94, -2158.33]
     - _Korok::PF21
@@ -5160,6 +5190,10 @@ _route:
     - _Enemy::Gleeok::G08
     - _Korok::PF31
     - _Korok::HF75
+    - _Korok::HF69
+    - _Korok::PF19
+    - _Korok::HF59::Trail
+    - _Korok::HF61
     - _Addison::A34
     - _Korok::HF70
     - _Korok::PF34::Start
@@ -5857,3 +5891,4 @@ _route:
     
     
     
+
