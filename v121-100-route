@@ -1055,20 +1055,6 @@ _route:
        comment: Bring Peace to Eldin!
     - _Bubbulfrog::LakeDarmanMonsterDen
     - Ascend out
-    - _Cave::DeathMountainWestTunnel00
-    - _Bubbulfrog::DeathMountainWestTunnel
-    - _Npc<Mota>:
-       coord: [2345.72, 620.15, 2682.08]
-       comment: The Abandoned Laborer
-       notes: Launch minecart with rocket
-    - _Npc<Mota>:
-       coord: [2220, 620, 2670]
-       comment: The Abandoned Laborer
-    - _Location::DeathMountainWestSite:
-       hide-icon-on-map: true
-    - _Korok::EC14
-    - _Korok::EC10::Start
-    - _Korok::EC10::End
     - _Cave::DeathMountainEastTunnel00
     - _Bubbulfrog::DeathMountainEastTunnel
     - _Enemy::Talus::GE04
@@ -1148,6 +1134,9 @@ _route:
        coord: [1830.87, 427.25, 2080.46]
        comment: Mine-Cart Land Quickshot Course
     - _Bubbulfrog::SouthernMine  
+    - _Location::EldinSkyArchipelago:
+       hide-icon-on-map: true
+    - _SagesWill::Eldin<Sage Will>
     - _Item<Korok Starting Block>:
        coord: [1799.11, 602.53, 2210.18]
     - _Korok::EC28
@@ -1160,18 +1149,29 @@ _route:
     - _Addison::A47
     - _Cave::DeathMountainFoothill00
     - _Bubbulfrog::DeathMountainFoothillCave
+    - _Cave::DeathMountainWestTunnel00
+    - _Bubbulfrog::DeathMountainWestTunnel
+    - _Npc<Mota>:
+       coord: [2345.72, 620.15, 2682.08]
+       comment: The Abandoned Laborer
+       notes: Launch minecart with rocket
+    - _Npc<Mota>:
+       coord: [2220, 620, 2670]
+       comment: The Abandoned Laborer
+    - _Location::DeathMountainWestSite:
+       hide-icon-on-map: true
+    - _Korok::EC14
+    - _Korok::EC10::Start
+    - _Korok::EC10::End
     - _Npc<Kabetta>:
        coord: [2363, 932.75, 2599.5]
        comment: Mine-Cart Land Death Mountain  
     - _Shrine::Sitsum
-    - _Location::EldinSkyArchipelago:
-       hide-icon-on-map: true
-    - _SagesWill::Eldin<Sage Will>
-    - _Enemy::Talus::GE05
-    - _Korok::EC24    
+    - _Addison::A56
     - _Korok::EC22::Trail
     - _Location::BridgeofEldin
-    - _Addison::A56
+    - _Korok::EC24    
+    - _Enemy::Talus::GE05
     - _Korok::EC30
     - _Cave::GorkoTunnel00
     - _Npc<Kima>:
