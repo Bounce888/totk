@@ -2032,15 +2032,13 @@ _route:
        coord: [3069.58, 367.53, 177.36]
     - _Korok::UZ38
     - _Cave::RalisChannel00
-    - _Korok::UZ40:
-       movements:
-       - to: [2941.59, 312.48, 210.35]
-         away: true
-    - _Cave::UplandZoranaByroad01
+    - _Korok::UZ40
     - _Cave::RalisChannel01
     - _Shrine::Joniu::Start
     - _Shrine::Joniu
     - _Bubbulfrog::RalisChannel
+    - Ascend out
+    - _Cave::UplandZoranaByroad01
     - Raise up floodgate with UH
     - _Bubbulfrog::UplandZoranaByroad
     - _Chest::ClimbingBoots
