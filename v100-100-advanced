@@ -286,6 +286,11 @@ _route:
 
   - Depths 1:
     - Clip down to Depths
+    - _Item<Stone Slab>:
+       coord: [32.19, -363.57, 150.55]
+       notes: Fuse to Claymore, optional ODZ
+    - _Enemy::Talus::DC01:
+       notes: Pick up one Ruby and one Amber before Autobuild from the 3 taluses.
     - _Poe::Large:
        coord: [-135.08, -285.5, -46.98]
     - _Poe::Large:
@@ -294,8 +299,6 @@ _route:
        coord: [-140.24, -339.37, -5.02]
     - _Poe::Large:
        coord: [-132.9, -339.24, -26.28]
-    - _Enemy::Talus::DC01:
-       notes: Pick up one Ruby and one Amber before Autobuild from the 3 taluses.
     - _Lightroot::Nisoij
     - _Enemy::Talus::DC03
     - _Enemy::Frox::DC08:
@@ -306,9 +309,6 @@ _route:
     - _Shop::BargainerStatue01:
        coord: [453.46, -300, -800.35]
        notes: Talk to discover shop location
-    - _Item<Stone Slab>:
-       coord: [600.73, -397.48, -673.85]
-       notes: Fuse to Claymore
     - _Enemy::FluxConstruct::DC03
     - _Enemy::Hinox::DC02
     - _Location::AppleanGrove:
@@ -2153,6 +2153,9 @@ _route:
        notes: Set ToD to Noon
     - _Bubbulfrog::LakeFeronaCave
     - Ascend out
+    - _Place::BedrockBistro:
+       hide-icon-on-map: true
+    - _Korok::EC43
     - _Shrine::Timawak
     - _Korok::EC37
     - _Korok::EC36::Start
@@ -2618,9 +2621,6 @@ _route:
        comment: Escort TWO back to Bedrock Bistro
     - _Bubbulfrog::WestRestaurantCave
     - _Cave::WestRestaurant00
-    - _Place::BedrockBistro:
-       hide-icon-on-map: true
-    - _Korok::EC43
     - _Npc<Cooke>:
        coord: [1761.51, 384.49, 1546.32]
        comment: Rock Roast or Dust, Meat for Meat
