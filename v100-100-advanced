@@ -2197,21 +2197,16 @@ _route:
        coord: [1744, 531.5, 2585]
        comment: The Ancient City Gorondia?
        notes: Launch minecart using rocket
-    - _Korok::EC06::Start
-    - _Npc<Dugby>:
-       coord: [1651, 414, 2792]
-       comment: The Ancient City Gorondia?
     - _Cave::YunoboCoHQSouth00
     - _Chest::EmberHeaddress
     - _Bubbulfrog::YunoboCoHQSouthCave
     - Ascend out
-    - _Korok::EC12
-    - _Korok::EC11
-    - _Cave::IsleofRabacGallery00
-    - _Korok::EC06::End
     - _Place::YunoboCoHQ:
        hide-icon-on-map: true
     - _Korok::EC13
+    - _Npc<Dugby>:
+       coord: [1651, 414, 2792]
+       comment: The Ancient City Gorondia?
     - _Enemy<Yunobo>:
        coord: [1639.66, 518.5, 2861.65]
        comment: Defeat Yunobo
@@ -2519,57 +2514,9 @@ _route:
     - _Enemy<Phantom Ganon>:
        coord: [411.39, -481.78, 2192.07]
        comment: Restore the Deku Tree
-  
-  - Korok Forest Surface:
-    - Ascend up the Deku Tree
-    - _Place::KorokForest:
-       hide-icon-on-map: true
-    - Upgrade to 9 Hearts
-    - _Chasm::DekuTree:
-       notes: Easily missable
-    - _Npc<Kula>:
-       coord: [433.49, 249.74, 2109.7]
-       comment: Whirly Swirly Things
-    - _Shrine::Musanokir
-    - _Npc<Hestu>:
-       coord: [419.49, 248.71, 2119.06]
-       comment: Hestu's Concerns
-       notes: Upgrade all bows and shields
-    - _Npc<Damia>:
-       coord: [564.99, 264.83, 2160.65]
-       comment: A Pretty Stone and Five Golden Apples
-    - _Shrine::Pupunke::Start
-    - _Shrine::Pupunke
-    - _Npc<Walton>:
-       coord: [417.59, 334.03, 2180.27]
-       comment: Walton's Treasure Hunt
-       notes: Talk once -> sword/spear -> Talk again
-    - Clip down from above
-    - _Npc<Oaki>:
-       coord: [413.12, 285.21, 2177.78]
-       comment: The Secret Room
-       notes: 2 Giant Brightbloom, 4 Blue Nightshade
-    - ABC-Clip through the front
-    - _Npc<Deku Tree>:
-       coord: [430, 268, 2145]
-       comment: Recovering the Hero's Sword
-    - _Equipment::Shield<Forest Dweller Shield>:
-       coord: [422.01, 263.88, 2157.42]
-    - _Npc<Maca>:
-       coord: [379.65, 251.5, 2083.58]
-       comment: Maca's Special Place
-    - _Npc<Walton>:
-       coord: [417.59, 334.03, 2180.27]
-       comment: Walton's Treasure Hunt
-       notes: Turn in shield, can discard equipment
-    - _Enemy::Talus::GT03
-    - _Shrine::Sakunbomar::Start
-    - _Shrine::Sakunbomar
-    - Equip SLB
-  
-  - Fire Temple:
     - _Warp::Lightroot::Mustis:
        comment: WARP
+       notes: Equip SLB (and a Flamebreaker piece if not already)
     - _Npc<Yunobo>:
        coord: [2338, -949, 2587]
        comment: Yunobo of Goron City
@@ -3141,12 +3088,23 @@ _route:
     - _Cave::DeplianBadlands00
     - _Bubbulfrog::DeplianBadlandsCave
     - _Shrine::Minetak
+  
+  - Thyphlo Ruins Surface:
+    - _Warp::Shrine::Isisim:
+       comment: WARP
+    - _Shrine::Isisim:
+       comment: (GOHMA) 
     - Ascend out
-    - _Korok::TR04
-    - _Enemy::Hinox::GE01
+    - _Korok::EC06::Start
+    - _Korok::EC06::End
+    - _Cave::IsleofRabacGallery00
+    - _Korok::EC11
+    - _Korok::EC12       
+    - _Korok::TR13::Start 
     - _Addison::A45:
        notes: Use Hover Stone vertically
-    - _Korok::TR13::Start
+    - _Korok::TR04
+    - _Enemy::Hinox::GE01
     - _Tear::G10
     - _Korok::TR12
     - _Korok::TR13::End
@@ -3178,7 +3136,7 @@ _route:
     - _Korok::TR05    
     - _Tower::ThyphloRuins
  
-  - Northern Sky:
+  - Thyphlo Ruins Sky:
     - Launch from tower
     - _Location::NorthHyruleSkyArchipelago:
        hide-icon-on-map: true
@@ -3202,18 +3160,60 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [283.88, 857.72, 1962.05]
     - _Korok::TRS02
+  
+  - Korok Forest Surface:
     - Dive down to shrine on surface below
     - _Shrine::Ninjis
-    
-    - Warp to Proving Grounds Shrine north of Goron City
-    - _Warp::Shrine::Isisim:
-       comment: WARP
-    - _Shrine::Isisim:
-       comment: (GOHMA)
-       
-    - Warp to Shrine above Thyphlo Ruins
+    - Slide through fog into Korok Forest:
+       notes: If slide fails, warp to Rikonasum Lightroot and ascend up
+    - _Place::KorokForest:
+       hide-icon-on-map: true
+    - _Npc<Maca>:
+       coord: [379.65, 251.5, 2083.58]
+       comment: Maca's Special Place
+    - _Npc<Hestu>:
+       coord: [419.49, 248.71, 2119.06]
+       comment: Hestu's Concerns
+       notes: Upgrade all bows and shields
+    - _Shrine::Musanokir
+    - _Npc<Kula>:
+       coord: [415.49, 248.71, 2145]
+       comment: Turn in Water/Sand Sinkhole Picture    
+    - Upgrade to 10 Hearts
+    - _Chasm::DekuTree:
+       notes: Easily missable
+    - Ascend up next to chasm
+    - _Npc<Oaki>:
+       coord: [413.12, 285.21, 2177.78]
+       comment: The Secret Room
+       notes: 2 Giant Brightbloom, 4 Blue Nightshade
+    - Ascend up
+    - _Npc<Walton>:
+       coord: [417.59, 334.03, 2180.27]
+       comment: Walton's Treasure Hunt
+       notes: Talk once -> sword/spear -> Talk again
+    - _Npc<Deku Tree>:
+       coord: [430, 268, 2145]
+       comment: Recovering the Hero's Sword
+    - _Equipment::Shield<Forest Dweller Shield>:
+       coord: [422.01, 263.88, 2157.42]
+    - _Npc<Damia>:
+       coord: [564.99, 264.83, 2160.65]
+       comment: A Pretty Stone and Five Golden Apples
+    - _Shrine::Pupunke::Start
+    - _Shrine::Pupunke
+    - _Npc<Walton>:
+       coord: [417.59, 334.03, 2180.27]
+       comment: Walton's Treasure Hunt
+       notes: Turn in shield, can discard equipment
+    - _Enemy::Talus::GT03
+    - _Shrine::Sakunbomar::Start
+    - _Shrine::Sakunbomar
+  
+  - East Hebra Sky:
     - _Warp::Shrine::Mayam:
        comment: WARP
+       notes: Can optionally launch out with jetpack and skip warp
     - _Tablet::S09
     - _Location::NorthLomeiCastleTopFloor:
        hide-icon-on-map: true
@@ -5343,7 +5343,7 @@ _route:
     - _Chasm::TobiosHollow:
        comment: Deposit mask to chasm
   
-  - Spirit Temple:
+  - Depths 5:
     - _Warp::Npc<Mineru's Shell>:
        coord: [868.00, -454.65, -2146.06]
        comment: Deposit Mask into Shell
@@ -5424,8 +5424,6 @@ _route:
        coord: [1412.28, -464.31, -3188.51]
     - _Poe::Grand:
        coord: [1418.56, -455.85, -3170.54]
-  
-  - Depths 5:
     - _Enemy::Hinox::DF06
     - _Location::FloriaCanyonMine
     - _Location::TaranCanyonMine
