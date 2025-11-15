@@ -1,0 +1,83 @@
+---
+_config:
+_project:
+  description: All Coliseums
+
+_route:
+  - Dragonhead:
+    - _Warp::ROA:
+       comment: Start from a Bingo File
+       line-color: white
+       level: Sky
+    - _Chest<Large Zonai Charge>:
+       coord: [501.28, 1893.86, -1613.06]
+    - _Equipment::Bow<Old Wooden Bow>:
+       coord: [449.23, 1514.74, -1613.78]
+    - _Equipment::Weapon<Rusty Broadsword>:
+       coord: [449.33, 1515.2, -1615.44]
+    - _Equipment::Shield<Rusty Shield>:
+       coord: [449.37, 1514.5, -1616.89]
+    - _Item<Boxes>:
+       coord: [472.44, 1514.79, -1615.43]
+       comment: Break with UH for Arrows
+    - _Equipment::Weapon<Rusty Claymore>:
+       coord: [664.38, 140.95, -1640.49]
+       comment: Dive down to surface below
+    - _Item<Lumber>:
+       coord: [582.77, 116.82, -1566.38]
+       comment: Fuse Wooden Board, slide with Lumber to Dragonhead
+    - _Equipment::Weapon<MsgNotFound Sword>:
+       comment: Get Dragonhead autosave, swap-unp-p-drop Lumber Slide weapon, get MNF
+    - _Dispenser::S02:
+       comment: Dupe LZCs and use 2 at the dispenser, pick up everything, get autosave
+    - _Item<Rocket>:
+       coord: [1404.47, 523.6, -3226.34]
+       comment: Setup IPR
+    - _Item<Rocket>:
+       coord: [1403.63, 523.91, -3225.72]
+       comment: Damage down Broadsword, WST to MNF, DZuggle 9
+    - _Item<Fairy>:
+       coord: [2125.74, 1368.68, -2625.69]
+       comment: Sandwich Slide or 45 Slide to sky circle island
+    - _Chest<Ancient Blade>:
+       coord: [2937.5, 228, -2515]
+       comment: Is buried in ground
+    
+  - Lizalfos and Bokoblins:
+    - Slide to surface above, clip down
+    - _Chest::RaviosHood:
+       notes: Ancient Blade Electric Lizalfos
+    - OOB Slide
+    - _Chest::MidnasHelmet
+  
+  - Gleeok:
+    - _Warp::Tower::LookoutLanding:
+       comment: ZUGGLE IPR SHIELD BEFORE WARP
+    - _Enemy::Gleeok::G07:
+       notes: Equip MNF during the fight as to not lose DZuggles
+  
+  - Lynels and Horriblins:
+    - Clip down
+    - _Chest::MajorasMask:
+       notes: Pick up arrows and SLB
+    - OOB Slide
+    - _Chest::SheiksMask
+  
+  - Hinox and Moblins:
+    - _Warp::Tower::LookoutLanding:
+       comment: ZUGGLE IPR SHIELD BEFORE WARP
+    - Clip down to Depths
+    - _Chest::KorokMask
+    - OOB Slide (board may burn)
+    - _Chest::ZantsHelmet
+    
+
+
+
+
+
+
+
+
+
+
