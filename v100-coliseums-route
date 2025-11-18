@@ -37,10 +37,10 @@ _route:
        coord: [1403.63, 523.91, -3225.72]
        comment: Damage down Broadsword, WST to MNF, DZuggle 9
     - _Item<Fairy>:
-       coord: [2125.74, 1368.68, -2625.69]
-       comment: Sandwich Slide or 45 Slide to sky circle island
+       coord: [926.96, 667.61, -2131.03]
+       comment: Slide
     - _Chest<Ancient Blade>:
-       coord: [2937.5, 228, -2515]
+       coord: [391.11, 114.24, -2316.78]
        comment: Is buried in ground
     
   - Lizalfos and Bokoblins:
