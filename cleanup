@@ -2047,7 +2047,44 @@ _route:
     
     
   - Flux Constructs:
-    - WIP
+    - _Warp::Shrine::Gutanbac
+    - _Enemy::FluxConstruct::SC02
+    - _Enemy::FluxConstruct::SC03
+    - _Enemy::FluxConstruct::SC01
+    - _Enemy::FluxConstruct::SH03
+    - _Enemy::FluxConstruct::SH01
+    - _Enemy::FluxConstruct::SH02
+    - _Warp::Shrine::Gutanbac
+    - _Enemy::FluxConstruct::SC04
+    - _Enemy::FluxConstruct::SF02
+    - _Enemy::FluxConstruct::SF03
+    - _Enemy::FluxConstruct::SF01
+    - _Enemy::FluxConstruct::SL02
+    - _Enemy::FluxConstruct::SL01
+    - _Enemy::FluxConstruct::SA02
+    - _Enemy::FluxConstruct::SA01
+    - _Enemy::FluxConstruct::SE01
+    - _Warp::Lightroot::Kato
+    - _Enemy::FluxConstruct::DH02
+    - _Enemy::FluxConstruct::DH03
+    - _Enemy::FluxConstruct::DC01
+    - _Enemy::FluxConstruct::DH01
+    - _Enemy::FluxConstruct::DE01
+    - _Enemy::FluxConstruct::DE02
+    - _Enemy::FluxConstruct::DA01
+    - _Enemy::FluxConstruct::DA02
+    - _Enemy::FluxConstruct::DL01
+    - _Enemy::FluxConstruct::DL04
+    - _Enemy::FluxConstruct::DL02
+    - _Enemy::FluxConstruct::DL03
+    - _Enemy::FluxConstruct::DC02
+    - _Enemy::FluxConstruct::DC03
+    - _Enemy::FluxConstruct::DG02
+    - _Enemy::FluxConstruct::DG01
+    - _Enemy::FluxConstruct::DG03
+    - _Enemy::FluxConstruct::DG04
+    - _Enemy::FluxConstruct::DF01
+    - _Enemy::FluxConstruct::DL05
   
 
   - Gleeok Sky:
@@ -2070,8 +2107,86 @@ _route:
   - Gleeok Depths:
     - _Enemy::Gleeok::D01    
   
-  - Hinox:
-    - WIP
+  - Hinox Surface:
+    - _Warp::Shrine::Otak
+    - _Enemy::Hinox::GH01
+    - _Enemy::Hinox::GH02
+    - _Enemy::Hinox::GH03
+    - _Enemy::Hinox::GR04
+    - _Enemy::Hinox::GR06
+    - _Enemy::Hinox::GR03
+    - _Enemy::Hinox::GR01
+    - _Enemy::Hinox::GR02
+    - _Enemy::Hinox::GE01
+    - _Enemy::Hinox::GE02
+    - _Enemy::Hinox::GA02
+    - _Enemy::Hinox::GA01
+    - _Enemy::Hinox::GA03
+    - _Enemy::Hinox::GA04
+    - _Enemy::Hinox::GZ02
+    - _Enemy::Hinox::GZ01
+    - _Enemy::Hinox::GZ04
+    - _Enemy::Hinox::GL01
+    - _Enemy::Hinox::GL02
+    - _Enemy::Hinox::GL03
+    - _Enemy::Hinox::GL04
+    - _Enemy::Hinox::GL05
+    - _Enemy::Hinox::GF09
+    - _Enemy::Hinox::GF08
+    - _Enemy::Hinox::GF06
+    - _Enemy::Hinox::GF05
+    - _Enemy::Hinox::GF04
+    - _Enemy::Hinox::GF03
+    - _Enemy::Hinox::GF02
+    - _Enemy::Hinox::GF01
+    - _Enemy::Hinox::GC05
+    - _Enemy::Hinox::GC02
+    - _Enemy::Hinox::CC01
+    - _Enemy::Hinox::GR05
+    - _Enemy::Hinox::GC01
+    - _Enemy::Hinox::GC03
+    - _Enemy::Hinox::GC04
+    - _Enemy::Hinox::GC06
+    - _Enemy::Hinox::GF07
+    - _Enemy::Hinox::GG01
+   
+  - Hinox Depths:
+    - _Warp::Lightroot::Kato   
+    - _Enemy::Hinox::DH01
+    - _Enemy::Hinox::DH03
+    - _Enemy::Hinox::DH02
+    - _Enemy::Hinox::DH04
+    - _Enemy::Hinox::DE04
+    - _Enemy::Hinox::DE03
+    - _Enemy::Hinox::DE02
+    - _Enemy::Hinox::DE01
+    - _Enemy::Hinox::DA01
+    - _Enemy::Hinox::DE05
+    - _Enemy::Hinox::DC02
+    - _Enemy::Hinox::DC01
+    - _Enemy::Hinox::DC03
+    - _Enemy::Hinox::DC04
+    - _Enemy::Hinox::DC05
+    - _Enemy::Hinox::DL02
+    - _Enemy::Hinox::DL01
+    - _Enemy::Hinox::DL04
+    - _Enemy::Hinox::DL03
+    - _Enemy::Hinox::DF01
+    - _Enemy::Hinox::DF03
+    - _Enemy::Hinox::DF04
+    - _Enemy::Hinox::DF05
+    - _Enemy::Hinox::DF06
+    - _Enemy::Hinox::DF07
+    - _Enemy::Hinox::DF02
+    - _Enemy::Hinox::DG03
+    - _Enemy::Hinox::DG02
+    - _Enemy::Hinox::DG01
+
+   
+  
+ 
+    
+
   
   - Molduga Surface:
     - _Warp::Shrine::Siwakama
@@ -2266,7 +2381,49 @@ _route:
   
        
   - Frox Depths:
-    - WIP
+    - _Warp::Lightroot::Kato:
+       hide-icon-on-map: true
+    - _Enemy::Frox::DH04
+    - _Enemy::Frox::DH03
+    - _Enemy::Frox::DH01
+    - _Enemy::Frox::DE01
+    - _Enemy::Frox::DE02
+    - _Enemy::Frox::DH02
+    - _Enemy::Frox::DH05
+    - _Enemy::Frox::DH06
+    - _Enemy::Frox::DH07
+    - _Enemy::Frox::DH08
+    - _Enemy::Frox::DC04
+    - _Enemy::Frox::DC01
+    - _Enemy::Frox::DE04
+    - _Enemy::Frox::DE03
+    - _Enemy::Frox::DA01
+    - _Enemy::Frox::DA02
+    - _Enemy::Frox::DA03
+    - _Enemy::Frox::DC06
+    - _Enemy::Frox::DL01
+    - _Enemy::Frox::DL02
+    - _Enemy::Frox::DF03
+    - _Enemy::Frox::DF02
+    - _Enemy::Frox::DF01
+    - _Enemy::Frox::DC10
+    - _Enemy::Frox::DC08
+    - _Enemy::Frox::DC02
+    - _Enemy::Frox::DC03
+    - _Enemy::Frox::DC05
+    - _Enemy::Frox::DC09
+    - _Enemy::Frox::DC07
+    - _Enemy::Frox::DG03
+    - _Enemy::Frox::DG05
+    - _Enemy::Frox::DG07
+    - _Enemy::Frox::DG09
+    - _Enemy::Frox::DG06
+    - _Enemy::Frox::DG08
+    - _Enemy::Frox::DG10
+    - _Enemy::Frox::DG04
+    - _Enemy::Frox::DG02
+    - _Enemy::Frox::DG01
+    
   
  
   - Old Maps:
