@@ -2046,7 +2046,7 @@ _route:
     - _Korok::UZS03    
     
     
-  - Flux Constructs:
+  - Flux Constructs Sky:
     - _Warp::Shrine::Gutanbac
     - _Enemy::FluxConstruct::SC02
     - _Enemy::FluxConstruct::SC03
@@ -2064,28 +2064,29 @@ _route:
     - _Enemy::FluxConstruct::SA02
     - _Enemy::FluxConstruct::SA01
     - _Enemy::FluxConstruct::SE01
+ 
+  - Flux Constructs Depths:
     - _Warp::Lightroot::Kato
     - _Enemy::FluxConstruct::DH02
     - _Enemy::FluxConstruct::DH03
-    - _Enemy::FluxConstruct::DC01
     - _Enemy::FluxConstruct::DH01
     - _Enemy::FluxConstruct::DE01
     - _Enemy::FluxConstruct::DE02
     - _Enemy::FluxConstruct::DA01
     - _Enemy::FluxConstruct::DA02
-    - _Enemy::FluxConstruct::DL01
-    - _Enemy::FluxConstruct::DL04
-    - _Enemy::FluxConstruct::DL02
-    - _Enemy::FluxConstruct::DL03
+    - _Enemy::FluxConstruct::DC01
     - _Enemy::FluxConstruct::DC02
     - _Enemy::FluxConstruct::DC03
-    - _Enemy::FluxConstruct::DG02
-    - _Enemy::FluxConstruct::DG01
-    - _Enemy::FluxConstruct::DG03
-    - _Enemy::FluxConstruct::DG04
-    - _Enemy::FluxConstruct::DF01
+    - _Enemy::FluxConstruct::DL01
+    - _Enemy::FluxConstruct::DL02
+    - _Enemy::FluxConstruct::DL03
+    - _Enemy::FluxConstruct::DL04
     - _Enemy::FluxConstruct::DL05
-  
+    - _Enemy::FluxConstruct::DF01
+    - _Enemy::FluxConstruct::DG04
+    - _Enemy::FluxConstruct::DG03
+    - _Enemy::FluxConstruct::DG02
+    - _Enemy::FluxConstruct::DG01 
 
   - Gleeok Sky:
     - _Enemy::Gleeok::S01
