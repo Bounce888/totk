@@ -184,6 +184,11 @@ _route:
     - _Chest<Cannon>:
        coord: [238.57, 113.53, -1648.46]
        comment: Is buried inside the water, use a wing to reach
+    - _Korok::PF13
+    - _Korok::HF53
+    - _Korok::PF19
+    - _Korok::HF59
+    - _Korok::HF61
     - _Material<Farosh Horn>:
        coord: [40, 300, -2200]
        notes: From Farosh
@@ -5116,15 +5121,10 @@ _route:
     - _Korok::HF45
     - _Location::OutpostRuins
     - _Chasm::ForestofTime
-    - _Korok::HF61
-    - _Korok::HF59::Trail
-    - _Korok::PF19
-    - _Korok::HF53
     - _Korok::PF12::Start
     - _Location::EastPostRuins
     - _Korok::HF48
     - _Location::ProximBridge
-    - _Korok::PF13
     - _Korok::PF10
     - _Korok::PF14::Start:
        notes: Use blueprint with two Korok Backpackers
