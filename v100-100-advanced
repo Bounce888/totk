@@ -241,8 +241,7 @@ _route:
     - _Enemy<3 Bokoblins>:
        coord: [1233.77, 295.3, -2356.17]
        comment: Defeat these next to the Cooking Pot
-    - Cook 2 Speed Food (1 Farosh Horn, 4 Fleet Lotus each)
-    - Eat the first immediately and eat the second after Depths 1; ensure the second lasts until FABS on the Great Plateau 
+    - Cook 1 Speed Food (1 Farosh Horn, 4 Fleet Lotus)
     - Rocket through cave; pick up Truffle and Brightcap, receive quest; pick up both spears, fuse a wing to one and throw it through the target
     - _Cave::Tobio'sHollow00
     - _Material<Hearty Truffle>:
@@ -349,6 +348,9 @@ _route:
        hide-icon-on-map: true
     - _Chest::MinersTop
     - _Enemy::Hinox::DC04
+    - _Tablet<Frox>:
+       coord: [-904.8560492426359,-500,-971]
+       comment: Snap
     - _Enemy::Frox::DC09
     - _Lightroot::Nihcayam
     - _Enemy::Talus::DC04
@@ -374,7 +376,7 @@ _route:
     - _SchemaStone::CentralMine
     - Drop UPR Shield
     - Perform BID (.link([guide] https://docs.google.com/presentation/d/1_bsHBX-od2V1wXxUn52OarLQw6rCl6nM-5Rxu14c4q8/edit?usp=sharing))
-    - Dupe 510 Large Zonaite, 192 Diamonds, 180 Rubies, 180 Fairies, 120 Flint, 60 Wood, 50 Fire Fruit, 35 Ancient Blades, 20 Dazzlefruit, 20 Splash Fruit, 10 Brightcaps, 10 Amber, 10 Sundelions, and 6 Golden Apples
+    - Dupe 510 Large Zonaite, 180 Diamonds, 150 Rubies, 180 Fairies, 120 Flint, 60 Wood, 35 Fire Fruit, 20 Ancient Blades, 20 Dazzlefruit, 20 Splash Fruit, 10 Brightcaps, 10 Amber, 10 Sundelions, and 6 Golden Apples
     - Ghost Fuse Wood:
        notes: For Ghost Fuse, overload drop weapon (not MNF), fuse weapon to shield, fuse wood to weapon twice, swap weapon
     - Pick up and Zuggle the UPR shield
@@ -396,15 +398,14 @@ _route:
     - _Lightroot::Mu-ustust
     - _Location::FloatingColiseum:
        hide-icon-on-map: true
-       notes: Use Ancient Blades on all except the 4th Lynel; pick up Savage Lynel Bow ("SLB"), Arrows, Both Horns, and Large CC
-    - _Chest::MajorasMask:
-       notes: If in need of extra arrows, defeat first Lynel as well
+    - Ancient Blade Every Lynel Except for fourth one:
+       notes: Sort Shift Dupe SLB. Pickup saber horn, arrows, Large CC
+    - _Chest::MajorasMask
     - Fuse Cart to Claymore
-    - Fuse Saber Horn to any weapon
-    - Fuse Ruby to any other weapon
+    - Fuse Saber Horn to a Claymnore
+    - Fuse Ruby to Zonaite Sword
     - Ghost Fuse the Saber Horn
-    - zuggle rock MNF
-    - Equip normal MNF
+    - Dupe Rock MNF once, sort weapon inventory
     
   - Hyrule Field:
     - _Warp::Tower::LookoutLanding:
@@ -469,6 +470,9 @@ _route:
     - _Korok::HF68::Start
     - _Korok::HF68::End
     - _Korok::HF72
+    - _Equipment::Weapon<Royal Claymore>:
+        coord: [-1289.81, 418.5, -2222.06]
+        notes: Perform WST from Rusty Claymore to Royal Claymore (no need to care about dura)
     - _Shrine::Tadarok
     - _Bubbulfrog::RiveroftheDeadWaterfallCave
     - _Cave::RiveroftheDeadWaterfall00
@@ -732,20 +736,17 @@ _route:
     - _Material<Staminoka Bass>:
        coord: [-3493.49, 258.08, 1853.66]
        notes: Pick up
-    - _Npc<Molli>:
-       coord: [-3617.09, 320.35, 1789.5]
-       comment: Molli the Fletcher's Quest
-    - _Npc<Bedoli>:
-       coord: [-3655.16, 320.26, 1762.85]
-       comment: Fish for Fletching
-       notes: Turn in 3 Glowing Cave Fish for 10 Arrows
-    - _Npc<Laissa>:
-       coord: [-3633.88, 309.76, 1826.67]
-       comment: The White Bird's Guidance
     - _Npc<Genli>:
        coord: [-3645.50, 289.88, 1822.96]
        comment: Genli's Home Cooking
        notes: Is near the general store
+    - _Npc<Laissa>:
+       coord: [-3633.88, 309.76, 1826.67]
+       comment: The White Bird's Guidance
+       notes: No extra dialogue
+    - _Npc<Molli>:
+       coord: [-3617.09, 320.35, 1789.5]
+       comment: Molli the Fletcher's Quest
     - _Npc<Tulin>:
        coord: [-3609.06, 323.62, 1825.01]
        comment: Treasure of the Secret Springs
@@ -753,7 +754,7 @@ _route:
        coord: [-3609.06, 323.62, 1825.01]
        comment: Legacy of the Rito
        notes: Turn in Swallow Bow, Diamond x3, Wood x5
-    - Dupe GEBs
+    - Dupe GEBs, Keep 1 full dura SLB for Eldin
     - _Npc<Gesane>:
        coord: [-3296.8, 227.18, 1807.36]
        comment: The Rito Rope Bridge
@@ -767,9 +768,6 @@ _route:
     - Clip down
     - _Bubbulfrog::BrightcapCave
     - _Chest::FrostbiteShirt
-    - _Tablet<Horriblin>:
-       coord: [-3021.74, 282.76, 1541.93]
-       comment: Snap
     - _Cave::Brightcap00
     - _Npc<Nat>:
        coord: [-2988.54, 304.71, 1657.21]
@@ -796,7 +794,8 @@ _route:
        coord: [-2169.75, 322.7, 1551.75]
        comment: Snap
     - Clip across into cave
-    - _Bubbulfrog::TanagarCanyonEastCave
+    - _Bubbulfrog::TanagarCanyonEastCave:
+       notes: Coord is -2170, 153
     - Clip across
     - _Tablet<Stalnox>:
        coord: [-2080, 34.8, 1558.58]
@@ -942,10 +941,10 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [-3820.74, 392.28, 1319.24]
     - _Korok::LB12
-    - _Tablet<Cherry Tree>:
-       coord: [-3880, 377.50, 1326.62]
-       comment: Snap
     - _Korok::RP54
+    - _Tablet<Cherry Tree>:
+       coord: [-4070.6477173591443,150,1810.711253032202]
+       notes: Snap after ascend korok
     - _Korok::RP50::Trail
     - _Korok::RP45
     - Clip down to Bubbulfrog
@@ -953,8 +952,8 @@ _route:
     - _Shrine::Wao-os
     - Ascend out
     - _Korok::RP47
-    - _Korok::RP46
     - _Cave::WestLakeTotori00
+    - _Korok::RP46
     - _Well::Dronoc'sPass
     - _Place::FlightRange:
        hide-icon-on-map: true
@@ -1018,6 +1017,9 @@ _route:
     - _Tower::PikidaStonegrove:
        comment: Launch from tower, dive back down
     - _Cave::PikidaStonegroveNorthwest00
+    - _Tablet<Horriblin>:
+        coord: [-2467.24, 474.19, 3204.31]
+        comment: Color Does not Matter
     - Clip across
     - _Bubbulfrog::PikidaStonegroveNorthwestCave
     - Ascend out (double)
@@ -1227,7 +1229,8 @@ _route:
     - _Well::MountGustaf
     - _Shrine::Ishodag
     - _Addison::A31
-    - _Korok::LL44
+    - _Korok::LL44:
+       notes: Shoot During Addison Sign
     - _Korok::LL47
     - _Korok::LL48
     - _Korok::LL45
@@ -1251,9 +1254,6 @@ _route:
     - _Korok::HF12
     - _Material<Bright Eyed Crab>:
        coord: [-2561.22, 305.97, -637.42]
-       notes: Pick up
-    - _Material<Blue Nightshade>:
-       coord: [-2475.5, 312.94, -653.87]
        notes: Pick up
     - _Korok::HF09::Trail
     - _Item<Korok Starting Block>:
@@ -1441,13 +1441,13 @@ _route:
   - Depths 2:
     - Dive down chasm
     - _Chasm::GreatPlateauWest::Depths<Cryonis Eye>
+    - _Item<Poe x6>:
+       coord: [-1432.45, -570.69, -1988.51]
     - _Location::HyliaCanyonMine:
        hide-icon-on-map: true
     - _Chest::MinersTrousers
     - _Chasm::GreatPlateauSouth::Depths<Stasis Eye>
     - _Chasm::GreatPlateauEast::Depths<Bombs Eye>
-    - _Poe::Grand:
-       coord: [-658, -410.28, -1794.7]
     - _Poe::Grand:
        coord: [-648.6, -412.91, -1784.9]
     - _Chasm::GreatPlateauNorth::Depths<Magnesis Eye>
@@ -1468,9 +1468,6 @@ _route:
     - _Poe::Large:
        coord: [-1233.75, -387.63, -2693.3]
     - _Location::FaloraaCanyonMine
-    - _Tablet<Frox>:
-       coord: [-885.63, -409.58, -2830.85]
-       comment: Snap
     - _Enemy::Frox::DF01
     - _Poe::Large:
        coord: [-507.22, -357.22, -2955.86]
@@ -1493,6 +1490,8 @@ _route:
     - Clip down into labyrinth
     - _Enemy::FluxConstruct::DG04
     - _Chest::EvilSpiritMask
+    - _Poe::Large:
+        coord: [-1630.71, -506.17, -3576.43]
     - _Location::DavalCanyonMine
     - _Location::GranajhCanyonMine
     - _Lightroot::Kawatik
@@ -1530,6 +1529,10 @@ _route:
     - _Poe::Large:
        coord: [-3872.21, -308.5, -3655.59]
     - _Location::GerudoUndergroundCemetery
+    - _Item<Large Poe>:
+        coord: [-4079.55, -342.3, -3757.13]
+    - _Item<Large Poe>:
+        coord: [-4100.27, -363.18, -3798.96]
     - _Lightroot::Kasari
     - _Location::DesertColiseum:
        hide-icon-on-map: true
@@ -1547,6 +1550,8 @@ _route:
     - _Poe::Large:
        coord: [-4106.73, -307.12, -3333.38]
     - _Lightroot::Gonatoyrim
+    - _Poe::Large:
+        coord: [-4414.62, -355.57, -3037.71]
     - _Enemy::FluxConstruct::DG03
     - _Lightroot::Gonatoyros
     - _Location::AbandonedGerudoMine:
@@ -1759,6 +1764,7 @@ _route:
        comment: Serenade to a Great Fairy
     - _Fairy::GreatFairyFountain03<Tera>:
        comment: Serenade to a Great Fairy
+       notes: 2 horizontal and 1 vertical rocket, then rocket straight to finish. Hover stone goes on side
     - _Korok::EC44
     - _Item<Korok Starting Block>:
        coord: [778.39, 253.55, 1529.54]
@@ -3267,7 +3273,7 @@ _route:
        comment: Serenade to Mija
     - _Fairy::GreatFairyFountain01<Mija>:
        comment: Serenade to Mija
-       
+       notes: 1 up and 1 forward rocket. Hover stone in front of roof, rocket to finish
     - _Warp::Shrine::Sisuran:
        comment: WARP
     - _Korok::RP06::Start
@@ -3304,8 +3310,8 @@ _route:
     - _Korok::RP14
     - _Korok::RP17::Trail
     - _Korok::RP16
-    - _Korok::RP15
     - _Korok::RP13::End
+    - _Korok::RP15
     - _Korok::RP08
     - _Korok::RP10
     - _Location::SherfinsSecretHotSpring
@@ -3334,16 +3340,20 @@ _route:
     - _Bubbulfrog::SturnidaSpringsCave
     - _Location::SturnidaSecretHotSpring:
        hide-icon-on-map: true
+    - Ascend Out
     - _Cave::SturnidaSprings00
     - _Addison::A00
     - _Korok::RP31
     - _Korok::RP29  
     - _Cave::LakeKilsie00
-    - _Bubbulfrog::LakeKilsieCave
     - _Chest::FrostbiteHeaddress
+    - Clip on top of iceberg
+    - _Bubbulfrog::LakeKilsieCave:
+       notes: Fly all the way up, look for hole with a bend to the left
     - Ascend out
     - _Korok::RP24
     - _Cave::EastBironSnowshelf01
+    - Rocket up to Tablet
     - _Tablet::S02
     - _Korok::RP22
     - Clip down
@@ -3581,11 +3591,11 @@ _route:
     - _Npc<Mastro>:
        coord: [1756.12, 116.07, -1958.84]
        comment: Serenade to Cotera
-       notes: Send to river, use rocket to launch across
     - _Location::BigTwinBridge
     - _Location::LittleTwinBridge
     - _Fairy::GreatFairyFountain<Cotera>:
        comment: Serenade to Cotera
+       notes: Use a 45 rocket aimed directly at fairy
     - _Korok::RW08::Trail  
     - _Korok::RW06     
     - _Korok::RW04
@@ -3652,6 +3662,7 @@ _route:
     - _Korok::UZ61
     - _Korok::UZ67
     - _Korok::UZ68
+    - _Addison::A78
     - _Korok::UZ71::End
     - _Korok::ML02::Trail
     - _Korok::ML03
@@ -3668,7 +3679,6 @@ _route:
     - _Bubbulfrog::TarmPointCave
     - Ascend out
     - _Korok::ML01
-    - _Addison::A78
     - _Korok::UZ69
     - _Item<Korok Starting Block>:
        coord: [4185, 129.84, -443.75]
@@ -3758,6 +3768,7 @@ _route:
     - _Npc<Terminal>:
        coord: [3959.56, 1224.77, -1537.83]
        comment: Complete shield surfing challenge
+       notes: In Sky
     - _Shrine::Zakusu:
        comment: (GOHMA)
     - _Korok::ML08::Start
@@ -5602,6 +5613,10 @@ _route:
     - _Npc<Gesane>:
        coord: [-3296.8, 227.18, 1807.36]
        comment: The Rito Rope Bridge
+    - _Npc<Bedoli>:
+       coord: [-3655.16, 320.26, 1762.85]
+       comment: Fish for Fletching
+       notes: Turn in 3 Glowing Cave Fish for 10 Arrows
     - _Chasm::RitoVillage:
        coord: [-3600, 300, 1760]
        notes: On south side of the village
