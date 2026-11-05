@@ -35,193 +35,21 @@ _route:
     - _Item<Fairy>:
        coord: [926.96, 667.61, -2131.03]
     - _Dispenser::S05:
-       notes: Dupe LZCs, use 2 for all 5 devices
-    - _Chest<Topaz>:
-       coord: [1516.64, 310.19, -2596.76]
-       comment: Is on the surface
-
-  - Setup - Castle:
-    - _Warp::Tower::LookoutLanding:
-       comment: WARP
-    - _Tower::LookoutLanding
-    - _Place::LookoutLanding:
-       hide-icon-on-map: true
-    - _Equipment::Weapon<Knight's Broadsword>:
-       coord: [-298.85, 123.94, 130]
-       comment: Recall from soldier
-    - WST + DZuggle 9 MNFs
-    - _Npc<Purah>:
-       coord: [-251.26, 126.18, 155.25]
-       comment: Start Regional Phenomena Quest
-    - _Npc<Josha>:
-       coord: [-248.72, 126.36, 148.83]
-       comment: Start Camera Quest
-       notes: Use Wing to skip running
-    - _Chest<Hylian Shield>:
-       coord: [-154, 141.78, 1157.37]
-    - _MainQuest<🔴✂️ Hylian Shield>
-    - _Item<Hearty Salmon>:
-       coord: [-218.15, 114.41, 1175.95]
-    - _Equipment::Weapon<Traveler's Claymore>:
-       coord: [-268.24, 131.21, 1153.31]    
-    - _Chest<Rockets x3>:
-       coord: [1038.57, 177.68, 1253.27]
-       notes: Don't dupe until after game over - free autosave after opening chest
-    - _Enemy<Bees>:
-       coord: [1029.84, 218.19, 1460.23]
-       comment: Game Over   
-    - _MainQuest<🔴✂️ Game Over from Bees>
-    - _Item<Dazzlefruit>:
-       coord: [1036.58, 145.61, 1239.07]
-    - _Shrine::Ekochiu:
-       comment: Complete
-    - _Item<Swift Violet>:
-       coord: [1204.67, 223.87, 1286.7]
-    - _Item<Sundelion>:
-       coord: [1253.04, 202.7, 1255.45]
-    - _Item<Fire Fruit>:
-       coord: [1254.02, 205.7, 1249.89]
-    - _Item<Silent Shroom>:
-       coord: [1172.56, 179.11, 1286.03]
-    - _Npc<Kilton>:
-       coord: [1228.03, 126.81, 1215.17]
-       comment: Obtain Bokoblin Mask
-    - _SideAdv::TheHuntforBubbulGems
-    - _MainQuest<🔴✂️ Bokoblin Mask>
-    - _Enemy<Blupee>:
-       coord: [1104.63, 126.31, 1162.8]
-       comment: Get green & blue rupee. Red is optional but lets you skip a chest later.
-    - _MainQuest<🔴✂️ Rupee from a Blupee>
-    - _Item<Hylian Shroom>:
-       coord: [1091.8, 127.44, 1162.55]
-    - _Well::WoodlandStable
-    - _Item<Wood>:
-       coord: [1079.53, 127.6, 1142.38]
-    - _Npc<Dog>:
-       coord: [1083.22, 127.48, 1144.29]
-       comment: Feed 4 Fire Fruit
-    - _Chest<Giant Brightbloom Seed x5>:
-       coord: [1100, 126.75, 1113]
-       comment: Dog Treasure Chest
-    - _Shop<Beedle>:
-       coord: [1092.11, 127.43, 1096.44]
-       comment: Buy arrows and all available insects 
-    - _Npc<Bad Horse>:
-       coord: [1150.29, 134.12, 1104.85]
-       comment: Will be upgraded later - note strength and cook accordingly (1 star strength = Fried Wild Greens, 2 star strength = Copious Fried Wild Greens.
-    - _Npc<Kish>:
-       coord: [1061.47, 128.06, 1134.35]
-       comment: Register as a Pony Points Member and Register the Horse
-    - _PonyPoint::Registration
-    - _PonyPoint::RegisterHorse
-    - _Item<Razorshroom>:
-       coord: [1068.6, 127.34, 1124.7]
-    - _Item<Blue Nightshade>:
-       coord: [959.29, 125.75, 1141.02]
-    - _Item<Hyrule Herb>:
-       coord: [944.46, 125.17, 1152.4]
-
-
-  - Setup - Fairies:
-    - _Item<Fairy>:
-       level: Sky
-       coord: [216.36, 860.17, 2046.1]
-       comment: Dupe 40-50
-    - _Chest<Glide Tights>:
-       coord: [231.18, 858.7, 2014.17]
-       comment: Win minigame, also gets Large Zonai Charge
-       notes: Pick up small Zonai Charge on trial run & dupe 2x
-    - _Dispenser::S15:
-       comment: Use, pick up everything (Light, Battery, Construct Head)
-    - _Npc<Zelda>:
-       coord: [-900, 2200, 3300]
-       comment: Get Horn & touch Master Sword
-    - _MainQuest<🔴✂️ Touch the Master Sword>
-
-
-  - Setup - Optional UPR:
-    - _Warp::Shrine::Gutanbac:
-       comment: WARP
-       line-color: yellow
-    - _Cave::Bottomless01
-    - _Item<Bomb Flower>:
-       coord: [744.35, 1647.04, -1344.69]
-    - If you're DinoTech, do UPR; else not
- 
- 
-  - Central B (reverse):
-    - _Korok::GSI06
-    - _Dispenser::S03:
-       comment: Use, pick up everything but fans (Flame Emitter, Portable Pot)
-    - _Korok::GSI05
-    - _OldMap::SouthHyrule_01
-    - _OldMap::SouthHyrule
-    - _OldMap::SouthHyrule_03
-    - _Enemy::FluxConstruct::SC03
-    - _MainQuest<🔴✂️ Defeat a Flux Construct>
-    - _OldMap::SouthHyrule_02
-    - _SagesWill::SouthHyrule
-
-
-  - Central A (reverse):
-    - _Cave::ShrineofResurrection00:
-       comment: Defeat Yiga Banana Ambush, get Schema Stone Construct    
-    - _Chasm::GreatPlateauWest
-    - _Chasm::GreatPlateauSouth
-    - _Enemy<Black Boss Bokoblin>:
-       coord: [-898.24, 179.44, -2221.19]
-       comment: Get Horn
-    - _Chest::YigaMask:
-       notes: Pick up weapons if possible, can complete 4 Sheikah Equipment early
-    - _Chasm::GreatPlateauEast
-    - _Enemy<Phantom Ganon>:
-       coord: [-365.6, 126.84, -1902]
-       comment: Pick up Sword
-    - _Chasm::GreatPlateauNorth
-    - _Enemy<Phantom Ganon>:
-       coord: [-416.76, 133.2, -1296.4]
-       comment: Pick up Dark Clump, Bow, Gloom Spear   
-    - _MainQuest<🔴✂️ Defeat a Phantom Ganon>
-    - _Item<Emblazoned Shield>:
-       coord: [-338.42, 124.5, -1598.98]
-       notes: This area has many crates for arrows
-    - _Chasm::ForestofTime    
-    - _Item<Bird Egg>:
-       coord: [-193.26, 136.66, -1567.67]
-    - _Shrine::Kamizun:
-       comment: Activate - will be completed later
-  
-    - _Enemy<Fire Wizzrobe>:
-       coord: [-57.89, 120.77, -1558.67]
-    - _Enemy<Aerocuda>:
-       coord: [45.36, 118.35, -1514.93]
-       comment: Pick up Eyeball
-    - _Well::DeyaVillageRuinsNorth
-    - _Enemy<Phantom Ganon Chance 1>:
-       coord: [267.54, 115, -1946.99]
-       comment: Pick up Club
-    - _Enemy<Phantom Ganon Chance 2>:
-       coord: [412.91, 114.99, -1868.65]
-       comment: Pick up Club
-    - _Enemy<Phantom Ganon Chance 3>:
-       coord: [456.72, 114.99, -1953.27]
-       comment: Pick up Club
-    - _MainQuest<🔴✂️ 4 Unique Demon King Equipment>       
-    - _Well::DeyaVillageRuins:
-       comment: Enter well
-    - _Enemy::Talus::SF03:
-       comment: Pick up loot (can skip upcoming Ore chests accordingly)
-       notes: Fuse Heart
-    - _MainQuest<🔴✂️ Defeat a Talus>
-    - _Chest<Giant Boomerang>:
-       coord: [396.05, 78.18, -1979.64]
-       comment: Inside of well on rock with Like Like
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-    - _Shrine::Susub:
-       comment: Complete Blessing, then ascend out of cave
+       notes: Dupe LZCs, use 2 for all 5 devices    
        
-    - _Well::DeyaVillageRuinsEast
+  - Setup Surface:
+    - _Material<Golden Apple and apple>:
+        coord: [900.73, 134.81, -1939.65]
+    - Do Copious 
+    - _MainQuest<🔴✂️ Copious Fried Wild Greens>
+    - _MainQuest<🔴✂️ Copious Mushroom Skewer>
+    - _MainQuest<🔴✂️ Copious Simmered Fruit>
+    - _Chest<Phrenic Bow>:
+       coord: [679.48, 162.95, -1886.24]
+    - _Well::DeyaVillageRuinsNorth   
+    - _Well::DeyaVillageRuins   
     - _Korok::PF20
+    - _Well::DeyaVillageRuinsEast
     - _Well::DeyaVillageRuinsSouth
     - _Well::HillsofBaumer
     - _Chasm::HillsofBaumer
@@ -230,6 +58,25 @@ _route:
     - _Korok::PF26
     - _Chest<Ancient Blade>:
        coord: [391.11, 114.24, -2316.78]
+       notes: Dupe 25
+    - _Well::PoplaFoothillsNorth
+    - _Tower::PoplaFoothills
+    - _Equipment::Weapon<Lizal Boomerang>:
+        coord: [753.5, 215.18, -2232.13]
+        notes: go away and swing sword (keep rang for the goal)
+    - _MainQuest<🔴✂️ Damage to Bees>
+    - _Chest<Shield of the Mind's Eye>:
+       coord: [736.85, 216.51, -2237.77]
+    - _Well::PoplaFoothillsSouth
+    - _Item<Blupee>:
+        coord: [607.27, 156.67, -2251.65]
+    - _Cave::PoplaFoothillsExcavationSite00
+    - _MainQuest<🔴✂️ Rupee From a Blupee>
+    - _Material<Topaz>:
+        coord: [567.16, 158.42, -2149.95]
+    - _Equipment::Weapon<Knight's Claymore>:
+        coord: [567.05, 200.33, -2395.63]
+        notes: Kill Blue Boss Boko, Take horn
     - _Chest<Gnarled Thick Stick>:
        coord: [567.32, 200.49, -2380.95]
        notes: Make 100+ (damage down) and 69 Power Weapon
@@ -237,27 +84,18 @@ _route:
        coord: [562.07, 200.56, -2383.51]
     - _MainQuest<🔴✂️ 69 Power Weapon>
     - _MainQuest<🔴✂️ 100+ Power Weapon>
-    - _Chest<Shield of the Mind's Eye>:
-       coord: [736.85, 216.51, -2237.77]
-    - _Well::PoplaFoothillsSouth
-    - _Enemy<Keese Swarm>:
-       coord: [571.35, 171.45, -2234.48]
-       comment: Pick up eyeball
-    - _Tower::PoplaFoothills
-    - _Well::PoplaFoothillsNorth
-    - _Chest<Phrenic Bow>:
-       coord: [679.48, 162.95, -1886.24]
-    - _Cave::DuelingPeaksSouth00
-    - _Enemy<Like Like>:
-       coord: [1192.77, 366.9, -1988.06]
-       comment: Use an Ancient Blade
-    - _MainQuest<🔴✂️ Vaporize an Enemy with an Ancient Blade>
-    - _Chest::TinglesShirt
-    - _Enemy::Hinox::GF02:
-       comment: Pick up horn & any roasted fish
+    - _Material<LZC>:
+        coord: [591.18, 194.32, -2788.16]
+    - _Item<Stone Slab>:
+        coord: [599.06, 174.31, -2782.85]
+        notes: Fuse to Knight's Claymore
 
 
   - Construct Factory Sky (altered):
+    - _Shrine::Joku-usin:
+       comment: Complete Proving Ground
+       notes: Clip on entrance to Like Like cellar
+    - _Enemy::FluxConstruct::SF02
     - _SagesWill::ThunderheadIsles_01:
        level: Sky
     - _Enemy<Die to Lightning>:
@@ -266,15 +104,15 @@ _route:
     - _MainQuest<🔴✂️ Game Over from Lightning>
     - _Dispenser::S02:
        comment: Use, pick up everything (Cart, Steering Stick)
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
+    - _Material<Big Hearty Radish>:
+        coord: [1400, 574.2, -3235.81]
     - _Shrine::Joku-u:
        comment: Complete
+       notes: Grab Diamond
     - _Item<Mineru's Mask>:
        coord: [1358.08, 575.80, -3234.40]
        comment: Wing to chasm, deliver to factory
-
-
+       
   - Construct Factory Surface (unaltered):
     - _Chasm::TobiosHollow
 
@@ -316,17 +154,263 @@ _route:
     - _Poe::Large:
        coord: [1011.07, -336.79, -2593.75]
        notes: = 155 Poes, else there are some extra around colosseum
+    - _Enemy<White-Maned Lynel>:
+        coord: [1761.31, -357.88, -1926.24]
+        notes: Pickup SLB. Ghost fuse mace horn (dupe). use base MNF for ODZ
     - _Chest::RaviosHood:
        notes: Pick up elemental horns (Electric, Fire, Ice - silver not needed)
     - _MainQuest<🔴✂️ Ravio's Hood>
+ 
+  - Lindor's Brow (altered):
+    - _Warp::Tower::LookoutLanding:
+       comment: WARP
+       line-color: deepskyblue
+    - _Npc<Purah>:
+       coord: [-251.26, 126.18, 155.25]
+       comment: Start Regional Phenomena Quest
+    - _Npc<Josha>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Start Camera Quest
+       notes: Use Wing to skip running
+    - _Shop::BargainerStatue06:
+       notes: Buy Tunic of the Depths
+    - _Well::LookoutLanding
+    - _Shop::CrystalRefinery01:
+       notes: Upgrade battery
+    - _MainQuest<🔴✂️ 6 Energy Wells>
+    - _Korok::LL42
+    - _Korok::LL41
+    - _Chest<Red Rupee>:
+       coord: [-421.66, 133.18, 394.31]
+       notes: unless already aquired from Blupee
+    - _Chest<Opal>:
+       coord: [-525.63, 132.82, 454.79]    
+       notes: unless already aquired from Taluses
+    - _Korok::LL35
+    - _Korok::LL34
+    - _Chasm::HyruleCastleMoatWest:
+       comment: Cave entrance on east side
+    - _Cave::NorthHyrulePlain01
+    - _Chest::ClimbingGear
+    - _Tower::Lindor'sBrow
+    - _Cave::ThundraPlateau00
+    - _Chest::MaskofAwakening:
+       notes: Read tablet
+    - _SideQuest::MiskosTreasureofAwakeningIII
+
+  - Tabantha Skydiving (unaltered):
+    - Activate terminal
+    - _MainQuest<🔴✂️ Visit a Low Gravity Area>
+    - _Chest::ZonaiteHelm:
+       comment: Buffer height 1730 not more
+    - Clip to room below near light switch
     - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
        notes: ZUGGLE ZUGGLE ZUGGLE
+    - _Shrine::Ga-ahisas:
+       comment: Complete blessing
+       notes: Get Star Fragment from chest
+    - _MainQuest<🔴✂️ Star Fragment>
+    - _MainQuest<🔴✂️ 4 Blessing Shrines>
 
 
-  - Thyphlo Ruins Surface - Part 2 (altered): 
-    - _Warp::Shrine::Ekochiu:
+  - Tulin (unaltered):
+    - _Enemy::Gleeok::G05:
+       comment: Don't pick anything up
+    - _Chest::TunicofAwakening
+    - _SideQuest::MiskosTreasureofAwakeningII:
+       notes: Read tablet
+    - _MainQuest<🔴✂️ 3 Awakening Armor Pieces>
+    - _Npc<Tabult>:
+       coord: [-3330.7, 263.89, 406]
+       comment: Minigame
+       notes: Cancel ABC
+    - _Npc<Modar>:
+       coord: [-3129.93, 24.43, 612.52]
+       comment: Minigame, Purple Rupee
+       notes: Cancel ABC
+    - _MainQuest<🔴✂️ Win a 50+ Rupee Value Prize from 4 Unique Minigames>
+    - _MainQuest<🔴✂️ Collect 5 Unique Rupees of Different Values>
+    - _Item<Wildberry>:
+       coord: [-3031.65, 336.33, 1545]
+       comment: Pick up
+    - _Chest::FrostbiteShirt
+    - _Chest<Kite Shield>:
+       coord: [-3186, 313.66, 1904]
+    - _Npc<Penn>:
+       coord: [-3260.35, 224.96, 1761.88]
+       comment: Start Penn Quests
+    - _Place::RitoVillage:
+       hide-icon-on-map: true
+       comment: Settlement
+    - _Npc<Tulin>:
+       coord: [-3593.1, 317.95, 1800.98]
+       comment: Start Main Quest
+    - _Equipment::Weapon<Feathered Spear>:
+       coord: [-3388.5, 333.08, 2144.5]
+       comment: From Ice Lizalfos
+    - _Npc<Harth>:
+       coord: [-3571.2, 247.65, 2260.04]
+       comment: Progress Main Quest
+    - _Tower::RosproPass
+    - _Equipment::Weapon<Feathered Edge>:
+       coord: [-3421.5, 371.04, 2375.01]
+       comment: From Blue Bokoblin
+    - _Chest<Swallow Bow>:
+       coord: [-3189.08, 564.19, 2562.46]
+       comment: In chest near Bokoblin camp
+    - _Cave::HebraHeadspring00
+    - _Enemy<Ice Keese>:
+       coord: [-2921.4, 514.47, 2555.29]
+       comment: Pick up Eyeball
+    - _MainQuest<🔴✂️ 5 Unique Eyeballs>
+    - _Chest::FrostbiteTrousers
+    - _Enemy<Aerocuda>:
+       coord: [-3022.67, 664.12, 2748.73]
+       comment: Recover Tulin's Bow
+    - _MainQuest<🔴✂️ Recover Tulin's Bow>
+    - _Temple::Wind
+    - ‼️⚠️ Before boss fight, ZUGGLE INFPR SHIELD ⚠️‼️:
+       notes: ZUGGLE ZUGGLE ZUGGLE
+	   
+       
+  - Return to Rito Village (altered):
+    - _Warp::Npc<Tulin>:
+       coord: [-3593.1, 317.95, 1800.98]
+       comment: Tulin of Rito Village
+       line-color: lightsalmon
+    - _MainQuest<🔴✂️ 1 Sage's Vow>
+    - _Npc<Rito Pot>:
+       coord: [-3595.41, 287.61, 1811.47]
+       comment: Fuse to weapon
+
+    - _Location::SturnidaSecretHotSpring
+    - _Cave::LakeKilsie00
+    - _Chest::FrostbiteHeaddress
+    - _MainQuest<🔴✂️ 3 Full Non-Buyable Armor Sets>
+    - _MainQuest<🔴✂️ 3 Frostbite Armor Pieces>
+    - _Location::SherfinsSecretHotSpring  
+    - _Chest<Falcon Bow>:
+       coord: [-4366.14, 491.72, 3514.09]
+       comment: In frozen chest (right ice block)
+    - _MainQuest<🔴✂️ 5 Unique Rito Equipment>
+    - _Cave::HebraGreatSkeleton00    
+    - _MainQuest<🔴✂️ Visit 3 Colossal Fossils or Dark Skeletons>
+    - _Location::GoflamsSecretHotSpring
+    - _MainQuest<🔴✂️ Visit 4 Named Secret Springs>
+    - Optional - Cook stamina food for horse
+    
+    - _Npc<Golden Horse>:
+       coord: [-1820.87, 341.56, 3381.87]
+       comment: Ride to stable
+    - _Npc<Penn>:
+       coord: [-1642.11, 339.2, 2575.8]
+       commment: Turn in horse, get 2 free Key Item Slots
+    - _SideAdv::ZeldasGoldenHorse
+    - _Npc<Varke>:
+       coord: [-1648.72, 339.78, 2569.43]
+       comment: Register Golden Horse
+    - _MainQuest<🔴✂️ 20 Key Item Slots Occupied>
+    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
+       notes: ZUGGLE ZUGGLE ZUGGLE
+    - _Shrine::Orochium:
+       comment: Activate
+       notes: Use Small Key (trap door at lasers), don't complete shrine
+    - _MainQuest<🔴✂️ Use 2 Small Keys>
+    - _Enemy<Ice Wizzrobe>:
+       coord: [-1443.48, 350.31, 2574.95]
+    - _MainQuest<🔴✂️ Kill 3 Unique Elemental Wizzrobes>  
+    - _Chest::YigaTights
+    - _Shrine::Kikakin
+    - _Chasm::DrenanHighlands
+    - _Korok::TR06:
+       comment: Starting block is a few metres south on top of broken statuel
+    - _Korok::TR08:
+       comment: Rotate up up right right
+    - _Tower::ThyphloRuins
+    - _Chest<Dusk Claymore>:
+       coord: [386.03, 270.38, 3170.75]
+    - _Npc<Slate>:
+       coord: [376.03, 270.38, 3160.75]
+       comment: Read for Diamond, Big Battery, LZC, Side Advs
+    - _MainQuest<🔴✂️ Big Battery>
+    - _SideAdv::InvestigatetheThyphloRuins
+    - _SideAdv::TheOwlProtectedbyDragons
+    - _SideAdv::TheCorridorbetweenTwoDragons
+    - _SideAdv::TheSixDragons
+    - _SideAdv::TheLongDragon
+    - _MainQuest<🔴✂️ 25 Korok Seeds>
+    - _MainQuest<🔴✂️ 11 Unique Korok Types>
+    
+  - Setup - Castle:
+    - _Warp::Tower::LookoutLanding:
        comment: WARP
-       line-color: darkorange
+    - _Equipment::Bow<Dusk Bow>:
+       coord: [-256.03, 616.32, 1062.02]
+    - _Chest<Sapphire>:
+       coord: [-248.34, 570.85, 1065.05]
+    - _MainQuest<🔴✂️ All 5 Rare Ores>
+    - _Chest::ChampionsLeathers
+    - _MainQuest<🔴✂️ Champion's Leathers>
+    - _Shrine::Serutabomac:
+       comment: Activate for Lightroot pair
+    - Collect necessary bows, drop when next goal achieved & dupe RGBs
+    - _Chest<Hylian Shield>:
+       coord: [-154, 141.78, 1157.37]
+    - _MainQuest<🔴✂️ Hylian Shield>
+    - _Item<Hearty Salmon>:
+       coord: [-218.15, 114.41, 1175.95]
+    - _MainQuest<🔴✂️ 7 Unique Bows>
+    - _Enemy<Normal Like>:
+       coord: [-323.34, 353.09, 1100.74]
+    - _Enemy<Ice Like>:
+       coord: [-346.88, 374.32, 968.09]
+    - _Enemy<Fire Like>:
+       coord: [-318.58, 378.37, 892.04]
+    - _Enemy<Shock Like>:
+       coord: [-425, 140.5, 1087]
+       comment: Is inside Lockup behind grate
+    - _MainQuest<🔴✂️ All 4 Like Like Stones>
+    - _Chasm::HyruleCastle
+
+  - To Eldin:
+    - _Warp::Shrine::Serutabomac
+    - _Enemy<Phantom Ganon 1>:
+        coord: [682.28, 179.01, 753.88]
+        notes: Pickup Club
+    - _Enemy<Phantom Ganon 2>:
+        coord: [765.72, 180.67, 750.97]
+        notes: Other Spawn Location
+    - _Item<Hyrule Herb>:
+       coord: [944.46, 125.17, 1152.4]
+    - _Item<Blue Nightshade>:
+       coord: [959.29, 125.75, 1141.02]
+    - _Shop<Beedle>:
+       coord: [1092.11, 127.43, 1096.44]
+       comment: Buy arrows and all available insects 
+    - _Npc<Bad Horse>:
+       coord: [1150.29, 134.12, 1104.85]
+       comment: Will be upgraded later - note strength and cook accordingly (1 star strength = Fried Wild Greens, 2 star strength = Copious Fried Wild Greens.
+    - _Npc<Kish>:
+       coord: [1061.47, 128.06, 1134.35]
+       comment: Register as a Pony Points Member and Register the Horse
+    - _Item<Wood>:
+       coord: [1079.53, 127.6, 1142.38]
+    - _Npc<Dog>:
+       coord: [1083.22, 127.48, 1144.29]
+       comment: Feed 4 Fire Fruit
+    - _Chest<Giant Brightbloom Seed x5>:
+       coord: [1100, 126.75, 1113]
+       comment: Dog Treasure Chest   
+    - _PonyPoint::Registration
+    - _PonyPoint::RegisterHorse 
+    - _Well::WoodlandStable
+    - _Npc<Kilton>:
+       coord: [1228.03, 126.81, 1215.17]
+       comment: Obtain Bokoblin Mask
+    - _SideAdv::TheHuntforBubbulGems
+    - _MainQuest<🔴✂️ Bokoblin Mask>
+    - _Shrine::Ekochiu:
+       notes: ONLY ACTIVATE
     - _Chasm::MinshiWoods
     - _Enemy::Talus::GE07:
        notes: Fuse Heart to weapon
@@ -377,15 +461,83 @@ _route:
        coord: [1642.65, 510.5, 2908.4]
        comment: Defeat, watch cutscene (yay)
     - _MainQuest<🔴✂️ Defeat Yunobo>
-
     - _Chest::VahRudaniaDivineHelm
+    
+  - North Depths:
     - _Chest::ZantsHelmet:
        notes: Get 4 Moblin Horns and Moblin Guts
     - _MainQuest<🔴✂️ 4 Unique Moblin Horns>
     - _MainQuest<🔴✂️ Zant's Helmet>
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
+    - _Enemy::Gleeok::D01:
+       notes: Pick up 3 Gleeok Horns and the Gleeok Guts
+    - _Chest::CapofTwilight
+    - _Chest::EvilSpiritGreaves   
+    - _MainQuest<🔴✂️ Cap of Twilight>
+    - _MainQuest<🔴✂️ Defeat 3 Unique Gleeok Types>
+    - _Shop::BargainerStatue02
+    - _MainQuest<🔴✂️ Pray at 4 Bargainer Statues>
+    - _Enemy::Frox::DH02:
+       comment: Get Fang
+    - _MainQuest<🔴✂️ 2 Unique Frox Fangs>
+    - _Lightroot::Nikakik
+    - _Enemy::Hinox::DE04:
+       notes: Pick up Black Hinox Horn and Hinox Guts
+    - _Chest::KorokMask
+    - _MainQuest<🔴✂️ Korok Mask>	
+    - _MainQuest<🔴✂️ Defeat 2 Banana Ambushes>
+    - _MainQuest<🔴✂️ Open 8 Locked Chests>
+    - _MainQuest<🔴✂️ 7 Black / White Horn / Fangs>	
+    - _Lightroot::Ramobnukas
+    - _Lightroot::Rikonasum
+    - Clip into Phantom Ganon room (can stand on tree stump, clip in and fall below his room, then ascend up into a recalled wing/cart
+    - _Enemy<Phantom Ganon>:
+       coord: [411.39, -481.78, 2192.07]
+       comment: Pick Up Sword
+    - Clip Down
+    - _Lightroot::Apapes
+    - _Enemy::Frox::DC02
+    - _Lightroot::Camobatures
+    - _Equipment::Weapon<Zelda's Torch>:
+       coord: [-257.09, -1684.76, 1023.05]
+       comment: Clip down
+    - _MainQuest<🔴✂️ Retrieve Zeldas Torch> 
+ 
+  - Central B (reverse):
+    - _Warp::Shrine::In-isa:
+       level: Sky
+       line-color: aquamarine
+    - _OldMap::SouthHyrule_02
+    - _SagesWill::SouthHyrule
+    - _OldMap::SouthHyrule_01
+    - _OldMap::SouthHyrule
+    - _OldMap::SouthHyrule_03
+    - _Enemy::FluxConstruct::SC03
+    - _MainQuest<🔴✂️ Defeat a Flux Construct>
 
+  - Central A (reverse):
+    - _Cave::ShrineofResurrection00:
+       comment: Defeat Yiga Banana Ambush, get Schema Stone Construct    
+    - _Chasm::GreatPlateauWest
+    - _Chasm::GreatPlateauSouth
+    - _Enemy<Black Boss Bokoblin>:
+       coord: [-898.24, 179.44, -2221.19]
+       comment: Get Horn
+    - _Chest::YigaMask:
+       notes: Pick up weapons if possible, can complete 4 Sheikah Equipment early
+    - _Chasm::GreatPlateauEast
+    - _Chasm::GreatPlateauNorth
+    - _Enemy<Phantom Ganon>:
+       coord: [-416.76, 133.2, -1296.4]
+       comment: Pick up Dark Clump, Bow, Gloom Spear   
+    - _MainQuest<🔴✂️ Defeat a Phantom Ganon>
+    - _Item<Emblazoned Shield>:
+       coord: [-338.42, 124.5, -1598.98]
+       notes: This area has many crates for arrows
+    - _Chasm::ForestofTime    
+    - _Item<Bird Egg>:
+       coord: [-193.26, 136.66, -1567.67]
+    - _Shrine::Kamizun:
+       comment: Activate - will be completed later
 
   - Central C (unaltered aside from warp):
     - _Warp::Shrine::Kamizun:
@@ -405,9 +557,6 @@ _route:
        coord: [-883.43, 111.94, -1106.31]
        comment: Is inside of the well in dummy
     - _Tower::HyruleField
-    - _Enemy<Blue Boss Bokoblin>:
-       coord: [-718.08, 166.6, -987.92]
-       comment: Get horn
     - _Shrine::Mayachin:
        comment: Activate for Lightroot pair
     - _Enemy<Boss Bokoblin>:
@@ -466,6 +615,8 @@ _route:
        coord: [-1233.75, -387.63, -2693.3]
     - _Poe::Large:
        coord: [-1241.05, -381.25, -2686.5]
+    - _Chest::EvilSpiritMask
+    - _MainQuest<🔴✂️ 3 Evil Spirit Armor Pieces>
     - _Poe::Grand:
        coord: [-2685.84, -332.6, -2905.19]
        notes: = 185 Poes
@@ -507,8 +658,7 @@ _route:
        coord: [-4774.8, -300.12, -3894.64]
        comment: Ascend out of the Depths
     - _MainQuest<🔴✂️ Leave the Depths Using Ascend>
-
-
+    
   - Gerudo (altered):
     - _Cave::GerudoGreatSkeleton00
     - _Item<Hunter's Shield>:
@@ -755,225 +905,79 @@ _route:
     - _MainQuest<🔴✂️ 5 Forge Constructs>
     - _SchemaStone::LanayruMine
     - _MainQuest<🔴✂️ 7 Autobuild Schematics>
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
-	  
-
-  - Lindor's Brow (altered):
-    - _Warp::Tower::LookoutLanding:
-       comment: WARP
-       line-color: deepskyblue
-    - _Shop::BargainerStatue06:
-       notes: Buy Tunic of the Depths
-    - _Well::LookoutLanding
-    - _Shop::CrystalRefinery01:
-       notes: Upgrade battery
-    - _MainQuest<🔴✂️ 6 Energy Wells>
-    - _Korok::LL42
-    - _Korok::LL41
-    - _Chest<Topaz>:
-       coord: [-335.05, 129.43, 391.17]
-       notes: unless already aquired from Taluses
-    - _Chest<Red Rupee>:
-       coord: [-421.66, 133.18, 394.31]
-       notes: unless already aquired from Blupee
-    - _Chest<Opal>:
-       coord: [-525.63, 132.82, 454.79]    
-       notes: unless already aquired from Taluses
-    - _Korok::LL35
-    - _Korok::LL34
-    - _Chasm::HyruleCastleMoatWest:
-       comment: Cave entrance on east side
-    - _Cave::NorthHyrulePlain01
-    - _Chest::ClimbingGear
-    - _Tower::Lindor'sBrow
-    - _Cave::ThundraPlateau00
-    - _Chest::MaskofAwakening:
-       notes: Read tablet
-    - _SideQuest::MiskosTreasureofAwakeningIII
-
-  - Tabantha Skydiving (unaltered):
-    - Activate terminal
-    - _MainQuest<🔴✂️ Visit a Low Gravity Area>
-    - _Chest::ZonaiteHelm:
-       comment: Buffer height 1730 not more
-    - Clip to room below near light switch
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
-    - _Shrine::Ga-ahisas:
-       comment: Complete blessing
-       notes: Get Star Fragment from chest
-    - _MainQuest<🔴✂️ Star Fragment>
-    - _MainQuest<🔴✂️ 4 Blessing Shrines>
-
-
-  - Tulin (unaltered):
-    - _Enemy::Gleeok::G05:
-       comment: Don't pick anything up
-    - _Chest::TunicofAwakening
-    - _SideQuest::MiskosTreasureofAwakeningII:
-       notes: Read tablet
-    - _MainQuest<🔴✂️ 3 Awakening Armor Pieces>
-    - _Npc<Tabult>:
-       coord: [-3330.7, 263.89, 406]
-       comment: Minigame
-       notes: Cancel ABC
-    - _Npc<Modar>:
-       coord: [-3129.93, 24.43, 612.52]
-       comment: Minigame, Purple Rupee
-       notes: Cancel ABC
-    - _MainQuest<🔴✂️ Win a 50+ Rupee Value Prize from 4 Unique Minigames>
-    - _MainQuest<🔴✂️ Collect 5 Unique Rupees of Different Values>
-    - _Item<Wildberry>:
-       coord: [-3031.65, 336.33, 1545]
-       comment: Pick up
-    - _Chest::FrostbiteShirt
-    - _Chest<Kite Shield>:
-       coord: [-3186, 313.66, 1904]
-    - _Npc<Penn>:
-       coord: [-3260.35, 224.96, 1761.88]
-       comment: Start Penn Quests
-    - _Place::RitoVillage:
-       hide-icon-on-map: true
-       comment: Settlement
-    - _Npc<Tulin>:
-       coord: [-3593.1, 317.95, 1800.98]
-       comment: Start Main Quest
-    - _Equipment::Weapon<Feathered Spear>:
-       coord: [-3388.5, 333.08, 2144.5]
-       comment: From Ice Lizalfos
-    - _Npc<Harth>:
-       coord: [-3571.2, 247.65, 2260.04]
-       comment: Progress Main Quest
-    - _Tower::RosproPass
-    - _Equipment::Weapon<Feathered Edge>:
-       coord: [-3421.5, 371.04, 2375.01]
-       comment: From Blue Bokoblin
-    - _Chest<Swallow Bow>:
-       coord: [-3189.08, 564.19, 2562.46]
-       comment: In chest near Bokoblin camp
-    - _Cave::HebraHeadspring00
-    - _Enemy<Ice Keese>:
-       coord: [-2921.4, 514.47, 2555.29]
-       comment: Pick up Eyeball
-    - _MainQuest<🔴✂️ 5 Unique Eyeballs>
-    - _Chest::FrostbiteTrousers
-    - _Enemy<Aerocuda>:
-       coord: [-3022.67, 664.12, 2748.73]
-       comment: Recover Tulin's Bow
-    - _MainQuest<🔴✂️ Recover Tulin's Bow>
-    - _Temple::Wind
-    - ‼️⚠️ Before boss fight, ZUGGLE INFPR SHIELD ⚠️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
-	   
        
-  - Return to Rito Village (altered):
-    - _Warp::Npc<Tulin>:
-       coord: [-3593.1, 317.95, 1800.98]
-       comment: Tulin of Rito Village
-       line-color: lightsalmon
-    - _MainQuest<🔴✂️ 1 Sage's Vow>
-    - _Npc<Rito Pot>:
-       coord: [-3595.41, 287.61, 1811.47]
-       comment: Fuse to weapon
-
-    - _Location::SturnidaSecretHotSpring
-    - _Cave::LakeKilsie00
-    - _Chest::FrostbiteHeaddress
-    - _MainQuest<🔴✂️ 3 Full Non-Buyable Armor Sets>
-    - _MainQuest<🔴✂️ 3 Frostbite Armor Pieces>
-    - _Location::SherfinsSecretHotSpring  
-    - _Chest<Falcon Bow>:
-       coord: [-4366.14, 491.72, 3514.09]
-       comment: In frozen chest (right ice block)
-    - _MainQuest<🔴✂️ 5 Unique Rito Equipment>
-    - _Cave::HebraGreatSkeleton00    
-    - _MainQuest<🔴✂️ Visit 3 Colossal Fossils or Dark Skeletons>
-    - _Location::GoflamsSecretHotSpring
-    - _MainQuest<🔴✂️ Visit 4 Named Secret Springs>
-    - Optional - Cook stamina food for horse
-    
-    - _Npc<Golden Horse>:
-       coord: [-1820.87, 341.56, 3381.87]
+  - Faron/Gerudo:
+    - _Warp::Shrine::Joku-u
+    - _Npc<Dondon>:
+       coord: [1545.4, 164.09, -3359.99]
+       level: Surface
+       line-color: lime
+       comment: Feed a Luminous Stone
+    - _MainQuest<🔴✂️ Feed a DonDon>
+    - _Chest::RubberHelm
+    - _MainQuest<🔴✂️ 4 Shock Resistance Armor Pieces>
+    - Optional - Cook stamina food for horse 
+    - _Npc<Giant White Stallion>:
+       coord: [799.59, 186.42, -3719.61]
        comment: Ride to stable
-    - _Npc<Penn>:
-       coord: [-1642.11, 339.2, 2575.8]
-       commment: Turn in horse, get 2 free Key Item Slots
-    - _SideAdv::ZeldasGoldenHorse
-    - _Npc<Varke>:
-       coord: [-1648.72, 339.78, 2569.43]
-       comment: Register Golden Horse
-    - _MainQuest<🔴✂️ 20 Key Item Slots Occupied>
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
-    - _Shrine::Orochium:
-       comment: Activate
-       notes: Use Small Key (trap door at lasers), don't complete shrine
-    - _MainQuest<🔴✂️ Use 2 Small Keys>
-    - _Enemy<Ice Wizzrobe>:
-       coord: [-1443.48, 350.31, 2574.95]
-    - _MainQuest<🔴✂️ Kill 3 Unique Elemental Wizzrobes>
+    - _MainQuest<🔴✂️ Mount 6 Unique Creature Types>
+    - _Npc<Padok>:
+       coord: [523.51, 153.41, -3446.07]
+       comment: Register horse
+    - _MainQuest<🔴✂️ Register 2 Legendary Horses>
+    - _SideAdv::AnEerieVoice:
+       comment: Talk to Penn twice to start the quest, then go to well west
+    - _MainQuest<🔴✂️ Lucky Clover Gazette Fabric>
+    - _Enemy<Monster Forces>:
+       coord: [-56.96, 136.44, -3468.28]
+       comment: Defeat (has Pirate Ship)
+    - _MainQuest<🔴✂️ Clear 3 Pirate Ship Monster Forces>
+    - _Cave::PufferBeachOverhead00
+    - _Chest::PhantomHelmet
+  - Gerudo Labyrinth - Sky:
+    - Make normal Pocket Rocket, zuggling not worth it anymore here:
+       layer: Sky
+    - _Shrine::Siyamotsus:
+       comment: Complete Blessing 
+    - _MainQuest<🔴✂️ 12 Sky Shrines>
+    - _Item<Mighty Zonaite Sword>:
+       coord: [-1762.5, 1167.5, -3425]
+    - _Item<Mighty Zonaite Spear>:
+       coord: [-1827.5, 1170, -3425]
+    - _Item<Mighty Zonaite Longsword>:
+       coord: [-1827.5, 1167.5, -3490]
+    - _Item<Mighty Zonaite Shield>:
+       coord: [-1794.75, 1127.62, -3560]
+    - _Item<Zonaite Bow>:
+       coord: [-1762.5, 1165, -3490]
+       notes: dive down after
+
+  - Gerudo Labyrinth - Surface:
+    - _Item<Strong Zonaite Shield>:
+       coord: [-1760.94, 177.11, -3529.23]
+       comment: In sand pile, needs guster made from cart/sled. Can ascend nearby after
+    - _Item<Strong Zonaite Longsword>:
+       coord: [-1782.8, 177.13, -3482.48]
+       comment: In sand pile. Can ascend northeast after.
+    - _Item<Strong Construct Bow>:
+       coord: [-1807.6, 177.13, -3470]
+       comment: In sand pile
+    - _MainQuest<🔴✂️ 9 Unique Zonaite Equipment>
+    - _Shrine::Motsusis:
+       comment: Complete Blessing
+    - _Chasm::SouthLomei
+    - _Cave::AncientAltarRuins04
+    - _Chest::PhantomGreaves
+    - _MainQuest<🔴✂️ 3 Phantom Armor Pieces>
+    - _Enemy::Molduga::SG03
+    - _MainQuest<🔴✂️ Defeat 3 Molduga>
+    - _Chasm::EastGerudo
     
-    - _Chest::YigaTights
-    - _Tower::ThyphloRuins
-    - _Chest<Dusk Claymore>:
-       coord: [386.03, 270.38, 3170.75]
-    - _Npc<Slate>:
-       coord: [376.03, 270.38, 3160.75]
-       comment: Read for Diamond, Big Battery, LZC, Side Advs
-    - _MainQuest<🔴✂️ Big Battery>
-    - _SideAdv::InvestigatetheThyphloRuins
-    - _SideAdv::TheOwlProtectedbyDragons
-    - _SideAdv::TheCorridorbetweenTwoDragons
-    - _SideAdv::TheSixDragons
-    - _SideAdv::TheLongDragon
-    - _Korok::TR08:
-       comment: Rotate up up right right
-    - _Korok::TR11:
-       notes: Backup Korok in case you missed one. Don't skip the one after this bc of unique korok types.
-    - _Korok::TR06:
-       comment: Starting block is a few metres south on top of broken statuel
-    - _MainQuest<🔴✂️ 25 Korok Seeds>
-    - _MainQuest<🔴✂️ 11 Unique Korok Types>
-    - _Chasm::DrenanHighlands
-   
-   
-  - Thyphlo Ruins Depths (unaltered):
-    - _Enemy::Gleeok::D01:
-       notes: Pick up 3 Gleeok Horns and the Gleeok Guts
-    - _Chest::CapofTwilight
-    - _MainQuest<🔴✂️ Cap of Twilight>
-    - _MainQuest<🔴✂️ Defeat 3 Unique Gleeok Types>
-    - _Lightroot::Nikakik
-    - _Shop::BargainerStatue02
-    - _MainQuest<🔴✂️ Pray at 4 Bargainer Statues>
-    - _Enemy::Frox::DH02:
-       comment: Get Fang
-    - _MainQuest<🔴✂️ 2 Unique Frox Fangs>
-    - ‼️‼️Before clipping, ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE  
-    - _Chest::EvilSpiritGreaves 
+  
  
-  - Korok Forest Depths (unaltered):
-    - _Warp::Lightroot::Nikakik:
-       comment: WARP
-       line-color: Crimson
-    - _Enemy::Hinox::DE04:
-       notes: Pick up Black Hinox Horn and Hinox Guts
-    - _Chest::KorokMask
-    - _MainQuest<🔴✂️ Korok Mask>	
-    - _MainQuest<🔴✂️ Defeat 2 Banana Ambushes>
-    - _MainQuest<🔴✂️ Open 8 Locked Chests>
-    - _MainQuest<🔴✂️ 7 Black / White Horn / Fangs>	
-    - _Lightroot::Ramobnukas
-    - _Lightroot::Rikonasum
-    - Clip into Phantom Ganon room (can stand on tree stump, clip in and fall below his room, then ascend up into a recalled wing/cart
-    - _Enemy<Phantom Ganon>:
-       coord: [411.39, -481.78, 2192.07]
-       comment: Don't pick up anything
-  
-  
   - Korok Forest Surface (unaltered):
+    - _Warp::Shrine::Kikakin
+    - _Shrine::Ninjis
     - _Place::KorokForest:
        hide-icon-on-map: true
        comment: Settlement
@@ -993,46 +997,7 @@ _route:
     - _SideAdv::HestusConcerns
     - _MainQuest<🔴✂️ Hestu's Concerns (Side Adventure)>
     - _Shrine::Musanokir:
-       comment: Activate for Lightroot pair
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE   
-
-
-  - Castle - Part 2 (altered):
-    - _Equipment::Bow<Dusk Bow>:
-       coord: [-256.03, 616.32, 1062.02]
-       notes: Not sure if this slide is realistic; if not, warp to WS and slide from there
-    - _Chest<Sapphire>:
-       coord: [-248.34, 570.85, 1065.05]
-    - _MainQuest<🔴✂️ All 5 Rare Ores>
-    - _Chest::ChampionsLeathers
-    - _MainQuest<🔴✂️ Champion's Leathers>
-    - _Shrine::Serutabomac:
-       comment: Activate for Lightroot pair
-    - Collect necessary bows, drop when next goal achieved & dupe RGBs
-    - _MainQuest<🔴✂️ 7 Unique Bows>
-    - _Enemy<Normal Like>:
-       coord: [-323.34, 353.09, 1100.74]
-    - _Enemy<Ice Like>:
-       coord: [-346.88, 374.32, 968.09]
-    - _Enemy<Fire Like>:
-       coord: [-318.58, 378.37, 892.04]
-    - _Enemy<Shock Like>:
-       coord: [-425, 140.5, 1087]
-       comment: Is inside Lockup behind grate
-    - _MainQuest<🔴✂️ All 4 Like Like Stones>
-    - _Chasm::HyruleCastle
-
-
-  - Castle - Depths (altered):
-    - _Lightroot::Camobatures
-    - _Equipment::Weapon<Zelda's Torch>:
-       coord: [-257.09, -1684.76, 1023.05]
-       comment: Clip down
-    - _MainQuest<🔴✂️ Retrieve Zeldas Torch>
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
-
+       comment: Complete
 
   - Akkala Approach (unaltered):
     - _Warp::Shrine::Ekochiu:
@@ -1376,95 +1341,8 @@ _route:
     - _MainQuest<🔴✂️ 4 Unique Bokoblin Horns>
     - _MainQuest<🔴✂️ Midna's Helmet>    
     - _MainQuest<🔴✂️ 2 Gloom Resistance Armor Pieces>
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
 
-
-  - Faron (altered) - Sky:
-    - _Warp::Shrine::Gutanbac:
-       comment: WARP
-       notes: Can also warp to Thunderhead, but then you have to navigate in the storm
-       level: Sky
-    - ‼️‼️ZUGGLE INFPR SHIELD ‼️‼️:
-       notes: ZUGGLE ZUGGLE ZUGGLE
-    - _Shrine::Joku-usin:
-       comment: Complete Proving Ground
-       notes: Clip on entrance to Like Like cellar
-    - _MainQuest<🔴✂️ 3 Proving Ground Shrines>
-
-
-  - Faron (altered) - Surface:
-    - _Npc<Dondon>:
-       coord: [1545.4, 164.09, -3359.99]
-       level: Surface
-       line-color: lime
-       comment: Feed a Luminous Stone
-    - _MainQuest<🔴✂️ Feed a DonDon>
-    - _Chest::RubberHelm
-    - _MainQuest<🔴✂️ 4 Shock Resistance Armor Pieces>
-    - Optional - Cook stamina food for horse 
-    - _Npc<Giant White Stallion>:
-       coord: [799.59, 186.42, -3719.61]
-       comment: Ride to stable
-    - _MainQuest<🔴✂️ Mount 6 Unique Creature Types>
-    - _Npc<Padok>:
-       coord: [523.51, 153.41, -3446.07]
-       comment: Register horse
-    - _MainQuest<🔴✂️ Register 2 Legendary Horses>
-    - _SideAdv::AnEerieVoice:
-       comment: Talk to Penn twice to start the quest, then go to well west
-    - _MainQuest<🔴✂️ Lucky Clover Gazette Fabric>
-    - _Enemy<Monster Forces>:
-       coord: [-56.96, 136.44, -3468.28]
-       comment: Defeat (has Pirate Ship)
-    - _MainQuest<🔴✂️ Clear 3 Pirate Ship Monster Forces>
-    - _Cave::PufferBeachOverhead00
-    - _Chest::PhantomHelmet
-    - _Cave::AncientAltarRuins04
-    - _Chest::PhantomGreaves
-    - _MainQuest<🔴✂️ 3 Phantom Armor Pieces>
-    - _Enemy::Molduga::SG03
-    - _MainQuest<🔴✂️ Defeat 3 Molduga>
-    - _Chasm::EastGerudo
-    
-  - Gerudo Labyrinth - Sky:
-    - Make normal Pocket Rocket, zuggling not worth it anymore here:
-       layer: Sky
-    - _Shrine::Siyamotsus:
-       comment: Complete Blessing 
-    - _MainQuest<🔴✂️ 12 Sky Shrines>
-    - _Item<Mighty Zonaite Sword>:
-       coord: [-1762.5, 1167.5, -3425]
-    - _Item<Mighty Zonaite Spear>:
-       coord: [-1827.5, 1170, -3425]
-    - _Item<Mighty Zonaite Longsword>:
-       coord: [-1827.5, 1167.5, -3490]
-    - _Item<Mighty Zonaite Shield>:
-       coord: [-1794.75, 1127.62, -3560]
-    - _Item<Zonaite Bow>:
-       coord: [-1762.5, 1165, -3490]
-       notes: dive down after
-
-  - Gerudo Labyrinth - Surface:
-    - _Item<Strong Zonaite Shield>:
-       coord: [-1760.94, 177.11, -3529.23]
-       comment: In sand pile, needs guster made from cart/sled. Can ascend nearby after
-    - _Item<Strong Zonaite Longsword>:
-       coord: [-1782.8, 177.13, -3482.48]
-       comment: In sand pile. Can ascend northeast after.
-    - _Item<Strong Construct Bow>:
-       coord: [-1807.6, 177.13, -3470]
-       comment: In sand pile
-    - _MainQuest<🔴✂️ 9 Unique Zonaite Equipment>
-    - _Shrine::Motsusis:
-       comment: Complete Blessing
-    - _Chasm::SouthLomei
-
-  - Gerudo Labyrinth - Depths:
-    - _Chest::EvilSpiritMask
-    - _MainQuest<🔴✂️ 3 Evil Spirit Armor Pieces>
-
-
+ 
   - Highlands (altered):
     - _Warp::Shrine::Rotsumamu:
        comment: WARP
