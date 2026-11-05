@@ -515,6 +515,14 @@ _route:
     - _MainQuest<🔴✂️ Defeat a Flux Construct>
 
   - Central A (reverse):
+    - _Enemy::Gleeok::G07:
+       comment: Don't pick anything up
+    - _Chest::TrousersofAwakening:
+       notes: Read tablet
+    - _Npc<Strade>:
+       coord: [-1273.68, 281.63, -1385.59]
+       comment: Minigame
+       notes: Cancel ABC. 8 rockets
     - _Cave::ShrineofResurrection00:
        comment: Defeat Yiga Banana Ambush, get Schema Stone Construct    
     - _Chasm::GreatPlateauWest
@@ -526,10 +534,6 @@ _route:
        notes: Pick up weapons if possible, can complete 4 Sheikah Equipment early
     - _Chasm::GreatPlateauEast
     - _Chasm::GreatPlateauNorth
-    - _Enemy<Phantom Ganon>:
-       coord: [-416.76, 133.2, -1296.4]
-       comment: Pick up Dark Clump, Bow, Gloom Spear   
-    - _MainQuest<🔴✂️ Defeat a Phantom Ganon>
     - _Item<Emblazoned Shield>:
        coord: [-338.42, 124.5, -1598.98]
        notes: This area has many crates for arrows
@@ -537,21 +541,11 @@ _route:
     - _Item<Bird Egg>:
        coord: [-193.26, 136.66, -1567.67]
     - _Shrine::Kamizun:
-       comment: Activate - will be completed later
-
-  - Central C (unaltered aside from warp):
-    - _Warp::Shrine::Kamizun:
-       comment: WARP
-    - _Shrine<Kamizun>:
-       comment: Complete Proving Grounds
-    - _Npc<Strade>:
-       coord: [-1273.68, 281.63, -1385.59]
-       comment: Minigame
-       notes: Cancel ABC
-    - _Enemy::Gleeok::G07:
-       comment: Don't pick anything up
-    - _Chest::TrousersofAwakening:
-       notes: Read tablet
+       comment: Complete
+    - _Enemy<Phantom Ganon>:
+       coord: [-416.76, 133.2, -1296.4]
+       comment: Pick up Dark Clump, Bow, Gloom Spear   
+    - _MainQuest<🔴✂️ Defeat a Phantom Ganon>
     - _Well::AquameLake
     - _Equipment::Weapon<If not already from Yiga enemy - Eightfold Blade>:
        coord: [-883.43, 111.94, -1106.31]
