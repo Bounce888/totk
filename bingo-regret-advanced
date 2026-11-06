@@ -539,7 +539,6 @@ _route:
     - _Chest::YigaMask:
        notes: Pick up weapons if possible, can complete 4 Sheikah Equipment early
     - _Chasm::GreatPlateauEast
-    - _Chasm::GreatPlateauNorth
     - _Item<Emblazoned Shield>:
        coord: [-338.42, 124.5, -1598.98]
        notes: This area has many crates for arrows
@@ -551,6 +550,7 @@ _route:
     - _Enemy<Phantom Ganon>:
        coord: [-416.76, 133.2, -1296.4]
        comment: Pick up Dark Clump, Bow, Gloom Spear   
+    - _Chasm::GreatPlateauNorth
     - _MainQuest<🔴✂️ Defeat a Phantom Ganon>
     - _Well::AquameLake
     - _Equipment::Weapon<If not already from Yiga enemy - Eightfold Blade>:
