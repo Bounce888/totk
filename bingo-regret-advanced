@@ -822,15 +822,12 @@ _route:
     - _MainQuest<🔴✂️ Give Beedle a Beetle>
     - Turn to night:
        notes: Cancel ABC
-    - _Chest<Boomerang>:
-       coord: [1056.47, 127.83, -291.43]
-       comment: Is in chest at nearby camp
-    - _Equipment::Weapon<Lizal Boomerang>:
-       coord: [1058.58, 119.67, -313.6]
     - _Enemy<Stalizalfos>:
        coord: [867.94, 131.71, -280.38]
        comment: Get arm
        notes: Defeat Moblin and Lizalfos, let Stalizalfos spawn, whack (do NOT headshot nor Dazzlefruit), and get Lizalfos Arm
+    - _Equipment::Weapon<Boomerang>:
+        coord: [857.76, 131.67, -274.16]
     - _MainQuest<🔴✂️ 4 Unique Boomerangs>
     - _Equipment::Weapon<Zora Sword>:
        coord: [2984.61, 383.19, -213.86]
