@@ -663,8 +663,6 @@ _route:
        notes: Buy Snowquill Set [3]
     - _Korok::RP53
     - _Shrine::Gatakis
-    - _Korok::RP52
-    - _Korok::RP51
     - _Korok::RP44
     - _Addison::A02
     - _Location::HebraTrailheadLodge:
@@ -755,6 +753,8 @@ _route:
        comment: Legacy of the Rito
        notes: Turn in Swallow Bow, Diamond x3, Wood x5
     - Dupe GEBs, Keep 1 full dura SLB for Eldin
+    - _Korok::RP52
+    - _Korok::RP51
     - _Npc<Gesane>:
        coord: [-3296.8, 227.18, 1807.36]
        comment: The Rito Rope Bridge
@@ -834,7 +834,9 @@ _route:
   
   - Tabantha:
     - _Location::ThundraPlateau:
-       hide-icon-on-map: true
+       hide-icon-on-map: true 
+    - _Enemy::Hinox::GR06
+    - _Korok::LB29
     - Clip down into cave
     - _Cave::ThundraPlateau00
     - _Chest::MaskofAwakening:
@@ -859,6 +861,8 @@ _route:
     - _Enemy::Talus::GR02:
        comment: Right 
     - _Korok::LB30::Start
+    - _Korok::LB22
+    - _Korok::LB27
     - _Korok::LB30::End
     - _Korok::LB31
     - _Korok::LB33
@@ -929,8 +933,6 @@ _route:
     - _Korok::LB32
     - _Korok::LB28
     - _Korok::LB24
-    - _Korok::LB27
-    - _Korok::LB22
     - _Location::GisaCrater:
        hide-icon-on-map: true
     - _Cave::GisaCrater01
@@ -1125,8 +1127,6 @@ _route:
     - _Korok::LB47
     - _Korok::LB43::Start
     - _Korok::LB43::End
-    - _Enemy::Hinox::GR06
-    - _Korok::LB29
     - _Addison::A22
     - _Korok::LB42   
     - _Cave::NorthHyrulePlain00 
