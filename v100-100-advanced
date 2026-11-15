@@ -733,20 +733,15 @@ _route:
        coord: [-3590, 317.93, 1802.5]
        comment: Tulin of Rito Village
        line-color: khaki
-    - _Material<Staminoka Bass>:
-       coord: [-3493.49, 258.08, 1853.66]
-       notes: Pick up
-    - _Npc<Genli>:
-       coord: [-3645.50, 289.88, 1822.96]
-       comment: Genli's Home Cooking
-       notes: Is near the general store
+    - _Npc<Molli>:
+       coord: [-3617.09, 320.35, 1789.5]
+       comment: Molli the Fletcher's Quest
+    - _Korok::RP52
+    - _Korok::RP51
     - _Npc<Laissa>:
        coord: [-3633.88, 309.76, 1826.67]
        comment: The White Bird's Guidance
        notes: No extra dialogue
-    - _Npc<Molli>:
-       coord: [-3617.09, 320.35, 1789.5]
-       comment: Molli the Fletcher's Quest
     - _Npc<Tulin>:
        coord: [-3609.06, 323.62, 1825.01]
        comment: Treasure of the Secret Springs
@@ -755,8 +750,6 @@ _route:
        comment: Legacy of the Rito
        notes: Turn in Swallow Bow, Diamond x3, Wood x5
     - Dupe GEBs, Keep 1 full dura SLB for Eldin
-    - _Korok::RP52
-    - _Korok::RP51
     - _Npc<Gesane>:
        coord: [-3296.8, 227.18, 1807.36]
        comment: The Rito Rope Bridge
@@ -5615,6 +5608,10 @@ _route:
     - _Npc<Gesane>:
        coord: [-3296.8, 227.18, 1807.36]
        comment: The Rito Rope Bridge
+    - _Npc<Genli>:
+       coord: [-3645.50, 289.88, 1822.96]
+       comment: Genli's Home Cooking
+       notes: Is near the general store
     - _Npc<Bedoli>:
        coord: [-3655.16, 320.26, 1762.85]
        comment: Fish for Fletching
