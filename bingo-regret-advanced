@@ -95,77 +95,75 @@ _route:
     - _Item<Stone Slab>:
         coord: [599.06, 174.31, -2782.85]
         notes: Fuse to Knight's Claymore
+        
+  - Faron/Gerudo:
+    - _Warp::Shrine::Joku-u
+    - _Npc<Dondon>:
+       coord: [1545.4, 164.09, -3359.99]
+       level: Surface
+       line-color: lime
+       comment: Feed a Luminous Stone
+    - _MainQuest<🔴✂️ Feed a DonDon>
+    - _Chest::RubberHelm
+    - _MainQuest<🔴✂️ 4 Shock Resistance Armor Pieces>
+    - Optional - Cook stamina food for horse 
+    - _Npc<Giant White Stallion>:
+       coord: [799.59, 186.42, -3719.61]
+       comment: Ride to stable
+    - _MainQuest<🔴✂️ Mount 6 Unique Creature Types>
+    - _Npc<Padok>:
+       coord: [523.51, 153.41, -3446.07]
+       comment: Register horse
+    - _MainQuest<🔴✂️ Register 2 Legendary Horses>
+    - _SideAdv::AnEerieVoice:
+       comment: Talk to Penn twice to start the quest, then go to well west
+    - _MainQuest<🔴✂️ Lucky Clover Gazette Fabric>
+    - _Enemy<Monster Forces>:
+       coord: [-56.96, 136.44, -3468.28]
+       comment: Defeat (has Pirate Ship)
+    - _MainQuest<🔴✂️ Clear 3 Pirate Ship Monster Forces>
+    - _Cave::PufferBeachOverhead00
+    - _Chest::PhantomHelmet
+    
+  - Gerudo Labyrinth - Sky:
+    - Make normal Pocket Rocket, zuggling not worth it anymore here:
+       layer: Sky
+    - _Shrine::Siyamotsus:
+       comment: Complete Blessing 
+    - _MainQuest<🔴✂️ 12 Sky Shrines>
+    - _Item<Mighty Zonaite Sword>:
+       coord: [-1762.5, 1167.5, -3425]
+    - _Item<Mighty Zonaite Spear>:
+       coord: [-1827.5, 1170, -3425]
+    - _Item<Mighty Zonaite Longsword>:
+       coord: [-1827.5, 1167.5, -3490]
+    - _Item<Mighty Zonaite Shield>:
+       coord: [-1794.75, 1127.62, -3560]
+    - _Item<Zonaite Bow>:
+       coord: [-1762.5, 1165, -3490]
+       notes: dive down after
 
+  - Gerudo Labyrinth - Surface:
+    - _Item<Strong Zonaite Shield>:
+       coord: [-1760.94, 177.11, -3529.23]
+       comment: In sand pile, needs guster made from cart/sled. Can ascend nearby after
+    - _Item<Strong Zonaite Longsword>:
+       coord: [-1782.8, 177.13, -3482.48]
+       comment: In sand pile. Can ascend northeast after.
+    - _Item<Strong Construct Bow>:
+       coord: [-1807.6, 177.13, -3470]
+       comment: In sand pile
+    - _MainQuest<🔴✂️ 9 Unique Zonaite Equipment>
+    - _Shrine::Motsusis:
+       comment: Complete Blessing
+    - _Chasm::SouthLomei
+    - _Cave::AncientAltarRuins04
+    - _Chest::PhantomGreaves
+    - _MainQuest<🔴✂️ 3 Phantom Armor Pieces>
+    - _Enemy::Molduga::SG03
+    - _MainQuest<🔴✂️ Defeat 3 Molduga>
+    - _Chasm::EastGerudo
 
-  - Construct Factory Sky (altered):
-    - _Shrine::Joku-usin:
-       comment: Complete Proving Ground
-       notes: Clip on entrance to Like Like cellar
-    - _Enemy::FluxConstruct::SF02
-    - _SagesWill::ThunderheadIsles_01:
-       level: Sky
-    - _Enemy<Die to Lightning>:
-       coord: [1320, 531.11, -3250]
-       layer: surface
-    - _MainQuest<🔴✂️ Game Over from Lightning>
-    - _Dispenser::S02:
-       comment: Use, pick up everything (Cart, Steering Stick)
-    - _Material<Big Hearty Radish>:
-        coord: [1400, 574.2, -3235.81]
-    - _Shrine::Joku-u:
-       comment: Complete
-       notes: Grab Diamond
-    - _Item<Mineru's Mask>:
-       coord: [1358.08, 575.80, -3234.40]
-       comment: Wing to chasm, deliver to factory
-       
-  - Construct Factory Surface (unaltered):
-    - _Chasm::TobiosHollow
-
-  - Construct Factory Depths (altered):
-    - _MainQuest<🔴✂️ Deliver Mineru's Mask to the Construct Factory>:
-       coord: [868, -454.65, -2146.06]
-    - _Poe::Grand:
-       coord: [868.01, -368.34, -2124.73]
-    - _Poe::Grand:
-       coord: [859, -368.18, -2115.73]
-    - _Poe::Large:
-       coord: [852, -388.45, -2137.73]
-    - _Poe::Large:
-       coord: [841.75, -420.39, -2141.98]
-    - _Poe::Large:
-       coord: [839, -434.21, -2109.73]
-    - _Poe::Grand:
-       coord: [854.5, -435.74, -2098.73]
-    - _Poe::Large:
-       coord: [880, -435.31, -2093.73]
-    - _Poe::Grand:
-       coord: [881.27, -435.06, -2116.9]
-    - _Poe::Large:
-       coord: [894.24, -419.43, -2128.13]
-    - _Poe::Large:
-       coord: [882.5, -401.67, -2138.73]
-    - _Lightroot::Muokuij
-    - _Shop::BargainerStatue04
-    - _Poe::Grand:
-       coord: [910.77, -354.38, -2513.94]
-    - _Poe::Large:
-       coord: [911.71, -354.14, -2513.73]
-    - _Poe::Large:
-       coord: [1053.61, -341.25, -2449.93]
-    - _Poe::Large:
-       coord: [1044.81, -342.17, -2551.49]
-    - _Poe::Large:
-       coord: [1024, -336.41, -2579.84]
-    - _Poe::Large:
-       coord: [1011.07, -336.79, -2593.75]
-       notes: = 155 Poes, else there are some extra around colosseum
-    - _Enemy<White-Maned Lynel>:
-        coord: [1761.31, -357.88, -1926.24]
-        notes: Pickup SLB. Ghost fuse mace horn (dupe). use base MNF for ODZ
-    - _Chest::RaviosHood:
-       notes: Pick up elemental horns (Electric, Fire, Ice - silver not needed)
-    - _MainQuest<🔴✂️ Ravio's Hood>
  
   - Lindor's Brow (altered):
     - _Warp::Tower::LookoutLanding:
@@ -902,75 +900,77 @@ _route:
     - _MainQuest<🔴✂️ 5 Forge Constructs>
     - _SchemaStone::LanayruMine
     - _MainQuest<🔴✂️ 7 Autobuild Schematics>
-       
-  - Faron/Gerudo:
-    - _Warp::Shrine::Joku-u
-    - _Npc<Dondon>:
-       coord: [1545.4, 164.09, -3359.99]
-       level: Surface
-       line-color: lime
-       comment: Feed a Luminous Stone
-    - _MainQuest<🔴✂️ Feed a DonDon>
-    - _Chest::RubberHelm
-    - _MainQuest<🔴✂️ 4 Shock Resistance Armor Pieces>
-    - Optional - Cook stamina food for horse 
-    - _Npc<Giant White Stallion>:
-       coord: [799.59, 186.42, -3719.61]
-       comment: Ride to stable
-    - _MainQuest<🔴✂️ Mount 6 Unique Creature Types>
-    - _Npc<Padok>:
-       coord: [523.51, 153.41, -3446.07]
-       comment: Register horse
-    - _MainQuest<🔴✂️ Register 2 Legendary Horses>
-    - _SideAdv::AnEerieVoice:
-       comment: Talk to Penn twice to start the quest, then go to well west
-    - _MainQuest<🔴✂️ Lucky Clover Gazette Fabric>
-    - _Enemy<Monster Forces>:
-       coord: [-56.96, 136.44, -3468.28]
-       comment: Defeat (has Pirate Ship)
-    - _MainQuest<🔴✂️ Clear 3 Pirate Ship Monster Forces>
-    - _Cave::PufferBeachOverhead00
-    - _Chest::PhantomHelmet
-  - Gerudo Labyrinth - Sky:
-    - Make normal Pocket Rocket, zuggling not worth it anymore here:
-       layer: Sky
-    - _Shrine::Siyamotsus:
-       comment: Complete Blessing 
-    - _MainQuest<🔴✂️ 12 Sky Shrines>
-    - _Item<Mighty Zonaite Sword>:
-       coord: [-1762.5, 1167.5, -3425]
-    - _Item<Mighty Zonaite Spear>:
-       coord: [-1827.5, 1170, -3425]
-    - _Item<Mighty Zonaite Longsword>:
-       coord: [-1827.5, 1167.5, -3490]
-    - _Item<Mighty Zonaite Shield>:
-       coord: [-1794.75, 1127.62, -3560]
-    - _Item<Zonaite Bow>:
-       coord: [-1762.5, 1165, -3490]
-       notes: dive down after
 
-  - Gerudo Labyrinth - Surface:
-    - _Item<Strong Zonaite Shield>:
-       coord: [-1760.94, 177.11, -3529.23]
-       comment: In sand pile, needs guster made from cart/sled. Can ascend nearby after
-    - _Item<Strong Zonaite Longsword>:
-       coord: [-1782.8, 177.13, -3482.48]
-       comment: In sand pile. Can ascend northeast after.
-    - _Item<Strong Construct Bow>:
-       coord: [-1807.6, 177.13, -3470]
-       comment: In sand pile
-    - _MainQuest<🔴✂️ 9 Unique Zonaite Equipment>
-    - _Shrine::Motsusis:
-       comment: Complete Blessing
-    - _Chasm::SouthLomei
-    - _Cave::AncientAltarRuins04
-    - _Chest::PhantomGreaves
-    - _MainQuest<🔴✂️ 3 Phantom Armor Pieces>
-    - _Enemy::Molduga::SG03
-    - _MainQuest<🔴✂️ Defeat 3 Molduga>
-    - _Chasm::EastGerudo
-    
-  
+  - Construct Factory Sky (altered):
+    - _Warp::Shrine::Joku-u
+    - _Shrine::Joku-usin:
+       comment: Complete Proving Ground
+       notes: Clip on entrance to Like Like cellar
+    - _Enemy::FluxConstruct::SF02
+    - _SagesWill::ThunderheadIsles_01:
+       level: Sky
+    - _Enemy<Die to Lightning>:
+       coord: [1320, 531.11, -3250]
+       layer: surface
+    - _MainQuest<🔴✂️ Game Over from Lightning>
+    - _Dispenser::S02:
+       comment: Use, pick up everything (Cart, Steering Stick)
+    - _Material<Big Hearty Radish>:
+        coord: [1400, 574.2, -3235.81]
+    - _Shrine::Joku-u:
+       comment: Complete
+       notes: Grab Diamond
+    - _Item<Mineru's Mask>:
+       coord: [1358.08, 575.80, -3234.40]
+       comment: Wing to chasm, deliver to factory
+       
+  - Construct Factory Surface (unaltered):
+    - _Chasm::TobiosHollow
+
+  - Construct Factory Depths (altered):
+    - _MainQuest<🔴✂️ Deliver Mineru's Mask to the Construct Factory>:
+       coord: [868, -454.65, -2146.06]
+    - _Poe::Grand:
+       coord: [868.01, -368.34, -2124.73]
+    - _Poe::Grand:
+       coord: [859, -368.18, -2115.73]
+    - _Poe::Large:
+       coord: [852, -388.45, -2137.73]
+    - _Poe::Large:
+       coord: [841.75, -420.39, -2141.98]
+    - _Poe::Large:
+       coord: [839, -434.21, -2109.73]
+    - _Poe::Grand:
+       coord: [854.5, -435.74, -2098.73]
+    - _Poe::Large:
+       coord: [880, -435.31, -2093.73]
+    - _Poe::Grand:
+       coord: [881.27, -435.06, -2116.9]
+    - _Poe::Large:
+       coord: [894.24, -419.43, -2128.13]
+    - _Poe::Large:
+       coord: [882.5, -401.67, -2138.73]
+    - _Lightroot::Muokuij
+    - _Shop::BargainerStatue04
+    - _Poe::Grand:
+       coord: [910.77, -354.38, -2513.94]
+    - _Poe::Large:
+       coord: [911.71, -354.14, -2513.73]
+    - _Poe::Large:
+       coord: [1053.61, -341.25, -2449.93]
+    - _Poe::Large:
+       coord: [1044.81, -342.17, -2551.49]
+    - _Poe::Large:
+       coord: [1024, -336.41, -2579.84]
+    - _Poe::Large:
+       coord: [1011.07, -336.79, -2593.75]
+       notes: = 155 Poes, else there are some extra around colosseum
+    - _Enemy<White-Maned Lynel>:
+        coord: [1761.31, -357.88, -1926.24]
+        notes: Pickup SLB. Ghost fuse mace horn (dupe). use base MNF for ODZ
+    - _Chest::RaviosHood:
+       notes: Pick up elemental horns (Electric, Fire, Ice - silver not needed)
+    - _MainQuest<🔴✂️ Ravio's Hood>
  
   - Korok Forest Surface (unaltered):
     - _Warp::Shrine::Kikakin
