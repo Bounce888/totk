@@ -4566,10 +4566,6 @@ _route:
        comment: Decorating with Passion
        notes: Fuse a Ruby to a Weapon
     - _Korok::GC25 
-    - _Item<Bazaar Orb>:
-       coord: [-3315, 129.62, -2579]
-       comment: Use an ABC Escort, take to Gerudo Town      
-    - Deposit in orb slot, ascend out
     - _Item<Arrow x30>:
        notes: Pick up
     - _Item<Gerudo Scimitar>:
@@ -5852,11 +5848,13 @@ _route:
        comment: SEldin Lanayru Hebra EHebra WNecluda Gerudo Necluda NeclSea NGerudo GHF SHyrule Sokkala
     - _Shop::ArmorShop04:
        notes: Buy 6 Armor
+
     - _Warp::Shrine::Musanokir:
        comment: WARP
     - _Npc<Hestu>:
        coord: [419.49, 248.71, 2119.06]
-       comment: Hestu's Gift and remaining upgrades     
+       comment: Hestu's Gift and remaining upgrades
+       
     - _Warp::Tower::LookoutLanding:
        comment: WARP
     - _Npc<Purah>:
