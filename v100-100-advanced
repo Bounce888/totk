@@ -1759,7 +1759,7 @@ _route:
        comment: Serenade to a Great Fairy
     - _Fairy::GreatFairyFountain03<Tera>:
        comment: Serenade to a Great Fairy
-       notes: 2 horizontal and 1 vertical rocket, then rocket straight to finish. Hover stone goes on side
+       notes: .link([Breezer Tech Tutorial] https://youtu.be/HXIQfoR1w-o)
     - _Korok::EC44
     - _Item<Korok Starting Block>:
        coord: [778.39, 253.55, 1529.54]
@@ -1928,8 +1928,6 @@ _route:
     - Rocket to Floating Scales, shoot King Scale arrow through droplet
     - _Location::FloatingScalesIsland:
        hide-icon-on-map: true
-    - Splash entrance to Zora Helm on north side of island
-    - _Chest::ZoraHelm
     - _Enemy<Sludge Like>:
        coord: [3899.97, 590.9, 590.81]
        comment: Sidon of the Zora
@@ -1956,20 +1954,14 @@ _route:
     - _Korok::UZ21
     - _Korok::UZ17
     - _Korok::UZ19
-    - _Korok::UZ25
     - _Addison::A77
-    - _Korok::UZ16
-    - _Cave::UlriaGrottoSouth00
-    - _Bubbulfrog::UlriaGrottoSouthCave
-    - _Enemy::Talus::GZ03:
-       comment: Right
-    - Ascend out
+    - _Korok::UZ25
+    - _Enemy::Talus::GZ04:
+       comment: Left
     - _Korok::UZ27
     - Equip Zora Armor
     - Ride up waterfall
     - _Korok::UZ28
-    - _Enemy::Talus::GZ04:
-       comment: Left
     - _Korok::UZ33
     - _Korok::UZ46
     - _Korok::UZ43
@@ -2076,12 +2068,30 @@ _route:
        coord: [3668.75, 1356.94, 567.5]
        comment: A Wife Wafted Away
     - _OldMap::WellspringIsland<Old Map>    
+    - clip down into helm
+    - _Chest::ZoraHelm
   
   - Yunobo:
-    - Clip down to cave
-    - _Bubbulfrog::ReservoirLakefrontCavern
+    - _Korok::UZ16
+    - _Cave::UlriaGrottoSouth00
+    - clip across
+    - _Bubbulfrog::UlriaGrottoSouthCave
+    - clip down and hit talus from oob
+    - _Enemy::Talus::GZ03:
+       comment: Right
+    - link([Clip Across] https://youtu.be/hgvfx6_r9PM)
+    - _Bubbulfrog::ReservoirLakefrontCavern:
+       movements:
+       - to: [4090, 210, 0595]
+       - to: [4033, 242, 622]
+       - to: [3883, 263, 562]
+       - to: [3901, 226, 479]
+       - to: [3892, 227, 429]
+       - to: [3912, 224, 387]
+       notes: ABC Overload clip into cave
     - _Item<Blue Rock>:
        coord: [3907.68, 316.91, 343.08]
+       notes: UH 2 blue rocks out of the room near the water, ABC them up (if they touch the cave water they can despawn)
     - _Cave::ReservoirLakefrontrn00
     - _Npc<Ledo>:
        coord: [3594.67, 316.50, 338.88]
@@ -2168,7 +2178,6 @@ _route:
     - _Korok::EC32
     - _Cave::GoronbiRiver00:
        notes: Is missable, ensure icon shows on map
-    - _Addison::A46
     - _Korok::EC29
     - ABC-Overload-Clip into cave
     - _Bubbulfrog::GoronbiRiverCave
@@ -2210,14 +2219,15 @@ _route:
     - Ascend out
     - _Place::YunoboCoHQ:
        hide-icon-on-map: true
-    - _Korok::EC13
     - _Npc<Dugby>:
        coord: [1651, 414, 2792]
        comment: The Ancient City Gorondia?
+    - clip down and activate dugby from underground
     - _Enemy<Yunobo>:
        coord: [1639.66, 518.5, 2861.65]
        comment: Defeat Yunobo
        notes: Ensure you do not have an ABC active when entering this cutscene, otherwise the game may crash.
+    - _Korok::EC13
     - _Cave::YunoboCoHQEast00
     - _Shrine<Isisim (activate)>:
        coord: [1842.02, 465.72, 2842.03]
@@ -2570,9 +2580,9 @@ _route:
     - _Npc<Dugby>:
        coord: [1614.5, 502, 2399]
        comment: The Ancient City Gorondia!
-       notes: At village center; launch with rocket, remove the blocking boulders
-    - _Place::SouthernMine:
+       notes: At village center. Get rid of first 2 boulders and hit the card with sword. then remove one of the other boulders (Dugby will deal with the fourth) and do the addison as overlap.
        hide-icon-on-map: true
+    - _Addison::A46
     - _Npc<Dugby>:
        coord: [1580, 300, 2060]
        comment: The Ancient City Gorondia!
@@ -3268,7 +3278,7 @@ _route:
        comment: Serenade to Mija
     - _Fairy::GreatFairyFountain01<Mija>:
        comment: Serenade to Mija
-       notes: 1 up and 1 forward rocket. Hover stone in front of roof, rocket to finish
+       notes: .link([Snowfield Breezer Tech] https://youtu.be/WM959blPr64)
     - _Warp::Shrine::Sisuran:
        comment: WARP
     - _Korok::RP06::Start
@@ -3590,7 +3600,7 @@ _route:
     - _Location::LittleTwinBridge
     - _Fairy::GreatFairyFountain<Cotera>:
        comment: Serenade to Cotera
-       notes: Use a 45 rocket aimed directly at fairy
+       notes: .link([Dueling Peaks Breezer Tech] https://youtu.be/vdQf1PruZPk)
     - _Korok::RW08::Trail  
     - _Korok::RW06     
     - _Korok::RW04
@@ -4568,6 +4578,9 @@ _route:
        coord: [-3862.75, 149.72, -2982.06]
        comment: Pride of the Gerudo
     - Talk to Riju, defend the town
+    - _Tablet<Stelae 4>:
+       comment: Near the pillars mural, behind bomb rocks
+       notes: Bomb and take a picture before talking to riju
     - Enter shelter, read mural, ascend out
     - _Item<North Mirror>:
         coord: [-4056.82, 167.50, -3149.83]
@@ -4608,6 +4621,9 @@ _route:
     - _Warp::Npc<Riju>:
        coord: [-3887.35, 157.48, -2968]
        comment: Riju of Gerudo Town
+    - _Npc<Riju>:
+       coord: [-3887.35, 157.48, -2968]
+       comment: Talk
        line-color: plum
     - _Npc<Isha>:
        coord: [-3828.5, 149.5, -2885]
@@ -4619,18 +4635,7 @@ _route:
        coord: [-3833.625,150,-2880.125]
     - _Npc<Dalia>:
        coord: [-3815, 400, -2873]
-       comment: Dalia's Game
-    - Use UH on the orbs to move and combine
-    - _Item<Dalia Orb>:
-       coord: [-3808.5, 149.5, -2877.5]
-    - _Item<Sand Seal Shop Orb>:
-       coord: [-3781, 49, -2900]
-    - _Item<Top of Town Orb>:
-       coord: [-3800, 58, -2969]
-       comment: Covered in sand, use a cart guster
-    - _Location<Enter the Gerudo Shelter>:
-       coord: [-3850, 300, -2925]
-    - UH the 3 carried orbs to the mini statue room
+       comment: Dalia's Game  
     - _Tablet<Stelae 1>:
        comment: In the Voe and You classroom, line two parts up
     - _Tablet<Stelae 2>:
@@ -4639,42 +4644,32 @@ _route:
     - _Tablet<Stelae 3>:
        comment: Inside the jail
     - Equip shirt and exit the jail
-    - _Item<Bar Orb>
-    - _Item<Shelved Orb>:
-       comment: In hidden crevice above two beds
-    - UH the 2 carried orbs towards the center
-    - _Tablet<Stelae 4>:
-       comment: Near the pillars mural, behind bomb rocks
     - _Npc<Rotana>:
        comment: Turn in the 4 stelae pictures
-    - _Item<Rotana Orb>
-    - UH the 3 carried orbs to statue room, then deposit all 7
-    - _Npc<Mural in Opened Hallway>:
-       comment: Read the mural to progress quest
-    - _Item<Large Eighth Orb>:
-       comment: UH out of the shelter, then ABC over to cave
+    - .link([Perform 7 Orbs Skip] https://youtu.be/rMs2s8i_8ls)
     - _Cave::GerudoSanctuary01
     - Deposit the Large Orb into the slot
     - Clip across to mural trigger
     - _Item<Mural>:
        coord: [-3779.26, 115.32, -2537.09]
        comment: Read the Mural
-    - ABC-Clip across
-    - _Bubbulfrog::GerudoSanctuary
     - Clip across
+    - _Bubbulfrog::GerudoSanctuary
+    - Clip across:
+       notes: ABC overload clip into bubbulfrog room
     - _Bubbulfrog::ValleyofSilentStatues
-  
-  - Gerudo Training:
-    - _Warp::Shrine::Soryotanog:
-       comment: WARP
-    - _Npc<Riju>:
-       coord: [-3887.35, 157.48, -2968]
-       comment: Talk
-    - Enter shelter
+    - Recall a stick and overload clip to 8th room:
+       notes: do not read the tablet
+    - place a hover stone and a steering stick where the 8th ball is (talles part of the room and clip):
+       notes: Pre-select ascend
     - _Npc<Rotana>:
        coord: [-3810, 137.87, -2971]
        comment: The Mysterious Eighth
+       ntoes: if you are fast enough, she will be on the bottom room. if she isnt there, ascend up. she will be where she was originally.
     - Ascend out
+    - _Npc<Riju>:
+       coord: [-3887.35, 157.48, -2968]
+       comment: Complete Treasure of the Gerudo Desert
     - _Korok::GC42::Start
     - _Korok::GC42::End
     - _Shrine::Karahatag:
@@ -4687,9 +4682,6 @@ _route:
     - _Cave::CentralGerudo00
     - _Bubbulfrog::CentralGerudoCave
     - Ascend out
-    - _Npc<Riju>:
-       coord: [-3887.35, 157.48, -2968]
-       comment: Complete Treasure of the Gerudo Desert
     - _Shop::SandSealRentalShop02:
        coord: [-3770, 150, -2925.5]
        comment: Rent a Sleigh Seal (50 Rupees)
@@ -4753,7 +4745,9 @@ _route:
        coord: [-1405.81, 137.76, -1263.57]
        comment: Serenade to Kaysa
     - _Fairy::GreatFairyFountain02<Kaysa>:
-       comment: Serenade to Kays
+       comment: Serenade to Kaysa
+       notes: .link([Outskirt Breezer Tech] https://youtu.be/8Vqd5fFYwLI)
+       
     - _Korok::HF36
     - _Well::OutskirtHill
     - _Korok::HF40
@@ -5858,13 +5852,11 @@ _route:
        comment: SEldin Lanayru Hebra EHebra WNecluda Gerudo Necluda NeclSea NGerudo GHF SHyrule Sokkala
     - _Shop::ArmorShop04:
        notes: Buy 6 Armor
-
     - _Warp::Shrine::Musanokir:
        comment: WARP
     - _Npc<Hestu>:
        coord: [419.49, 248.71, 2119.06]
-       comment: Hestu's Gift and remaining upgrades
-       
+       comment: Hestu's Gift and remaining upgrades     
     - _Warp::Tower::LookoutLanding:
        comment: WARP
     - _Npc<Purah>:
