@@ -2079,7 +2079,7 @@ _route:
     - clip down and hit talus from oob
     - _Enemy::Talus::GZ03:
        comment: Right
-    - link([Clip Across] https://youtu.be/hgvfx6_r9PM)
+    - .link([Clip Across] https://youtu.be/hgvfx6_r9PM)
     - _Bubbulfrog::ReservoirLakefrontCavern:
        movements:
        - to: [4090, 210, 0595]
