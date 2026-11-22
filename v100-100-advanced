@@ -4356,9 +4356,7 @@ _route:
     - _Korok::GC34::Trail    
     - _Place::GerudoTown:
        hide-icon-on-map: true
-    - _Item<Sewer>:
-       coord: [-3795, 300, -2905]
-       comment: Enter and then slip through crevice, ascend into GSC
+    - drop a stick on the upper part of the wall and dorp another stick beside link. then drop 10 sticks on one side of link and 10 on the other side. then mount the first stick (clipping down and despawning it at the same time)
     - _Shop<Gerudo Secret Club>:
        coord: [-3789.95, 149.36, -2922.42]
        comment: Buy Snow/Sand [2] and Desert Voe [2]
