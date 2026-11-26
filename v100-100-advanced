@@ -1205,20 +1205,22 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [-2479.18, 327.36, -509.34]
     - _Korok::HF08
-    - _Korok::HF17
-    - _Korok::HF16
-    - _Enemy::Talus::GC04
     - _Korok::HF03
     - _Cave::SatoriMountain00
     - Clip across (from inside cave)
     - _Bubbulfrog::SatoriMountainCave
-    - Clip across to lower cave
-    - _Bubbulfrog::SatoriMountainFoothillCave
+    - Clip across and up to talus
+    - _Enemy::Talus::GC04:
+       notes: Hit from out of bounds
+    - _Bubbulfrog::SatoriMountainFoothillCave:
+       notes: clip in with ABC
     - _Enemy::Hinox::GC04
     - _Shrine::Usazum::Start
     - _Cave::SatoriMountainFoothill00
     - _Shrine::Usazum
     - _Korok::HF18
+    - _Korok::HF16
+    - _Korok::HF17
     - _Korok::HF27
     - _Korok::HF30
     - _Enemy::Hinox::GC06
