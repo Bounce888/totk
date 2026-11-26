@@ -976,14 +976,16 @@ _route:
  
   - Forgotten Temple:
     - _Enemy::Gleeok::G02
-    - Clip down
-    - Break rocks blocking path
+    - Clip down at gleeok:
+       notes: clip down far. if you run into an invisible wall, just rocket backwards and go under it (basically same depths as the wall you can see)
+    - Shoot Bubbulfrog from out of bounds
+    - After shooting bubbulfrog, Bomb the rocks
+    - _Bubbulfrog::EastBironSnowshelfCave:
+       notes: clip into here
     - _Npc<Selmie>:
        coord: [-3668.34, 335.72, 3102.31]
        comment: The Duchess Who Disappeared
-    - _Bubbulfrog::EastBironSnowshelfCave
-    - Ascend up
-    - Rocket out through cave entrance
+    - Rocket out through cave entranc
     - _Cave::EastBironSnowshelf00
     - _Korok::RP25
     - _Korok::RP32
@@ -1254,21 +1256,22 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [-2479.18, 327.36, -509.34]
     - _Korok::HF08
-    - _Korok::HF17
-    - _Korok::HF16
-    - _Enemy::Talus::GC04:
-       comment: Back 
     - _Korok::HF03
     - _Cave::SatoriMountain00
     - Clip across (from inside cave)
     - _Bubbulfrog::SatoriMountainCave
-    - Clip across to lower cave
-    - _Bubbulfrog::SatoriMountainFoothillCave
+    - Clip across and up to talus
+    - _Enemy::Talus::GC04:
+       notes: Hit from out of bounds
+    - _Bubbulfrog::SatoriMountainFoothillCave:
+       notes: clip in with ABC
     - _Enemy::Hinox::GC04
     - _Shrine::Usazum::Start
     - _Cave::SatoriMountainFoothill00
     - _Shrine::Usazum
     - _Korok::HF18
+    - _Korok::HF16
+    - _Korok::HF17
     - _Korok::HF27
     - _Korok::HF30
     - _Enemy::Hinox::GC06
@@ -3361,11 +3364,14 @@ _route:
     - Rocket up to Tablet
     - _Tablet::S02
     - _Korok::RP22
-    - Clip down
-    - _Chest::VahMedohDivineHelm
-    - Ascend up on opposite end of hallway, mark cave entrance and then re-enter for Bubbulfrog
+    - Clip down:
+       notes: Look for the leftern-most side of the ice when trying to line it up, or on the right edge of the convex rock. (on top of the ledge above the ice).
     - _Cave::NorthBironSnowshelf00
+    - Shoot bubbulfrog out of bounds, clip back inside
     - _Bubbulfrog::NorthBironSnowshelfCave
+    - clip down:
+       notes: unclip when the camera returns to link. rocket away from the cave and up to the chest. dont go directly towards the chest first
+    - _Chest::VahMedohDivineHelm
   
   - Lanayru Wetlands:
     - _Warp::Tower::LookoutLanding:
