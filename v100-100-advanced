@@ -4341,12 +4341,12 @@ _route:
     - _Korok::GC24
     - _Shrine::Kudanisar
     - _Korok::GH47::Start
+    - _Korok::GH49
     - _Korok::GH47::End
     - _Korok::GH44:
        movements:
        - to: [-4363.35, 95.83, -1845.61]
          away: true
-    - _Korok::GH49
     - _Korok::GH52
     - _Item<Korok Starting Block>:
        coord: [-4482.4, 173.76, -2133.92]
@@ -4354,13 +4354,12 @@ _route:
     - _Korok::GC14::Trail
     - _Korok::GC17
     - _Korok::GC10
+    - _Korok::GC04
     - _Cave::WestGerudoUndergroundRuins00:
        notes: clip down at the entrance, dismount OOB after discovery
     - _Bubbulfrog::WestGerudoUndergroundRuins
     - _Chest::VahNaborisDivineHelm:
        notes: ghost clip south
-    - _Korok::GC04:
-       notes: ascend out
     - _Shrine::Mayamats
     - _Korok::GH28
     - _Korok::GH27
