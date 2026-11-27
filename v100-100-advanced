@@ -551,24 +551,30 @@ _route:
     - _Korok::GCS01
     - _SagesWill::SouthHyrule_01<Sage Will>:
        notes: For light switches, use Dazzlefruit and a multishot bow; stay in bullet time
-    - _OldMap::SouthHyrule_04<Old Map>
-    
-    - Slide to Satori Mountain
+    - _OldMap::SouthHyrule_04<Old Map>  
+    - Slide to Lomei Labyrinth
+    - _Location::SouthLomeiCastleTopFloor:
+       hide-icon-on-map: true
+    - _Shrine::Siyamotsus
+    - _Item<Korok Starting Block>:
+       coord: [-1715.53, 1291.05, -3576.85]
+    - _Korok::GCS02
+    - _Tablet::S05
     - _Location::WestHyruleSkyArchipelago:
        hide-icon-on-map: true
-       level: Sky
-    - _Enemy::FluxConstruct::SC01
-    - _SagesWill::Tabantha<Sage Will>:
-       comment: Attached to Flux Construct
-  
-    - Slide to Gerudo Highlands Tower
+       level: Sky        
+    - Slide to Gleeok
+    - _Enemy::Gleeok::S02
+    - _SagesWill::Gerudo<Sage Will>:
+       comment: After the Gleeok
+    - _Korok::GH38
+    - _Korok::GH37
     - _Korok::GH26
     - _Cave::Meadela'sMantle00
     - _Bubbulfrog::Meadela'sMantleCave
     - Ascend into the tower platform
     - _Tower::GerudoHighlands:
        comment: Launch from the tower
- 
     - _Location::NorthGerudoSkyArchipelago:
        hide-icon-on-map: true
     - _Tablet::S08
@@ -1256,6 +1262,11 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [-2479.18, 327.36, -509.34]
     - _Korok::HF08
+    - GAS Launch up to Flux
+    - _Enemy::FluxConstruct::SC01
+    - _SagesWill::Tabantha<Sage Will>:
+       comment: Attached to Flux Construct
+    - dive down
     - _Korok::HF03
     - _Cave::SatoriMountain00
     - Clip across (from inside cave)
@@ -4261,56 +4272,12 @@ _route:
        coord: [-1381.37, 574.75, -3366.07]
        comment: Heat, Cold Endurance Contest
        notes: Unequip armor before quest to avoid desync; use a campfire to pass time for quest
-
-  - Gerudo Labyrinth Sky:
-    - _Location::SouthLomeiCastleTopFloor:
-       hide-icon-on-map: true
-    - _Shrine::Siyamotsus
-    - _Item<Korok Starting Block>:
-       coord: [-1715.53, 1291.05, -3576.85]
-    - _Korok::GCS02
-  
-  - Scattered Gerudo:
     - _Location::SouthLomeiLabyrinth:
        hide-icon-on-map: true
     - _Korok::GC46
     - _Shrine::Motsusis
     - _Chasm::SouthLomei
     - _Korok::GC38
-    - _Korok::GC36
-    - _Korok::GC33
-    - _Shrine::Kitawak
-    - _Korok::GC27
-    - _Addison::A26
-    - _Korok::GC26
-    - _Cave::LowerSpectacleRock00
-    - _Bubbulfrog::LowerSpectacleRockCave
-    - _Korok::GC19::Start
-    - _Korok::GC19::End
-    - _Addison::A25
-    - _Cave::StalryPlateau00
-    - _Bubbulfrog::StalryPlateauCave
-    - _Npc<Botrick>:
-       coord: [-1509.83, 87.22, -2234.80]
-       comment: Disaster in Gerudo Canyon
-       notes: Save from Fire Lizalfos
-    - _Well::MountNabooru
-    - _Cave::MountNabooruSouth00
-    - _Bubbulfrog::MountNabooruSouthCave
-    - Ascend out
-    - _Npc<Giro>:
-       coord: [-1885.63, 104, -2340.83]
-       comment: Disaster in Gerudo Canyon
-       notes: Hand over Splash Fruit
-    - _Shrine::Rakakudaj::Start
-    - _Korok::GC08
-    - _Korok::GC05::Start:
-       notes: Combine crystal and Korok ABC
-    - _Korok::GC05::End
-    - _Shrine::Rakakudaj
-    - _Korok::GC23
-    - _Enemy::Gleeok::G09
-    - _Tablet::S05
     - _Chasm::EastGerudo
     - _Korok::GC40
     - _Enemy::Molduga::SG03:
@@ -4348,59 +4315,38 @@ _route:
     - _Addison::A08
     - _Korok::GC35::Start
     - _Korok::GC35::End
-    - _Cave::AncientPrisonRuins00
-    - Clip across
+    - _Cave::AncientPrisonRuins00:
+       notes: clip down close to the center of the sandpit, dismount OOB after discovery
     - _Bubbulfrog::AncientPrisonRuins
-    - Clip across
-    - _Shrine::Chichim
-    - Ascend out
-    - _Cave::QuicksandLake00
+    - _Shrine::Chichim:
+       notes: double clip down
+    - _Cave::QuicksandLake00:
+       notes: double clip down
     - _Bubbulfrog::QuicksandLakeCave
-    - Ascend out
-    - _Location::DesertRift
-    - _Korok::GC29
-    - _Korok::GC34::Trail    
-    - _Place::GerudoTown:
-       hide-icon-on-map: true
-    - drop a stick on the upper part of the wall and dorp another stick beside link. then drop 10 sticks on one side of link and 10 on the other side. then mount the first stick (clipping down and despawning it at the same time)
-    - _Shop<Gerudo Secret Club>:
-       coord: [-3789.95, 149.36, -2922.42]
-       comment: Buy Snow/Sand [2] and Desert Voe [2]
-    - _Shrine::Soryotanog:
-       comment: (STICK)
-    - _Item<Korok Starting Block>:
-       coord: [-3859.3, 190.19, -3017.55]
-    - _Korok::GC32
-    - _Korok::GC31
-    - _Item<Sewer>:
-       coord: [-3840, 300, -2850]
-       comment: Enter and then ascend up through Korok stump
-    - _Korok::GC30:
-       notes: Drop into northernmost sewer and ascend
-    - _Location::NorthGerudoRuins:
-       hide-icon-on-map: true
-    - _Cave::GerudoSanctuary00:
-       notes: Mark by climbing slightly into cave (or enter then ascend out)
-    - _Cave::ValleyofSilentStatues00
     - _Npc<Riju>:
        coord: [-3782.48, 137.99, -2639.96]
        comment: Riju of Gerudo Town
-    - _Korok::GC20
-    - _Location::NorthernIcehouse:
-       hide-icon-on-map: true
-    - _Korok::GC15
-    - _Npc<Anche>:
-       coord: [-3752, 139.5, -2277.5]
-       comment: The Iceless Icehouse
-       notes: Use an ice fruit
+       notes: clip down immediately, slide OOB into cutscene trigger
+    - _Cave::GerudoSanctuary00:
+       movements:
+       - to: [-3763.27, 14.39, -2698.52]
+         away: true
+       notes: enter after shooting arrow in Riju phase 1
+    - _Cave::ValleyofSilentStatues00:
+       movements:
+       - to: [-3827.19, 34.71, -2650.32]
+         away: true
+       notes: grab 20x arrows, enter after shooting arrow in Riju phase 2
     - _Enemy::Molduga::SG01
     - _Korok::GC24
+    - _Shrine::Kudanisar
     - _Korok::GH47::Start
     - _Korok::GH47::End
-    - _Korok::GH44
+    - _Korok::GH44:
+       movements:
+       - to: [-4363.35, 95.83, -1845.61]
+         away: true
     - _Korok::GH49
-    - _Shrine::Kudanisar:
-       comment: Stand on the switch, use recall on the ball
     - _Korok::GH52
     - _Item<Korok Starting Block>:
        coord: [-4482.4, 173.76, -2133.92]
@@ -4408,15 +4354,14 @@ _route:
     - _Korok::GC14::Trail
     - _Korok::GC17
     - _Korok::GC10
-    - _Korok::GC04
-    - _Cave::WestGerudoUndergroundRuins00
-    - Clip across
-    - _Chest::VahNaborisDivineHelm
-    - Clip across
+    - _Cave::WestGerudoUndergroundRuins00:
+       notes: clip down at the entrance, dismount OOB after discovery
     - _Bubbulfrog::WestGerudoUndergroundRuins
-    - Ascend out
-    - _Shrine::Mayamats:
-       comment: (STICK OPTION)
+    - _Chest::VahNaborisDivineHelm:
+       notes: ghost clip south
+    - _Korok::GC04:
+       notes: ascend out
+    - _Shrine::Mayamats
     - _Korok::GH28
     - _Korok::GH27
     - _Korok::GH10::Start
@@ -4489,131 +4434,98 @@ _route:
     - _Bubbulfrog::TaafeiHillCave
     - _Enemy::Talus::GG04:
        comment: Right
-    - _Cave::TaafeiHill00:
-       comment: Exit cave, ensure cave entrance is marked
-    - _Cave::YigaBlademasterStation00:
-       comment: Open door in area below
+    - Go Back into cave and clip down to Suariwak Shrine
+    - _Shrine::Suariwak
     - _Npc<Yiga Blademaster>:
        comment: The Yiga Clan Exam
-    - _Item<Secret Base Frog Statue>:
-       coord: [-2432.61, 183.31, -2035.49]
-       comment: Deposit Banana
-    - _Item<Secret Base Frog Statue>
-    - Unequip the Yiga Set
-    - _Korok::GC06    
+       notes: No need for yiga armor
+    - _Cave::YigaBlademasterStation00
+    - Go Up to Taafei Hill
+    - _Npc<Yiga Blademaster>:
+       comment: The Yiga Clan Exam  
     - _Korok::GC09::Start
     - _Korok::GC09::End
     - _Addison::A14
     - _Tower::GerudoCanyon:
        comment: Repair contraption using 3 Hover Stones
-    - _Korok::GC12
-    - _Shrine::Turakamik:
-       comment: (STICK)
-    - _Place::GerudoCanyonStable:
-       hide-icon-on-map: true
-    - _Addison::A15
-    - _Npc<Piaffe>:
-       coord: [-2802.75, 135.44, -2225]
-       comment: Piaffe, Packed Away
-       notes: Destroy Crates
-    - _Npc<Piaffe>:
-       comment: A Picture for the Closed Stable I
-    - _Npc<Piaffe>:
-       comment: A Picture for the Closed Stable II
-    - _Npc<Penn>:
-       coord: [-2817, 134.87, -2236.5]
-       comment: The Blocked Well
-    - _Well::GerudoCanyon:
-       comment: Enter well
-    - _Enemy<Inside the Well>:
-       comment: The Blocked Well
-    - _Korok::GC18
-    - _Npc<Malena>:
-       coord: [-2726.13, 167.9, -2335.33]
-       comment: Gleeok Gut
-    - _Cave::GerudoCanyonMine00
-    - _Item<Secret Base Frog Statue>:
-       coord: [-2675.53, 199.38, -2496.61]
-       comment: Deposit Banana
-    - _Bubbulfrog::GerudoCanyonMine
-    - Ascend out
     - _Korok::GH54::Trail
     - _Location::GerudoDesertGateway
     - _Korok::GC22::Start
     - _Korok::GH53
     - _Korok::GH55
     - _Korok::GC22::End
-    - _Place::KaraKaraBazaar:
-       hide-icon-on-map: true
     - _Enemy<Gibdos>:
-       coord: [-3330, 300, -2575]
-       comment: Defend
-    - _Cave::OasisSource00
-    - _Npc<Ponthos>:
-       coord: [-3290, 111.64, -2643]
-       comment: Start quest
-    - Break the rocks along the path
-    - _Bubbulfrog::OasisSource
-    - Trigger cutscene under well
-    - _Well::KaraKaraBazaar
-    - Climb out
-    - _Shop<Beedle>:
-       coord: [-3225.5, 130, -2592.75]
-       notes: Buy arrows
+       coord: [-3324, 130, -2574]
+       comment: Riju of Gerudo Town
     - _Shop<Armor Shop>:
        coord: [-3275.5, 129.34, -2552]
-       comment: Buy armor
-    - _Chest<Desert Voe Headband>
     - _Shrine::Mayatat
     - _Npc<Boraa>:
        coord: [-3226.39, 129.06, -2517.8]
        comment: Decorating with Passion
-       notes: Fuse a Ruby to a Weapon
-    - _Korok::GC25 
-    - _Item<Arrow x30>:
-       notes: Pick up
-    - _Item<Gerudo Scimitar>:
-       comment: Pride of the Gerudo
-    - _Item<Gerudo Shield>:
-       coord: [-3862.75, 149.72, -2982.06]
-       comment: Pride of the Gerudo
-    - Talk to Riju, defend the town
-    - _Tablet<Stelae 4>:
-       comment: Near the pillars mural, behind bomb rocks
-       notes: Bomb and take a picture before talking to riju
-    - Enter shelter, read mural, ascend out
-    - _Item<North Mirror>:
-        coord: [-4056.82, 167.50, -3149.83]
-    - Launch up
-    - _Enemy::Gleeok::S02
-    - _SagesWill::Gerudo<Sage Will>:
-       comment: After the Gleeok
+    - _Shop<Beedle>:
+       coord: [-3225.5, 130, -2592.75]
+       notes: buy arrows
+    - _Well::KaraKaraBazaar:
+       notes: enter and break rocks along the path
+    - _Bubbulfrog::OasisSource
+    - _Cave::OasisSource00
+    - _Npc<Ponthos>:
+       coord: [-3335, 111, -2676]
+       comment: Lost in the Dunes
+    - _Korok::GC25:
+       notes: ascend out
+    - _Npc<Benja>:
+       coord: [-3272, 129, -2582]
+       comment: Lost in the Dunes
+    - _Location::DesertRift
+    - _Korok::GC29
+    - _Shop<Gerudo Secret Club>:
+       coord: [-3789.95, 149.36, -2922.42]
+       notes: drop delay clip down
+    - _Item<Korok Starting Block>:
+       coord: [-3859.3, 190.19, -3017.55]
+    - _Korok::GC32
+    - _Shrine::Soryotanog
+    - _Npc<Riju>:
+       coord: [-3864, 156, -2943]
+       comment: Riju of Gerudo Town
+       notes: grab 50x arrows, Gerudo Shield and Gerudo Scimitar during defense
+    - _Tablet<Stelae 1>:
+       comment: in mural room
+       notes: clip down
+    - _Npc<Riju>:
+       comment: Riju of Gerudo Town
+       notes: take out stick before speaking
+    - _Tablet<Stelae 2>:
+       comment: in jail room
+       notes: mount stick and unequip shirt
     - _Enemy::Molduga::SG04
     - _Npc<Isha>:
        coord: [-4772.75, 140.25, -2825.25]
        comment: Defeat the Molduga
-    - _Shrine::Miryotanog:
-       comment: (GOHMA)
-    - _Item<Middle Mirror>:
-        coord: [-4539.07, 138.50, -3278.52]
+    - _Shrine::Miryotanog
     - _Korok::GC45::Start
+    - _Item<West Mirror>:
+        coord: [-4595.64, 136.60, -3278.52]
     - _Korok::GC45::End
-    - Clip out, rocket across, clip in
+    - _Bubbulfrog::GerudoGreatSkeleton:
+       notes: clip down immediately
+    - _Korok::GC49
     - _Npc<Loone>:
        coord: [-4873.42, 47.82, -3770.62]
        comment: Gerudo's Colossal Fossil
-       notes: Build small fossil
-    - _Korok::GC49
-    - _Bubbulfrog::GerudoGreatSkeleton
-    - _Cave::GerudoGreatSkeleton00:
-       comment: Exit through entrance
-    - _Location::ArbitersGrounds:
-       hide-icon-on-map: true
+    - _Cave::GerudoGreatSkeleton00
     - _Shrine::Irasak
     - _Item<South Mirror>:
        coord: [-4185.51, 167.50, -3632.07]
-    - _Item<Activation Trigger>:
-       coord: [-4260, 400, -3333]
+    - _Npc<Riju>:
+       coord: [-4260.47, 145.83, -3353.47]
+       comment: Riju of Gerudo Town
+    - _Item<North Mirror>:
+       movements:
+       - to: [-4056.82, 167.50, -3149.83]
+         away: true
     - _Temple::Lightning
     - _Item<Heart Container>
   
@@ -4689,39 +4601,108 @@ _route:
        coord: [-3760, 149.5, -2944.5]
        comment: To the Ruins
        notes: Escort to East Gerudo Ruins with Sand Seal
+    - _Korok::GC34::Trail
     - _Location::EastGerudoRuins:
        hide-icon-on-map: true
     - _Npc<Pokki>:
        coord: [-2792, 135, -2881.25]
        comment: To the Ruins
-    - _Cave::EastGerudoRuins00
     - _Bubbulfrog::EastGerudoRuinsCave
     - Ascend out
+    - _Cave::EastGerudoRuins00
     - _Item<Korok Starting Block>:
        coord: [-2731.97, 140.68, -2820.41]
     - _Korok::GC28
     - _Cave::GerudoCanyonMine01 
+    - _Item<Secret Base Frog Statue>:
+       coord: [-2675.53, 199.38, -2496.61]
+       comment: Deposit Banana
+    - _Bubbulfrog::GerudoCanyonMine
+    - Ascend Out
+    - _Cave::GerudoCanyonMine00
+    - _Korok::GC18
+    - _Npc<Malena>:
+       coord: [-2726.13, 167.9, -2335.33]
+       comment: Gleeok Gut         
+    - _Well::GerudoCanyon:
+       comment: Enter well
+    - _Npc<Penn>:
+       coord: [-2817, 134.87, -2236.5]
+       comment: The Blocked Well
+    - _Enemy<Inside the Well>:
+       comment: The Blocked Well    
+    - _Npc<Piaffe>:
+       coord: [-2802.75, 135.44, -2225]
+       comment: Piaffe, Packed Away
+       notes: Destroy Crates
+    - _Npc<Piaffe>:
+       comment: A Picture for the Closed Stable I
+    - _Npc<Piaffe>:
+       comment: A Picture for the Closed Stable II  
+    - _Addison::A15  
+    - _Shrine::Turakamik
+    - _Korok::GC12
+    - _Korok::GC06
+    - _Item<Secret Base Frog Statue>:
+       coord: [-2432.61, 183.31, -2035.49]
+       comment: Deposit Banana
+    - Unequip the Yiga Set   
+       
+       
+    - _Korok::GC11
+    - _Korok::GC13
+    - _Item<Korok Starting Block>:
+       coord: [-2251.93, 380.69, -2358.59]
+    - _Korok::GC16
+    - _Cave::SpectacleRock00
+    - _Bubbulfrog::SpectacleRockCave  
+    - Ascend out
     - _Enemy::Talus::GG05:
        comment: Right
     - _Item<Secret Base Frog Statue>:
        coord: [-2301.11, 462.97, -2426.82]
        comment: Deposit Banana
-    - _Cave::SpectacleRock00
-    - _Bubbulfrog::SpectacleRockCave
+    - _Enemy::Gleeok::G09
+    - _Korok::GC23
+    - _Addison::A26
+    - _Korok::GC27
+    - _Korok::GC36
+    - _Korok::GC33
+    - _Shrine::Kitawak
+    - _Korok::GC26
+    - _Cave::LowerSpectacleRock00
+    - _Bubbulfrog::LowerSpectacleRockCave
+    - _Npc<Giro>:
+       coord: [-1885.63, 104, -2340.83]
+       comment: Disaster in Gerudo Canyon
+       notes: Hand over Splash Fruit
+    - _Shrine::Rakakudaj::Start
+    - _Korok::GC19::Start
+    - _Korok::GC19::End
+    - _Addison::A25
+    - _Cave::StalryPlateau00
+    - _Bubbulfrog::StalryPlateauCave
+    - _Npc<Botrick>:
+       coord: [-1509.83, 87.22, -2234.80]
+       comment: Disaster in Gerudo Canyon
+       notes: Save from Fire Lizalfos
+    - _Well::MountNabooru
+    - _Cave::MountNabooruSouth00
+    - _Bubbulfrog::MountNabooruSouthCave
     - Ascend out
-    - _Item<Korok Starting Block>:
-       coord: [-2251.93, 380.69, -2358.59]
-    - _Korok::GC16
-    - _Korok::GC13
-    - _Korok::GC11
+    - _Korok::GC08
+    - _Korok::GC05::Start:
+       notes: Combine crystal and Korok ABC
+    - _Cave::MountNabooru00
+    - _Korok::GC05::End
+    - _Shrine::Rakakudaj
+    - _Cave::KoukotPlateau01
+    - _Bubbulfrog::KoukotPlateauCave 
     - _Npc<Garill>:
        coord: [-2197.67, 258.5, -1866.53]
        comment: Disaster in Gerudo Canyon
        notes: Spicy Pepper 
-    - _Cave::KoukotPlateau01
-    - _Bubbulfrog::KoukotPlateauCave 
     - _Addison::A13
-    - _Cave::MountNabooru00
     - _Bubbulfrog::MountNabooruCave
     - _Item<Secret Base Frog Statue>:
        coord: [-1838.75, 147.18, -1943.96]
@@ -4760,10 +4741,11 @@ _route:
     - _Item<Secret Base Frog Statue>:
        coord: [-2323.3, 252.92, -1839.97]
        comment: Deposit Banana
-    - _Cave::YigaBlademasterStation00
+    - _Cave::TaafeiHill00
+    - Clip down to Suariwak and make your way to the blademaster
     - _Npc<Yiga Blademaster>:
        comment: The Yiga Clan Exam
-    - _Shrine::Suariwak
+       notes: No need for yiga armor
     - _Bubbulfrog::YigaBlademasterStation
     - Ascend out
     - _Korok::GH42
@@ -4785,8 +4767,6 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [-3845.88, 471.02, -1465.43]
     - _Korok::GH33
-    - _Korok::GH38
-    - _Korok::GH37
     - _Place::YigaClanHideout:
        hide-icon-on-map: true
     - _Npc<Mimos>:
