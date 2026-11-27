@@ -4354,12 +4354,12 @@ _route:
     - _Korok::GC14::Trail
     - _Korok::GC17
     - _Korok::GC10
-    - _Korok::GC04
     - _Cave::WestGerudoUndergroundRuins00:
        notes: clip down at the entrance, dismount OOB after discovery
     - _Bubbulfrog::WestGerudoUndergroundRuins
-    - _Chest::VahNaborisDivineHelm:
-       notes: ghost clip south
+    - _Chest::VahNaborisDivineHelm
+    - ascend out
+    - _Korok::GC04
     - _Shrine::Mayamats
     - _Korok::GH28
     - _Korok::GH27
@@ -4372,13 +4372,12 @@ _route:
     - _Korok::GH13
     - _Korok::GH10::End
     - _Shrine::Otutsum
-    - Rocket across
     - Clip down
-    - _Bubbulfrog::StatueoftheEighthHeroineCave
     - _Chest::TinglesHood
+    - _Bubbulfrog::StatueoftheEighthHeroineCave
+    - clip across to cave entrance
     - _Cave::StatueoftheEighthHeroine00:
-       notes: Run to the cave entrance and mark it by standing against the grate
-    - Ascend out
+       notes: go over the oob part with the cave, and crouch dash out to outside of the bars. clip out of the cave (entrance will be marked)
     - _Location::StatueoftheEighthHeroine:
        hide-icon-on-map: true
     - _Korok::GH09
